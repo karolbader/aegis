@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "rules": [
+    { "tag": "policy", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "governance", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "risk", "min_hits_for_partial": 1, "min_hits_for_met": 3 },
+    { "tag": "access", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "identity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "mfa", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "cryptography", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "logging", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "vulnerability", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "incident", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "continuity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "audit", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "awareness", "min_hits_for_partial": 1, "min_hits_for_met": 2 }
+  ]
+}

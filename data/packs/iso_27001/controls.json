@@ -1,0 +1,142 @@
+[
+  {
+    "control_id": "ISO-001",
+    "title": "Security Policy Governance",
+    "description": "Maintain and review core information security policies with named approvers.",
+    "severity": 4,
+    "tags": ["policy", "governance", "review"]
+  },
+  {
+    "control_id": "ISO-002",
+    "title": "Risk Register Maintenance",
+    "description": "Keep an active risk register with treatment decisions and due dates.",
+    "severity": 5,
+    "tags": ["risk", "register", "governance"]
+  },
+  {
+    "control_id": "ISO-003",
+    "title": "Asset Classification",
+    "description": "Classify key assets and assign owners for accountability.",
+    "severity": 4,
+    "tags": ["asset", "classification", "ownership"]
+  },
+  {
+    "control_id": "ISO-004",
+    "title": "Access Control Policy",
+    "description": "Define access rules for business roles and privileged accounts.",
+    "severity": 5,
+    "tags": ["access", "identity", "policy"]
+  },
+  {
+    "control_id": "ISO-005",
+    "title": "Authentication Strength",
+    "description": "Apply strong authentication controls for sensitive workflows.",
+    "severity": 5,
+    "tags": ["access", "mfa", "identity"]
+  },
+  {
+    "control_id": "ISO-006",
+    "title": "Cryptographic Key Operations",
+    "description": "Document key creation, rotation, and retirement practices.",
+    "severity": 4,
+    "tags": ["cryptography", "encryption", "key_management"]
+  },
+  {
+    "control_id": "ISO-007",
+    "title": "Operational Procedure Control",
+    "description": "Keep security operating procedures current and tested.",
+    "severity": 3,
+    "tags": ["operations", "procedure", "cadence"]
+  },
+  {
+    "control_id": "ISO-008",
+    "title": "Logging and Event Oversight",
+    "description": "Review event logs and define retention requirements.",
+    "severity": 4,
+    "tags": ["logging", "monitoring", "retention"]
+  },
+  {
+    "control_id": "ISO-009",
+    "title": "Vulnerability Management",
+    "description": "Track vulnerabilities through remediation and closure.",
+    "severity": 4,
+    "tags": ["vulnerability", "operations", "risk"]
+  },
+  {
+    "control_id": "ISO-010",
+    "title": "Secure Change Management",
+    "description": "Evaluate security impact for changes before deployment.",
+    "severity": 4,
+    "tags": ["change", "operations", "review"]
+  },
+  {
+    "control_id": "ISO-011",
+    "title": "Supplier Security Management",
+    "description": "Assess supplier security posture and contractual requirements.",
+    "severity": 4,
+    "tags": ["supplier", "third_party", "risk"]
+  },
+  {
+    "control_id": "ISO-012",
+    "title": "Incident Handling Workflow",
+    "description": "Use documented incident handling steps and escalation paths.",
+    "severity": 5,
+    "tags": ["incident", "response", "governance"]
+  },
+  {
+    "control_id": "ISO-013",
+    "title": "Business Continuity Planning",
+    "description": "Maintain continuity procedures for critical services.",
+    "severity": 4,
+    "tags": ["continuity", "recovery", "cadence"]
+  },
+  {
+    "control_id": "ISO-014",
+    "title": "Compliance Evidence Tracking",
+    "description": "Collect evidence for mandatory obligations and assessments.",
+    "severity": 3,
+    "tags": ["compliance", "evidence", "audit"]
+  },
+  {
+    "control_id": "ISO-015",
+    "title": "Internal Audit Cadence",
+    "description": "Run internal security audits on a scheduled basis.",
+    "severity": 3,
+    "tags": ["audit", "cadence", "governance"]
+  },
+  {
+    "control_id": "ISO-016",
+    "title": "Management Review Cycle",
+    "description": "Review security objectives and outcomes with leadership.",
+    "severity": 3,
+    "tags": ["governance", "review", "cadence"]
+  },
+  {
+    "control_id": "ISO-017",
+    "title": "Security Awareness Tracking",
+    "description": "Measure completion and quality of awareness activities.",
+    "severity": 2,
+    "tags": ["awareness", "training", "people"]
+  },
+  {
+    "control_id": "ISO-018",
+    "title": "Physical Access Safeguards",
+    "description": "Control physical entry to sensitive work areas.",
+    "severity": 3,
+    "tags": ["physical", "access", "facility"]
+  },
+  {
+    "control_id": "ISO-019",
+    "title": "Data Retention and Disposal",
+    "description": "Apply retention and secure disposal rules for data sets.",
+    "severity": 3,
+    "tags": ["data", "retention", "disposal"]
+  },
+  {
+    "control_id": "ISO-020",
+    "title": "Control Improvement Backlog",
+    "description": "Track improvement actions and verify completion.",
+    "severity": 2,
+    "tags": ["improvement", "governance", "register"]
+  }
+]

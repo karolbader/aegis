@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "rules": [
+    { "tag": "identity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "access", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "mfa", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "logging", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "monitoring", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "encryption", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "incident", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "backup", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "vendor", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "continuity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "governance", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "training", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "risk", "min_hits_for_partial": 1, "min_hits_for_met": 3 }
+  ]
+}

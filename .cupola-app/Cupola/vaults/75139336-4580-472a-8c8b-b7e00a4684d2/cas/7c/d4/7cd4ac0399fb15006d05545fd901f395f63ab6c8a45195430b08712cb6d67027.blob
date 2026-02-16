@@ -1,0 +1,23 @@
+{
+  "vault_id": "75139336-4580-472a-8c8b-b7e00a4684d2",
+  "root": "\\\\?\\E:\\CupolaCore\\_vault_aegis_glue",
+  "created_at": 1771264552422860900,
+  "artifacts": [
+    {
+      "rel_path": "notes.md",
+      "raw_blob_id": "17610c310f8dcd405475b1c51b4f6bd72a38aace32a629ee0a2a2444200c2be5",
+      "mtime_ns": 1771259400109548000,
+      "file_size": 65,
+      "file_type": "md",
+      "artifact_version_id": "ce11105f-85c4-4c3a-9cec-4d8550c1b602"
+    },
+    {
+      "rel_path": "policy.txt",
+      "raw_blob_id": "8e81f104225dc1ec3900d5dd205d2cb83bc5ba0a9e9cae51d7328b48ba802137",
+      "mtime_ns": 1771259400098498900,
+      "file_size": 90,
+      "file_type": "txt",
+      "artifact_version_id": "d6891210-3050-40b9-821d-fd140d06d82b"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "queries": [
+    {
+      "query_id": "ISO-Q-001",
+      "query_text": "information security policy approved",
+      "tags": ["policy", "governance", "review"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-002",
+      "query_text": "risk register treatment owner",
+      "tags": ["risk", "register", "governance"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-003",
+      "query_text": "asset inventory classification owner",
+      "tags": ["asset", "classification", "ownership"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-004",
+      "query_text": "access control role based privileged",
+      "tags": ["access", "identity", "policy"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-005",
+      "query_text": "MFA strong authentication",
+      "tags": ["mfa", "identity", "access"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-006",
+      "query_text": "cryptographic key rotation encryption",
+      "tags": ["cryptography", "encryption", "key_management"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-007",
+      "query_text": "security event logging retention",
+      "tags": ["logging", "monitoring", "retention"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-008",
+      "query_text": "vulnerability remediation patch management",
+      "tags": ["vulnerability", "operations", "risk"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-009",
+      "query_text": "incident response escalation workflow",
+      "tags": ["incident", "response", "governance"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-010",
+      "query_text": "business continuity disaster recovery",
+      "tags": ["continuity", "recovery", "cadence"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-011",
+      "query_text": "internal audit management review",
+      "tags": ["audit", "governance", "cadence"],
+      "limit": 5
+    },
+    {
+      "query_id": "ISO-Q-012",
+      "query_text": "security awareness training completion",
+      "tags": ["awareness", "training", "people"],
+      "limit": 5
+    }
+  ]
+}

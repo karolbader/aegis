@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "rules": [
+    { "tag": "identify", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "protect", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "detect", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "respond", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "recover", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "risk", "min_hits_for_partial": 1, "min_hits_for_met": 3 },
+    { "tag": "incident", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "monitoring", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "encryption", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "governance", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "continuity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
+    { "tag": "training", "min_hits_for_partial": 1, "min_hits_for_met": 2 }
+  ]
+}

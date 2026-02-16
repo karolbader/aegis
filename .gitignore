@@ -1,4 +1,6 @@
 target/
-data/
+data/*
+!data/packs/
+!data/packs/**
 out/
 *.log

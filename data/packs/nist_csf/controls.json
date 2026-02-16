@@ -1,0 +1,142 @@
+[
+  {
+    "control_id": "NIST-001",
+    "title": "Asset Visibility",
+    "description": "Maintain visibility into systems, software, and data assets.",
+    "severity": 4,
+    "tags": ["identify", "asset", "inventory"]
+  },
+  {
+    "control_id": "NIST-002",
+    "title": "Business Context Mapping",
+    "description": "Document critical services and supporting dependencies.",
+    "severity": 3,
+    "tags": ["identify", "context", "dependency"]
+  },
+  {
+    "control_id": "NIST-003",
+    "title": "Risk Assessment Rhythm",
+    "description": "Run repeatable assessments and prioritize treatment actions.",
+    "severity": 4,
+    "tags": ["identify", "risk", "cadence"]
+  },
+  {
+    "control_id": "NIST-004",
+    "title": "Identity and Access Protection",
+    "description": "Enforce identity controls for users and privileged roles.",
+    "severity": 5,
+    "tags": ["protect", "identity", "access"]
+  },
+  {
+    "control_id": "NIST-005",
+    "title": "Awareness and Training",
+    "description": "Train personnel on secure behaviors and reporting channels.",
+    "severity": 2,
+    "tags": ["protect", "training", "people"]
+  },
+  {
+    "control_id": "NIST-006",
+    "title": "Data Security Safeguards",
+    "description": "Apply controls for data confidentiality and integrity.",
+    "severity": 5,
+    "tags": ["protect", "data", "encryption"]
+  },
+  {
+    "control_id": "NIST-007",
+    "title": "Protective Technology Baseline",
+    "description": "Harden systems using standard configuration baselines.",
+    "severity": 4,
+    "tags": ["protect", "baseline", "endpoint"]
+  },
+  {
+    "control_id": "NIST-008",
+    "title": "Anomaly Detection",
+    "description": "Detect unusual events and route alerts for triage.",
+    "severity": 4,
+    "tags": ["detect", "monitoring", "alerting"]
+  },
+  {
+    "control_id": "NIST-009",
+    "title": "Continuous Monitoring",
+    "description": "Continuously monitor logs, assets, and network activity.",
+    "severity": 4,
+    "tags": ["detect", "monitoring", "logging"]
+  },
+  {
+    "control_id": "NIST-010",
+    "title": "Detection Process Governance",
+    "description": "Maintain detection runbooks and ownership for signal quality.",
+    "severity": 3,
+    "tags": ["detect", "process", "governance"]
+  },
+  {
+    "control_id": "NIST-011",
+    "title": "Incident Response Planning",
+    "description": "Define incident response objectives, roles, and communications.",
+    "severity": 5,
+    "tags": ["respond", "incident", "planning"]
+  },
+  {
+    "control_id": "NIST-012",
+    "title": "Incident Analysis",
+    "description": "Analyze incident evidence and identify scope quickly.",
+    "severity": 4,
+    "tags": ["respond", "incident", "analysis"]
+  },
+  {
+    "control_id": "NIST-013",
+    "title": "Containment and Mitigation",
+    "description": "Contain incidents and deploy mitigation with verification.",
+    "severity": 5,
+    "tags": ["respond", "containment", "mitigation"]
+  },
+  {
+    "control_id": "NIST-014",
+    "title": "Response Communications",
+    "description": "Coordinate internal and external incident communications.",
+    "severity": 4,
+    "tags": ["respond", "communications", "governance"]
+  },
+  {
+    "control_id": "NIST-015",
+    "title": "Recovery Planning",
+    "description": "Prepare recovery plans to restore key services.",
+    "severity": 4,
+    "tags": ["recover", "continuity", "planning"]
+  },
+  {
+    "control_id": "NIST-016",
+    "title": "Recovery Improvements",
+    "description": "Capture lessons learned and track recovery improvements.",
+    "severity": 3,
+    "tags": ["recover", "improvement", "register"]
+  },
+  {
+    "control_id": "NIST-017",
+    "title": "Recovery Communications",
+    "description": "Communicate recovery progress to operational stakeholders.",
+    "severity": 3,
+    "tags": ["recover", "communications", "cadence"]
+  },
+  {
+    "control_id": "NIST-018",
+    "title": "Third-Party Risk Coordination",
+    "description": "Coordinate cyber risk expectations with key suppliers.",
+    "severity": 4,
+    "tags": ["identify", "third_party", "risk"]
+  },
+  {
+    "control_id": "NIST-019",
+    "title": "Change and Configuration Control",
+    "description": "Control security-impacting change through review workflows.",
+    "severity": 3,
+    "tags": ["protect", "change", "review"]
+  },
+  {
+    "control_id": "NIST-020",
+    "title": "Program Metrics",
+    "description": "Track security metrics and use them for program decisions.",
+    "severity": 2,
+    "tags": ["identify", "metrics", "governance"]
+  }
+]

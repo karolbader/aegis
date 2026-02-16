@@ -1,0 +1,142 @@
+[
+  {
+    "control_id": "VS-001",
+    "title": "Identity Platform Ownership",
+    "description": "Document who owns workforce identity services and how account lifecycle changes are approved.",
+    "severity": 4,
+    "tags": ["identity", "access", "sso"]
+  },
+  {
+    "control_id": "VS-002",
+    "title": "Multi-Factor Authentication",
+    "description": "Require MFA for employee and contractor access to critical systems.",
+    "severity": 5,
+    "tags": ["mfa", "identity", "access"]
+  },
+  {
+    "control_id": "VS-003",
+    "title": "Privileged Access Reviews",
+    "description": "Review administrator privileges on a fixed cadence and remove stale access.",
+    "severity": 5,
+    "tags": ["access", "privileged", "review"]
+  },
+  {
+    "control_id": "VS-004",
+    "title": "Endpoint Hardening Baseline",
+    "description": "Maintain baseline endpoint security settings and monitor drift.",
+    "severity": 4,
+    "tags": ["endpoint", "baseline", "hardening"]
+  },
+  {
+    "control_id": "VS-005",
+    "title": "Patch Cadence",
+    "description": "Track patching SLAs and verify critical patches are deployed within target windows.",
+    "severity": 4,
+    "tags": ["patch", "cadence", "vulnerability"]
+  },
+  {
+    "control_id": "VS-006",
+    "title": "Vulnerability Triage",
+    "description": "Prioritize vulnerabilities by exploitability and business impact.",
+    "severity": 4,
+    "tags": ["vulnerability", "risk", "triage"]
+  },
+  {
+    "control_id": "VS-007",
+    "title": "Logging Retention",
+    "description": "Retain security-relevant logs long enough to support investigations.",
+    "severity": 3,
+    "tags": ["logging", "monitoring", "retention"]
+  },
+  {
+    "control_id": "VS-008",
+    "title": "Alert Response Workflow",
+    "description": "Define response ownership and escalation for high-severity alerts.",
+    "severity": 4,
+    "tags": ["monitoring", "alerting", "incident"]
+  },
+  {
+    "control_id": "VS-009",
+    "title": "Data Encryption At Rest",
+    "description": "Protect stored sensitive data with managed encryption keys.",
+    "severity": 5,
+    "tags": ["encryption", "data", "key_management"]
+  },
+  {
+    "control_id": "VS-010",
+    "title": "Data Encryption In Transit",
+    "description": "Use modern TLS settings for service-to-service and user traffic.",
+    "severity": 5,
+    "tags": ["encryption", "network", "tls"]
+  },
+  {
+    "control_id": "VS-011",
+    "title": "Incident Readiness",
+    "description": "Maintain an incident response plan with clear communication channels.",
+    "severity": 5,
+    "tags": ["incident", "response", "tabletop"]
+  },
+  {
+    "control_id": "VS-012",
+    "title": "Backup and Restore Testing",
+    "description": "Test data restoration procedures and capture recovery outcomes.",
+    "severity": 4,
+    "tags": ["backup", "recovery", "continuity"]
+  },
+  {
+    "control_id": "VS-013",
+    "title": "Change Approval Trail",
+    "description": "Record security-impacting changes and their approvals.",
+    "severity": 3,
+    "tags": ["change", "governance", "review"]
+  },
+  {
+    "control_id": "VS-014",
+    "title": "Asset Inventory Coverage",
+    "description": "Track production assets with ownership and risk context.",
+    "severity": 4,
+    "tags": ["asset", "inventory", "risk"]
+  },
+  {
+    "control_id": "VS-015",
+    "title": "Vendor Due Diligence",
+    "description": "Assess critical vendors before onboarding and during renewal.",
+    "severity": 4,
+    "tags": ["vendor", "third_party", "risk"]
+  },
+  {
+    "control_id": "VS-016",
+    "title": "Security Awareness Program",
+    "description": "Run periodic security training and track participation.",
+    "severity": 2,
+    "tags": ["training", "awareness", "people"]
+  },
+  {
+    "control_id": "VS-017",
+    "title": "Data Handling Guidance",
+    "description": "Define handling expectations for confidential and regulated data.",
+    "severity": 4,
+    "tags": ["data", "policy", "classification"]
+  },
+  {
+    "control_id": "VS-018",
+    "title": "Network Segmentation",
+    "description": "Separate critical workloads from general-purpose network zones.",
+    "severity": 4,
+    "tags": ["network", "segmentation", "architecture"]
+  },
+  {
+    "control_id": "VS-019",
+    "title": "Business Continuity Governance",
+    "description": "Maintain continuity playbooks with accountable owners.",
+    "severity": 3,
+    "tags": ["continuity", "governance", "cadence"]
+  },
+  {
+    "control_id": "VS-020",
+    "title": "Metrics and Reporting",
+    "description": "Publish a recurring security metrics report to leadership.",
+    "severity": 2,
+    "tags": ["metrics", "governance", "cadence"]
+  }
+]
