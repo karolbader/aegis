@@ -6,7 +6,7 @@ use serde_json::Value;
 use sha2::{Digest, Sha256};
 use std::collections::{BTreeMap, BTreeSet};
 use std::fs;
-use std::path::{Path, PathBuf};
+use std::path::{Component, Path, PathBuf};
 use std::process::Command;
 
 const PACK_ID: &str = "PACK-001";
@@ -828,10 +828,21 @@ fn cmd_run_inner(args: RunArgs, overrides: Option<RunCommandOverrides>) -> Resul
         intake.generated_at = Some(now_utc_rfc3339());
     }
 
-    let library_pack_data = load_library_pack_data(intake.library_pack)?;
     let export_dir = resolve_export_dir_for_run(&args, &intake, PACK_ID);
-    fs::create_dir_all(&export_dir)
-        .with_context(|| format!("Failed to create export directory {}", export_dir.display()))?;
+    let vault_path = normalized_absolute_path(&args.vault)?;
+    let out_path = normalized_absolute_path(&export_dir)?;
+    if is_within(&out_path, &vault_path) {
+        bail!(
+            "Refusing --out inside --vault (would invalidate Cupola manifest verification). Choose an output folder outside the vault."
+        );
+    }
+
+    println!("Using output directory {}", out_path.display());
+    fs::create_dir_all(&out_path)
+        .with_context(|| format!("Failed to create export directory {}", out_path.display()))?;
+
+    let library_pack_data = load_library_pack_data(intake.library_pack)?;
+    let export_dir = out_path;
 
     let cupola_manifest_path_abs = absolute_path(&export_dir.join(CUPOLA_MANIFEST_FILE))?;
     let (auto, cupola, hash_status, freeze_status, verify_status, replay_status) = match overrides {
@@ -940,13 +951,7 @@ fn resolve_export_dir_for_run(args: &RunArgs, intake: &IntakeV1, pack_id: &str) 
             .join(pack_id);
     }
 
-    match intake.output_mode {
-        Some(OutputMode::InVault) => args.vault.join(".aegis").join("exports").join(pack_id),
-        _ => PathBuf::from("out")
-            .join(&intake.client_id)
-            .join(&intake.engagement_id)
-            .join(pack_id),
-    }
+    default_run_output_root()
 }
 
 fn resolve_export_dir_for_quote(out: Option<&Path>, intake: &IntakeV1, pack_id: &str) -> PathBuf {
@@ -2067,6 +2072,63 @@ fn absolute_path(path: &Path) -> Result<PathBuf> {
     Ok(cwd.join(path))
 }
 
+fn default_run_output_root() -> PathBuf {
+    let stamp = Utc::now().format("%Y%m%d-%H%M%S");
+    std::env::temp_dir()
+        .join("aegis")
+        .join("runs")
+        .join(format!("run-{stamp}"))
+}
+
+fn normalized_absolute_path(path: &Path) -> Result<PathBuf> {
+    let absolute = absolute_path(path)?;
+    Ok(normalize_lexical_path(&absolute))
+}
+
+fn normalize_lexical_path(path: &Path) -> PathBuf {
+    let mut normalized = PathBuf::new();
+    for component in path.components() {
+        match component {
+            Component::CurDir => {}
+            Component::ParentDir => {
+                let _ = normalized.pop();
+            }
+            _ => normalized.push(component.as_os_str()),
+        }
+    }
+    normalized
+}
+
+fn is_within(child: &Path, parent: &Path) -> bool {
+    let child_components = comparable_components(child);
+    let parent_components = comparable_components(parent);
+    !parent_components.is_empty()
+        && child_components.len() >= parent_components.len()
+        && child_components[..parent_components.len()] == parent_components[..]
+}
+
+fn comparable_components(path: &Path) -> Vec<String> {
+    normalize_lexical_path(path)
+        .components()
+        .map(component_for_compare)
+        .collect()
+}
+
+fn component_for_compare(component: Component<'_>) -> String {
+    let token = match component {
+        Component::Prefix(prefix) => prefix.as_os_str().to_string_lossy().into_owned(),
+        Component::RootDir => std::path::MAIN_SEPARATOR.to_string(),
+        Component::CurDir => ".".to_string(),
+        Component::ParentDir => "..".to_string(),
+        Component::Normal(part) => part.to_string_lossy().into_owned(),
+    };
+    if cfg!(windows) {
+        token.to_ascii_lowercase()
+    } else {
+        token
+    }
+}
+
 fn json_pretty(value: &impl Serialize) -> Result<String> {
     let content = serde_json::to_string_pretty(value).context("Failed to serialize JSON")?;
     Ok(format!("{content}\n"))
@@ -2186,6 +2248,48 @@ mod tests {
                 .join("q1")
                 .join(PACK_ID)
         );
+    }
+
+    #[test]
+    #[cfg(windows)]
+    fn is_within_true_for_child_under_parent() {
+        assert!(is_within(
+            Path::new(r"C:\vault\exports\acme\eng\PACK-001"),
+            Path::new(r"C:\vault")
+        ));
+    }
+
+    #[test]
+    #[cfg(windows)]
+    fn is_within_true_for_equal_paths() {
+        assert!(is_within(Path::new(r"C:\vault"), Path::new(r"C:\vault")));
+    }
+
+    #[test]
+    #[cfg(windows)]
+    fn is_within_false_for_sibling() {
+        assert!(!is_within(
+            Path::new(r"C:\vault_sibling\exports"),
+            Path::new(r"C:\vault")
+        ));
+    }
+
+    #[test]
+    #[cfg(windows)]
+    fn is_within_false_for_different_drive() {
+        assert!(!is_within(
+            Path::new(r"D:\vault\exports"),
+            Path::new(r"C:\vault")
+        ));
+    }
+
+    #[test]
+    #[cfg(windows)]
+    fn is_within_handles_mixed_slashes_and_case() {
+        assert!(is_within(
+            Path::new(r"c:/VaUlT\Exports/Acme"),
+            Path::new(r"C:\vault")
+        ));
     }
 
     #[test]
