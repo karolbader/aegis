@@ -13,7 +13,6 @@ const PACK_ID: &str = "PACK-001";
 const PACK_PATH: &str = "data/pack.json";
 const CUPOLA_IMPORT_PATH: &str = "data/cupola_import.json";
 const CUPOLA_SEARCH_RAW_PATH: &str = "data/cupola_search.raw.json";
-const PACKS_ROOT: &str = "data/packs";
 const DEFAULT_CUPOLA_REPO: &str = r"E:\CupolaCore";
 
 const DECISION_PACK_HTML: &str = "DecisionPack.html";
@@ -92,6 +91,12 @@ struct ExportArgs {
     library_pack: LibraryPack,
     #[arg(long, default_value = DEFAULT_CUPOLA_REPO)]
     cupola_repo: PathBuf,
+    #[arg(
+        long,
+        value_name = "DATA_DIR",
+        help = "Folder containing data/packs/... libraries"
+    )]
+    data_dir: Option<PathBuf>,
 }
 
 #[derive(Debug, Clone, Args)]
@@ -106,6 +111,12 @@ struct RunArgs {
     in_vault: Option<PathBuf>,
     #[arg(long)]
     out: Option<PathBuf>,
+    #[arg(
+        long,
+        value_name = "DATA_DIR",
+        help = "Folder containing data/packs/... libraries"
+    )]
+    data_dir: Option<PathBuf>,
 }
 
 #[derive(Debug, Clone, Args)]
@@ -172,6 +183,15 @@ enum LibraryPack {
     Iso27001,
     #[value(name = "nist_csf")]
     NistCsf,
+    #[value(name = "vendorsecurity/v1", alias = "vendor_security_v1")]
+    #[serde(rename = "vendorsecurity/v1", alias = "vendor_security_v1")]
+    VendorSecurityV1,
+    #[value(name = "dfir-lite/v1", alias = "dfir_lite_v1")]
+    #[serde(rename = "dfir-lite/v1", alias = "dfir_lite_v1")]
+    DfirLiteV1,
+    #[value(name = "iso27001-lite/v1", alias = "iso27001_lite_v1")]
+    #[serde(rename = "iso27001-lite/v1", alias = "iso27001_lite_v1")]
+    Iso27001LiteV1,
 }
 
 impl LibraryPack {
@@ -180,6 +200,9 @@ impl LibraryPack {
             LibraryPack::VendorSecurity => "vendor_security",
             LibraryPack::Iso27001 => "iso_27001",
             LibraryPack::NistCsf => "nist_csf",
+            LibraryPack::VendorSecurityV1 => "vendorsecurity/v1",
+            LibraryPack::DfirLiteV1 => "dfir-lite/v1",
+            LibraryPack::Iso27001LiteV1 => "iso27001-lite/v1",
         }
     }
 }
@@ -575,6 +598,7 @@ struct AegisManifestV11 {
     cupola_import_path: String,
     pack_type: PackType,
     library_pack: LibraryPack,
+    pack_meta: PackMeta,
     claim_count: usize,
     intake: IntakeV1,
     cupola: CupolaContextV11,
@@ -616,6 +640,47 @@ struct DecisionPackBuild<'a> {
     freeze_status: Option<String>,
     verify_status: Option<String>,
     replay_status: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+struct PackMeta {
+    pack_type: String,
+    library: String,
+    client: String,
+    engagement: String,
+    pack_id: String,
+}
+
+fn build_pack_meta(intake: &IntakeV1, pack_id: &str) -> Result<PackMeta> {
+    let pack_type = intake.pack_type.slug().trim().to_string();
+    let library = intake.library_pack.slug().trim().to_string();
+    let client = intake.client_id.trim().to_string();
+    let engagement = intake.engagement_id.trim().to_string();
+    let pack_id = pack_id.trim().to_string();
+
+    if pack_type.is_empty() {
+        bail!("pack_meta.pack_type is required");
+    }
+    if library.is_empty() {
+        bail!("pack_meta.library is required");
+    }
+    if client.is_empty() {
+        bail!("pack_meta.client is required");
+    }
+    if engagement.is_empty() {
+        bail!("pack_meta.engagement is required");
+    }
+    if pack_id.is_empty() {
+        bail!("pack_meta.pack_id is required");
+    }
+
+    Ok(PackMeta {
+        pack_type,
+        library,
+        client,
+        engagement,
+        pack_id,
+    })
 }
 
 fn main() -> Result<()> {
@@ -841,7 +906,8 @@ fn cmd_run_inner(args: RunArgs, overrides: Option<RunCommandOverrides>) -> Resul
     fs::create_dir_all(&out_path)
         .with_context(|| format!("Failed to create export directory {}", out_path.display()))?;
 
-    let library_pack_data = load_library_pack_data(intake.library_pack)?;
+    let library_pack_data =
+        load_library_pack_data_with_data_dir(args.data_dir.as_deref(), intake.library_pack)?;
     let export_dir = out_path;
 
     let cupola_manifest_path_abs = absolute_path(&export_dir.join(CUPOLA_MANIFEST_FILE))?;
@@ -1025,7 +1091,8 @@ fn cmd_export(args: ExportArgs) -> Result<()> {
     let cupola = load_cupola_search(&cupola_import_path)?;
     validate_pack_bindings(&pack, cupola.hits.len())?;
 
-    let library_pack_data = load_library_pack_data(args.library_pack)?;
+    let library_pack_data =
+        load_library_pack_data_with_data_dir(args.data_dir.as_deref(), args.library_pack)?;
     let claims_have_scores = pack.claims.values().any(|claim| claim.score.is_some());
     let should_auto = pack.claims.is_empty()
         || !claims_have_scores
@@ -1118,11 +1185,19 @@ fn write_decision_pack_outputs(build: DecisionPackBuild<'_>) -> Result<()> {
     let generated_at = now_utc_rfc3339();
     let canonical_pack_json = canonical_pack_json(pack)?;
     let pack_sha256 = sha256_hex(&canonical_pack_json);
+    let pack_meta = build_pack_meta(intake, &pack.pack_id)?;
     let quote = compute_quote(intake)?;
     let quote_json_content = json_pretty(&quote)?;
     let quote_md_content = render_quote_md(intake, &quote);
     let checklist_md_content = render_data_share_checklist_md(intake);
-    let html_content = render_html(&pack_sha256, intake, controls, control_results, query_log);
+    let html_content = render_html(
+        &pack_sha256,
+        &pack_meta,
+        intake.pack_type,
+        controls,
+        control_results,
+        query_log,
+    );
     let replay_content = render_replay_md(
         cupola.vault.as_ref().and_then(|v| v.vault_path.as_deref()),
         cupola_manifest_path_abs,
@@ -1144,6 +1219,7 @@ fn write_decision_pack_outputs(build: DecisionPackBuild<'_>) -> Result<()> {
         cupola_import_path: cupola_import_path.to_string_lossy().to_string(),
         pack_type: intake.pack_type,
         library_pack: intake.library_pack,
+        pack_meta: pack_meta.clone(),
         claim_count: pack.claims.len(),
         intake: intake.clone(),
         cupola: CupolaContextV11 {
@@ -1413,8 +1489,12 @@ fn default_control_result(control: &LibraryControl) -> ControlResultManifest {
     }
 }
 
-fn load_library_pack_data(library_pack: LibraryPack) -> Result<LibraryPackData> {
-    let root = Path::new(PACKS_ROOT).join(library_pack.slug());
+fn load_library_pack_data_with_data_dir(
+    data_dir: Option<&Path>,
+    library_pack: LibraryPack,
+) -> Result<LibraryPackData> {
+    let packs_root = resolve_packs_root(data_dir)?;
+    let root = packs_root.join(library_pack.slug());
     let controls_path = root.join("controls.json");
     let queries_path = root.join("queries.json");
     let rubric_path = root.join("rubric.json");
@@ -1459,6 +1539,34 @@ fn load_library_pack_data(library_pack: LibraryPack) -> Result<LibraryPackData> 
         queries,
         rubric,
     })
+}
+
+fn resolve_packs_root(data_dir: Option<&Path>) -> Result<PathBuf> {
+    let data_root = if let Some(data_dir) = data_dir {
+        normalized_absolute_path(data_dir)?
+    } else {
+        resolve_default_data_dir()?
+    };
+    Ok(data_root.join("packs"))
+}
+
+fn resolve_default_data_dir() -> Result<PathBuf> {
+    let exe_path = std::env::current_exe().context("Failed to resolve executable path")?;
+    let exe_dir = exe_path
+        .parent()
+        .context("Failed to resolve executable directory")?;
+    let exe_data = normalize_lexical_path(&exe_dir.join("data"));
+    if exe_data.exists() {
+        return Ok(exe_data);
+    }
+
+    let manifest_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+    let target_dir = manifest_dir.join("target");
+    if is_within(exe_dir, &target_dir) {
+        return Ok(normalize_lexical_path(&manifest_dir.join("data")));
+    }
+
+    Ok(exe_data)
 }
 
 fn default_query_limit() -> usize {
@@ -1658,12 +1766,13 @@ fn read_json_file<T: DeserializeOwned>(path: &Path) -> Result<T> {
 
 fn render_html(
     pack_sha256: &str,
-    intake: &IntakeV1,
+    pack_meta: &PackMeta,
+    pack_type: PackType,
     controls: &[LibraryControl],
     control_results: &BTreeMap<String, ControlResultManifest>,
     query_log: &[QueryLogEntry],
 ) -> String {
-    let solution_body = match intake.pack_type {
+    let solution_body = match pack_type {
         PackType::DdResponse => render_dd_response_section(controls, control_results),
         PackType::TrustAudit => render_trust_audit_section(controls, control_results),
         PackType::GovernanceControls => {
@@ -1674,13 +1783,13 @@ fn render_html(
     let query_section = render_query_log_section(query_log);
 
     format!(
-        "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>DecisionPack</title>\n  <style>\n    body {{ font-family: ui-sans-serif, -apple-system, Segoe UI, sans-serif; margin: 24px; color: #1e293b; line-height: 1.45; }}\n    h1 {{ margin: 0 0 8px 0; }}\n    h2 {{ margin-top: 28px; }}\n    h3 {{ margin-top: 20px; }}\n    .meta {{ margin-bottom: 16px; color: #475569; }}\n    .chip {{ display: inline-block; padding: 2px 8px; border-radius: 999px; background: #e2e8f0; margin-right: 6px; font-size: 12px; }}\n    table {{ border-collapse: collapse; width: 100%; margin-top: 12px; }}\n    th, td {{ border: 1px solid #cbd5e1; padding: 8px; vertical-align: top; text-align: left; }}\n    th {{ background: #f1f5f9; }}\n    code {{ background: #f8fafc; padding: 0 4px; border-radius: 4px; }}\n    pre {{ background: #f8fafc; padding: 12px; border-radius: 8px; overflow: auto; }}\n    blockquote {{ margin: 8px 0; padding: 8px 12px; border-left: 3px solid #94a3b8; background: #f8fafc; }}\n    .status-met {{ color: #166534; font-weight: 600; }}\n    .status-partial {{ color: #92400e; font-weight: 600; }}\n    .status-gap {{ color: #991b1b; font-weight: 600; }}\n  </style>\n</head>\n<body>\n  <h1>{}</h1>\n  <div class=\"meta\">\n    pack_sha256: <code>{}</code><br>\n    pack_type: <code>{}</code>\n    <span class=\"chip\">library: {}</span>\n    <span class=\"chip\">client: {}</span>\n    <span class=\"chip\">engagement: {}</span>\n  </div>\n  {}\n  {}\n</body>\n</html>\n",
-        escape_html(intake.pack_type.label()),
+        "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>DecisionPack</title>\n  <!-- civitas-branding:civitas-mark-v1 -->\n  <style>\n    :root {{\n      --paper: #F7F6F2;\n      --ink: #0B1220;\n      --muted: #475467;\n      --rule: #D7D3CA;\n      --accent: #1E3A5F;\n      --head-fill: #EFECE4;\n      --row-alt: #FAF8F3;\n      --space-1: 4px;\n      --space-2: 8px;\n      --space-3: 12px;\n      --space-4: 16px;\n      --space-5: 24px;\n      --space-6: 32px;\n    }}\n    * {{ box-sizing: border-box; }}\n    html, body {{ margin: 0; padding: 0; }}\n    body {{\n      background: var(--paper);\n      color: var(--ink);\n      font-family: \"IBM Plex Sans\", ui-sans-serif, -apple-system, Segoe UI, sans-serif;\n      line-height: 1.45;\n      padding: var(--space-6);\n    }}\n    .page {{ max-width: 1120px; margin: 0 auto; }}\n    h1, h2, h3 {{\n      font-family: \"IBM Plex Serif\", Georgia, serif;\n      letter-spacing: 0.01em;\n      color: var(--ink);\n      margin: 0;\n    }}\n    h2 {{\n      margin-top: var(--space-6);\n      padding-top: var(--space-4);\n      border-top: 1px solid var(--rule);\n      font-size: 1.2rem;\n    }}\n    h3 {{ margin-top: var(--space-5); font-size: 1.05rem; }}\n    p, li {{ margin-top: var(--space-2); }}\n    .masthead {{\n      display: flex;\n      justify-content: space-between;\n      align-items: flex-start;\n      gap: var(--space-5);\n      border-top: 1px solid var(--rule);\n      border-bottom: 1px solid var(--rule);\n      padding: var(--space-4) var(--space-3);\n      margin-bottom: var(--space-5);\n    }}\n    .masthead-left {{ display: flex; gap: var(--space-4); align-items: flex-start; }}\n    .mark {{ width: 44px; height: 44px; flex: 0 0 auto; }}\n    .title-group h1 {{ font-size: 1.85rem; margin: 0; }}\n    .motto {{ margin: var(--space-1) 0 0; color: var(--muted); font-size: 0.94rem; }}\n    .meta {{ min-width: 280px; max-width: 320px; font-size: 0.82rem; line-height: 1.25; text-align: right; background: var(--head-fill); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px; margin-left: auto; color: var(--muted); }}\n    .meta code {{ color: var(--ink); }}\n    .meta dl {{ margin: 0; display: grid; grid-template-columns: 104px 1fr; row-gap: var(--space-1); column-gap: var(--space-2); }}\n    .meta dt {{ font-weight: 600; color: #2A3547; }}\n    .meta dd {{ margin: 0; }}\n    table {{\n      border-collapse: collapse;\n      width: 100%;\n      margin-top: var(--space-3);\n      border: 1px solid var(--rule);\n      background: #FFFEFC;\n    }}\n    th, td {{\n      border-bottom: 1px solid var(--rule);\n      padding: var(--space-2) var(--space-3);\n      vertical-align: top;\n      text-align: left;\n    }}\n    th {{\n      background: var(--head-fill);\n      font-size: 0.79rem;\n      letter-spacing: 0.02em;\n      text-transform: uppercase;\n      color: #334155;\n    }}\n    tbody tr:nth-child(even) {{ background: var(--row-alt); }}\n    .num {{ text-align: right; font-variant-numeric: tabular-nums; }}\n    code, pre {{\n      font-family: \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;\n      font-size: 0.88em;\n    }}\n    code {{\n      background: #F2EFE7;\n      border: 1px solid #E2DDD2;\n      border-radius: 3px;\n      padding: 0 4px;\n      overflow-wrap: anywhere;\n    }}\n    pre {{\n      background: #F8F6F1;\n      border: 1px solid #E2DDD2;\n      padding: var(--space-3);\n      border-radius: 4px;\n      overflow: auto;\n      margin: var(--space-2) 0;\n    }}\n    blockquote {{\n      margin: var(--space-2) 0;\n      padding: var(--space-2) var(--space-3);\n      border-left: 2px solid #B9B2A2;\n      background: #F5F2EA;\n      color: #253247;\n    }}\n    .status-met {{ color: #1E6A45; font-weight: 600; }}\n    .status-partial {{ color: #8A5A1D; font-weight: 600; }}\n    .status-gap {{ color: #8D2E24; font-weight: 600; }}\n    .muted {{ color: var(--muted); }}\n    @media (max-width: 900px) {{\n      body {{ padding: var(--space-4); }}\n      .masthead {{ flex-direction: column; gap: var(--space-4); }}\n      .meta {{ min-width: 0; width: 100%; }}\n      .meta dl {{ grid-template-columns: 96px 1fr; }}\n    }}\n  </style>\n</head>\n<body>\n  <div class=\"page\">\n    <header class=\"masthead\">\n      <div class=\"masthead-left\">\n        <svg class=\"mark\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"Civitas mark\" role=\"img\">\n          <rect x=\"4\" y=\"4\" width=\"40\" height=\"40\" rx=\"4\" stroke=\"#1E3A5F\" stroke-width=\"1.5\"/>\n          <path d=\"M12 12H36\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M14 34V15\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M24 34V11\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M34 34V15\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M12 36H36\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n        </svg>\n        <div class=\"title-group\">\n          <h1>{}</h1>\n          <p class=\"motto\">Civitas Analytica &mdash; Engineered truth.</p>\n        </div>\n      </div>\n      <aside class=\"meta\">\n        <dl>\n          <dt>pack_sha256</dt><dd><code>{}</code></dd>\n          <dt>pack_type</dt><dd><code>{}</code></dd>\n          <dt>library</dt><dd>{}</dd>\n          <dt>client</dt><dd>{}</dd>\n          <dt>engagement</dt><dd>{}</dd>\n        </dl>\n      </aside>\n    </header>\n    <main>\n      {}\n      {}\n    </main>\n  </div>\n</body>\n</html>\n",
+        escape_html(pack_type.label()),
         escape_html(pack_sha256),
-        escape_html(&format!("{:?}", intake.pack_type).to_ascii_lowercase()),
-        escape_html(&format!("{:?}", intake.library_pack).to_ascii_lowercase()),
-        escape_html(&intake.client_id),
-        escape_html(&intake.engagement_id),
+        escape_html(&pack_meta.pack_type),
+        escape_html(&pack_meta.library),
+        escape_html(&pack_meta.client),
+        escape_html(&pack_meta.engagement),
         solution_body,
         query_section
     )
@@ -1743,7 +1852,7 @@ fn render_trust_audit_section(
             .cloned()
             .unwrap_or_else(|| default_control_result(control));
         rows.push_str(&format!(
-            "<tr><td><code>{}</code></td><td>{}</td><td><span class=\"{}\">{}</span></td><td>{}</td><td>{}</td></tr>",
+            "<tr><td><code>{}</code></td><td>{}</td><td><span class=\"{}\">{}</span></td><td class=\"num\">{}</td><td class=\"num\">{}</td></tr>",
             escape_html(&control.control_id),
             escape_html(&result.title),
             status_css_class(result.status),
@@ -1754,7 +1863,7 @@ fn render_trust_audit_section(
     }
 
     format!(
-        "<h2>Trust Audit Matrix</h2><table><thead><tr><th>control_id</th><th>title</th><th>status</th><th>severity</th><th>evidence_count</th></tr></thead><tbody>{}</tbody></table>",
+        "<h2>Trust Audit Matrix</h2><table class=\"matrix-table\"><thead><tr><th>control_id</th><th>title</th><th>status</th><th class=\"num\">severity</th><th class=\"num\">evidence_count</th></tr></thead><tbody>{}</tbody></table>",
         rows
     )
 }
@@ -1852,14 +1961,14 @@ fn render_governance_subsection(
 
 fn render_query_log_section(query_log: &[QueryLogEntry]) -> String {
     if query_log.is_empty() {
-        return "<h2>Query Log</h2><p>No automated queries executed for this export.</p>"
+        return "<h2>Query Log</h2><p class=\"muted\">No automated queries executed for this export.</p>"
             .to_string();
     }
 
     let mut rows = String::new();
     for entry in query_log {
         rows.push_str(&format!(
-            "<tr><td><code>{}</code></td><td>{}</td><td>{}</td><td>{}</td></tr>",
+            "<tr><td><code>{}</code></td><td>{}</td><td>{}</td><td class=\"num\">{}</td></tr>",
             escape_html(&entry.query_id),
             escape_html(&entry.query_text),
             escape_html(&entry.tags.join(", ")),
@@ -1868,7 +1977,7 @@ fn render_query_log_section(query_log: &[QueryLogEntry]) -> String {
     }
 
     format!(
-        "<h2>Query Log</h2><table><thead><tr><th>query_id</th><th>query_text</th><th>tags</th><th>hits</th></tr></thead><tbody>{}</tbody></table>",
+        "<h2>Query Log</h2><table class=\"query-table\"><thead><tr><th>query_id</th><th>query_text</th><th>tags</th><th class=\"num\">hits</th></tr></thead><tbody>{}</tbody></table>",
         rows
     )
 }
@@ -2230,6 +2339,7 @@ mod tests {
             pack_type: PackType::DdResponse,
             library_pack: LibraryPack::VendorSecurity,
             cupola_repo: PathBuf::from(DEFAULT_CUPOLA_REPO),
+            data_dir: None,
         }
     }
 
@@ -2248,6 +2358,25 @@ mod tests {
                 .join("q1")
                 .join(PACK_ID)
         );
+    }
+
+    #[test]
+    fn starter_library_packs_load() {
+        let starter_packs = [
+            LibraryPack::VendorSecurityV1,
+            LibraryPack::DfirLiteV1,
+            LibraryPack::Iso27001LiteV1,
+        ];
+
+        for library_pack in starter_packs {
+            let data =
+                load_library_pack_data_with_data_dir(None, library_pack).unwrap_or_else(|err| {
+                    panic!("library {} failed to load: {err:#}", library_pack.slug())
+                });
+            assert!(!data.controls.is_empty());
+            assert!(!data.queries.queries.is_empty());
+            assert!(!data.rubric.rules.is_empty());
+        }
     }
 
     #[test]
@@ -2338,7 +2467,15 @@ mod tests {
             LibraryPack::VendorSecurity,
         );
 
-        let html = render_html("abc123", &intake, &controls, &control_results, &[]);
+        let pack_meta = build_pack_meta(&intake, PACK_ID).expect("pack meta should build");
+        let html = render_html(
+            "abc123",
+            &pack_meta,
+            intake.pack_type,
+            &controls,
+            &control_results,
+            &[],
+        );
         assert!(html.contains("Trust Audit Matrix"));
 
         let manifest = AegisManifestV11 {
@@ -2350,6 +2487,7 @@ mod tests {
             cupola_import_path: CUPOLA_IMPORT_PATH.to_string(),
             pack_type: PackType::TrustAudit,
             library_pack: LibraryPack::VendorSecurity,
+            pack_meta,
             claim_count: 0,
             intake,
             cupola: CupolaContextV11 {
@@ -2577,6 +2715,7 @@ mod tests {
             intake: intake_path.clone(),
             in_vault: None,
             out: Some(out_root.clone()),
+            data_dir: None,
         };
 
         cmd_run_inner(args, Some(overrides)).expect("run should succeed with test overrides");
@@ -2592,6 +2731,10 @@ mod tests {
 
         assert_eq!(manifest["pack_type"], "trust_audit");
         assert_eq!(manifest["library_pack"], "vendor_security");
+        assert_eq!(manifest["pack_meta"]["pack_type"], "trust_audit");
+        assert_eq!(manifest["pack_meta"]["library"], "vendor_security");
+        assert_eq!(manifest["pack_meta"]["client"], "acme");
+        assert_eq!(manifest["pack_meta"]["engagement"], "eng42");
         assert!(manifest["query_log"]
             .as_array()
             .is_some_and(|entries| !entries.is_empty()));
