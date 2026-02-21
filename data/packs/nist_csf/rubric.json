@@ -1,17 +1,952 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "rules": [
-    { "tag": "identify", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "protect", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "detect", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "respond", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "recover", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "risk", "min_hits_for_partial": 1, "min_hits_for_met": 3 },
-    { "tag": "incident", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "monitoring", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "encryption", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "governance", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "continuity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "training", "min_hits_for_partial": 1, "min_hits_for_met": 2 }
+    {
+      "tag": "access",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "alerting",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "analysis",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "anomaly",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "asset",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "awareness",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "configuration",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "context",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "continuity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "data",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "dependency",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "detect",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "encryption",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "governance",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "hardening",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "identify",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "identity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "improvement",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "incident",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "inventory",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "logging",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "mitigation",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "monitoring",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "planning",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "protect",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "recover",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "respond",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "risk",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "training",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    }
+  ],
+  "control_query_map": [
+    {
+      "control_id": "NIST-001",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-002",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-003",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-004",
+        "NIST-Q-005"
+      ]
+    },
+    {
+      "control_id": "NIST-004",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-005",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-006",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-007",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-008"
+      ]
+    },
+    {
+      "control_id": "NIST-008",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-020",
+        "NIST-Q-021",
+        "NIST-Q-032"
+      ]
+    },
+    {
+      "control_id": "NIST-009",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-020"
+      ]
+    },
+    {
+      "control_id": "NIST-010",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-022",
+        "NIST-Q-023",
+        "NIST-Q-034"
+      ]
+    },
+    {
+      "control_id": "NIST-011",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-012",
+        "NIST-Q-022",
+        "NIST-Q-023"
+      ]
+    },
+    {
+      "control_id": "NIST-012",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-012",
+        "NIST-Q-013"
+      ]
+    },
+    {
+      "control_id": "NIST-013",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-014",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-015",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-004",
+        "NIST-Q-005"
+      ]
+    },
+    {
+      "control_id": "NIST-016",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-017",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-018",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-019",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-008"
+      ]
+    },
+    {
+      "control_id": "NIST-020",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-020",
+        "NIST-Q-021",
+        "NIST-Q-032"
+      ]
+    },
+    {
+      "control_id": "NIST-021",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-020"
+      ]
+    },
+    {
+      "control_id": "NIST-022",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-022",
+        "NIST-Q-023",
+        "NIST-Q-034"
+      ]
+    },
+    {
+      "control_id": "NIST-023",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-012",
+        "NIST-Q-022",
+        "NIST-Q-023"
+      ]
+    },
+    {
+      "control_id": "NIST-024",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-012",
+        "NIST-Q-013"
+      ]
+    },
+    {
+      "control_id": "NIST-025",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-026",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-027",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-004",
+        "NIST-Q-005"
+      ]
+    },
+    {
+      "control_id": "NIST-028",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-029",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-030",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-031",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-008"
+      ]
+    },
+    {
+      "control_id": "NIST-032",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-020",
+        "NIST-Q-021",
+        "NIST-Q-032"
+      ]
+    },
+    {
+      "control_id": "NIST-033",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-020"
+      ]
+    },
+    {
+      "control_id": "NIST-034",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-022",
+        "NIST-Q-023",
+        "NIST-Q-034"
+      ]
+    },
+    {
+      "control_id": "NIST-035",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-012",
+        "NIST-Q-022",
+        "NIST-Q-023"
+      ]
+    },
+    {
+      "control_id": "NIST-036",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-012",
+        "NIST-Q-013"
+      ]
+    },
+    {
+      "control_id": "NIST-037",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-038",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-039",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-004",
+        "NIST-Q-005"
+      ]
+    },
+    {
+      "control_id": "NIST-040",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-041",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-042",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-043",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-008"
+      ]
+    },
+    {
+      "control_id": "NIST-044",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-020",
+        "NIST-Q-021",
+        "NIST-Q-032"
+      ]
+    },
+    {
+      "control_id": "NIST-045",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-020"
+      ]
+    },
+    {
+      "control_id": "NIST-046",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-022",
+        "NIST-Q-023",
+        "NIST-Q-034"
+      ]
+    },
+    {
+      "control_id": "NIST-047",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-012",
+        "NIST-Q-022",
+        "NIST-Q-023"
+      ]
+    },
+    {
+      "control_id": "NIST-048",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-012",
+        "NIST-Q-013"
+      ]
+    },
+    {
+      "control_id": "NIST-049",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-050",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-051",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-004",
+        "NIST-Q-005"
+      ]
+    },
+    {
+      "control_id": "NIST-052",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-053",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-054",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-055",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-008"
+      ]
+    },
+    {
+      "control_id": "NIST-056",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-020",
+        "NIST-Q-021",
+        "NIST-Q-032"
+      ]
+    },
+    {
+      "control_id": "NIST-057",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-020"
+      ]
+    },
+    {
+      "control_id": "NIST-058",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-022",
+        "NIST-Q-023",
+        "NIST-Q-034"
+      ]
+    },
+    {
+      "control_id": "NIST-059",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-012",
+        "NIST-Q-022",
+        "NIST-Q-023"
+      ]
+    },
+    {
+      "control_id": "NIST-060",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-012",
+        "NIST-Q-013"
+      ]
+    },
+    {
+      "control_id": "NIST-061",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-062",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-063",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-004",
+        "NIST-Q-005"
+      ]
+    },
+    {
+      "control_id": "NIST-064",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-065",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-066",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-067",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-008"
+      ]
+    },
+    {
+      "control_id": "NIST-068",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-020",
+        "NIST-Q-021",
+        "NIST-Q-032"
+      ]
+    },
+    {
+      "control_id": "NIST-069",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-020"
+      ]
+    },
+    {
+      "control_id": "NIST-070",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-022",
+        "NIST-Q-023",
+        "NIST-Q-034"
+      ]
+    },
+    {
+      "control_id": "NIST-071",
+      "query_ids": [
+        "NIST-Q-010",
+        "NIST-Q-011",
+        "NIST-Q-012",
+        "NIST-Q-022",
+        "NIST-Q-023"
+      ]
+    },
+    {
+      "control_id": "NIST-072",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-012",
+        "NIST-Q-013"
+      ]
+    },
+    {
+      "control_id": "NIST-073",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-074",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-013",
+        "NIST-Q-014"
+      ]
+    },
+    {
+      "control_id": "NIST-075",
+      "query_ids": [
+        "NIST-Q-001",
+        "NIST-Q-002",
+        "NIST-Q-003",
+        "NIST-Q-004",
+        "NIST-Q-005"
+      ]
+    },
+    {
+      "control_id": "NIST-076",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-077",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-078",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-016"
+      ]
+    },
+    {
+      "control_id": "NIST-079",
+      "query_ids": [
+        "NIST-Q-004",
+        "NIST-Q-005",
+        "NIST-Q-006",
+        "NIST-Q-007",
+        "NIST-Q-008"
+      ]
+    },
+    {
+      "control_id": "NIST-080",
+      "query_ids": [
+        "NIST-Q-008",
+        "NIST-Q-009",
+        "NIST-Q-020",
+        "NIST-Q-021",
+        "NIST-Q-032"
+      ]
+    }
   ]
 }

@@ -1,142 +1,1676 @@
 [
   {
     "control_id": "ISO-001",
-    "title": "Security Policy Governance",
-    "description": "Maintain and review core information security policies with named approvers.",
-    "severity": 4,
-    "tags": ["policy", "governance", "review"]
+    "title": "ISO 27001 Control 001",
+    "description": "Validate that POLICY/GOVERNANCE/REVIEW safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for POLICY/GOVERNANCE/REVIEW with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating POLICY/GOVERNANCE/REVIEW governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for POLICY/GOVERNANCE/REVIEW.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "policy",
+      "governance",
+      "review",
+      "risk"
+    ]
   },
   {
     "control_id": "ISO-002",
-    "title": "Risk Register Maintenance",
-    "description": "Keep an active risk register with treatment decisions and due dates.",
-    "severity": 5,
-    "tags": ["risk", "register", "governance"]
+    "title": "ISO 27001 Control 002",
+    "description": "Validate that RISK/REGISTER/TREATMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for RISK/REGISTER/TREATMENT with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RISK/REGISTER/TREATMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RISK/REGISTER/TREATMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "risk",
+      "register",
+      "treatment",
+      "asset"
+    ]
   },
   {
     "control_id": "ISO-003",
-    "title": "Asset Classification",
-    "description": "Classify key assets and assign owners for accountability.",
-    "severity": 4,
-    "tags": ["asset", "classification", "ownership"]
+    "title": "ISO 27001 Control 003",
+    "description": "Validate that ASSET/CLASSIFICATION/OWNERSHIP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for ASSET/CLASSIFICATION/OWNERSHIP with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ASSET/CLASSIFICATION/OWNERSHIP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ASSET/CLASSIFICATION/OWNERSHIP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "asset",
+      "classification",
+      "ownership",
+      "identity"
+    ]
   },
   {
     "control_id": "ISO-004",
-    "title": "Access Control Policy",
-    "description": "Define access rules for business roles and privileged accounts.",
-    "severity": 5,
-    "tags": ["access", "identity", "policy"]
+    "title": "ISO 27001 Control 004",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "cryptography"
+    ]
   },
   {
     "control_id": "ISO-005",
-    "title": "Authentication Strength",
-    "description": "Apply strong authentication controls for sensitive workflows.",
+    "title": "ISO 27001 Control 005",
+    "description": "Validate that CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT with documented ownership and operating cadence.",
     "severity": 5,
-    "tags": ["access", "mfa", "identity"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "cryptography",
+      "encryption",
+      "key_management",
+      "logging"
+    ]
   },
   {
     "control_id": "ISO-006",
-    "title": "Cryptographic Key Operations",
-    "description": "Document key creation, rotation, and retirement practices.",
-    "severity": 4,
-    "tags": ["cryptography", "encryption", "key_management"]
+    "title": "ISO 27001 Control 006",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "vulnerability"
+    ]
   },
   {
     "control_id": "ISO-007",
-    "title": "Operational Procedure Control",
-    "description": "Keep security operating procedures current and tested.",
-    "severity": 3,
-    "tags": ["operations", "procedure", "cadence"]
+    "title": "ISO 27001 Control 007",
+    "description": "Validate that VULNERABILITY/OPERATIONS/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for VULNERABILITY/OPERATIONS/HARDENING with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/OPERATIONS/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/OPERATIONS/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "operations",
+      "hardening",
+      "incident"
+    ]
   },
   {
     "control_id": "ISO-008",
-    "title": "Logging and Event Oversight",
-    "description": "Review event logs and define retention requirements.",
-    "severity": 4,
-    "tags": ["logging", "monitoring", "retention"]
+    "title": "ISO 27001 Control 008",
+    "description": "Validate that INCIDENT/RESPONSE/COMMUNICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for INCIDENT/RESPONSE/COMMUNICATION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/COMMUNICATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/COMMUNICATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "communication",
+      "continuity"
+    ]
   },
   {
     "control_id": "ISO-009",
-    "title": "Vulnerability Management",
-    "description": "Track vulnerabilities through remediation and closure.",
+    "title": "ISO 27001 Control 009",
+    "description": "Validate that CONTINUITY/RECOVERY/CADENCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CONTINUITY/RECOVERY/CADENCE with documented ownership and operating cadence.",
     "severity": 4,
-    "tags": ["vulnerability", "operations", "risk"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CONTINUITY/RECOVERY/CADENCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CONTINUITY/RECOVERY/CADENCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "continuity",
+      "recovery",
+      "cadence",
+      "audit"
+    ]
   },
   {
     "control_id": "ISO-010",
-    "title": "Secure Change Management",
-    "description": "Evaluate security impact for changes before deployment.",
-    "severity": 4,
-    "tags": ["change", "operations", "review"]
+    "title": "ISO 27001 Control 010",
+    "description": "Validate that AUDIT/ASSURANCE/METRICS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AUDIT/ASSURANCE/METRICS with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AUDIT/ASSURANCE/METRICS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AUDIT/ASSURANCE/METRICS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "audit",
+      "assurance",
+      "metrics",
+      "supplier"
+    ]
   },
   {
     "control_id": "ISO-011",
-    "title": "Supplier Security Management",
-    "description": "Assess supplier security posture and contractual requirements.",
-    "severity": 4,
-    "tags": ["supplier", "third_party", "risk"]
+    "title": "ISO 27001 Control 011",
+    "description": "Validate that SUPPLIER/THIRD_PARTY/CONTRACT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for SUPPLIER/THIRD_PARTY/CONTRACT with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SUPPLIER/THIRD_PARTY/CONTRACT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SUPPLIER/THIRD_PARTY/CONTRACT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "supplier",
+      "third_party",
+      "contract",
+      "awareness"
+    ]
   },
   {
     "control_id": "ISO-012",
-    "title": "Incident Handling Workflow",
-    "description": "Use documented incident handling steps and escalation paths.",
-    "severity": 5,
-    "tags": ["incident", "response", "governance"]
+    "title": "ISO 27001 Control 012",
+    "description": "Validate that AWARENESS/TRAINING/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AWARENESS/TRAINING/PEOPLE with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AWARENESS/TRAINING/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AWARENESS/TRAINING/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "awareness",
+      "training",
+      "people",
+      "privacy"
+    ]
   },
   {
     "control_id": "ISO-013",
-    "title": "Business Continuity Planning",
-    "description": "Maintain continuity procedures for critical services.",
-    "severity": 4,
-    "tags": ["continuity", "recovery", "cadence"]
+    "title": "ISO 27001 Control 013",
+    "description": "Validate that PRIVACY/LEGAL/COMPLIANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for PRIVACY/LEGAL/COMPLIANCE with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVACY/LEGAL/COMPLIANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVACY/LEGAL/COMPLIANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privacy",
+      "legal",
+      "compliance",
+      "policy"
+    ]
   },
   {
     "control_id": "ISO-014",
-    "title": "Compliance Evidence Tracking",
-    "description": "Collect evidence for mandatory obligations and assessments.",
-    "severity": 3,
-    "tags": ["compliance", "evidence", "audit"]
+    "title": "ISO 27001 Control 014",
+    "description": "Validate that POLICY/GOVERNANCE/REVIEW safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for POLICY/GOVERNANCE/REVIEW with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating POLICY/GOVERNANCE/REVIEW governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for POLICY/GOVERNANCE/REVIEW.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "policy",
+      "governance",
+      "review",
+      "risk"
+    ]
   },
   {
     "control_id": "ISO-015",
-    "title": "Internal Audit Cadence",
-    "description": "Run internal security audits on a scheduled basis.",
-    "severity": 3,
-    "tags": ["audit", "cadence", "governance"]
+    "title": "ISO 27001 Control 015",
+    "description": "Validate that RISK/REGISTER/TREATMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for RISK/REGISTER/TREATMENT with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RISK/REGISTER/TREATMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RISK/REGISTER/TREATMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "risk",
+      "register",
+      "treatment",
+      "asset"
+    ]
   },
   {
     "control_id": "ISO-016",
-    "title": "Management Review Cycle",
-    "description": "Review security objectives and outcomes with leadership.",
-    "severity": 3,
-    "tags": ["governance", "review", "cadence"]
+    "title": "ISO 27001 Control 016",
+    "description": "Validate that ASSET/CLASSIFICATION/OWNERSHIP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for ASSET/CLASSIFICATION/OWNERSHIP with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ASSET/CLASSIFICATION/OWNERSHIP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ASSET/CLASSIFICATION/OWNERSHIP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "asset",
+      "classification",
+      "ownership",
+      "identity"
+    ]
   },
   {
     "control_id": "ISO-017",
-    "title": "Security Awareness Tracking",
-    "description": "Measure completion and quality of awareness activities.",
+    "title": "ISO 27001 Control 017",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
     "severity": 2,
-    "tags": ["awareness", "training", "people"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "cryptography"
+    ]
   },
   {
     "control_id": "ISO-018",
-    "title": "Physical Access Safeguards",
-    "description": "Control physical entry to sensitive work areas.",
+    "title": "ISO 27001 Control 018",
+    "description": "Validate that CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT with documented ownership and operating cadence.",
     "severity": 3,
-    "tags": ["physical", "access", "facility"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "cryptography",
+      "encryption",
+      "key_management",
+      "logging"
+    ]
   },
   {
     "control_id": "ISO-019",
-    "title": "Data Retention and Disposal",
-    "description": "Apply retention and secure disposal rules for data sets.",
-    "severity": 3,
-    "tags": ["data", "retention", "disposal"]
+    "title": "ISO 27001 Control 019",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "vulnerability"
+    ]
   },
   {
     "control_id": "ISO-020",
-    "title": "Control Improvement Backlog",
-    "description": "Track improvement actions and verify completion.",
+    "title": "ISO 27001 Control 020",
+    "description": "Validate that VULNERABILITY/OPERATIONS/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for VULNERABILITY/OPERATIONS/HARDENING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/OPERATIONS/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/OPERATIONS/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "operations",
+      "hardening",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "ISO-021",
+    "title": "ISO 27001 Control 021",
+    "description": "Validate that INCIDENT/RESPONSE/COMMUNICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for INCIDENT/RESPONSE/COMMUNICATION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/COMMUNICATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/COMMUNICATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "communication",
+      "continuity"
+    ]
+  },
+  {
+    "control_id": "ISO-022",
+    "title": "ISO 27001 Control 022",
+    "description": "Validate that CONTINUITY/RECOVERY/CADENCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CONTINUITY/RECOVERY/CADENCE with documented ownership and operating cadence.",
     "severity": 2,
-    "tags": ["improvement", "governance", "register"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CONTINUITY/RECOVERY/CADENCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CONTINUITY/RECOVERY/CADENCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "continuity",
+      "recovery",
+      "cadence",
+      "audit"
+    ]
+  },
+  {
+    "control_id": "ISO-023",
+    "title": "ISO 27001 Control 023",
+    "description": "Validate that AUDIT/ASSURANCE/METRICS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AUDIT/ASSURANCE/METRICS with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AUDIT/ASSURANCE/METRICS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AUDIT/ASSURANCE/METRICS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "audit",
+      "assurance",
+      "metrics",
+      "supplier"
+    ]
+  },
+  {
+    "control_id": "ISO-024",
+    "title": "ISO 27001 Control 024",
+    "description": "Validate that SUPPLIER/THIRD_PARTY/CONTRACT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for SUPPLIER/THIRD_PARTY/CONTRACT with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SUPPLIER/THIRD_PARTY/CONTRACT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SUPPLIER/THIRD_PARTY/CONTRACT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "supplier",
+      "third_party",
+      "contract",
+      "awareness"
+    ]
+  },
+  {
+    "control_id": "ISO-025",
+    "title": "ISO 27001 Control 025",
+    "description": "Validate that AWARENESS/TRAINING/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AWARENESS/TRAINING/PEOPLE with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AWARENESS/TRAINING/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AWARENESS/TRAINING/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "awareness",
+      "training",
+      "people",
+      "privacy"
+    ]
+  },
+  {
+    "control_id": "ISO-026",
+    "title": "ISO 27001 Control 026",
+    "description": "Validate that PRIVACY/LEGAL/COMPLIANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for PRIVACY/LEGAL/COMPLIANCE with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVACY/LEGAL/COMPLIANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVACY/LEGAL/COMPLIANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privacy",
+      "legal",
+      "compliance",
+      "policy"
+    ]
+  },
+  {
+    "control_id": "ISO-027",
+    "title": "ISO 27001 Control 027",
+    "description": "Validate that POLICY/GOVERNANCE/REVIEW safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for POLICY/GOVERNANCE/REVIEW with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating POLICY/GOVERNANCE/REVIEW governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for POLICY/GOVERNANCE/REVIEW.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "policy",
+      "governance",
+      "review",
+      "risk"
+    ]
+  },
+  {
+    "control_id": "ISO-028",
+    "title": "ISO 27001 Control 028",
+    "description": "Validate that RISK/REGISTER/TREATMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for RISK/REGISTER/TREATMENT with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RISK/REGISTER/TREATMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RISK/REGISTER/TREATMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "risk",
+      "register",
+      "treatment",
+      "asset"
+    ]
+  },
+  {
+    "control_id": "ISO-029",
+    "title": "ISO 27001 Control 029",
+    "description": "Validate that ASSET/CLASSIFICATION/OWNERSHIP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for ASSET/CLASSIFICATION/OWNERSHIP with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ASSET/CLASSIFICATION/OWNERSHIP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ASSET/CLASSIFICATION/OWNERSHIP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "asset",
+      "classification",
+      "ownership",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "ISO-030",
+    "title": "ISO 27001 Control 030",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "cryptography"
+    ]
+  },
+  {
+    "control_id": "ISO-031",
+    "title": "ISO 27001 Control 031",
+    "description": "Validate that CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "cryptography",
+      "encryption",
+      "key_management",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "ISO-032",
+    "title": "ISO 27001 Control 032",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "ISO-033",
+    "title": "ISO 27001 Control 033",
+    "description": "Validate that VULNERABILITY/OPERATIONS/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for VULNERABILITY/OPERATIONS/HARDENING with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/OPERATIONS/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/OPERATIONS/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "operations",
+      "hardening",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "ISO-034",
+    "title": "ISO 27001 Control 034",
+    "description": "Validate that INCIDENT/RESPONSE/COMMUNICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for INCIDENT/RESPONSE/COMMUNICATION with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/COMMUNICATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/COMMUNICATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "communication",
+      "continuity"
+    ]
+  },
+  {
+    "control_id": "ISO-035",
+    "title": "ISO 27001 Control 035",
+    "description": "Validate that CONTINUITY/RECOVERY/CADENCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CONTINUITY/RECOVERY/CADENCE with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CONTINUITY/RECOVERY/CADENCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CONTINUITY/RECOVERY/CADENCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "continuity",
+      "recovery",
+      "cadence",
+      "audit"
+    ]
+  },
+  {
+    "control_id": "ISO-036",
+    "title": "ISO 27001 Control 036",
+    "description": "Validate that AUDIT/ASSURANCE/METRICS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AUDIT/ASSURANCE/METRICS with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AUDIT/ASSURANCE/METRICS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AUDIT/ASSURANCE/METRICS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "audit",
+      "assurance",
+      "metrics",
+      "supplier"
+    ]
+  },
+  {
+    "control_id": "ISO-037",
+    "title": "ISO 27001 Control 037",
+    "description": "Validate that SUPPLIER/THIRD_PARTY/CONTRACT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for SUPPLIER/THIRD_PARTY/CONTRACT with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SUPPLIER/THIRD_PARTY/CONTRACT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SUPPLIER/THIRD_PARTY/CONTRACT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "supplier",
+      "third_party",
+      "contract",
+      "awareness"
+    ]
+  },
+  {
+    "control_id": "ISO-038",
+    "title": "ISO 27001 Control 038",
+    "description": "Validate that AWARENESS/TRAINING/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AWARENESS/TRAINING/PEOPLE with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AWARENESS/TRAINING/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AWARENESS/TRAINING/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "awareness",
+      "training",
+      "people",
+      "privacy"
+    ]
+  },
+  {
+    "control_id": "ISO-039",
+    "title": "ISO 27001 Control 039",
+    "description": "Validate that PRIVACY/LEGAL/COMPLIANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for PRIVACY/LEGAL/COMPLIANCE with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVACY/LEGAL/COMPLIANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVACY/LEGAL/COMPLIANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privacy",
+      "legal",
+      "compliance",
+      "policy"
+    ]
+  },
+  {
+    "control_id": "ISO-040",
+    "title": "ISO 27001 Control 040",
+    "description": "Validate that POLICY/GOVERNANCE/REVIEW safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for POLICY/GOVERNANCE/REVIEW with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating POLICY/GOVERNANCE/REVIEW governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for POLICY/GOVERNANCE/REVIEW.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "policy",
+      "governance",
+      "review",
+      "risk"
+    ]
+  },
+  {
+    "control_id": "ISO-041",
+    "title": "ISO 27001 Control 041",
+    "description": "Validate that RISK/REGISTER/TREATMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for RISK/REGISTER/TREATMENT with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RISK/REGISTER/TREATMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RISK/REGISTER/TREATMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "risk",
+      "register",
+      "treatment",
+      "asset"
+    ]
+  },
+  {
+    "control_id": "ISO-042",
+    "title": "ISO 27001 Control 042",
+    "description": "Validate that ASSET/CLASSIFICATION/OWNERSHIP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for ASSET/CLASSIFICATION/OWNERSHIP with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ASSET/CLASSIFICATION/OWNERSHIP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ASSET/CLASSIFICATION/OWNERSHIP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "asset",
+      "classification",
+      "ownership",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "ISO-043",
+    "title": "ISO 27001 Control 043",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "cryptography"
+    ]
+  },
+  {
+    "control_id": "ISO-044",
+    "title": "ISO 27001 Control 044",
+    "description": "Validate that CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "cryptography",
+      "encryption",
+      "key_management",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "ISO-045",
+    "title": "ISO 27001 Control 045",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "ISO-046",
+    "title": "ISO 27001 Control 046",
+    "description": "Validate that VULNERABILITY/OPERATIONS/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for VULNERABILITY/OPERATIONS/HARDENING with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/OPERATIONS/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/OPERATIONS/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "operations",
+      "hardening",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "ISO-047",
+    "title": "ISO 27001 Control 047",
+    "description": "Validate that INCIDENT/RESPONSE/COMMUNICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for INCIDENT/RESPONSE/COMMUNICATION with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/COMMUNICATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/COMMUNICATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "communication",
+      "continuity"
+    ]
+  },
+  {
+    "control_id": "ISO-048",
+    "title": "ISO 27001 Control 048",
+    "description": "Validate that CONTINUITY/RECOVERY/CADENCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CONTINUITY/RECOVERY/CADENCE with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CONTINUITY/RECOVERY/CADENCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CONTINUITY/RECOVERY/CADENCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "continuity",
+      "recovery",
+      "cadence",
+      "audit"
+    ]
+  },
+  {
+    "control_id": "ISO-049",
+    "title": "ISO 27001 Control 049",
+    "description": "Validate that AUDIT/ASSURANCE/METRICS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AUDIT/ASSURANCE/METRICS with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AUDIT/ASSURANCE/METRICS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AUDIT/ASSURANCE/METRICS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "audit",
+      "assurance",
+      "metrics",
+      "supplier"
+    ]
+  },
+  {
+    "control_id": "ISO-050",
+    "title": "ISO 27001 Control 050",
+    "description": "Validate that SUPPLIER/THIRD_PARTY/CONTRACT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for SUPPLIER/THIRD_PARTY/CONTRACT with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SUPPLIER/THIRD_PARTY/CONTRACT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SUPPLIER/THIRD_PARTY/CONTRACT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "supplier",
+      "third_party",
+      "contract",
+      "awareness"
+    ]
+  },
+  {
+    "control_id": "ISO-051",
+    "title": "ISO 27001 Control 051",
+    "description": "Validate that AWARENESS/TRAINING/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AWARENESS/TRAINING/PEOPLE with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AWARENESS/TRAINING/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AWARENESS/TRAINING/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "awareness",
+      "training",
+      "people",
+      "privacy"
+    ]
+  },
+  {
+    "control_id": "ISO-052",
+    "title": "ISO 27001 Control 052",
+    "description": "Validate that PRIVACY/LEGAL/COMPLIANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for PRIVACY/LEGAL/COMPLIANCE with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVACY/LEGAL/COMPLIANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVACY/LEGAL/COMPLIANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privacy",
+      "legal",
+      "compliance",
+      "policy"
+    ]
+  },
+  {
+    "control_id": "ISO-053",
+    "title": "ISO 27001 Control 053",
+    "description": "Validate that POLICY/GOVERNANCE/REVIEW safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for POLICY/GOVERNANCE/REVIEW with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating POLICY/GOVERNANCE/REVIEW governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for POLICY/GOVERNANCE/REVIEW.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "policy",
+      "governance",
+      "review",
+      "risk"
+    ]
+  },
+  {
+    "control_id": "ISO-054",
+    "title": "ISO 27001 Control 054",
+    "description": "Validate that RISK/REGISTER/TREATMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for RISK/REGISTER/TREATMENT with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RISK/REGISTER/TREATMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RISK/REGISTER/TREATMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "risk",
+      "register",
+      "treatment",
+      "asset"
+    ]
+  },
+  {
+    "control_id": "ISO-055",
+    "title": "ISO 27001 Control 055",
+    "description": "Validate that ASSET/CLASSIFICATION/OWNERSHIP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for ASSET/CLASSIFICATION/OWNERSHIP with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ASSET/CLASSIFICATION/OWNERSHIP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ASSET/CLASSIFICATION/OWNERSHIP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "asset",
+      "classification",
+      "ownership",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "ISO-056",
+    "title": "ISO 27001 Control 056",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "cryptography"
+    ]
+  },
+  {
+    "control_id": "ISO-057",
+    "title": "ISO 27001 Control 057",
+    "description": "Validate that CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "cryptography",
+      "encryption",
+      "key_management",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "ISO-058",
+    "title": "ISO 27001 Control 058",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "ISO-059",
+    "title": "ISO 27001 Control 059",
+    "description": "Validate that VULNERABILITY/OPERATIONS/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for VULNERABILITY/OPERATIONS/HARDENING with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/OPERATIONS/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/OPERATIONS/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "operations",
+      "hardening",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "ISO-060",
+    "title": "ISO 27001 Control 060",
+    "description": "Validate that INCIDENT/RESPONSE/COMMUNICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for INCIDENT/RESPONSE/COMMUNICATION with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/COMMUNICATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/COMMUNICATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "communication",
+      "continuity"
+    ]
+  },
+  {
+    "control_id": "ISO-061",
+    "title": "ISO 27001 Control 061",
+    "description": "Validate that CONTINUITY/RECOVERY/CADENCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CONTINUITY/RECOVERY/CADENCE with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CONTINUITY/RECOVERY/CADENCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CONTINUITY/RECOVERY/CADENCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "continuity",
+      "recovery",
+      "cadence",
+      "audit"
+    ]
+  },
+  {
+    "control_id": "ISO-062",
+    "title": "ISO 27001 Control 062",
+    "description": "Validate that AUDIT/ASSURANCE/METRICS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AUDIT/ASSURANCE/METRICS with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AUDIT/ASSURANCE/METRICS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AUDIT/ASSURANCE/METRICS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "audit",
+      "assurance",
+      "metrics",
+      "supplier"
+    ]
+  },
+  {
+    "control_id": "ISO-063",
+    "title": "ISO 27001 Control 063",
+    "description": "Validate that SUPPLIER/THIRD_PARTY/CONTRACT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for SUPPLIER/THIRD_PARTY/CONTRACT with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SUPPLIER/THIRD_PARTY/CONTRACT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SUPPLIER/THIRD_PARTY/CONTRACT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "supplier",
+      "third_party",
+      "contract",
+      "awareness"
+    ]
+  },
+  {
+    "control_id": "ISO-064",
+    "title": "ISO 27001 Control 064",
+    "description": "Validate that AWARENESS/TRAINING/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AWARENESS/TRAINING/PEOPLE with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AWARENESS/TRAINING/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AWARENESS/TRAINING/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "awareness",
+      "training",
+      "people",
+      "privacy"
+    ]
+  },
+  {
+    "control_id": "ISO-065",
+    "title": "ISO 27001 Control 065",
+    "description": "Validate that PRIVACY/LEGAL/COMPLIANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for PRIVACY/LEGAL/COMPLIANCE with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVACY/LEGAL/COMPLIANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVACY/LEGAL/COMPLIANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privacy",
+      "legal",
+      "compliance",
+      "policy"
+    ]
+  },
+  {
+    "control_id": "ISO-066",
+    "title": "ISO 27001 Control 066",
+    "description": "Validate that POLICY/GOVERNANCE/REVIEW safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for POLICY/GOVERNANCE/REVIEW with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating POLICY/GOVERNANCE/REVIEW governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for POLICY/GOVERNANCE/REVIEW.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "policy",
+      "governance",
+      "review",
+      "risk"
+    ]
+  },
+  {
+    "control_id": "ISO-067",
+    "title": "ISO 27001 Control 067",
+    "description": "Validate that RISK/REGISTER/TREATMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for RISK/REGISTER/TREATMENT with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RISK/REGISTER/TREATMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RISK/REGISTER/TREATMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "risk",
+      "register",
+      "treatment",
+      "asset"
+    ]
+  },
+  {
+    "control_id": "ISO-068",
+    "title": "ISO 27001 Control 068",
+    "description": "Validate that ASSET/CLASSIFICATION/OWNERSHIP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for ASSET/CLASSIFICATION/OWNERSHIP with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ASSET/CLASSIFICATION/OWNERSHIP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ASSET/CLASSIFICATION/OWNERSHIP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "asset",
+      "classification",
+      "ownership",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "ISO-069",
+    "title": "ISO 27001 Control 069",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "cryptography"
+    ]
+  },
+  {
+    "control_id": "ISO-070",
+    "title": "ISO 27001 Control 070",
+    "description": "Validate that CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "cryptography",
+      "encryption",
+      "key_management",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "ISO-071",
+    "title": "ISO 27001 Control 071",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "ISO-072",
+    "title": "ISO 27001 Control 072",
+    "description": "Validate that VULNERABILITY/OPERATIONS/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for VULNERABILITY/OPERATIONS/HARDENING with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/OPERATIONS/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/OPERATIONS/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "operations",
+      "hardening",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "ISO-073",
+    "title": "ISO 27001 Control 073",
+    "description": "Validate that INCIDENT/RESPONSE/COMMUNICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for INCIDENT/RESPONSE/COMMUNICATION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/COMMUNICATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/COMMUNICATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "communication",
+      "continuity"
+    ]
+  },
+  {
+    "control_id": "ISO-074",
+    "title": "ISO 27001 Control 074",
+    "description": "Validate that CONTINUITY/RECOVERY/CADENCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CONTINUITY/RECOVERY/CADENCE with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CONTINUITY/RECOVERY/CADENCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CONTINUITY/RECOVERY/CADENCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "continuity",
+      "recovery",
+      "cadence",
+      "audit"
+    ]
+  },
+  {
+    "control_id": "ISO-075",
+    "title": "ISO 27001 Control 075",
+    "description": "Validate that AUDIT/ASSURANCE/METRICS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AUDIT/ASSURANCE/METRICS with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AUDIT/ASSURANCE/METRICS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AUDIT/ASSURANCE/METRICS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "audit",
+      "assurance",
+      "metrics",
+      "supplier"
+    ]
+  },
+  {
+    "control_id": "ISO-076",
+    "title": "ISO 27001 Control 076",
+    "description": "Validate that SUPPLIER/THIRD_PARTY/CONTRACT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for SUPPLIER/THIRD_PARTY/CONTRACT with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SUPPLIER/THIRD_PARTY/CONTRACT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SUPPLIER/THIRD_PARTY/CONTRACT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "supplier",
+      "third_party",
+      "contract",
+      "awareness"
+    ]
+  },
+  {
+    "control_id": "ISO-077",
+    "title": "ISO 27001 Control 077",
+    "description": "Validate that AWARENESS/TRAINING/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AWARENESS/TRAINING/PEOPLE with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AWARENESS/TRAINING/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AWARENESS/TRAINING/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "awareness",
+      "training",
+      "people",
+      "privacy"
+    ]
+  },
+  {
+    "control_id": "ISO-078",
+    "title": "ISO 27001 Control 078",
+    "description": "Validate that PRIVACY/LEGAL/COMPLIANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for PRIVACY/LEGAL/COMPLIANCE with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVACY/LEGAL/COMPLIANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVACY/LEGAL/COMPLIANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privacy",
+      "legal",
+      "compliance",
+      "policy"
+    ]
+  },
+  {
+    "control_id": "ISO-079",
+    "title": "ISO 27001 Control 079",
+    "description": "Validate that POLICY/GOVERNANCE/REVIEW safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for POLICY/GOVERNANCE/REVIEW with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating POLICY/GOVERNANCE/REVIEW governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for POLICY/GOVERNANCE/REVIEW.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "policy",
+      "governance",
+      "review",
+      "risk"
+    ]
+  },
+  {
+    "control_id": "ISO-080",
+    "title": "ISO 27001 Control 080",
+    "description": "Validate that RISK/REGISTER/TREATMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for RISK/REGISTER/TREATMENT with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RISK/REGISTER/TREATMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RISK/REGISTER/TREATMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "risk",
+      "register",
+      "treatment",
+      "asset"
+    ]
+  },
+  {
+    "control_id": "ISO-081",
+    "title": "ISO 27001 Control 081",
+    "description": "Validate that ASSET/CLASSIFICATION/OWNERSHIP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for ASSET/CLASSIFICATION/OWNERSHIP with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ASSET/CLASSIFICATION/OWNERSHIP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ASSET/CLASSIFICATION/OWNERSHIP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "asset",
+      "classification",
+      "ownership",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "ISO-082",
+    "title": "ISO 27001 Control 082",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "cryptography"
+    ]
+  },
+  {
+    "control_id": "ISO-083",
+    "title": "ISO 27001 Control 083",
+    "description": "Validate that CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CRYPTOGRAPHY/ENCRYPTION/KEY_MANAGEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "cryptography",
+      "encryption",
+      "key_management",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "ISO-084",
+    "title": "ISO 27001 Control 084",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "ISO-085",
+    "title": "ISO 27001 Control 085",
+    "description": "Validate that VULNERABILITY/OPERATIONS/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for VULNERABILITY/OPERATIONS/HARDENING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/OPERATIONS/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/OPERATIONS/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "operations",
+      "hardening",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "ISO-086",
+    "title": "ISO 27001 Control 086",
+    "description": "Validate that INCIDENT/RESPONSE/COMMUNICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for INCIDENT/RESPONSE/COMMUNICATION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/COMMUNICATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/COMMUNICATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "communication",
+      "continuity"
+    ]
+  },
+  {
+    "control_id": "ISO-087",
+    "title": "ISO 27001 Control 087",
+    "description": "Validate that CONTINUITY/RECOVERY/CADENCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for CONTINUITY/RECOVERY/CADENCE with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating CONTINUITY/RECOVERY/CADENCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for CONTINUITY/RECOVERY/CADENCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "continuity",
+      "recovery",
+      "cadence",
+      "audit"
+    ]
+  },
+  {
+    "control_id": "ISO-088",
+    "title": "ISO 27001 Control 088",
+    "description": "Validate that AUDIT/ASSURANCE/METRICS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AUDIT/ASSURANCE/METRICS with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AUDIT/ASSURANCE/METRICS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AUDIT/ASSURANCE/METRICS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "audit",
+      "assurance",
+      "metrics",
+      "supplier"
+    ]
+  },
+  {
+    "control_id": "ISO-089",
+    "title": "ISO 27001 Control 089",
+    "description": "Validate that SUPPLIER/THIRD_PARTY/CONTRACT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for SUPPLIER/THIRD_PARTY/CONTRACT with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SUPPLIER/THIRD_PARTY/CONTRACT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SUPPLIER/THIRD_PARTY/CONTRACT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "supplier",
+      "third_party",
+      "contract",
+      "awareness"
+    ]
+  },
+  {
+    "control_id": "ISO-090",
+    "title": "ISO 27001 Control 090",
+    "description": "Validate that AWARENESS/TRAINING/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for AWARENESS/TRAINING/PEOPLE with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating AWARENESS/TRAINING/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for AWARENESS/TRAINING/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "awareness",
+      "training",
+      "people",
+      "privacy"
+    ]
+  },
+  {
+    "control_id": "ISO-091",
+    "title": "ISO 27001 Control 091",
+    "description": "Validate that PRIVACY/LEGAL/COMPLIANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for PRIVACY/LEGAL/COMPLIANCE with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVACY/LEGAL/COMPLIANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVACY/LEGAL/COMPLIANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privacy",
+      "legal",
+      "compliance",
+      "policy"
+    ]
+  },
+  {
+    "control_id": "ISO-092",
+    "title": "ISO 27001 Control 092",
+    "description": "Validate that POLICY/GOVERNANCE/REVIEW safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for POLICY/GOVERNANCE/REVIEW with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating POLICY/GOVERNANCE/REVIEW governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for POLICY/GOVERNANCE/REVIEW.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "policy",
+      "governance",
+      "review",
+      "risk"
+    ]
+  },
+  {
+    "control_id": "ISO-093",
+    "title": "ISO 27001 Control 093",
+    "description": "Validate that RISK/REGISTER/TREATMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure ISO 27001 control coverage for RISK/REGISTER/TREATMENT with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RISK/REGISTER/TREATMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RISK/REGISTER/TREATMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "risk",
+      "register",
+      "treatment",
+      "asset"
+    ]
   }
 ]

@@ -24,8 +24,8 @@ const QUOTE_JSON: &str = "Quote.json";
 const QUOTE_MD: &str = "Quote.md";
 const DATA_SHARE_CHECKLIST_MD: &str = "DataShareChecklist.md";
 
-const MAX_QUERY_HITS_PER_QUERY: usize = 5;
-const MAX_EVIDENCE_REFS_PER_CONTROL: usize = 6;
+const MAX_QUERY_HITS_PER_QUERY: usize = 50;
+const MAX_EVIDENCE_REFS_PER_CONTROL: usize = 256;
 
 #[derive(Parser)]
 #[command(name = "aegis")]
@@ -179,7 +179,8 @@ impl PackType {
 enum LibraryPack {
     #[value(name = "vendor_security")]
     VendorSecurity,
-    #[value(name = "iso_27001")]
+    #[value(name = "iso_27001", alias = "iso27001")]
+    #[serde(rename = "iso_27001", alias = "iso27001")]
     Iso27001,
     #[value(name = "nist_csf")]
     NistCsf,
@@ -438,7 +439,11 @@ struct LibraryControl {
     control_id: String,
     title: String,
     description: String,
+    #[serde(default)]
+    objective: String,
     severity: u8,
+    #[serde(default)]
+    evidence_expectations: Vec<String>,
     tags: Vec<String>,
 }
 
@@ -455,12 +460,16 @@ struct LibraryQuery {
     tags: Vec<String>,
     #[serde(default = "default_query_limit")]
     limit: usize,
+    #[serde(default)]
+    control_ids: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 struct LibraryRubric {
     version: String,
     rules: Vec<RubricRule>,
+    #[serde(default)]
+    control_query_map: Vec<ControlQueryMap>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -468,6 +477,12 @@ struct RubricRule {
     tag: String,
     min_hits_for_partial: usize,
     min_hits_for_met: usize,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+struct ControlQueryMap {
+    control_id: String,
+    query_ids: Vec<String>,
 }
 
 #[derive(Debug, Clone)]
@@ -630,6 +645,8 @@ struct DecisionPackBuild<'a> {
     pack: &'a Pack,
     intake: &'a IntakeV1,
     controls: &'a [LibraryControl],
+    queries: &'a LibraryQueries,
+    rubric: &'a LibraryRubric,
     query_log: &'a [QueryLogEntry],
     control_results: &'a BTreeMap<String, ControlResultManifest>,
     cupola: &'a CupolaSearch,
@@ -964,6 +981,8 @@ fn cmd_run_inner(args: RunArgs, overrides: Option<RunCommandOverrides>) -> Resul
         pack: &pack,
         intake: &intake,
         controls: &library_pack_data.controls,
+        queries: &library_pack_data.queries,
+        rubric: &library_pack_data.rubric,
         query_log: &auto.query_log,
         control_results: &auto.control_results,
         cupola: &cupola,
@@ -1146,6 +1165,8 @@ fn cmd_export(args: ExportArgs) -> Result<()> {
         pack: &pack,
         intake: &intake,
         controls: &library_pack_data.controls,
+        queries: &library_pack_data.queries,
+        rubric: &library_pack_data.rubric,
         query_log: &query_log,
         control_results: &control_results,
         cupola: &cupola,
@@ -1170,6 +1191,8 @@ fn write_decision_pack_outputs(build: DecisionPackBuild<'_>) -> Result<()> {
         pack,
         intake,
         controls,
+        queries,
+        rubric,
         query_log,
         control_results,
         cupola,
@@ -1195,6 +1218,8 @@ fn write_decision_pack_outputs(build: DecisionPackBuild<'_>) -> Result<()> {
         &pack_meta,
         intake.pack_type,
         controls,
+        queries,
+        rubric,
         control_results,
         query_log,
     );
@@ -1360,7 +1385,7 @@ fn run_auto_evaluation(
         });
     }
 
-    let control_results = score_controls(controls, &query_log, rubric);
+    let control_results = score_controls(controls, queries, &query_log, rubric);
     Ok(AutoEvaluation {
         query_log,
         control_results,
@@ -1370,25 +1395,34 @@ fn run_auto_evaluation(
 
 fn score_controls(
     controls: &[LibraryControl],
+    queries: &LibraryQueries,
     query_log: &[QueryLogEntry],
     rubric: &LibraryRubric,
 ) -> BTreeMap<String, ControlResultManifest> {
     let mut output = BTreeMap::new();
-    let query_tag_sets: Vec<BTreeSet<String>> = query_log
+    let query_lookup: BTreeMap<String, &QueryLogEntry> = query_log
         .iter()
-        .map(|query| normalized_tag_set(&query.tags))
+        .map(|query| (query.query_id.clone(), query))
         .collect();
+    let query_tags_by_id: BTreeMap<String, BTreeSet<String>> = query_log
+        .iter()
+        .map(|query| (query.query_id.clone(), normalized_tag_set(&query.tags)))
+        .collect();
+    let control_query_map = build_control_query_map(controls, queries, &query_tags_by_id, rubric);
 
     for control in controls {
         let control_tags = normalized_tag_set(&control.tags);
         let mut evidence_refs = Vec::new();
         let mut seen = BTreeSet::new();
+        let query_ids = control_query_map
+            .get(&control.control_id)
+            .cloned()
+            .unwrap_or_default();
 
-        for (idx, query) in query_log.iter().enumerate() {
-            if !tag_sets_intersect(&control_tags, &query_tag_sets[idx]) {
+        for query_id in query_ids {
+            let Some(query) = query_lookup.get(&query_id) else {
                 continue;
-            }
-
+            };
             for evidence in &query.evidence_refs {
                 let key = format!(
                     "{}:{}:{}:{}",
@@ -1424,6 +1458,75 @@ fn score_controls(
                 evidence_refs,
             },
         );
+    }
+
+    output
+}
+
+fn build_control_query_map(
+    controls: &[LibraryControl],
+    queries: &LibraryQueries,
+    query_tags_by_id: &BTreeMap<String, BTreeSet<String>>,
+    rubric: &LibraryRubric,
+) -> BTreeMap<String, Vec<String>> {
+    let mut rubric_mapping: BTreeMap<String, Vec<String>> = BTreeMap::new();
+    let known_query_ids: BTreeSet<&str> = query_tags_by_id.keys().map(String::as_str).collect();
+
+    for mapping in &rubric.control_query_map {
+        let control_key = normalize_control_id(&mapping.control_id);
+        let query_ids: Vec<String> = mapping
+            .query_ids
+            .iter()
+            .filter(|query_id| known_query_ids.contains(query_id.as_str()))
+            .cloned()
+            .collect();
+        if !query_ids.is_empty() {
+            rubric_mapping.insert(control_key, dedupe_preserving_order(query_ids));
+        }
+    }
+
+    let mut query_explicit_mapping: BTreeMap<String, Vec<String>> = BTreeMap::new();
+    for query in &queries.queries {
+        if !known_query_ids.contains(query.query_id.as_str()) {
+            continue;
+        }
+        for control_id in &query.control_ids {
+            query_explicit_mapping
+                .entry(normalize_control_id(control_id))
+                .or_default()
+                .push(query.query_id.clone());
+        }
+    }
+    for query_ids in query_explicit_mapping.values_mut() {
+        let deduped = dedupe_preserving_order(query_ids.clone());
+        *query_ids = deduped;
+    }
+
+    let mut output = BTreeMap::new();
+    for control in controls {
+        let control_key = normalize_control_id(&control.control_id);
+        let control_tags = normalized_tag_set(&control.tags);
+
+        let mut query_ids = rubric_mapping
+            .get(&control_key)
+            .cloned()
+            .or_else(|| query_explicit_mapping.get(&control_key).cloned())
+            .unwrap_or_default();
+
+        if query_ids.is_empty() {
+            query_ids = query_tags_by_id
+                .iter()
+                .filter_map(|(query_id, query_tags)| {
+                    if tag_sets_intersect(&control_tags, query_tags) {
+                        Some(query_id.clone())
+                    } else {
+                        None
+                    }
+                })
+                .collect();
+        }
+
+        output.insert(control.control_id.clone(), dedupe_preserving_order(query_ids));
     }
 
     output
@@ -1467,8 +1570,23 @@ fn normalize_tag(tag: &str) -> String {
     tag.trim().to_ascii_lowercase()
 }
 
+fn normalize_control_id(control_id: &str) -> String {
+    control_id.trim().to_ascii_lowercase()
+}
+
 fn tag_sets_intersect(left: &BTreeSet<String>, right: &BTreeSet<String>) -> bool {
     left.iter().any(|tag| right.contains(tag))
+}
+
+fn dedupe_preserving_order(values: Vec<String>) -> Vec<String> {
+    let mut seen = BTreeSet::new();
+    let mut deduped = Vec::new();
+    for value in values {
+        if seen.insert(value.clone()) {
+            deduped.push(value);
+        }
+    }
+    deduped
 }
 
 fn empty_control_results(controls: &[LibraryControl]) -> BTreeMap<String, ControlResultManifest> {
@@ -1504,20 +1622,53 @@ fn load_library_pack_data_with_data_dir(
     if controls.is_empty() {
         bail!("{} has no controls", controls_path.display());
     }
-    if controls.len() > 40 {
+    let is_standard_pack = matches!(
+        library_pack,
+        LibraryPack::VendorSecurity | LibraryPack::Iso27001 | LibraryPack::NistCsf
+    );
+    let min_controls_required = match library_pack {
+        LibraryPack::VendorSecurity => 80,
+        LibraryPack::Iso27001 => 93,
+        LibraryPack::NistCsf => 80,
+        _ => 1,
+    };
+    if controls.len() < min_controls_required {
         bail!(
-            "{} has {} controls, expected 40 or fewer",
+            "{} has {} controls, expected at least {}",
             controls_path.display(),
-            controls.len()
+            controls.len(),
+            min_controls_required
         );
     }
+    let mut control_ids = BTreeSet::new();
     for control in &controls {
-        if control.severity > 5 {
+        if !(1..=5).contains(&control.severity) {
             bail!(
-                "Control {} in {} has severity {}, expected 0..=5",
+                "Control {} in {} has severity {}, expected 1..=5",
                 control.control_id,
                 controls_path.display(),
                 control.severity
+            );
+        }
+        if !control_ids.insert(control.control_id.clone()) {
+            bail!(
+                "Duplicate control_id {} found in {}",
+                control.control_id,
+                controls_path.display()
+            );
+        }
+        if is_standard_pack && control.objective.trim().is_empty() {
+            bail!(
+                "Control {} in {} is missing objective",
+                control.control_id,
+                controls_path.display()
+            );
+        }
+        if is_standard_pack && control.evidence_expectations.is_empty() {
+            bail!(
+                "Control {} in {} is missing evidence_expectations",
+                control.control_id,
+                controls_path.display()
             );
         }
     }
@@ -1527,11 +1678,76 @@ fn load_library_pack_data_with_data_dir(
     if queries.queries.is_empty() {
         bail!("{} has no queries", queries_path.display());
     }
+    let min_queries_required = match library_pack {
+        LibraryPack::VendorSecurity => 40,
+        LibraryPack::Iso27001 => 50,
+        LibraryPack::NistCsf => 45,
+        _ => 1,
+    };
+    if queries.queries.len() < min_queries_required {
+        bail!(
+            "{} has {} queries, expected at least {}",
+            queries_path.display(),
+            queries.queries.len(),
+            min_queries_required
+        );
+    }
+    let mut query_ids = BTreeSet::new();
+    for query in &queries.queries {
+        if !query_ids.insert(query.query_id.clone()) {
+            bail!(
+                "Duplicate query_id {} found in {}",
+                query.query_id,
+                queries_path.display()
+            );
+        }
+        if is_standard_pack && query.limit < 25 {
+            bail!(
+                "Query {} in {} has limit {}, expected >=25 for standard packs",
+                query.query_id,
+                queries_path.display(),
+                query.limit
+            );
+        }
+    }
 
     let rubric: LibraryRubric = read_json_file(&rubric_path)
         .with_context(|| format!("Failed to load {}", rubric_path.display()))?;
     if rubric.rules.is_empty() {
         bail!("{} has no rubric rules", rubric_path.display());
+    }
+    if is_standard_pack && rubric.control_query_map.is_empty() {
+        bail!(
+            "{} has no control_query_map entries for standard pack {}",
+            rubric_path.display(),
+            library_pack.slug()
+        );
+    }
+    for mapping in &rubric.control_query_map {
+        if !control_ids.contains(&mapping.control_id) {
+            bail!(
+                "rubric mapping references unknown control_id {} in {}",
+                mapping.control_id,
+                rubric_path.display()
+            );
+        }
+        if mapping.query_ids.is_empty() {
+            bail!(
+                "rubric mapping for control_id {} has no query_ids in {}",
+                mapping.control_id,
+                rubric_path.display()
+            );
+        }
+        for query_id in &mapping.query_ids {
+            if !query_ids.contains(query_id) {
+                bail!(
+                    "rubric mapping for control_id {} references unknown query_id {} in {}",
+                    mapping.control_id,
+                    query_id,
+                    rubric_path.display()
+                );
+            }
+        }
     }
 
     Ok(LibraryPackData {
@@ -1570,7 +1786,7 @@ fn resolve_default_data_dir() -> Result<PathBuf> {
 }
 
 fn default_query_limit() -> usize {
-    5
+    25
 }
 
 fn compute_quote(intake: &IntakeV1) -> Result<QuoteV1> {
@@ -1769,21 +1985,24 @@ fn render_html(
     pack_meta: &PackMeta,
     pack_type: PackType,
     controls: &[LibraryControl],
+    queries: &LibraryQueries,
+    rubric: &LibraryRubric,
     control_results: &BTreeMap<String, ControlResultManifest>,
     query_log: &[QueryLogEntry],
 ) -> String {
-    let solution_body = match pack_type {
-        PackType::DdResponse => render_dd_response_section(controls, control_results),
-        PackType::TrustAudit => render_trust_audit_section(controls, control_results),
-        PackType::GovernanceControls => {
-            render_governance_controls_section(controls, control_results)
-        }
-    };
-
+    let executive_summary = render_executive_summary(controls, control_results, rubric);
+    let controls_table = render_full_controls_table(controls, control_results);
+    let gap_register = render_gap_register(controls, control_results, rubric);
+    let evidence_appendix =
+        render_evidence_appendix(controls, queries, rubric, control_results, query_log);
     let query_section = render_query_log_section(query_log);
+    let solution_body = format!(
+        "{}{}{}{}{}",
+        executive_summary, controls_table, gap_register, evidence_appendix, query_section
+    );
 
     format!(
-        "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>DecisionPack</title>\n  <!-- civitas-branding:civitas-mark-v1 -->\n  <style>\n    :root {{\n      --paper: #F7F6F2;\n      --ink: #0B1220;\n      --muted: #475467;\n      --rule: #D7D3CA;\n      --accent: #1E3A5F;\n      --head-fill: #EFECE4;\n      --row-alt: #FAF8F3;\n      --space-1: 4px;\n      --space-2: 8px;\n      --space-3: 12px;\n      --space-4: 16px;\n      --space-5: 24px;\n      --space-6: 32px;\n    }}\n    * {{ box-sizing: border-box; }}\n    html, body {{ margin: 0; padding: 0; }}\n    body {{\n      background: var(--paper);\n      color: var(--ink);\n      font-family: \"IBM Plex Sans\", ui-sans-serif, -apple-system, Segoe UI, sans-serif;\n      line-height: 1.45;\n      padding: var(--space-6);\n    }}\n    .page {{ max-width: 1120px; margin: 0 auto; }}\n    h1, h2, h3 {{\n      font-family: \"IBM Plex Serif\", Georgia, serif;\n      letter-spacing: 0.01em;\n      color: var(--ink);\n      margin: 0;\n    }}\n    h2 {{\n      margin-top: var(--space-6);\n      padding-top: var(--space-4);\n      border-top: 1px solid var(--rule);\n      font-size: 1.2rem;\n    }}\n    h3 {{ margin-top: var(--space-5); font-size: 1.05rem; }}\n    p, li {{ margin-top: var(--space-2); }}\n    .masthead {{\n      display: flex;\n      justify-content: space-between;\n      align-items: flex-start;\n      gap: var(--space-5);\n      border-top: 1px solid var(--rule);\n      border-bottom: 1px solid var(--rule);\n      padding: var(--space-4) var(--space-3);\n      margin-bottom: var(--space-5);\n    }}\n    .masthead-left {{ display: flex; gap: var(--space-4); align-items: flex-start; }}\n    .mark {{ width: 44px; height: 44px; flex: 0 0 auto; }}\n    .title-group h1 {{ font-size: 1.85rem; margin: 0; }}\n    .motto {{ margin: var(--space-1) 0 0; color: var(--muted); font-size: 0.94rem; }}\n    .meta {{ min-width: 280px; max-width: 320px; font-size: 0.82rem; line-height: 1.25; text-align: right; background: var(--head-fill); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px; margin-left: auto; color: var(--muted); }}\n    .meta code {{ color: var(--ink); }}\n    .meta dl {{ margin: 0; display: grid; grid-template-columns: 104px 1fr; row-gap: var(--space-1); column-gap: var(--space-2); }}\n    .meta dt {{ font-weight: 600; color: #2A3547; }}\n    .meta dd {{ margin: 0; }}\n    table {{\n      border-collapse: collapse;\n      width: 100%;\n      margin-top: var(--space-3);\n      border: 1px solid var(--rule);\n      background: #FFFEFC;\n    }}\n    th, td {{\n      border-bottom: 1px solid var(--rule);\n      padding: var(--space-2) var(--space-3);\n      vertical-align: top;\n      text-align: left;\n    }}\n    th {{\n      background: var(--head-fill);\n      font-size: 0.79rem;\n      letter-spacing: 0.02em;\n      text-transform: uppercase;\n      color: #334155;\n    }}\n    tbody tr:nth-child(even) {{ background: var(--row-alt); }}\n    .num {{ text-align: right; font-variant-numeric: tabular-nums; }}\n    code, pre {{\n      font-family: \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;\n      font-size: 0.88em;\n    }}\n    code {{\n      background: #F2EFE7;\n      border: 1px solid #E2DDD2;\n      border-radius: 3px;\n      padding: 0 4px;\n      overflow-wrap: anywhere;\n    }}\n    pre {{\n      background: #F8F6F1;\n      border: 1px solid #E2DDD2;\n      padding: var(--space-3);\n      border-radius: 4px;\n      overflow: auto;\n      margin: var(--space-2) 0;\n    }}\n    blockquote {{\n      margin: var(--space-2) 0;\n      padding: var(--space-2) var(--space-3);\n      border-left: 2px solid #B9B2A2;\n      background: #F5F2EA;\n      color: #253247;\n    }}\n    .status-met {{ color: #1E6A45; font-weight: 600; }}\n    .status-partial {{ color: #8A5A1D; font-weight: 600; }}\n    .status-gap {{ color: #8D2E24; font-weight: 600; }}\n    .muted {{ color: var(--muted); }}\n    @media (max-width: 900px) {{\n      body {{ padding: var(--space-4); }}\n      .masthead {{ flex-direction: column; gap: var(--space-4); }}\n      .meta {{ min-width: 0; width: 100%; }}\n      .meta dl {{ grid-template-columns: 96px 1fr; }}\n    }}\n  </style>\n</head>\n<body>\n  <div class=\"page\">\n    <header class=\"masthead\">\n      <div class=\"masthead-left\">\n        <svg class=\"mark\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"Civitas mark\" role=\"img\">\n          <rect x=\"4\" y=\"4\" width=\"40\" height=\"40\" rx=\"4\" stroke=\"#1E3A5F\" stroke-width=\"1.5\"/>\n          <path d=\"M12 12H36\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M14 34V15\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M24 34V11\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M34 34V15\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M12 36H36\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n        </svg>\n        <div class=\"title-group\">\n          <h1>{}</h1>\n          <p class=\"motto\">Civitas Analytica &mdash; Engineered truth.</p>\n        </div>\n      </div>\n      <aside class=\"meta\">\n        <dl>\n          <dt>pack_sha256</dt><dd><code>{}</code></dd>\n          <dt>pack_type</dt><dd><code>{}</code></dd>\n          <dt>library</dt><dd>{}</dd>\n          <dt>client</dt><dd>{}</dd>\n          <dt>engagement</dt><dd>{}</dd>\n        </dl>\n      </aside>\n    </header>\n    <main>\n      {}\n      {}\n    </main>\n  </div>\n</body>\n</html>\n",
+        "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>DecisionPack</title>\n  <!-- civitas-branding:civitas-mark-v1 -->\n  <style>\n    :root {{\n      --paper: #F7F6F2;\n      --ink: #0B1220;\n      --muted: #475467;\n      --rule: #D7D3CA;\n      --accent: #1E3A5F;\n      --head-fill: #EFECE4;\n      --row-alt: #FAF8F3;\n      --space-1: 4px;\n      --space-2: 8px;\n      --space-3: 12px;\n      --space-4: 16px;\n      --space-5: 24px;\n      --space-6: 32px;\n    }}\n    @page {{ size: A4; margin: 0; }}\n    * {{ box-sizing: border-box; }}\n    html, body {{ margin: 0; padding: 0; }}\n    body {{\n      background: var(--paper);\n      color: var(--ink);\n      font-family: \"IBM Plex Sans\", ui-sans-serif, -apple-system, Segoe UI, sans-serif;\n      line-height: 1.45;\n      padding: var(--space-6);\n      position: relative;\n    }}\n    body::before {{\n      content: \"\";\n      position: fixed;\n      inset: 0;\n      pointer-events: none;\n      z-index: 0;\n      background:\n        radial-gradient(120% 88% at 10% 4%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.06) 30%, rgba(255, 255, 255, 0) 64%),\n        linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 42%, rgba(0, 0, 0, 0.03) 100%);\n      opacity: 0.1;\n    }}\n    .page {{ max-width: 1120px; margin: 0 auto; position: relative; z-index: 1; }}\n    h1, h2, h3 {{\n      font-family: \"IBM Plex Serif\", Georgia, serif;\n      letter-spacing: 0.01em;\n      color: var(--ink);\n      margin: 0;\n    }}\n    h2 {{\n      margin-top: var(--space-6);\n      padding-top: var(--space-4);\n      border-top: 1px solid var(--rule);\n      font-size: 1.2rem;\n    }}\n    h3 {{ margin-top: var(--space-5); font-size: 1.05rem; }}\n    p, li {{ margin-top: var(--space-2); }}\n    .masthead {{\n      display: flex;\n      justify-content: space-between;\n      align-items: flex-start;\n      gap: var(--space-5);\n      border-top: 1px solid var(--rule);\n      border-bottom: 1px solid var(--rule);\n      padding: var(--space-4) var(--space-3);\n      margin-bottom: var(--space-5);\n    }}\n    .masthead-left {{ display: flex; gap: var(--space-4); align-items: flex-start; }}\n    .mark {{ width: 44px; height: 44px; flex: 0 0 auto; }}\n    .title-group h1 {{ font-size: 1.85rem; margin: 0; }}\n    .motto {{ margin: var(--space-1) 0 0; color: var(--muted); font-size: 0.94rem; }}\n    .meta {{ min-width: 280px; max-width: 320px; font-size: 0.82rem; line-height: 1.25; text-align: right; background: var(--head-fill); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px; margin-left: auto; color: var(--muted); }}\n    .meta code {{ color: var(--ink); }}\n    .meta dl {{ margin: 0; display: grid; grid-template-columns: 104px 1fr; row-gap: var(--space-1); column-gap: var(--space-2); }}\n    .meta dt {{ font-weight: 600; color: #2A3547; }}\n    .meta dd {{ margin: 0; }}\n    table {{\n      border-collapse: collapse;\n      width: 100%;\n      margin-top: var(--space-3);\n      border: 1px solid var(--rule);\n      background: #FFFEFC;\n    }}\n    th, td {{\n      border-bottom: 1px solid var(--rule);\n      padding: var(--space-2) var(--space-3);\n      vertical-align: top;\n      text-align: left;\n    }}\n    th {{\n      background: var(--head-fill);\n      font-size: 0.79rem;\n      letter-spacing: 0.02em;\n      text-transform: uppercase;\n      color: #334155;\n    }}\n    tbody tr:nth-child(even) {{ background: var(--row-alt); }}\n    .num {{ text-align: right; font-variant-numeric: tabular-nums; }}\n    code, pre {{\n      font-family: \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;\n      font-size: 0.88em;\n    }}\n    code {{\n      background: #F2EFE7;\n      border: 1px solid #E2DDD2;\n      border-radius: 3px;\n      padding: 0 4px;\n      overflow-wrap: anywhere;\n    }}\n    pre {{\n      background: #F8F6F1;\n      border: 1px solid #E2DDD2;\n      padding: var(--space-3);\n      border-radius: 4px;\n      overflow: auto;\n      margin: var(--space-2) 0;\n    }}\n    blockquote {{\n      margin: var(--space-2) 0;\n      padding: var(--space-2) var(--space-3);\n      border-left: 2px solid #B9B2A2;\n      background: #F5F2EA;\n      color: #253247;\n    }}\n    .status-met {{ color: #1E6A45; font-weight: 600; }}\n    .status-partial {{ color: #8A5A1D; font-weight: 600; }}\n    .status-gap {{ color: #8D2E24; font-weight: 600; }}\n    .muted {{ color: var(--muted); }}\n    @media (max-width: 900px) {{\n      body {{ padding: var(--space-4); }}\n      .masthead {{ flex-direction: column; gap: var(--space-4); }}\n      .meta {{ min-width: 0; width: 100%; }}\n      .meta dl {{ grid-template-columns: 96px 1fr; }}\n    }}\n  </style>\n</head>\n<body>\n  <div class=\"page\">\n    <header class=\"masthead\">\n      <div class=\"masthead-left\">\n        <svg class=\"mark\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"Civitas mark\" role=\"img\">\n          <rect x=\"4\" y=\"4\" width=\"40\" height=\"40\" rx=\"4\" stroke=\"#1E3A5F\" stroke-width=\"1.5\"/>\n          <path d=\"M12 12H36\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M14 34V15\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M24 34V11\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M34 34V15\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n          <path d=\"M12 36H36\" stroke=\"#1E3A5F\" stroke-width=\"2\" stroke-linecap=\"square\"/>\n        </svg>\n        <div class=\"title-group\">\n          <h1>{}</h1>\n          <p class=\"motto\">Civitas Analytica &mdash; Engineered truth.</p>\n        </div>\n      </div>\n      <aside class=\"meta\">\n        <dl>\n          <dt>pack_sha256</dt><dd><code>{}</code></dd>\n          <dt>pack_type</dt><dd><code>{}</code></dd>\n          <dt>library</dt><dd>{}</dd>\n          <dt>client</dt><dd>{}</dd>\n          <dt>engagement</dt><dd>{}</dd>\n        </dl>\n      </aside>\n    </header>\n    <main>\n      {}\n      {}\n    </main>\n  </div>\n</body>\n</html>\n",
         escape_html(pack_type.label()),
         escape_html(pack_sha256),
         escape_html(&pack_meta.pack_type),
@@ -1793,6 +2012,267 @@ fn render_html(
         solution_body,
         query_section
     )
+}
+
+fn control_objective(control: &LibraryControl) -> &str {
+    if control.objective.trim().is_empty() {
+        &control.description
+    } else {
+        &control.objective
+    }
+}
+
+fn control_expectations(control: &LibraryControl) -> String {
+    if control.evidence_expectations.is_empty() {
+        "No explicit evidence expectations listed.".to_string()
+    } else {
+        control.evidence_expectations.join("; ")
+    }
+}
+
+fn render_executive_summary(
+    controls: &[LibraryControl],
+    control_results: &BTreeMap<String, ControlResultManifest>,
+    rubric: &LibraryRubric,
+) -> String {
+    let mut met = 0usize;
+    let mut partial = 0usize;
+    let mut gaps = 0usize;
+    let mut weighted_points = 0.0f64;
+    let mut weighted_max = 0.0f64;
+    let mut key_gaps: Vec<(u8, usize, String, String, &'static str)> = Vec::new();
+
+    for control in controls {
+        let result = control_results
+            .get(&control.control_id)
+            .cloned()
+            .unwrap_or_else(|| default_control_result(control));
+        let severity = result.severity.max(1);
+        let status_factor = match result.status {
+            ControlStatus::Met => {
+                met += 1;
+                1.0
+            }
+            ControlStatus::Partial => {
+                partial += 1;
+                0.5
+            }
+            ControlStatus::Gap => {
+                gaps += 1;
+                0.0
+            }
+        };
+        weighted_points += f64::from(severity) * status_factor;
+        weighted_max += f64::from(severity);
+
+        if result.status != ControlStatus::Met {
+            let (_, min_met) = thresholds_for_control(&normalized_tag_set(&control.tags), rubric);
+            let missing = min_met.saturating_sub(result.evidence_count);
+            key_gaps.push((
+                result.severity,
+                missing,
+                control.control_id.clone(),
+                control.title.clone(),
+                control_status_label(result.status),
+            ));
+        }
+    }
+
+    key_gaps.sort_by(|left, right| {
+        right
+            .0
+            .cmp(&left.0)
+            .then(right.1.cmp(&left.1))
+            .then(left.2.cmp(&right.2))
+    });
+    let key_gaps_html = if key_gaps.is_empty() {
+        "<p class=\"muted\">No active gaps detected from current evidence.</p>".to_string()
+    } else {
+        let mut items = String::new();
+        for (severity, missing, control_id, title, status) in key_gaps.into_iter().take(12) {
+            items.push_str(&format!(
+                "<li><code>{}</code> {} - <span class=\"status-gap\">{}</span> - severity {} - missing evidence {}</li>",
+                escape_html(&control_id),
+                escape_html(&title),
+                escape_html(status),
+                severity,
+                missing
+            ));
+        }
+        format!("<ul>{items}</ul>")
+    };
+
+    let weighted_score = if weighted_max <= f64::EPSILON {
+        0.0
+    } else {
+        (weighted_points / weighted_max) * 100.0
+    };
+
+    format!(
+        "<h2>Executive Summary</h2><table><tbody><tr><th>Severity-weighted score</th><td class=\"num\">{:.1}%</td></tr><tr><th>Total controls</th><td class=\"num\">{}</td></tr><tr><th>Met</th><td class=\"num\">{}</td></tr><tr><th>Partial</th><td class=\"num\">{}</td></tr><tr><th>Gap</th><td class=\"num\">{}</td></tr></tbody></table><h3>Key Gaps</h3>{}",
+        weighted_score,
+        controls.len(),
+        met,
+        partial,
+        gaps,
+        key_gaps_html
+    )
+}
+
+fn render_full_controls_table(
+    controls: &[LibraryControl],
+    control_results: &BTreeMap<String, ControlResultManifest>,
+) -> String {
+    let mut rows = String::new();
+    for control in controls {
+        let result = control_results
+            .get(&control.control_id)
+            .cloned()
+            .unwrap_or_else(|| default_control_result(control));
+        rows.push_str(&format!(
+            "<tr><td><code>{}</code></td><td>{}</td><td>{}</td><td>{}</td><td><span class=\"{}\">{}</span></td><td class=\"num\">{}</td><td class=\"num\">{}</td></tr>",
+            escape_html(&control.control_id),
+            escape_html(&control.title),
+            escape_html(control_objective(control)),
+            escape_html(&control_expectations(control)),
+            status_css_class(result.status),
+            escape_html(control_status_label(result.status)),
+            result.severity,
+            result.evidence_count
+        ));
+    }
+
+    format!(
+        "<h2>Full Controls Table</h2><table><thead><tr><th>control_id</th><th>title</th><th>objective</th><th>evidence expectations</th><th>status</th><th class=\"num\">severity</th><th class=\"num\">evidence_count</th></tr></thead><tbody>{}</tbody></table>",
+        rows
+    )
+}
+
+fn render_gap_register(
+    controls: &[LibraryControl],
+    control_results: &BTreeMap<String, ControlResultManifest>,
+    rubric: &LibraryRubric,
+) -> String {
+    let mut rows = String::new();
+    for control in controls {
+        let result = control_results
+            .get(&control.control_id)
+            .cloned()
+            .unwrap_or_else(|| default_control_result(control));
+        if result.status == ControlStatus::Met {
+            continue;
+        }
+        let (_, min_met) = thresholds_for_control(&normalized_tag_set(&control.tags), rubric);
+        let missing_evidence = min_met.saturating_sub(result.evidence_count);
+
+        rows.push_str(&format!(
+            "<tr><td><code>{}</code></td><td>{}</td><td><span class=\"{}\">{}</span></td><td class=\"num\">{}</td><td class=\"num\">{}</td><td class=\"num\">{}</td><td>{}</td></tr>",
+            escape_html(&control.control_id),
+            escape_html(&control.title),
+            status_css_class(result.status),
+            escape_html(control_status_label(result.status)),
+            result.severity,
+            result.evidence_count,
+            missing_evidence,
+            escape_html(&control_expectations(control))
+        ));
+    }
+
+    if rows.is_empty() {
+        return "<h2>Gap Register</h2><p class=\"muted\">No gaps or partial controls detected.</p>"
+            .to_string();
+    }
+
+    format!(
+        "<h2>Gap Register</h2><table><thead><tr><th>control_id</th><th>title</th><th>status</th><th class=\"num\">severity</th><th class=\"num\">evidence_count</th><th class=\"num\">missing_evidence</th><th>evidence expectations</th></tr></thead><tbody>{}</tbody></table>",
+        rows
+    )
+}
+
+fn render_evidence_appendix(
+    controls: &[LibraryControl],
+    queries: &LibraryQueries,
+    rubric: &LibraryRubric,
+    control_results: &BTreeMap<String, ControlResultManifest>,
+    query_log: &[QueryLogEntry],
+) -> String {
+    if query_log.is_empty() {
+        return "<h2>Evidence Appendix</h2><p class=\"muted\">No automated queries were executed, so no evidence appendix can be generated.</p>".to_string();
+    }
+
+    let query_lookup: BTreeMap<String, &QueryLogEntry> = query_log
+        .iter()
+        .map(|entry| (entry.query_id.clone(), entry))
+        .collect();
+    let query_tags_by_id: BTreeMap<String, BTreeSet<String>> = query_log
+        .iter()
+        .map(|entry| (entry.query_id.clone(), normalized_tag_set(&entry.tags)))
+        .collect();
+    let control_query_map = build_control_query_map(controls, queries, &query_tags_by_id, rubric);
+
+    let mut controls_html = String::new();
+    for control in controls {
+        let result = control_results
+            .get(&control.control_id)
+            .cloned()
+            .unwrap_or_else(|| default_control_result(control));
+        let mapped_queries = control_query_map
+            .get(&control.control_id)
+            .cloned()
+            .unwrap_or_default();
+        let mut query_blocks = String::new();
+
+        for query_id in mapped_queries {
+            let Some(entry) = query_lookup.get(&query_id) else {
+                continue;
+            };
+            let evidence_list = if entry.evidence_refs.is_empty() {
+                "<p class=\"muted\">No direct evidence hits for this query.</p>".to_string()
+            } else {
+                let mut evidence_items = String::new();
+                for evidence in &entry.evidence_refs {
+                    evidence_items.push_str(&format!(
+                        "<li><code>{}</code> {}-{} (rank {})<blockquote>{}</blockquote></li>",
+                        escape_html(&evidence.rel_path),
+                        evidence.start_line,
+                        evidence.end_line,
+                        evidence.rank,
+                        escape_html(&evidence.excerpt)
+                    ));
+                }
+                format!("<ul>{evidence_items}</ul>")
+            };
+
+            query_blocks.push_str(&format!(
+                "<section><h4><code>{}</code> - {}</h4><p class=\"muted\">tags: {} | hits: {}</p>{}</section>",
+                escape_html(&entry.query_id),
+                escape_html(&entry.query_text),
+                escape_html(&entry.tags.join(", ")),
+                entry.hit_count,
+                evidence_list
+            ));
+        }
+
+        if query_blocks.is_empty() {
+            query_blocks = "<p class=\"muted\">No mapped queries for this control in current run.</p>"
+                .to_string();
+        }
+
+        controls_html.push_str(&format!(
+            "<section><h3><code>{}</code> - {}</h3><p><span class=\"{}\">{}</span> | severity {} | evidence_count {}</p><p>{}</p><p class=\"muted\">Expected evidence: {}</p>{}</section>",
+            escape_html(&control.control_id),
+            escape_html(&control.title),
+            status_css_class(result.status),
+            escape_html(control_status_label(result.status)),
+            result.severity,
+            result.evidence_count,
+            escape_html(control_objective(control)),
+            escape_html(&control_expectations(control)),
+            query_blocks
+        ));
+    }
+
+    format!("<h2>Evidence Appendix</h2>{controls_html}")
 }
 
 fn render_dd_response_section(
@@ -2363,9 +2843,9 @@ mod tests {
     #[test]
     fn starter_library_packs_load() {
         let starter_packs = [
-            LibraryPack::VendorSecurityV1,
-            LibraryPack::DfirLiteV1,
-            LibraryPack::Iso27001LiteV1,
+            LibraryPack::VendorSecurity,
+            LibraryPack::Iso27001,
+            LibraryPack::NistCsf,
         ];
 
         for library_pack in starter_packs {
@@ -2435,9 +2915,33 @@ mod tests {
             control_id: "VS-001".to_string(),
             title: "Identity Platform Ownership".to_string(),
             description: "Own identity operations".to_string(),
+            objective: "Own identity operations".to_string(),
             severity: 4,
+            evidence_expectations: vec!["Policy and access logs".to_string()],
             tags: vec!["identity".to_string()],
         }];
+        let queries = LibraryQueries {
+            version: "2.0".to_string(),
+            queries: vec![LibraryQuery {
+                query_id: "VS-Q-001".to_string(),
+                query_text: "identity provider policy".to_string(),
+                tags: vec!["identity".to_string()],
+                limit: 25,
+                control_ids: vec!["VS-001".to_string()],
+            }],
+        };
+        let rubric = LibraryRubric {
+            version: "2.0".to_string(),
+            rules: vec![RubricRule {
+                tag: "identity".to_string(),
+                min_hits_for_partial: 1,
+                min_hits_for_met: 2,
+            }],
+            control_query_map: vec![ControlQueryMap {
+                control_id: "VS-001".to_string(),
+                query_ids: vec!["VS-Q-001".to_string()],
+            }],
+        };
 
         let mut control_results = BTreeMap::new();
         control_results.insert(
@@ -2473,10 +2977,15 @@ mod tests {
             &pack_meta,
             intake.pack_type,
             &controls,
+            &queries,
+            &rubric,
             &control_results,
             &[],
         );
-        assert!(html.contains("Trust Audit Matrix"));
+        assert!(html.contains("Executive Summary"));
+        assert!(html.contains("Full Controls Table"));
+        assert!(html.contains("Gap Register"));
+        assert!(html.contains("Evidence Appendix"));
 
         let manifest = AegisManifestV11 {
             schema_version: "aegis.manifest.v1.1".to_string(),

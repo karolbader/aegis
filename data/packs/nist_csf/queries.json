@@ -1,77 +1,921 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "queries": [
     {
       "query_id": "NIST-Q-001",
-      "query_text": "asset inventory owner",
-      "tags": ["identify", "asset", "inventory"],
-      "limit": 5
+      "query_text": "identify asset inventory controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "asset",
+        "inventory"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-001",
+        "NIST-002",
+        "NIST-003",
+        "NIST-012",
+        "NIST-013",
+        "NIST-014",
+        "NIST-015",
+        "NIST-024",
+        "NIST-025",
+        "NIST-026",
+        "NIST-027",
+        "NIST-036",
+        "NIST-037",
+        "NIST-038",
+        "NIST-039",
+        "NIST-048",
+        "NIST-049",
+        "NIST-050",
+        "NIST-051",
+        "NIST-060",
+        "NIST-061",
+        "NIST-062",
+        "NIST-063",
+        "NIST-072",
+        "NIST-073",
+        "NIST-074",
+        "NIST-075"
+      ]
     },
     {
       "query_id": "NIST-Q-002",
-      "query_text": "critical service dependency mapping",
-      "tags": ["identify", "context", "dependency"],
-      "limit": 5
+      "query_text": "identify context dependency controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "context",
+        "dependency"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-001",
+        "NIST-002",
+        "NIST-003",
+        "NIST-012",
+        "NIST-013",
+        "NIST-014",
+        "NIST-015",
+        "NIST-024",
+        "NIST-025",
+        "NIST-026",
+        "NIST-027",
+        "NIST-036",
+        "NIST-037",
+        "NIST-038",
+        "NIST-039",
+        "NIST-048",
+        "NIST-049",
+        "NIST-050",
+        "NIST-051",
+        "NIST-060",
+        "NIST-061",
+        "NIST-062",
+        "NIST-063",
+        "NIST-072",
+        "NIST-073",
+        "NIST-074",
+        "NIST-075"
+      ]
     },
     {
       "query_id": "NIST-Q-003",
-      "query_text": "risk assessment cadence",
-      "tags": ["identify", "risk", "cadence"],
-      "limit": 5
+      "query_text": "identify risk governance controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "risk",
+        "governance"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-001",
+        "NIST-002",
+        "NIST-003",
+        "NIST-012",
+        "NIST-013",
+        "NIST-014",
+        "NIST-015",
+        "NIST-024",
+        "NIST-025",
+        "NIST-026",
+        "NIST-027",
+        "NIST-036",
+        "NIST-037",
+        "NIST-038",
+        "NIST-039",
+        "NIST-048",
+        "NIST-049",
+        "NIST-050",
+        "NIST-051",
+        "NIST-060",
+        "NIST-061",
+        "NIST-062",
+        "NIST-063",
+        "NIST-072",
+        "NIST-073",
+        "NIST-074",
+        "NIST-075"
+      ]
     },
     {
       "query_id": "NIST-Q-004",
-      "query_text": "identity access control MFA privileged",
-      "tags": ["protect", "identity", "access"],
-      "limit": 5
+      "query_text": "protect identity access controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "identity",
+        "access"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-003",
+        "NIST-004",
+        "NIST-005",
+        "NIST-006",
+        "NIST-007",
+        "NIST-015",
+        "NIST-016",
+        "NIST-017",
+        "NIST-018",
+        "NIST-019",
+        "NIST-027",
+        "NIST-028",
+        "NIST-029",
+        "NIST-030",
+        "NIST-031",
+        "NIST-039",
+        "NIST-040",
+        "NIST-041",
+        "NIST-042",
+        "NIST-043",
+        "NIST-051",
+        "NIST-052",
+        "NIST-053",
+        "NIST-054",
+        "NIST-055",
+        "NIST-063",
+        "NIST-064",
+        "NIST-065",
+        "NIST-066",
+        "NIST-067",
+        "NIST-075",
+        "NIST-076",
+        "NIST-077",
+        "NIST-078",
+        "NIST-079"
+      ]
     },
     {
       "query_id": "NIST-Q-005",
-      "query_text": "security awareness training",
-      "tags": ["protect", "training", "people"],
-      "limit": 5
+      "query_text": "protect awareness training controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "awareness",
+        "training"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-003",
+        "NIST-004",
+        "NIST-005",
+        "NIST-006",
+        "NIST-007",
+        "NIST-015",
+        "NIST-016",
+        "NIST-017",
+        "NIST-018",
+        "NIST-019",
+        "NIST-027",
+        "NIST-028",
+        "NIST-029",
+        "NIST-030",
+        "NIST-031",
+        "NIST-039",
+        "NIST-040",
+        "NIST-041",
+        "NIST-042",
+        "NIST-043",
+        "NIST-051",
+        "NIST-052",
+        "NIST-053",
+        "NIST-054",
+        "NIST-055",
+        "NIST-063",
+        "NIST-064",
+        "NIST-065",
+        "NIST-066",
+        "NIST-067",
+        "NIST-075",
+        "NIST-076",
+        "NIST-077",
+        "NIST-078",
+        "NIST-079"
+      ]
     },
     {
       "query_id": "NIST-Q-006",
-      "query_text": "data encryption confidentiality integrity",
-      "tags": ["protect", "data", "encryption"],
-      "limit": 5
+      "query_text": "protect data encryption controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "data",
+        "encryption"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-004",
+        "NIST-005",
+        "NIST-006",
+        "NIST-007",
+        "NIST-016",
+        "NIST-017",
+        "NIST-018",
+        "NIST-019",
+        "NIST-028",
+        "NIST-029",
+        "NIST-030",
+        "NIST-031",
+        "NIST-040",
+        "NIST-041",
+        "NIST-042",
+        "NIST-043",
+        "NIST-052",
+        "NIST-053",
+        "NIST-054",
+        "NIST-055",
+        "NIST-064",
+        "NIST-065",
+        "NIST-066",
+        "NIST-067",
+        "NIST-076",
+        "NIST-077",
+        "NIST-078",
+        "NIST-079"
+      ]
     },
     {
       "query_id": "NIST-Q-007",
-      "query_text": "anomaly detection alert monitoring",
-      "tags": ["detect", "monitoring", "alerting"],
-      "limit": 5
+      "query_text": "protect configuration hardening controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "configuration",
+        "hardening"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-004",
+        "NIST-005",
+        "NIST-006",
+        "NIST-007",
+        "NIST-016",
+        "NIST-017",
+        "NIST-018",
+        "NIST-019",
+        "NIST-028",
+        "NIST-029",
+        "NIST-030",
+        "NIST-031",
+        "NIST-040",
+        "NIST-041",
+        "NIST-042",
+        "NIST-043",
+        "NIST-052",
+        "NIST-053",
+        "NIST-054",
+        "NIST-055",
+        "NIST-064",
+        "NIST-065",
+        "NIST-066",
+        "NIST-067",
+        "NIST-076",
+        "NIST-077",
+        "NIST-078",
+        "NIST-079"
+      ]
     },
     {
       "query_id": "NIST-Q-008",
-      "query_text": "security logging continuous monitoring",
-      "tags": ["detect", "monitoring", "logging"],
-      "limit": 5
+      "query_text": "detect monitoring logging controls evidence owner review register policy log",
+      "tags": [
+        "detect",
+        "monitoring",
+        "logging"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-007",
+        "NIST-008",
+        "NIST-009",
+        "NIST-019",
+        "NIST-020",
+        "NIST-021",
+        "NIST-031",
+        "NIST-032",
+        "NIST-033",
+        "NIST-043",
+        "NIST-044",
+        "NIST-045",
+        "NIST-055",
+        "NIST-056",
+        "NIST-057",
+        "NIST-067",
+        "NIST-068",
+        "NIST-069",
+        "NIST-079",
+        "NIST-080"
+      ]
     },
     {
       "query_id": "NIST-Q-009",
-      "query_text": "incident response plan communications",
-      "tags": ["respond", "incident", "planning"],
-      "limit": 5
+      "query_text": "detect anomaly alerting controls evidence owner review register policy log",
+      "tags": [
+        "detect",
+        "anomaly",
+        "alerting"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-008",
+        "NIST-009",
+        "NIST-020",
+        "NIST-021",
+        "NIST-032",
+        "NIST-033",
+        "NIST-044",
+        "NIST-045",
+        "NIST-056",
+        "NIST-057",
+        "NIST-068",
+        "NIST-069",
+        "NIST-080"
+      ]
     },
     {
       "query_id": "NIST-Q-010",
-      "query_text": "incident analysis containment mitigation",
-      "tags": ["respond", "analysis", "mitigation"],
-      "limit": 5
+      "query_text": "respond incident planning controls evidence owner review register policy log",
+      "tags": [
+        "respond",
+        "incident",
+        "planning"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-009",
+        "NIST-010",
+        "NIST-011",
+        "NIST-021",
+        "NIST-022",
+        "NIST-023",
+        "NIST-033",
+        "NIST-034",
+        "NIST-035",
+        "NIST-045",
+        "NIST-046",
+        "NIST-047",
+        "NIST-057",
+        "NIST-058",
+        "NIST-059",
+        "NIST-069",
+        "NIST-070",
+        "NIST-071"
+      ]
     },
     {
       "query_id": "NIST-Q-011",
-      "query_text": "business continuity recovery plan",
-      "tags": ["recover", "continuity", "planning"],
-      "limit": 5
+      "query_text": "respond analysis mitigation controls evidence owner review register policy log",
+      "tags": [
+        "respond",
+        "analysis",
+        "mitigation"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-009",
+        "NIST-010",
+        "NIST-011",
+        "NIST-021",
+        "NIST-022",
+        "NIST-023",
+        "NIST-033",
+        "NIST-034",
+        "NIST-035",
+        "NIST-045",
+        "NIST-046",
+        "NIST-047",
+        "NIST-057",
+        "NIST-058",
+        "NIST-059",
+        "NIST-069",
+        "NIST-070",
+        "NIST-071"
+      ]
     },
     {
       "query_id": "NIST-Q-012",
-      "query_text": "recovery lessons learned improvement register",
-      "tags": ["recover", "improvement", "register"],
-      "limit": 5
+      "query_text": "recover continuity improvement controls evidence owner review register policy log",
+      "tags": [
+        "recover",
+        "continuity",
+        "improvement"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-011",
+        "NIST-012",
+        "NIST-023",
+        "NIST-024",
+        "NIST-035",
+        "NIST-036",
+        "NIST-047",
+        "NIST-048",
+        "NIST-059",
+        "NIST-060",
+        "NIST-071",
+        "NIST-072"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-013",
+      "query_text": "identify asset inventory controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "asset",
+        "inventory"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-001",
+        "NIST-002",
+        "NIST-012",
+        "NIST-013",
+        "NIST-014",
+        "NIST-024",
+        "NIST-025",
+        "NIST-026",
+        "NIST-036",
+        "NIST-037",
+        "NIST-038",
+        "NIST-048",
+        "NIST-049",
+        "NIST-050",
+        "NIST-060",
+        "NIST-061",
+        "NIST-062",
+        "NIST-072",
+        "NIST-073",
+        "NIST-074"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-014",
+      "query_text": "identify context dependency controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "context",
+        "dependency"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-001",
+        "NIST-002",
+        "NIST-013",
+        "NIST-014",
+        "NIST-025",
+        "NIST-026",
+        "NIST-037",
+        "NIST-038",
+        "NIST-049",
+        "NIST-050",
+        "NIST-061",
+        "NIST-062",
+        "NIST-073",
+        "NIST-074"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-015",
+      "query_text": "identify risk governance controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "risk",
+        "governance"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-016",
+      "query_text": "protect identity access controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "identity",
+        "access"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-004",
+        "NIST-005",
+        "NIST-006",
+        "NIST-016",
+        "NIST-017",
+        "NIST-018",
+        "NIST-028",
+        "NIST-029",
+        "NIST-030",
+        "NIST-040",
+        "NIST-041",
+        "NIST-042",
+        "NIST-052",
+        "NIST-053",
+        "NIST-054",
+        "NIST-064",
+        "NIST-065",
+        "NIST-066",
+        "NIST-076",
+        "NIST-077",
+        "NIST-078"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-017",
+      "query_text": "protect awareness training controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "awareness",
+        "training"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-018",
+      "query_text": "protect data encryption controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "data",
+        "encryption"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-019",
+      "query_text": "protect configuration hardening controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "configuration",
+        "hardening"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-020",
+      "query_text": "detect monitoring logging controls evidence owner review register policy log",
+      "tags": [
+        "detect",
+        "monitoring",
+        "logging"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-008",
+        "NIST-009",
+        "NIST-020",
+        "NIST-021",
+        "NIST-032",
+        "NIST-033",
+        "NIST-044",
+        "NIST-045",
+        "NIST-056",
+        "NIST-057",
+        "NIST-068",
+        "NIST-069",
+        "NIST-080"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-021",
+      "query_text": "detect anomaly alerting controls evidence owner review register policy log",
+      "tags": [
+        "detect",
+        "anomaly",
+        "alerting"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-008",
+        "NIST-020",
+        "NIST-032",
+        "NIST-044",
+        "NIST-056",
+        "NIST-068",
+        "NIST-080"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-022",
+      "query_text": "respond incident planning controls evidence owner review register policy log",
+      "tags": [
+        "respond",
+        "incident",
+        "planning"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-010",
+        "NIST-011",
+        "NIST-022",
+        "NIST-023",
+        "NIST-034",
+        "NIST-035",
+        "NIST-046",
+        "NIST-047",
+        "NIST-058",
+        "NIST-059",
+        "NIST-070",
+        "NIST-071"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-023",
+      "query_text": "respond analysis mitigation controls evidence owner review register policy log",
+      "tags": [
+        "respond",
+        "analysis",
+        "mitigation"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-010",
+        "NIST-011",
+        "NIST-022",
+        "NIST-023",
+        "NIST-034",
+        "NIST-035",
+        "NIST-046",
+        "NIST-047",
+        "NIST-058",
+        "NIST-059",
+        "NIST-070",
+        "NIST-071"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-024",
+      "query_text": "recover continuity improvement controls evidence owner review register policy log",
+      "tags": [
+        "recover",
+        "continuity",
+        "improvement"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-025",
+      "query_text": "identify asset inventory controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "asset",
+        "inventory"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-026",
+      "query_text": "identify context dependency controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "context",
+        "dependency"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-027",
+      "query_text": "identify risk governance controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "risk",
+        "governance"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-028",
+      "query_text": "protect identity access controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "identity",
+        "access"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-029",
+      "query_text": "protect awareness training controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "awareness",
+        "training"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-030",
+      "query_text": "protect data encryption controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "data",
+        "encryption"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-031",
+      "query_text": "protect configuration hardening controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "configuration",
+        "hardening"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-032",
+      "query_text": "detect monitoring logging controls evidence owner review register policy log",
+      "tags": [
+        "detect",
+        "monitoring",
+        "logging"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-008",
+        "NIST-020",
+        "NIST-032",
+        "NIST-044",
+        "NIST-056",
+        "NIST-068",
+        "NIST-080"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-033",
+      "query_text": "detect anomaly alerting controls evidence owner review register policy log",
+      "tags": [
+        "detect",
+        "anomaly",
+        "alerting"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-034",
+      "query_text": "respond incident planning controls evidence owner review register policy log",
+      "tags": [
+        "respond",
+        "incident",
+        "planning"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "NIST-010",
+        "NIST-022",
+        "NIST-034",
+        "NIST-046",
+        "NIST-058",
+        "NIST-070"
+      ]
+    },
+    {
+      "query_id": "NIST-Q-035",
+      "query_text": "respond analysis mitigation controls evidence owner review register policy log",
+      "tags": [
+        "respond",
+        "analysis",
+        "mitigation"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-036",
+      "query_text": "recover continuity improvement controls evidence owner review register policy log",
+      "tags": [
+        "recover",
+        "continuity",
+        "improvement"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-037",
+      "query_text": "identify asset inventory controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "asset",
+        "inventory"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-038",
+      "query_text": "identify context dependency controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "context",
+        "dependency"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-039",
+      "query_text": "identify risk governance controls evidence owner review register policy log",
+      "tags": [
+        "identify",
+        "risk",
+        "governance"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-040",
+      "query_text": "protect identity access controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "identity",
+        "access"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-041",
+      "query_text": "protect awareness training controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "awareness",
+        "training"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-042",
+      "query_text": "protect data encryption controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "data",
+        "encryption"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-043",
+      "query_text": "protect configuration hardening controls evidence owner review register policy log",
+      "tags": [
+        "protect",
+        "configuration",
+        "hardening"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-044",
+      "query_text": "detect monitoring logging controls evidence owner review register policy log",
+      "tags": [
+        "detect",
+        "monitoring",
+        "logging"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "NIST-Q-045",
+      "query_text": "detect anomaly alerting controls evidence owner review register policy log",
+      "tags": [
+        "detect",
+        "anomaly",
+        "alerting"
+      ],
+      "limit": 30,
+      "control_ids": []
     }
   ]
 }

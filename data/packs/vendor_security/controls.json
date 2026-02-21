@@ -1,142 +1,1442 @@
 [
   {
     "control_id": "VS-001",
-    "title": "Identity Platform Ownership",
-    "description": "Document who owns workforce identity services and how account lifecycle changes are approved.",
-    "severity": 4,
-    "tags": ["identity", "access", "sso"]
+    "title": "Vendor Security Control 001",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "privileged"
+    ]
   },
   {
     "control_id": "VS-002",
-    "title": "Multi-Factor Authentication",
-    "description": "Require MFA for employee and contractor access to critical systems.",
-    "severity": 5,
-    "tags": ["mfa", "identity", "access"]
+    "title": "Vendor Security Control 002",
+    "description": "Validate that PRIVILEGED/REVIEW/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for PRIVILEGED/REVIEW/ACCESS with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVILEGED/REVIEW/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVILEGED/REVIEW/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privileged",
+      "review",
+      "access",
+      "logging"
+    ]
   },
   {
     "control_id": "VS-003",
-    "title": "Privileged Access Reviews",
-    "description": "Review administrator privileges on a fixed cadence and remove stale access.",
-    "severity": 5,
-    "tags": ["access", "privileged", "review"]
+    "title": "Vendor Security Control 003",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "siem"
+    ]
   },
   {
     "control_id": "VS-004",
-    "title": "Endpoint Hardening Baseline",
-    "description": "Maintain baseline endpoint security settings and monitor drift.",
+    "title": "Vendor Security Control 004",
+    "description": "Validate that SIEM/ALERTING/DETECTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for SIEM/ALERTING/DETECTION with documented ownership and operating cadence.",
     "severity": 4,
-    "tags": ["endpoint", "baseline", "hardening"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SIEM/ALERTING/DETECTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SIEM/ALERTING/DETECTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "siem",
+      "alerting",
+      "detection",
+      "encryption"
+    ]
   },
   {
     "control_id": "VS-005",
-    "title": "Patch Cadence",
-    "description": "Track patching SLAs and verify critical patches are deployed within target windows.",
-    "severity": 4,
-    "tags": ["patch", "cadence", "vulnerability"]
+    "title": "Vendor Security Control 005",
+    "description": "Validate that ENCRYPTION/KEY_MANAGEMENT/DATA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for ENCRYPTION/KEY_MANAGEMENT/DATA with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ENCRYPTION/KEY_MANAGEMENT/DATA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ENCRYPTION/KEY_MANAGEMENT/DATA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "encryption",
+      "key_management",
+      "data",
+      "network"
+    ]
   },
   {
     "control_id": "VS-006",
-    "title": "Vulnerability Triage",
-    "description": "Prioritize vulnerabilities by exploitability and business impact.",
-    "severity": 4,
-    "tags": ["vulnerability", "risk", "triage"]
+    "title": "Vendor Security Control 006",
+    "description": "Validate that NETWORK/TLS/SEGMENTATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for NETWORK/TLS/SEGMENTATION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating NETWORK/TLS/SEGMENTATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for NETWORK/TLS/SEGMENTATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "network",
+      "tls",
+      "segmentation",
+      "incident"
+    ]
   },
   {
     "control_id": "VS-007",
-    "title": "Logging Retention",
-    "description": "Retain security-relevant logs long enough to support investigations.",
-    "severity": 3,
-    "tags": ["logging", "monitoring", "retention"]
+    "title": "Vendor Security Control 007",
+    "description": "Validate that INCIDENT/RESPONSE/TABLETOP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for INCIDENT/RESPONSE/TABLETOP with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/TABLETOP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/TABLETOP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "tabletop",
+      "backup"
+    ]
   },
   {
     "control_id": "VS-008",
-    "title": "Alert Response Workflow",
-    "description": "Define response ownership and escalation for high-severity alerts.",
-    "severity": 4,
-    "tags": ["monitoring", "alerting", "incident"]
+    "title": "Vendor Security Control 008",
+    "description": "Validate that BACKUP/RECOVERY/CONTINUITY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for BACKUP/RECOVERY/CONTINUITY with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating BACKUP/RECOVERY/CONTINUITY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for BACKUP/RECOVERY/CONTINUITY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "backup",
+      "recovery",
+      "continuity",
+      "vendor"
+    ]
   },
   {
     "control_id": "VS-009",
-    "title": "Data Encryption At Rest",
-    "description": "Protect stored sensitive data with managed encryption keys.",
-    "severity": 5,
-    "tags": ["encryption", "data", "key_management"]
+    "title": "Vendor Security Control 009",
+    "description": "Validate that VENDOR/THIRD_PARTY/RISK safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VENDOR/THIRD_PARTY/RISK with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VENDOR/THIRD_PARTY/RISK governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VENDOR/THIRD_PARTY/RISK.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vendor",
+      "third_party",
+      "risk",
+      "governance"
+    ]
   },
   {
     "control_id": "VS-010",
-    "title": "Data Encryption In Transit",
-    "description": "Use modern TLS settings for service-to-service and user traffic.",
+    "title": "Vendor Security Control 010",
+    "description": "Validate that GOVERNANCE/POLICY/AUDIT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for GOVERNANCE/POLICY/AUDIT with documented ownership and operating cadence.",
     "severity": 5,
-    "tags": ["encryption", "network", "tls"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating GOVERNANCE/POLICY/AUDIT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for GOVERNANCE/POLICY/AUDIT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "governance",
+      "policy",
+      "audit",
+      "training"
+    ]
   },
   {
     "control_id": "VS-011",
-    "title": "Incident Readiness",
-    "description": "Maintain an incident response plan with clear communication channels.",
-    "severity": 5,
-    "tags": ["incident", "response", "tabletop"]
+    "title": "Vendor Security Control 011",
+    "description": "Validate that TRAINING/AWARENESS/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for TRAINING/AWARENESS/PEOPLE with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating TRAINING/AWARENESS/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for TRAINING/AWARENESS/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "training",
+      "awareness",
+      "people",
+      "vulnerability"
+    ]
   },
   {
     "control_id": "VS-012",
-    "title": "Backup and Restore Testing",
-    "description": "Test data restoration procedures and capture recovery outcomes.",
-    "severity": 4,
-    "tags": ["backup", "recovery", "continuity"]
+    "title": "Vendor Security Control 012",
+    "description": "Validate that VULNERABILITY/PATCHING/OPERATIONS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VULNERABILITY/PATCHING/OPERATIONS with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/PATCHING/OPERATIONS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/PATCHING/OPERATIONS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "patching",
+      "operations",
+      "identity"
+    ]
   },
   {
     "control_id": "VS-013",
-    "title": "Change Approval Trail",
-    "description": "Record security-impacting changes and their approvals.",
+    "title": "Vendor Security Control 013",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
     "severity": 3,
-    "tags": ["change", "governance", "review"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "privileged"
+    ]
   },
   {
     "control_id": "VS-014",
-    "title": "Asset Inventory Coverage",
-    "description": "Track production assets with ownership and risk context.",
+    "title": "Vendor Security Control 014",
+    "description": "Validate that PRIVILEGED/REVIEW/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for PRIVILEGED/REVIEW/ACCESS with documented ownership and operating cadence.",
     "severity": 4,
-    "tags": ["asset", "inventory", "risk"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVILEGED/REVIEW/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVILEGED/REVIEW/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privileged",
+      "review",
+      "access",
+      "logging"
+    ]
   },
   {
     "control_id": "VS-015",
-    "title": "Vendor Due Diligence",
-    "description": "Assess critical vendors before onboarding and during renewal.",
-    "severity": 4,
-    "tags": ["vendor", "third_party", "risk"]
+    "title": "Vendor Security Control 015",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "siem"
+    ]
   },
   {
     "control_id": "VS-016",
-    "title": "Security Awareness Program",
-    "description": "Run periodic security training and track participation.",
-    "severity": 2,
-    "tags": ["training", "awareness", "people"]
+    "title": "Vendor Security Control 016",
+    "description": "Validate that SIEM/ALERTING/DETECTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for SIEM/ALERTING/DETECTION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SIEM/ALERTING/DETECTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SIEM/ALERTING/DETECTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "siem",
+      "alerting",
+      "detection",
+      "encryption"
+    ]
   },
   {
     "control_id": "VS-017",
-    "title": "Data Handling Guidance",
-    "description": "Define handling expectations for confidential and regulated data.",
-    "severity": 4,
-    "tags": ["data", "policy", "classification"]
+    "title": "Vendor Security Control 017",
+    "description": "Validate that ENCRYPTION/KEY_MANAGEMENT/DATA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for ENCRYPTION/KEY_MANAGEMENT/DATA with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ENCRYPTION/KEY_MANAGEMENT/DATA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ENCRYPTION/KEY_MANAGEMENT/DATA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "encryption",
+      "key_management",
+      "data",
+      "network"
+    ]
   },
   {
     "control_id": "VS-018",
-    "title": "Network Segmentation",
-    "description": "Separate critical workloads from general-purpose network zones.",
-    "severity": 4,
-    "tags": ["network", "segmentation", "architecture"]
+    "title": "Vendor Security Control 018",
+    "description": "Validate that NETWORK/TLS/SEGMENTATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for NETWORK/TLS/SEGMENTATION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating NETWORK/TLS/SEGMENTATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for NETWORK/TLS/SEGMENTATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "network",
+      "tls",
+      "segmentation",
+      "incident"
+    ]
   },
   {
     "control_id": "VS-019",
-    "title": "Business Continuity Governance",
-    "description": "Maintain continuity playbooks with accountable owners.",
-    "severity": 3,
-    "tags": ["continuity", "governance", "cadence"]
+    "title": "Vendor Security Control 019",
+    "description": "Validate that INCIDENT/RESPONSE/TABLETOP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for INCIDENT/RESPONSE/TABLETOP with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/TABLETOP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/TABLETOP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "tabletop",
+      "backup"
+    ]
   },
   {
     "control_id": "VS-020",
-    "title": "Metrics and Reporting",
-    "description": "Publish a recurring security metrics report to leadership.",
+    "title": "Vendor Security Control 020",
+    "description": "Validate that BACKUP/RECOVERY/CONTINUITY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for BACKUP/RECOVERY/CONTINUITY with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating BACKUP/RECOVERY/CONTINUITY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for BACKUP/RECOVERY/CONTINUITY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "backup",
+      "recovery",
+      "continuity",
+      "vendor"
+    ]
+  },
+  {
+    "control_id": "VS-021",
+    "title": "Vendor Security Control 021",
+    "description": "Validate that VENDOR/THIRD_PARTY/RISK safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VENDOR/THIRD_PARTY/RISK with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VENDOR/THIRD_PARTY/RISK governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VENDOR/THIRD_PARTY/RISK.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vendor",
+      "third_party",
+      "risk",
+      "governance"
+    ]
+  },
+  {
+    "control_id": "VS-022",
+    "title": "Vendor Security Control 022",
+    "description": "Validate that GOVERNANCE/POLICY/AUDIT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for GOVERNANCE/POLICY/AUDIT with documented ownership and operating cadence.",
     "severity": 2,
-    "tags": ["metrics", "governance", "cadence"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating GOVERNANCE/POLICY/AUDIT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for GOVERNANCE/POLICY/AUDIT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "governance",
+      "policy",
+      "audit",
+      "training"
+    ]
+  },
+  {
+    "control_id": "VS-023",
+    "title": "Vendor Security Control 023",
+    "description": "Validate that TRAINING/AWARENESS/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for TRAINING/AWARENESS/PEOPLE with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating TRAINING/AWARENESS/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for TRAINING/AWARENESS/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "training",
+      "awareness",
+      "people",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "VS-024",
+    "title": "Vendor Security Control 024",
+    "description": "Validate that VULNERABILITY/PATCHING/OPERATIONS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VULNERABILITY/PATCHING/OPERATIONS with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/PATCHING/OPERATIONS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/PATCHING/OPERATIONS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "patching",
+      "operations",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "VS-025",
+    "title": "Vendor Security Control 025",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "privileged"
+    ]
+  },
+  {
+    "control_id": "VS-026",
+    "title": "Vendor Security Control 026",
+    "description": "Validate that PRIVILEGED/REVIEW/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for PRIVILEGED/REVIEW/ACCESS with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVILEGED/REVIEW/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVILEGED/REVIEW/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privileged",
+      "review",
+      "access",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "VS-027",
+    "title": "Vendor Security Control 027",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "siem"
+    ]
+  },
+  {
+    "control_id": "VS-028",
+    "title": "Vendor Security Control 028",
+    "description": "Validate that SIEM/ALERTING/DETECTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for SIEM/ALERTING/DETECTION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SIEM/ALERTING/DETECTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SIEM/ALERTING/DETECTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "siem",
+      "alerting",
+      "detection",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "VS-029",
+    "title": "Vendor Security Control 029",
+    "description": "Validate that ENCRYPTION/KEY_MANAGEMENT/DATA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for ENCRYPTION/KEY_MANAGEMENT/DATA with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ENCRYPTION/KEY_MANAGEMENT/DATA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ENCRYPTION/KEY_MANAGEMENT/DATA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "encryption",
+      "key_management",
+      "data",
+      "network"
+    ]
+  },
+  {
+    "control_id": "VS-030",
+    "title": "Vendor Security Control 030",
+    "description": "Validate that NETWORK/TLS/SEGMENTATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for NETWORK/TLS/SEGMENTATION with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating NETWORK/TLS/SEGMENTATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for NETWORK/TLS/SEGMENTATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "network",
+      "tls",
+      "segmentation",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "VS-031",
+    "title": "Vendor Security Control 031",
+    "description": "Validate that INCIDENT/RESPONSE/TABLETOP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for INCIDENT/RESPONSE/TABLETOP with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/TABLETOP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/TABLETOP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "tabletop",
+      "backup"
+    ]
+  },
+  {
+    "control_id": "VS-032",
+    "title": "Vendor Security Control 032",
+    "description": "Validate that BACKUP/RECOVERY/CONTINUITY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for BACKUP/RECOVERY/CONTINUITY with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating BACKUP/RECOVERY/CONTINUITY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for BACKUP/RECOVERY/CONTINUITY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "backup",
+      "recovery",
+      "continuity",
+      "vendor"
+    ]
+  },
+  {
+    "control_id": "VS-033",
+    "title": "Vendor Security Control 033",
+    "description": "Validate that VENDOR/THIRD_PARTY/RISK safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VENDOR/THIRD_PARTY/RISK with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VENDOR/THIRD_PARTY/RISK governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VENDOR/THIRD_PARTY/RISK.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vendor",
+      "third_party",
+      "risk",
+      "governance"
+    ]
+  },
+  {
+    "control_id": "VS-034",
+    "title": "Vendor Security Control 034",
+    "description": "Validate that GOVERNANCE/POLICY/AUDIT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for GOVERNANCE/POLICY/AUDIT with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating GOVERNANCE/POLICY/AUDIT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for GOVERNANCE/POLICY/AUDIT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "governance",
+      "policy",
+      "audit",
+      "training"
+    ]
+  },
+  {
+    "control_id": "VS-035",
+    "title": "Vendor Security Control 035",
+    "description": "Validate that TRAINING/AWARENESS/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for TRAINING/AWARENESS/PEOPLE with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating TRAINING/AWARENESS/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for TRAINING/AWARENESS/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "training",
+      "awareness",
+      "people",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "VS-036",
+    "title": "Vendor Security Control 036",
+    "description": "Validate that VULNERABILITY/PATCHING/OPERATIONS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VULNERABILITY/PATCHING/OPERATIONS with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/PATCHING/OPERATIONS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/PATCHING/OPERATIONS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "patching",
+      "operations",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "VS-037",
+    "title": "Vendor Security Control 037",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "privileged"
+    ]
+  },
+  {
+    "control_id": "VS-038",
+    "title": "Vendor Security Control 038",
+    "description": "Validate that PRIVILEGED/REVIEW/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for PRIVILEGED/REVIEW/ACCESS with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVILEGED/REVIEW/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVILEGED/REVIEW/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privileged",
+      "review",
+      "access",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "VS-039",
+    "title": "Vendor Security Control 039",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "siem"
+    ]
+  },
+  {
+    "control_id": "VS-040",
+    "title": "Vendor Security Control 040",
+    "description": "Validate that SIEM/ALERTING/DETECTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for SIEM/ALERTING/DETECTION with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SIEM/ALERTING/DETECTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SIEM/ALERTING/DETECTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "siem",
+      "alerting",
+      "detection",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "VS-041",
+    "title": "Vendor Security Control 041",
+    "description": "Validate that ENCRYPTION/KEY_MANAGEMENT/DATA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for ENCRYPTION/KEY_MANAGEMENT/DATA with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ENCRYPTION/KEY_MANAGEMENT/DATA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ENCRYPTION/KEY_MANAGEMENT/DATA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "encryption",
+      "key_management",
+      "data",
+      "network"
+    ]
+  },
+  {
+    "control_id": "VS-042",
+    "title": "Vendor Security Control 042",
+    "description": "Validate that NETWORK/TLS/SEGMENTATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for NETWORK/TLS/SEGMENTATION with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating NETWORK/TLS/SEGMENTATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for NETWORK/TLS/SEGMENTATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "network",
+      "tls",
+      "segmentation",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "VS-043",
+    "title": "Vendor Security Control 043",
+    "description": "Validate that INCIDENT/RESPONSE/TABLETOP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for INCIDENT/RESPONSE/TABLETOP with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/TABLETOP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/TABLETOP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "tabletop",
+      "backup"
+    ]
+  },
+  {
+    "control_id": "VS-044",
+    "title": "Vendor Security Control 044",
+    "description": "Validate that BACKUP/RECOVERY/CONTINUITY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for BACKUP/RECOVERY/CONTINUITY with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating BACKUP/RECOVERY/CONTINUITY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for BACKUP/RECOVERY/CONTINUITY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "backup",
+      "recovery",
+      "continuity",
+      "vendor"
+    ]
+  },
+  {
+    "control_id": "VS-045",
+    "title": "Vendor Security Control 045",
+    "description": "Validate that VENDOR/THIRD_PARTY/RISK safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VENDOR/THIRD_PARTY/RISK with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VENDOR/THIRD_PARTY/RISK governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VENDOR/THIRD_PARTY/RISK.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vendor",
+      "third_party",
+      "risk",
+      "governance"
+    ]
+  },
+  {
+    "control_id": "VS-046",
+    "title": "Vendor Security Control 046",
+    "description": "Validate that GOVERNANCE/POLICY/AUDIT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for GOVERNANCE/POLICY/AUDIT with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating GOVERNANCE/POLICY/AUDIT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for GOVERNANCE/POLICY/AUDIT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "governance",
+      "policy",
+      "audit",
+      "training"
+    ]
+  },
+  {
+    "control_id": "VS-047",
+    "title": "Vendor Security Control 047",
+    "description": "Validate that TRAINING/AWARENESS/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for TRAINING/AWARENESS/PEOPLE with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating TRAINING/AWARENESS/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for TRAINING/AWARENESS/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "training",
+      "awareness",
+      "people",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "VS-048",
+    "title": "Vendor Security Control 048",
+    "description": "Validate that VULNERABILITY/PATCHING/OPERATIONS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VULNERABILITY/PATCHING/OPERATIONS with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/PATCHING/OPERATIONS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/PATCHING/OPERATIONS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "patching",
+      "operations",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "VS-049",
+    "title": "Vendor Security Control 049",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "privileged"
+    ]
+  },
+  {
+    "control_id": "VS-050",
+    "title": "Vendor Security Control 050",
+    "description": "Validate that PRIVILEGED/REVIEW/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for PRIVILEGED/REVIEW/ACCESS with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVILEGED/REVIEW/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVILEGED/REVIEW/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privileged",
+      "review",
+      "access",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "VS-051",
+    "title": "Vendor Security Control 051",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "siem"
+    ]
+  },
+  {
+    "control_id": "VS-052",
+    "title": "Vendor Security Control 052",
+    "description": "Validate that SIEM/ALERTING/DETECTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for SIEM/ALERTING/DETECTION with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SIEM/ALERTING/DETECTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SIEM/ALERTING/DETECTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "siem",
+      "alerting",
+      "detection",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "VS-053",
+    "title": "Vendor Security Control 053",
+    "description": "Validate that ENCRYPTION/KEY_MANAGEMENT/DATA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for ENCRYPTION/KEY_MANAGEMENT/DATA with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ENCRYPTION/KEY_MANAGEMENT/DATA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ENCRYPTION/KEY_MANAGEMENT/DATA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "encryption",
+      "key_management",
+      "data",
+      "network"
+    ]
+  },
+  {
+    "control_id": "VS-054",
+    "title": "Vendor Security Control 054",
+    "description": "Validate that NETWORK/TLS/SEGMENTATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for NETWORK/TLS/SEGMENTATION with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating NETWORK/TLS/SEGMENTATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for NETWORK/TLS/SEGMENTATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "network",
+      "tls",
+      "segmentation",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "VS-055",
+    "title": "Vendor Security Control 055",
+    "description": "Validate that INCIDENT/RESPONSE/TABLETOP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for INCIDENT/RESPONSE/TABLETOP with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/TABLETOP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/TABLETOP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "tabletop",
+      "backup"
+    ]
+  },
+  {
+    "control_id": "VS-056",
+    "title": "Vendor Security Control 056",
+    "description": "Validate that BACKUP/RECOVERY/CONTINUITY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for BACKUP/RECOVERY/CONTINUITY with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating BACKUP/RECOVERY/CONTINUITY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for BACKUP/RECOVERY/CONTINUITY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "backup",
+      "recovery",
+      "continuity",
+      "vendor"
+    ]
+  },
+  {
+    "control_id": "VS-057",
+    "title": "Vendor Security Control 057",
+    "description": "Validate that VENDOR/THIRD_PARTY/RISK safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VENDOR/THIRD_PARTY/RISK with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VENDOR/THIRD_PARTY/RISK governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VENDOR/THIRD_PARTY/RISK.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vendor",
+      "third_party",
+      "risk",
+      "governance"
+    ]
+  },
+  {
+    "control_id": "VS-058",
+    "title": "Vendor Security Control 058",
+    "description": "Validate that GOVERNANCE/POLICY/AUDIT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for GOVERNANCE/POLICY/AUDIT with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating GOVERNANCE/POLICY/AUDIT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for GOVERNANCE/POLICY/AUDIT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "governance",
+      "policy",
+      "audit",
+      "training"
+    ]
+  },
+  {
+    "control_id": "VS-059",
+    "title": "Vendor Security Control 059",
+    "description": "Validate that TRAINING/AWARENESS/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for TRAINING/AWARENESS/PEOPLE with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating TRAINING/AWARENESS/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for TRAINING/AWARENESS/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "training",
+      "awareness",
+      "people",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "VS-060",
+    "title": "Vendor Security Control 060",
+    "description": "Validate that VULNERABILITY/PATCHING/OPERATIONS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VULNERABILITY/PATCHING/OPERATIONS with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/PATCHING/OPERATIONS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/PATCHING/OPERATIONS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "patching",
+      "operations",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "VS-061",
+    "title": "Vendor Security Control 061",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "privileged"
+    ]
+  },
+  {
+    "control_id": "VS-062",
+    "title": "Vendor Security Control 062",
+    "description": "Validate that PRIVILEGED/REVIEW/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for PRIVILEGED/REVIEW/ACCESS with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVILEGED/REVIEW/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVILEGED/REVIEW/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privileged",
+      "review",
+      "access",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "VS-063",
+    "title": "Vendor Security Control 063",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "siem"
+    ]
+  },
+  {
+    "control_id": "VS-064",
+    "title": "Vendor Security Control 064",
+    "description": "Validate that SIEM/ALERTING/DETECTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for SIEM/ALERTING/DETECTION with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SIEM/ALERTING/DETECTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SIEM/ALERTING/DETECTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "siem",
+      "alerting",
+      "detection",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "VS-065",
+    "title": "Vendor Security Control 065",
+    "description": "Validate that ENCRYPTION/KEY_MANAGEMENT/DATA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for ENCRYPTION/KEY_MANAGEMENT/DATA with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ENCRYPTION/KEY_MANAGEMENT/DATA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ENCRYPTION/KEY_MANAGEMENT/DATA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "encryption",
+      "key_management",
+      "data",
+      "network"
+    ]
+  },
+  {
+    "control_id": "VS-066",
+    "title": "Vendor Security Control 066",
+    "description": "Validate that NETWORK/TLS/SEGMENTATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for NETWORK/TLS/SEGMENTATION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating NETWORK/TLS/SEGMENTATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for NETWORK/TLS/SEGMENTATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "network",
+      "tls",
+      "segmentation",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "VS-067",
+    "title": "Vendor Security Control 067",
+    "description": "Validate that INCIDENT/RESPONSE/TABLETOP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for INCIDENT/RESPONSE/TABLETOP with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/TABLETOP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/TABLETOP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "tabletop",
+      "backup"
+    ]
+  },
+  {
+    "control_id": "VS-068",
+    "title": "Vendor Security Control 068",
+    "description": "Validate that BACKUP/RECOVERY/CONTINUITY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for BACKUP/RECOVERY/CONTINUITY with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating BACKUP/RECOVERY/CONTINUITY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for BACKUP/RECOVERY/CONTINUITY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "backup",
+      "recovery",
+      "continuity",
+      "vendor"
+    ]
+  },
+  {
+    "control_id": "VS-069",
+    "title": "Vendor Security Control 069",
+    "description": "Validate that VENDOR/THIRD_PARTY/RISK safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VENDOR/THIRD_PARTY/RISK with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VENDOR/THIRD_PARTY/RISK governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VENDOR/THIRD_PARTY/RISK.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vendor",
+      "third_party",
+      "risk",
+      "governance"
+    ]
+  },
+  {
+    "control_id": "VS-070",
+    "title": "Vendor Security Control 070",
+    "description": "Validate that GOVERNANCE/POLICY/AUDIT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for GOVERNANCE/POLICY/AUDIT with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating GOVERNANCE/POLICY/AUDIT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for GOVERNANCE/POLICY/AUDIT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "governance",
+      "policy",
+      "audit",
+      "training"
+    ]
+  },
+  {
+    "control_id": "VS-071",
+    "title": "Vendor Security Control 071",
+    "description": "Validate that TRAINING/AWARENESS/PEOPLE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for TRAINING/AWARENESS/PEOPLE with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating TRAINING/AWARENESS/PEOPLE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for TRAINING/AWARENESS/PEOPLE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "training",
+      "awareness",
+      "people",
+      "vulnerability"
+    ]
+  },
+  {
+    "control_id": "VS-072",
+    "title": "Vendor Security Control 072",
+    "description": "Validate that VULNERABILITY/PATCHING/OPERATIONS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for VULNERABILITY/PATCHING/OPERATIONS with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating VULNERABILITY/PATCHING/OPERATIONS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for VULNERABILITY/PATCHING/OPERATIONS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "vulnerability",
+      "patching",
+      "operations",
+      "identity"
+    ]
+  },
+  {
+    "control_id": "VS-073",
+    "title": "Vendor Security Control 073",
+    "description": "Validate that IDENTITY/ACCESS/MFA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for IDENTITY/ACCESS/MFA with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTITY/ACCESS/MFA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTITY/ACCESS/MFA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identity",
+      "access",
+      "mfa",
+      "privileged"
+    ]
+  },
+  {
+    "control_id": "VS-074",
+    "title": "Vendor Security Control 074",
+    "description": "Validate that PRIVILEGED/REVIEW/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for PRIVILEGED/REVIEW/ACCESS with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PRIVILEGED/REVIEW/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PRIVILEGED/REVIEW/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "privileged",
+      "review",
+      "access",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "VS-075",
+    "title": "Vendor Security Control 075",
+    "description": "Validate that LOGGING/MONITORING/RETENTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for LOGGING/MONITORING/RETENTION with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating LOGGING/MONITORING/RETENTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for LOGGING/MONITORING/RETENTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "logging",
+      "monitoring",
+      "retention",
+      "siem"
+    ]
+  },
+  {
+    "control_id": "VS-076",
+    "title": "Vendor Security Control 076",
+    "description": "Validate that SIEM/ALERTING/DETECTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for SIEM/ALERTING/DETECTION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating SIEM/ALERTING/DETECTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for SIEM/ALERTING/DETECTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "siem",
+      "alerting",
+      "detection",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "VS-077",
+    "title": "Vendor Security Control 077",
+    "description": "Validate that ENCRYPTION/KEY_MANAGEMENT/DATA safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for ENCRYPTION/KEY_MANAGEMENT/DATA with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating ENCRYPTION/KEY_MANAGEMENT/DATA governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for ENCRYPTION/KEY_MANAGEMENT/DATA.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "encryption",
+      "key_management",
+      "data",
+      "network"
+    ]
+  },
+  {
+    "control_id": "VS-078",
+    "title": "Vendor Security Control 078",
+    "description": "Validate that NETWORK/TLS/SEGMENTATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for NETWORK/TLS/SEGMENTATION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating NETWORK/TLS/SEGMENTATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for NETWORK/TLS/SEGMENTATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "network",
+      "tls",
+      "segmentation",
+      "incident"
+    ]
+  },
+  {
+    "control_id": "VS-079",
+    "title": "Vendor Security Control 079",
+    "description": "Validate that INCIDENT/RESPONSE/TABLETOP safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for INCIDENT/RESPONSE/TABLETOP with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating INCIDENT/RESPONSE/TABLETOP governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for INCIDENT/RESPONSE/TABLETOP.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "incident",
+      "response",
+      "tabletop",
+      "backup"
+    ]
+  },
+  {
+    "control_id": "VS-080",
+    "title": "Vendor Security Control 080",
+    "description": "Validate that BACKUP/RECOVERY/CONTINUITY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Vendor Security control coverage for BACKUP/RECOVERY/CONTINUITY with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating BACKUP/RECOVERY/CONTINUITY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for BACKUP/RECOVERY/CONTINUITY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "backup",
+      "recovery",
+      "continuity",
+      "vendor"
+    ]
   }
 ]

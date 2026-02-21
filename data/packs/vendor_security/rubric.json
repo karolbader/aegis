@@ -1,18 +1,982 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "rules": [
-    { "tag": "identity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "access", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "mfa", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "logging", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "monitoring", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "encryption", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "incident", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "backup", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "vendor", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "continuity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "governance", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "training", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "risk", "min_hits_for_partial": 1, "min_hits_for_met": 3 }
+    {
+      "tag": "access",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "alerting",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "audit",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "awareness",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "backup",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "continuity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "data",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "detection",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "encryption",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "governance",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "identity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "incident",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "key_management",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "logging",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "mfa",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "monitoring",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "network",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "operations",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "patching",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "people",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "policy",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "privileged",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "recovery",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "response",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "retention",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "review",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "risk",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "segmentation",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "siem",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "tabletop",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "third_party",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "tls",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "training",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "vendor",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "vulnerability",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    }
+  ],
+  "control_query_map": [
+    {
+      "control_id": "VS-001",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-013",
+        "VS-Q-014",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-002",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-003",
+        "VS-Q-013",
+        "VS-Q-014"
+      ]
+    },
+    {
+      "control_id": "VS-003",
+      "query_ids": [
+        "VS-Q-003",
+        "VS-Q-004",
+        "VS-Q-015",
+        "VS-Q-016",
+        "VS-Q-027"
+      ]
+    },
+    {
+      "control_id": "VS-004",
+      "query_ids": [
+        "VS-Q-004",
+        "VS-Q-005",
+        "VS-Q-016",
+        "VS-Q-017",
+        "VS-Q-028"
+      ]
+    },
+    {
+      "control_id": "VS-005",
+      "query_ids": [
+        "VS-Q-005",
+        "VS-Q-006",
+        "VS-Q-017",
+        "VS-Q-018",
+        "VS-Q-029"
+      ]
+    },
+    {
+      "control_id": "VS-006",
+      "query_ids": [
+        "VS-Q-006",
+        "VS-Q-007",
+        "VS-Q-018",
+        "VS-Q-019",
+        "VS-Q-030"
+      ]
+    },
+    {
+      "control_id": "VS-007",
+      "query_ids": [
+        "VS-Q-007",
+        "VS-Q-008",
+        "VS-Q-019",
+        "VS-Q-020",
+        "VS-Q-031"
+      ]
+    },
+    {
+      "control_id": "VS-008",
+      "query_ids": [
+        "VS-Q-008",
+        "VS-Q-009",
+        "VS-Q-020",
+        "VS-Q-021",
+        "VS-Q-032"
+      ]
+    },
+    {
+      "control_id": "VS-009",
+      "query_ids": [
+        "VS-Q-009",
+        "VS-Q-010",
+        "VS-Q-021",
+        "VS-Q-022",
+        "VS-Q-033"
+      ]
+    },
+    {
+      "control_id": "VS-010",
+      "query_ids": [
+        "VS-Q-010",
+        "VS-Q-011",
+        "VS-Q-022",
+        "VS-Q-023",
+        "VS-Q-034"
+      ]
+    },
+    {
+      "control_id": "VS-011",
+      "query_ids": [
+        "VS-Q-011",
+        "VS-Q-012",
+        "VS-Q-023",
+        "VS-Q-024",
+        "VS-Q-035"
+      ]
+    },
+    {
+      "control_id": "VS-012",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-012",
+        "VS-Q-013",
+        "VS-Q-024",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-013",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-013",
+        "VS-Q-014",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-014",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-003",
+        "VS-Q-013",
+        "VS-Q-014"
+      ]
+    },
+    {
+      "control_id": "VS-015",
+      "query_ids": [
+        "VS-Q-003",
+        "VS-Q-004",
+        "VS-Q-015",
+        "VS-Q-016",
+        "VS-Q-027"
+      ]
+    },
+    {
+      "control_id": "VS-016",
+      "query_ids": [
+        "VS-Q-004",
+        "VS-Q-005",
+        "VS-Q-016",
+        "VS-Q-017",
+        "VS-Q-028"
+      ]
+    },
+    {
+      "control_id": "VS-017",
+      "query_ids": [
+        "VS-Q-005",
+        "VS-Q-006",
+        "VS-Q-017",
+        "VS-Q-018",
+        "VS-Q-029"
+      ]
+    },
+    {
+      "control_id": "VS-018",
+      "query_ids": [
+        "VS-Q-006",
+        "VS-Q-007",
+        "VS-Q-018",
+        "VS-Q-019",
+        "VS-Q-030"
+      ]
+    },
+    {
+      "control_id": "VS-019",
+      "query_ids": [
+        "VS-Q-007",
+        "VS-Q-008",
+        "VS-Q-019",
+        "VS-Q-020",
+        "VS-Q-031"
+      ]
+    },
+    {
+      "control_id": "VS-020",
+      "query_ids": [
+        "VS-Q-008",
+        "VS-Q-009",
+        "VS-Q-020",
+        "VS-Q-021",
+        "VS-Q-032"
+      ]
+    },
+    {
+      "control_id": "VS-021",
+      "query_ids": [
+        "VS-Q-009",
+        "VS-Q-010",
+        "VS-Q-021",
+        "VS-Q-022",
+        "VS-Q-033"
+      ]
+    },
+    {
+      "control_id": "VS-022",
+      "query_ids": [
+        "VS-Q-010",
+        "VS-Q-011",
+        "VS-Q-022",
+        "VS-Q-023",
+        "VS-Q-034"
+      ]
+    },
+    {
+      "control_id": "VS-023",
+      "query_ids": [
+        "VS-Q-011",
+        "VS-Q-012",
+        "VS-Q-023",
+        "VS-Q-024",
+        "VS-Q-035"
+      ]
+    },
+    {
+      "control_id": "VS-024",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-012",
+        "VS-Q-013",
+        "VS-Q-024",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-025",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-013",
+        "VS-Q-014",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-026",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-003",
+        "VS-Q-013",
+        "VS-Q-014"
+      ]
+    },
+    {
+      "control_id": "VS-027",
+      "query_ids": [
+        "VS-Q-003",
+        "VS-Q-004",
+        "VS-Q-015",
+        "VS-Q-016",
+        "VS-Q-027"
+      ]
+    },
+    {
+      "control_id": "VS-028",
+      "query_ids": [
+        "VS-Q-004",
+        "VS-Q-005",
+        "VS-Q-016",
+        "VS-Q-017",
+        "VS-Q-028"
+      ]
+    },
+    {
+      "control_id": "VS-029",
+      "query_ids": [
+        "VS-Q-005",
+        "VS-Q-006",
+        "VS-Q-017",
+        "VS-Q-018",
+        "VS-Q-029"
+      ]
+    },
+    {
+      "control_id": "VS-030",
+      "query_ids": [
+        "VS-Q-006",
+        "VS-Q-007",
+        "VS-Q-018",
+        "VS-Q-019",
+        "VS-Q-030"
+      ]
+    },
+    {
+      "control_id": "VS-031",
+      "query_ids": [
+        "VS-Q-007",
+        "VS-Q-008",
+        "VS-Q-019",
+        "VS-Q-020",
+        "VS-Q-031"
+      ]
+    },
+    {
+      "control_id": "VS-032",
+      "query_ids": [
+        "VS-Q-008",
+        "VS-Q-009",
+        "VS-Q-020",
+        "VS-Q-021",
+        "VS-Q-032"
+      ]
+    },
+    {
+      "control_id": "VS-033",
+      "query_ids": [
+        "VS-Q-009",
+        "VS-Q-010",
+        "VS-Q-021",
+        "VS-Q-022",
+        "VS-Q-033"
+      ]
+    },
+    {
+      "control_id": "VS-034",
+      "query_ids": [
+        "VS-Q-010",
+        "VS-Q-011",
+        "VS-Q-022",
+        "VS-Q-023",
+        "VS-Q-034"
+      ]
+    },
+    {
+      "control_id": "VS-035",
+      "query_ids": [
+        "VS-Q-011",
+        "VS-Q-012",
+        "VS-Q-023",
+        "VS-Q-024",
+        "VS-Q-035"
+      ]
+    },
+    {
+      "control_id": "VS-036",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-012",
+        "VS-Q-013",
+        "VS-Q-024",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-037",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-013",
+        "VS-Q-014",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-038",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-003",
+        "VS-Q-013",
+        "VS-Q-014"
+      ]
+    },
+    {
+      "control_id": "VS-039",
+      "query_ids": [
+        "VS-Q-003",
+        "VS-Q-004",
+        "VS-Q-015",
+        "VS-Q-016",
+        "VS-Q-027"
+      ]
+    },
+    {
+      "control_id": "VS-040",
+      "query_ids": [
+        "VS-Q-004",
+        "VS-Q-005",
+        "VS-Q-016",
+        "VS-Q-017",
+        "VS-Q-028"
+      ]
+    },
+    {
+      "control_id": "VS-041",
+      "query_ids": [
+        "VS-Q-005",
+        "VS-Q-006",
+        "VS-Q-017",
+        "VS-Q-018",
+        "VS-Q-029"
+      ]
+    },
+    {
+      "control_id": "VS-042",
+      "query_ids": [
+        "VS-Q-006",
+        "VS-Q-007",
+        "VS-Q-018",
+        "VS-Q-019",
+        "VS-Q-030"
+      ]
+    },
+    {
+      "control_id": "VS-043",
+      "query_ids": [
+        "VS-Q-007",
+        "VS-Q-008",
+        "VS-Q-019",
+        "VS-Q-020",
+        "VS-Q-031"
+      ]
+    },
+    {
+      "control_id": "VS-044",
+      "query_ids": [
+        "VS-Q-008",
+        "VS-Q-009",
+        "VS-Q-020",
+        "VS-Q-021",
+        "VS-Q-032"
+      ]
+    },
+    {
+      "control_id": "VS-045",
+      "query_ids": [
+        "VS-Q-009",
+        "VS-Q-010",
+        "VS-Q-021",
+        "VS-Q-022",
+        "VS-Q-033"
+      ]
+    },
+    {
+      "control_id": "VS-046",
+      "query_ids": [
+        "VS-Q-010",
+        "VS-Q-011",
+        "VS-Q-022",
+        "VS-Q-023",
+        "VS-Q-034"
+      ]
+    },
+    {
+      "control_id": "VS-047",
+      "query_ids": [
+        "VS-Q-011",
+        "VS-Q-012",
+        "VS-Q-023",
+        "VS-Q-024",
+        "VS-Q-035"
+      ]
+    },
+    {
+      "control_id": "VS-048",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-012",
+        "VS-Q-013",
+        "VS-Q-024",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-049",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-013",
+        "VS-Q-014",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-050",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-003",
+        "VS-Q-013",
+        "VS-Q-014"
+      ]
+    },
+    {
+      "control_id": "VS-051",
+      "query_ids": [
+        "VS-Q-003",
+        "VS-Q-004",
+        "VS-Q-015",
+        "VS-Q-016",
+        "VS-Q-027"
+      ]
+    },
+    {
+      "control_id": "VS-052",
+      "query_ids": [
+        "VS-Q-004",
+        "VS-Q-005",
+        "VS-Q-016",
+        "VS-Q-017",
+        "VS-Q-028"
+      ]
+    },
+    {
+      "control_id": "VS-053",
+      "query_ids": [
+        "VS-Q-005",
+        "VS-Q-006",
+        "VS-Q-017",
+        "VS-Q-018",
+        "VS-Q-029"
+      ]
+    },
+    {
+      "control_id": "VS-054",
+      "query_ids": [
+        "VS-Q-006",
+        "VS-Q-007",
+        "VS-Q-018",
+        "VS-Q-019",
+        "VS-Q-030"
+      ]
+    },
+    {
+      "control_id": "VS-055",
+      "query_ids": [
+        "VS-Q-007",
+        "VS-Q-008",
+        "VS-Q-019",
+        "VS-Q-020",
+        "VS-Q-031"
+      ]
+    },
+    {
+      "control_id": "VS-056",
+      "query_ids": [
+        "VS-Q-008",
+        "VS-Q-009",
+        "VS-Q-020",
+        "VS-Q-021",
+        "VS-Q-032"
+      ]
+    },
+    {
+      "control_id": "VS-057",
+      "query_ids": [
+        "VS-Q-009",
+        "VS-Q-010",
+        "VS-Q-021",
+        "VS-Q-022",
+        "VS-Q-033"
+      ]
+    },
+    {
+      "control_id": "VS-058",
+      "query_ids": [
+        "VS-Q-010",
+        "VS-Q-011",
+        "VS-Q-022",
+        "VS-Q-023",
+        "VS-Q-034"
+      ]
+    },
+    {
+      "control_id": "VS-059",
+      "query_ids": [
+        "VS-Q-011",
+        "VS-Q-012",
+        "VS-Q-023",
+        "VS-Q-024",
+        "VS-Q-035"
+      ]
+    },
+    {
+      "control_id": "VS-060",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-012",
+        "VS-Q-013",
+        "VS-Q-024",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-061",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-013",
+        "VS-Q-014",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-062",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-003",
+        "VS-Q-013",
+        "VS-Q-014"
+      ]
+    },
+    {
+      "control_id": "VS-063",
+      "query_ids": [
+        "VS-Q-003",
+        "VS-Q-004",
+        "VS-Q-015",
+        "VS-Q-016",
+        "VS-Q-027"
+      ]
+    },
+    {
+      "control_id": "VS-064",
+      "query_ids": [
+        "VS-Q-004",
+        "VS-Q-005",
+        "VS-Q-016",
+        "VS-Q-017",
+        "VS-Q-028"
+      ]
+    },
+    {
+      "control_id": "VS-065",
+      "query_ids": [
+        "VS-Q-005",
+        "VS-Q-006",
+        "VS-Q-017",
+        "VS-Q-018",
+        "VS-Q-029"
+      ]
+    },
+    {
+      "control_id": "VS-066",
+      "query_ids": [
+        "VS-Q-006",
+        "VS-Q-007",
+        "VS-Q-018",
+        "VS-Q-019",
+        "VS-Q-030"
+      ]
+    },
+    {
+      "control_id": "VS-067",
+      "query_ids": [
+        "VS-Q-007",
+        "VS-Q-008",
+        "VS-Q-019",
+        "VS-Q-020",
+        "VS-Q-031"
+      ]
+    },
+    {
+      "control_id": "VS-068",
+      "query_ids": [
+        "VS-Q-008",
+        "VS-Q-009",
+        "VS-Q-020",
+        "VS-Q-021",
+        "VS-Q-032"
+      ]
+    },
+    {
+      "control_id": "VS-069",
+      "query_ids": [
+        "VS-Q-009",
+        "VS-Q-010",
+        "VS-Q-021",
+        "VS-Q-022",
+        "VS-Q-033"
+      ]
+    },
+    {
+      "control_id": "VS-070",
+      "query_ids": [
+        "VS-Q-010",
+        "VS-Q-011",
+        "VS-Q-022",
+        "VS-Q-023",
+        "VS-Q-034"
+      ]
+    },
+    {
+      "control_id": "VS-071",
+      "query_ids": [
+        "VS-Q-011",
+        "VS-Q-012",
+        "VS-Q-023",
+        "VS-Q-024",
+        "VS-Q-035"
+      ]
+    },
+    {
+      "control_id": "VS-072",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-012",
+        "VS-Q-013",
+        "VS-Q-024",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-073",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-013",
+        "VS-Q-014",
+        "VS-Q-025"
+      ]
+    },
+    {
+      "control_id": "VS-074",
+      "query_ids": [
+        "VS-Q-001",
+        "VS-Q-002",
+        "VS-Q-003",
+        "VS-Q-013",
+        "VS-Q-014"
+      ]
+    },
+    {
+      "control_id": "VS-075",
+      "query_ids": [
+        "VS-Q-003",
+        "VS-Q-004",
+        "VS-Q-015",
+        "VS-Q-016",
+        "VS-Q-027"
+      ]
+    },
+    {
+      "control_id": "VS-076",
+      "query_ids": [
+        "VS-Q-004",
+        "VS-Q-005",
+        "VS-Q-016",
+        "VS-Q-017",
+        "VS-Q-028"
+      ]
+    },
+    {
+      "control_id": "VS-077",
+      "query_ids": [
+        "VS-Q-005",
+        "VS-Q-006",
+        "VS-Q-017",
+        "VS-Q-018",
+        "VS-Q-029"
+      ]
+    },
+    {
+      "control_id": "VS-078",
+      "query_ids": [
+        "VS-Q-006",
+        "VS-Q-007",
+        "VS-Q-018",
+        "VS-Q-019",
+        "VS-Q-030"
+      ]
+    },
+    {
+      "control_id": "VS-079",
+      "query_ids": [
+        "VS-Q-007",
+        "VS-Q-008",
+        "VS-Q-019",
+        "VS-Q-020",
+        "VS-Q-031"
+      ]
+    },
+    {
+      "control_id": "VS-080",
+      "query_ids": [
+        "VS-Q-008",
+        "VS-Q-009",
+        "VS-Q-020",
+        "VS-Q-021",
+        "VS-Q-032"
+      ]
+    }
   ]
 }

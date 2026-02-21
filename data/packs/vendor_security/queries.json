@@ -1,77 +1,879 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "queries": [
     {
       "query_id": "VS-Q-001",
-      "query_text": "single sign-on SSO identity provider",
-      "tags": ["identity", "sso"],
-      "limit": 5
+      "query_text": "identity access mfa controls evidence owner review register policy log",
+      "tags": [
+        "identity",
+        "access",
+        "mfa"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-001",
+        "VS-002",
+        "VS-012",
+        "VS-013",
+        "VS-014",
+        "VS-024",
+        "VS-025",
+        "VS-026",
+        "VS-036",
+        "VS-037",
+        "VS-038",
+        "VS-048",
+        "VS-049",
+        "VS-050",
+        "VS-060",
+        "VS-061",
+        "VS-062",
+        "VS-072",
+        "VS-073",
+        "VS-074"
+      ]
     },
     {
       "query_id": "VS-Q-002",
-      "query_text": "multi-factor authentication MFA",
-      "tags": ["mfa", "access"],
-      "limit": 5
+      "query_text": "privileged review access controls evidence owner review register policy log",
+      "tags": [
+        "privileged",
+        "review",
+        "access"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-001",
+        "VS-002",
+        "VS-013",
+        "VS-014",
+        "VS-025",
+        "VS-026",
+        "VS-037",
+        "VS-038",
+        "VS-049",
+        "VS-050",
+        "VS-061",
+        "VS-062",
+        "VS-073",
+        "VS-074"
+      ]
     },
     {
       "query_id": "VS-Q-003",
-      "query_text": "administrator access review privileged",
-      "tags": ["privileged", "review", "access"],
-      "limit": 5
+      "query_text": "logging monitoring retention controls evidence owner review register policy log",
+      "tags": [
+        "logging",
+        "monitoring",
+        "retention"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-002",
+        "VS-003",
+        "VS-014",
+        "VS-015",
+        "VS-026",
+        "VS-027",
+        "VS-038",
+        "VS-039",
+        "VS-050",
+        "VS-051",
+        "VS-062",
+        "VS-063",
+        "VS-074",
+        "VS-075"
+      ]
     },
     {
       "query_id": "VS-Q-004",
-      "query_text": "security logging retained days",
-      "tags": ["logging", "monitoring", "retention"],
-      "limit": 5
+      "query_text": "siem alerting detection controls evidence owner review register policy log",
+      "tags": [
+        "siem",
+        "alerting",
+        "detection"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-003",
+        "VS-004",
+        "VS-015",
+        "VS-016",
+        "VS-027",
+        "VS-028",
+        "VS-039",
+        "VS-040",
+        "VS-051",
+        "VS-052",
+        "VS-063",
+        "VS-064",
+        "VS-075",
+        "VS-076"
+      ]
     },
     {
       "query_id": "VS-Q-005",
-      "query_text": "SIEM alerts detection monitoring",
-      "tags": ["monitoring", "alerting"],
-      "limit": 5
+      "query_text": "encryption key_management data controls evidence owner review register policy log",
+      "tags": [
+        "encryption",
+        "key_management",
+        "data"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-004",
+        "VS-005",
+        "VS-016",
+        "VS-017",
+        "VS-028",
+        "VS-029",
+        "VS-040",
+        "VS-041",
+        "VS-052",
+        "VS-053",
+        "VS-064",
+        "VS-065",
+        "VS-076",
+        "VS-077"
+      ]
     },
     {
       "query_id": "VS-Q-006",
-      "query_text": "encryption at rest key management",
-      "tags": ["encryption", "key_management", "data"],
-      "limit": 5
+      "query_text": "network tls segmentation controls evidence owner review register policy log",
+      "tags": [
+        "network",
+        "tls",
+        "segmentation"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-005",
+        "VS-006",
+        "VS-017",
+        "VS-018",
+        "VS-029",
+        "VS-030",
+        "VS-041",
+        "VS-042",
+        "VS-053",
+        "VS-054",
+        "VS-065",
+        "VS-066",
+        "VS-077",
+        "VS-078"
+      ]
     },
     {
       "query_id": "VS-Q-007",
-      "query_text": "TLS encryption in transit",
-      "tags": ["encryption", "network", "tls"],
-      "limit": 5
+      "query_text": "incident response tabletop controls evidence owner review register policy log",
+      "tags": [
+        "incident",
+        "response",
+        "tabletop"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-006",
+        "VS-007",
+        "VS-018",
+        "VS-019",
+        "VS-030",
+        "VS-031",
+        "VS-042",
+        "VS-043",
+        "VS-054",
+        "VS-055",
+        "VS-066",
+        "VS-067",
+        "VS-078",
+        "VS-079"
+      ]
     },
     {
       "query_id": "VS-Q-008",
-      "query_text": "incident response plan tabletop",
-      "tags": ["incident", "response", "tabletop"],
-      "limit": 5
+      "query_text": "backup recovery continuity controls evidence owner review register policy log",
+      "tags": [
+        "backup",
+        "recovery",
+        "continuity"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-007",
+        "VS-008",
+        "VS-019",
+        "VS-020",
+        "VS-031",
+        "VS-032",
+        "VS-043",
+        "VS-044",
+        "VS-055",
+        "VS-056",
+        "VS-067",
+        "VS-068",
+        "VS-079",
+        "VS-080"
+      ]
     },
     {
       "query_id": "VS-Q-009",
-      "query_text": "backup restore recovery test",
-      "tags": ["backup", "recovery", "continuity"],
-      "limit": 5
+      "query_text": "vendor third_party risk controls evidence owner review register policy log",
+      "tags": [
+        "vendor",
+        "third_party",
+        "risk"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-008",
+        "VS-009",
+        "VS-020",
+        "VS-021",
+        "VS-032",
+        "VS-033",
+        "VS-044",
+        "VS-045",
+        "VS-056",
+        "VS-057",
+        "VS-068",
+        "VS-069",
+        "VS-080"
+      ]
     },
     {
       "query_id": "VS-Q-010",
-      "query_text": "third-party vendor risk assessment",
-      "tags": ["vendor", "third_party", "risk"],
-      "limit": 5
+      "query_text": "governance policy audit controls evidence owner review register policy log",
+      "tags": [
+        "governance",
+        "policy",
+        "audit"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-009",
+        "VS-010",
+        "VS-021",
+        "VS-022",
+        "VS-033",
+        "VS-034",
+        "VS-045",
+        "VS-046",
+        "VS-057",
+        "VS-058",
+        "VS-069",
+        "VS-070"
+      ]
     },
     {
       "query_id": "VS-Q-011",
-      "query_text": "business continuity disaster recovery",
-      "tags": ["continuity", "governance"],
-      "limit": 5
+      "query_text": "training awareness people controls evidence owner review register policy log",
+      "tags": [
+        "training",
+        "awareness",
+        "people"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-010",
+        "VS-011",
+        "VS-022",
+        "VS-023",
+        "VS-034",
+        "VS-035",
+        "VS-046",
+        "VS-047",
+        "VS-058",
+        "VS-059",
+        "VS-070",
+        "VS-071"
+      ]
     },
     {
       "query_id": "VS-Q-012",
-      "query_text": "security awareness training phishing",
-      "tags": ["training", "awareness", "people"],
-      "limit": 5
+      "query_text": "vulnerability patching operations controls evidence owner review register policy log",
+      "tags": [
+        "vulnerability",
+        "patching",
+        "operations"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-011",
+        "VS-012",
+        "VS-023",
+        "VS-024",
+        "VS-035",
+        "VS-036",
+        "VS-047",
+        "VS-048",
+        "VS-059",
+        "VS-060",
+        "VS-071",
+        "VS-072"
+      ]
+    },
+    {
+      "query_id": "VS-Q-013",
+      "query_text": "identity access mfa controls evidence owner review register policy log",
+      "tags": [
+        "identity",
+        "access",
+        "mfa"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-001",
+        "VS-002",
+        "VS-012",
+        "VS-013",
+        "VS-014",
+        "VS-024",
+        "VS-025",
+        "VS-026",
+        "VS-036",
+        "VS-037",
+        "VS-038",
+        "VS-048",
+        "VS-049",
+        "VS-050",
+        "VS-060",
+        "VS-061",
+        "VS-062",
+        "VS-072",
+        "VS-073",
+        "VS-074"
+      ]
+    },
+    {
+      "query_id": "VS-Q-014",
+      "query_text": "privileged review access controls evidence owner review register policy log",
+      "tags": [
+        "privileged",
+        "review",
+        "access"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-001",
+        "VS-002",
+        "VS-013",
+        "VS-014",
+        "VS-025",
+        "VS-026",
+        "VS-037",
+        "VS-038",
+        "VS-049",
+        "VS-050",
+        "VS-061",
+        "VS-062",
+        "VS-073",
+        "VS-074"
+      ]
+    },
+    {
+      "query_id": "VS-Q-015",
+      "query_text": "logging monitoring retention controls evidence owner review register policy log",
+      "tags": [
+        "logging",
+        "monitoring",
+        "retention"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-003",
+        "VS-015",
+        "VS-027",
+        "VS-039",
+        "VS-051",
+        "VS-063",
+        "VS-075"
+      ]
+    },
+    {
+      "query_id": "VS-Q-016",
+      "query_text": "siem alerting detection controls evidence owner review register policy log",
+      "tags": [
+        "siem",
+        "alerting",
+        "detection"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-003",
+        "VS-004",
+        "VS-015",
+        "VS-016",
+        "VS-027",
+        "VS-028",
+        "VS-039",
+        "VS-040",
+        "VS-051",
+        "VS-052",
+        "VS-063",
+        "VS-064",
+        "VS-075",
+        "VS-076"
+      ]
+    },
+    {
+      "query_id": "VS-Q-017",
+      "query_text": "encryption key_management data controls evidence owner review register policy log",
+      "tags": [
+        "encryption",
+        "key_management",
+        "data"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-004",
+        "VS-005",
+        "VS-016",
+        "VS-017",
+        "VS-028",
+        "VS-029",
+        "VS-040",
+        "VS-041",
+        "VS-052",
+        "VS-053",
+        "VS-064",
+        "VS-065",
+        "VS-076",
+        "VS-077"
+      ]
+    },
+    {
+      "query_id": "VS-Q-018",
+      "query_text": "network tls segmentation controls evidence owner review register policy log",
+      "tags": [
+        "network",
+        "tls",
+        "segmentation"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-005",
+        "VS-006",
+        "VS-017",
+        "VS-018",
+        "VS-029",
+        "VS-030",
+        "VS-041",
+        "VS-042",
+        "VS-053",
+        "VS-054",
+        "VS-065",
+        "VS-066",
+        "VS-077",
+        "VS-078"
+      ]
+    },
+    {
+      "query_id": "VS-Q-019",
+      "query_text": "incident response tabletop controls evidence owner review register policy log",
+      "tags": [
+        "incident",
+        "response",
+        "tabletop"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-006",
+        "VS-007",
+        "VS-018",
+        "VS-019",
+        "VS-030",
+        "VS-031",
+        "VS-042",
+        "VS-043",
+        "VS-054",
+        "VS-055",
+        "VS-066",
+        "VS-067",
+        "VS-078",
+        "VS-079"
+      ]
+    },
+    {
+      "query_id": "VS-Q-020",
+      "query_text": "backup recovery continuity controls evidence owner review register policy log",
+      "tags": [
+        "backup",
+        "recovery",
+        "continuity"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-007",
+        "VS-008",
+        "VS-019",
+        "VS-020",
+        "VS-031",
+        "VS-032",
+        "VS-043",
+        "VS-044",
+        "VS-055",
+        "VS-056",
+        "VS-067",
+        "VS-068",
+        "VS-079",
+        "VS-080"
+      ]
+    },
+    {
+      "query_id": "VS-Q-021",
+      "query_text": "vendor third_party risk controls evidence owner review register policy log",
+      "tags": [
+        "vendor",
+        "third_party",
+        "risk"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-008",
+        "VS-009",
+        "VS-020",
+        "VS-021",
+        "VS-032",
+        "VS-033",
+        "VS-044",
+        "VS-045",
+        "VS-056",
+        "VS-057",
+        "VS-068",
+        "VS-069",
+        "VS-080"
+      ]
+    },
+    {
+      "query_id": "VS-Q-022",
+      "query_text": "governance policy audit controls evidence owner review register policy log",
+      "tags": [
+        "governance",
+        "policy",
+        "audit"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-009",
+        "VS-010",
+        "VS-021",
+        "VS-022",
+        "VS-033",
+        "VS-034",
+        "VS-045",
+        "VS-046",
+        "VS-057",
+        "VS-058",
+        "VS-069",
+        "VS-070"
+      ]
+    },
+    {
+      "query_id": "VS-Q-023",
+      "query_text": "training awareness people controls evidence owner review register policy log",
+      "tags": [
+        "training",
+        "awareness",
+        "people"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-010",
+        "VS-011",
+        "VS-022",
+        "VS-023",
+        "VS-034",
+        "VS-035",
+        "VS-046",
+        "VS-047",
+        "VS-058",
+        "VS-059",
+        "VS-070",
+        "VS-071"
+      ]
+    },
+    {
+      "query_id": "VS-Q-024",
+      "query_text": "vulnerability patching operations controls evidence owner review register policy log",
+      "tags": [
+        "vulnerability",
+        "patching",
+        "operations"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-011",
+        "VS-012",
+        "VS-023",
+        "VS-024",
+        "VS-035",
+        "VS-036",
+        "VS-047",
+        "VS-048",
+        "VS-059",
+        "VS-060",
+        "VS-071",
+        "VS-072"
+      ]
+    },
+    {
+      "query_id": "VS-Q-025",
+      "query_text": "identity access mfa controls evidence owner review register policy log",
+      "tags": [
+        "identity",
+        "access",
+        "mfa"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-001",
+        "VS-012",
+        "VS-013",
+        "VS-024",
+        "VS-025",
+        "VS-036",
+        "VS-037",
+        "VS-048",
+        "VS-049",
+        "VS-060",
+        "VS-061",
+        "VS-072",
+        "VS-073"
+      ]
+    },
+    {
+      "query_id": "VS-Q-026",
+      "query_text": "privileged review access controls evidence owner review register policy log",
+      "tags": [
+        "privileged",
+        "review",
+        "access"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "VS-Q-027",
+      "query_text": "logging monitoring retention controls evidence owner review register policy log",
+      "tags": [
+        "logging",
+        "monitoring",
+        "retention"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-003",
+        "VS-015",
+        "VS-027",
+        "VS-039",
+        "VS-051",
+        "VS-063",
+        "VS-075"
+      ]
+    },
+    {
+      "query_id": "VS-Q-028",
+      "query_text": "siem alerting detection controls evidence owner review register policy log",
+      "tags": [
+        "siem",
+        "alerting",
+        "detection"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-004",
+        "VS-016",
+        "VS-028",
+        "VS-040",
+        "VS-052",
+        "VS-064",
+        "VS-076"
+      ]
+    },
+    {
+      "query_id": "VS-Q-029",
+      "query_text": "encryption key_management data controls evidence owner review register policy log",
+      "tags": [
+        "encryption",
+        "key_management",
+        "data"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-005",
+        "VS-017",
+        "VS-029",
+        "VS-041",
+        "VS-053",
+        "VS-065",
+        "VS-077"
+      ]
+    },
+    {
+      "query_id": "VS-Q-030",
+      "query_text": "network tls segmentation controls evidence owner review register policy log",
+      "tags": [
+        "network",
+        "tls",
+        "segmentation"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-006",
+        "VS-018",
+        "VS-030",
+        "VS-042",
+        "VS-054",
+        "VS-066",
+        "VS-078"
+      ]
+    },
+    {
+      "query_id": "VS-Q-031",
+      "query_text": "incident response tabletop controls evidence owner review register policy log",
+      "tags": [
+        "incident",
+        "response",
+        "tabletop"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-007",
+        "VS-019",
+        "VS-031",
+        "VS-043",
+        "VS-055",
+        "VS-067",
+        "VS-079"
+      ]
+    },
+    {
+      "query_id": "VS-Q-032",
+      "query_text": "backup recovery continuity controls evidence owner review register policy log",
+      "tags": [
+        "backup",
+        "recovery",
+        "continuity"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-008",
+        "VS-020",
+        "VS-032",
+        "VS-044",
+        "VS-056",
+        "VS-068",
+        "VS-080"
+      ]
+    },
+    {
+      "query_id": "VS-Q-033",
+      "query_text": "vendor third_party risk controls evidence owner review register policy log",
+      "tags": [
+        "vendor",
+        "third_party",
+        "risk"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-009",
+        "VS-021",
+        "VS-033",
+        "VS-045",
+        "VS-057",
+        "VS-069"
+      ]
+    },
+    {
+      "query_id": "VS-Q-034",
+      "query_text": "governance policy audit controls evidence owner review register policy log",
+      "tags": [
+        "governance",
+        "policy",
+        "audit"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-010",
+        "VS-022",
+        "VS-034",
+        "VS-046",
+        "VS-058",
+        "VS-070"
+      ]
+    },
+    {
+      "query_id": "VS-Q-035",
+      "query_text": "training awareness people controls evidence owner review register policy log",
+      "tags": [
+        "training",
+        "awareness",
+        "people"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "VS-011",
+        "VS-023",
+        "VS-035",
+        "VS-047",
+        "VS-059",
+        "VS-071"
+      ]
+    },
+    {
+      "query_id": "VS-Q-036",
+      "query_text": "vulnerability patching operations controls evidence owner review register policy log",
+      "tags": [
+        "vulnerability",
+        "patching",
+        "operations"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "VS-Q-037",
+      "query_text": "identity access mfa controls evidence owner review register policy log",
+      "tags": [
+        "identity",
+        "access",
+        "mfa"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "VS-Q-038",
+      "query_text": "privileged review access controls evidence owner review register policy log",
+      "tags": [
+        "privileged",
+        "review",
+        "access"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "VS-Q-039",
+      "query_text": "logging monitoring retention controls evidence owner review register policy log",
+      "tags": [
+        "logging",
+        "monitoring",
+        "retention"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "VS-Q-040",
+      "query_text": "siem alerting detection controls evidence owner review register policy log",
+      "tags": [
+        "siem",
+        "alerting",
+        "detection"
+      ],
+      "limit": 30,
+      "control_ids": []
     }
   ]
 }

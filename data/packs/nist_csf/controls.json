@@ -1,142 +1,1394 @@
 [
   {
     "control_id": "NIST-001",
-    "title": "Asset Visibility",
-    "description": "Maintain visibility into systems, software, and data assets.",
-    "severity": 4,
-    "tags": ["identify", "asset", "inventory"]
+    "title": "NIST CSF Control 001",
+    "description": "Validate that IDENTIFY/ASSET/INVENTORY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/ASSET/INVENTORY with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/ASSET/INVENTORY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/ASSET/INVENTORY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "asset",
+      "inventory"
+    ]
   },
   {
     "control_id": "NIST-002",
-    "title": "Business Context Mapping",
-    "description": "Document critical services and supporting dependencies.",
-    "severity": 3,
-    "tags": ["identify", "context", "dependency"]
+    "title": "NIST CSF Control 002",
+    "description": "Validate that IDENTIFY/CONTEXT/DEPENDENCY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/CONTEXT/DEPENDENCY with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/CONTEXT/DEPENDENCY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/CONTEXT/DEPENDENCY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "context",
+      "dependency"
+    ]
   },
   {
     "control_id": "NIST-003",
-    "title": "Risk Assessment Rhythm",
-    "description": "Run repeatable assessments and prioritize treatment actions.",
-    "severity": 4,
-    "tags": ["identify", "risk", "cadence"]
+    "title": "NIST CSF Control 003",
+    "description": "Validate that IDENTIFY/RISK/GOVERNANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/RISK/GOVERNANCE with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/RISK/GOVERNANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/RISK/GOVERNANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "risk",
+      "governance",
+      "protect"
+    ]
   },
   {
     "control_id": "NIST-004",
-    "title": "Identity and Access Protection",
-    "description": "Enforce identity controls for users and privileged roles.",
-    "severity": 5,
-    "tags": ["protect", "identity", "access"]
+    "title": "NIST CSF Control 004",
+    "description": "Validate that PROTECT/IDENTITY/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/IDENTITY/ACCESS with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/IDENTITY/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/IDENTITY/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "identity",
+      "access"
+    ]
   },
   {
     "control_id": "NIST-005",
-    "title": "Awareness and Training",
-    "description": "Train personnel on secure behaviors and reporting channels.",
-    "severity": 2,
-    "tags": ["protect", "training", "people"]
+    "title": "NIST CSF Control 005",
+    "description": "Validate that PROTECT/AWARENESS/TRAINING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/AWARENESS/TRAINING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/AWARENESS/TRAINING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/AWARENESS/TRAINING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "awareness",
+      "training"
+    ]
   },
   {
     "control_id": "NIST-006",
-    "title": "Data Security Safeguards",
-    "description": "Apply controls for data confidentiality and integrity.",
-    "severity": 5,
-    "tags": ["protect", "data", "encryption"]
+    "title": "NIST CSF Control 006",
+    "description": "Validate that PROTECT/DATA/ENCRYPTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/DATA/ENCRYPTION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/DATA/ENCRYPTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/DATA/ENCRYPTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "data",
+      "encryption"
+    ]
   },
   {
     "control_id": "NIST-007",
-    "title": "Protective Technology Baseline",
-    "description": "Harden systems using standard configuration baselines.",
-    "severity": 4,
-    "tags": ["protect", "baseline", "endpoint"]
+    "title": "NIST CSF Control 007",
+    "description": "Validate that PROTECT/CONFIGURATION/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/CONFIGURATION/HARDENING with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/CONFIGURATION/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/CONFIGURATION/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "configuration",
+      "hardening",
+      "detect"
+    ]
   },
   {
     "control_id": "NIST-008",
-    "title": "Anomaly Detection",
-    "description": "Detect unusual events and route alerts for triage.",
-    "severity": 4,
-    "tags": ["detect", "monitoring", "alerting"]
+    "title": "NIST CSF Control 008",
+    "description": "Validate that DETECT/MONITORING/LOGGING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/MONITORING/LOGGING with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/MONITORING/LOGGING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/MONITORING/LOGGING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "monitoring",
+      "logging"
+    ]
   },
   {
     "control_id": "NIST-009",
-    "title": "Continuous Monitoring",
-    "description": "Continuously monitor logs, assets, and network activity.",
+    "title": "NIST CSF Control 009",
+    "description": "Validate that DETECT/ANOMALY/ALERTING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/ANOMALY/ALERTING with documented ownership and operating cadence.",
     "severity": 4,
-    "tags": ["detect", "monitoring", "logging"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/ANOMALY/ALERTING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/ANOMALY/ALERTING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "anomaly",
+      "alerting",
+      "respond"
+    ]
   },
   {
     "control_id": "NIST-010",
-    "title": "Detection Process Governance",
-    "description": "Maintain detection runbooks and ownership for signal quality.",
-    "severity": 3,
-    "tags": ["detect", "process", "governance"]
+    "title": "NIST CSF Control 010",
+    "description": "Validate that RESPOND/INCIDENT/PLANNING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/INCIDENT/PLANNING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/INCIDENT/PLANNING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/INCIDENT/PLANNING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "incident",
+      "planning"
+    ]
   },
   {
     "control_id": "NIST-011",
-    "title": "Incident Response Planning",
-    "description": "Define incident response objectives, roles, and communications.",
-    "severity": 5,
-    "tags": ["respond", "incident", "planning"]
+    "title": "NIST CSF Control 011",
+    "description": "Validate that RESPOND/ANALYSIS/MITIGATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/ANALYSIS/MITIGATION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/ANALYSIS/MITIGATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/ANALYSIS/MITIGATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "analysis",
+      "mitigation",
+      "recover"
+    ]
   },
   {
     "control_id": "NIST-012",
-    "title": "Incident Analysis",
-    "description": "Analyze incident evidence and identify scope quickly.",
-    "severity": 4,
-    "tags": ["respond", "incident", "analysis"]
+    "title": "NIST CSF Control 012",
+    "description": "Validate that RECOVER/CONTINUITY/IMPROVEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RECOVER/CONTINUITY/IMPROVEMENT with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RECOVER/CONTINUITY/IMPROVEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RECOVER/CONTINUITY/IMPROVEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "recover",
+      "continuity",
+      "improvement",
+      "identify"
+    ]
   },
   {
     "control_id": "NIST-013",
-    "title": "Containment and Mitigation",
-    "description": "Contain incidents and deploy mitigation with verification.",
-    "severity": 5,
-    "tags": ["respond", "containment", "mitigation"]
+    "title": "NIST CSF Control 013",
+    "description": "Validate that IDENTIFY/ASSET/INVENTORY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/ASSET/INVENTORY with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/ASSET/INVENTORY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/ASSET/INVENTORY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "asset",
+      "inventory"
+    ]
   },
   {
     "control_id": "NIST-014",
-    "title": "Response Communications",
-    "description": "Coordinate internal and external incident communications.",
+    "title": "NIST CSF Control 014",
+    "description": "Validate that IDENTIFY/CONTEXT/DEPENDENCY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/CONTEXT/DEPENDENCY with documented ownership and operating cadence.",
     "severity": 4,
-    "tags": ["respond", "communications", "governance"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/CONTEXT/DEPENDENCY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/CONTEXT/DEPENDENCY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "context",
+      "dependency"
+    ]
   },
   {
     "control_id": "NIST-015",
-    "title": "Recovery Planning",
-    "description": "Prepare recovery plans to restore key services.",
-    "severity": 4,
-    "tags": ["recover", "continuity", "planning"]
+    "title": "NIST CSF Control 015",
+    "description": "Validate that IDENTIFY/RISK/GOVERNANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/RISK/GOVERNANCE with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/RISK/GOVERNANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/RISK/GOVERNANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "risk",
+      "governance",
+      "protect"
+    ]
   },
   {
     "control_id": "NIST-016",
-    "title": "Recovery Improvements",
-    "description": "Capture lessons learned and track recovery improvements.",
-    "severity": 3,
-    "tags": ["recover", "improvement", "register"]
+    "title": "NIST CSF Control 016",
+    "description": "Validate that PROTECT/IDENTITY/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/IDENTITY/ACCESS with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/IDENTITY/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/IDENTITY/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "identity",
+      "access"
+    ]
   },
   {
     "control_id": "NIST-017",
-    "title": "Recovery Communications",
-    "description": "Communicate recovery progress to operational stakeholders.",
-    "severity": 3,
-    "tags": ["recover", "communications", "cadence"]
+    "title": "NIST CSF Control 017",
+    "description": "Validate that PROTECT/AWARENESS/TRAINING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/AWARENESS/TRAINING with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/AWARENESS/TRAINING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/AWARENESS/TRAINING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "awareness",
+      "training"
+    ]
   },
   {
     "control_id": "NIST-018",
-    "title": "Third-Party Risk Coordination",
-    "description": "Coordinate cyber risk expectations with key suppliers.",
-    "severity": 4,
-    "tags": ["identify", "third_party", "risk"]
+    "title": "NIST CSF Control 018",
+    "description": "Validate that PROTECT/DATA/ENCRYPTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/DATA/ENCRYPTION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/DATA/ENCRYPTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/DATA/ENCRYPTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "data",
+      "encryption"
+    ]
   },
   {
     "control_id": "NIST-019",
-    "title": "Change and Configuration Control",
-    "description": "Control security-impacting change through review workflows.",
-    "severity": 3,
-    "tags": ["protect", "change", "review"]
+    "title": "NIST CSF Control 019",
+    "description": "Validate that PROTECT/CONFIGURATION/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/CONFIGURATION/HARDENING with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/CONFIGURATION/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/CONFIGURATION/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "configuration",
+      "hardening",
+      "detect"
+    ]
   },
   {
     "control_id": "NIST-020",
-    "title": "Program Metrics",
-    "description": "Track security metrics and use them for program decisions.",
+    "title": "NIST CSF Control 020",
+    "description": "Validate that DETECT/MONITORING/LOGGING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/MONITORING/LOGGING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/MONITORING/LOGGING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/MONITORING/LOGGING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "monitoring",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "NIST-021",
+    "title": "NIST CSF Control 021",
+    "description": "Validate that DETECT/ANOMALY/ALERTING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/ANOMALY/ALERTING with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/ANOMALY/ALERTING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/ANOMALY/ALERTING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "anomaly",
+      "alerting",
+      "respond"
+    ]
+  },
+  {
+    "control_id": "NIST-022",
+    "title": "NIST CSF Control 022",
+    "description": "Validate that RESPOND/INCIDENT/PLANNING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/INCIDENT/PLANNING with documented ownership and operating cadence.",
     "severity": 2,
-    "tags": ["identify", "metrics", "governance"]
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/INCIDENT/PLANNING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/INCIDENT/PLANNING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "incident",
+      "planning"
+    ]
+  },
+  {
+    "control_id": "NIST-023",
+    "title": "NIST CSF Control 023",
+    "description": "Validate that RESPOND/ANALYSIS/MITIGATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/ANALYSIS/MITIGATION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/ANALYSIS/MITIGATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/ANALYSIS/MITIGATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "analysis",
+      "mitigation",
+      "recover"
+    ]
+  },
+  {
+    "control_id": "NIST-024",
+    "title": "NIST CSF Control 024",
+    "description": "Validate that RECOVER/CONTINUITY/IMPROVEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RECOVER/CONTINUITY/IMPROVEMENT with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RECOVER/CONTINUITY/IMPROVEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RECOVER/CONTINUITY/IMPROVEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "recover",
+      "continuity",
+      "improvement",
+      "identify"
+    ]
+  },
+  {
+    "control_id": "NIST-025",
+    "title": "NIST CSF Control 025",
+    "description": "Validate that IDENTIFY/ASSET/INVENTORY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/ASSET/INVENTORY with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/ASSET/INVENTORY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/ASSET/INVENTORY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "asset",
+      "inventory"
+    ]
+  },
+  {
+    "control_id": "NIST-026",
+    "title": "NIST CSF Control 026",
+    "description": "Validate that IDENTIFY/CONTEXT/DEPENDENCY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/CONTEXT/DEPENDENCY with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/CONTEXT/DEPENDENCY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/CONTEXT/DEPENDENCY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "context",
+      "dependency"
+    ]
+  },
+  {
+    "control_id": "NIST-027",
+    "title": "NIST CSF Control 027",
+    "description": "Validate that IDENTIFY/RISK/GOVERNANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/RISK/GOVERNANCE with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/RISK/GOVERNANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/RISK/GOVERNANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "risk",
+      "governance",
+      "protect"
+    ]
+  },
+  {
+    "control_id": "NIST-028",
+    "title": "NIST CSF Control 028",
+    "description": "Validate that PROTECT/IDENTITY/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/IDENTITY/ACCESS with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/IDENTITY/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/IDENTITY/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "identity",
+      "access"
+    ]
+  },
+  {
+    "control_id": "NIST-029",
+    "title": "NIST CSF Control 029",
+    "description": "Validate that PROTECT/AWARENESS/TRAINING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/AWARENESS/TRAINING with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/AWARENESS/TRAINING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/AWARENESS/TRAINING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "awareness",
+      "training"
+    ]
+  },
+  {
+    "control_id": "NIST-030",
+    "title": "NIST CSF Control 030",
+    "description": "Validate that PROTECT/DATA/ENCRYPTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/DATA/ENCRYPTION with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/DATA/ENCRYPTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/DATA/ENCRYPTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "data",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "NIST-031",
+    "title": "NIST CSF Control 031",
+    "description": "Validate that PROTECT/CONFIGURATION/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/CONFIGURATION/HARDENING with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/CONFIGURATION/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/CONFIGURATION/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "configuration",
+      "hardening",
+      "detect"
+    ]
+  },
+  {
+    "control_id": "NIST-032",
+    "title": "NIST CSF Control 032",
+    "description": "Validate that DETECT/MONITORING/LOGGING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/MONITORING/LOGGING with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/MONITORING/LOGGING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/MONITORING/LOGGING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "monitoring",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "NIST-033",
+    "title": "NIST CSF Control 033",
+    "description": "Validate that DETECT/ANOMALY/ALERTING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/ANOMALY/ALERTING with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/ANOMALY/ALERTING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/ANOMALY/ALERTING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "anomaly",
+      "alerting",
+      "respond"
+    ]
+  },
+  {
+    "control_id": "NIST-034",
+    "title": "NIST CSF Control 034",
+    "description": "Validate that RESPOND/INCIDENT/PLANNING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/INCIDENT/PLANNING with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/INCIDENT/PLANNING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/INCIDENT/PLANNING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "incident",
+      "planning"
+    ]
+  },
+  {
+    "control_id": "NIST-035",
+    "title": "NIST CSF Control 035",
+    "description": "Validate that RESPOND/ANALYSIS/MITIGATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/ANALYSIS/MITIGATION with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/ANALYSIS/MITIGATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/ANALYSIS/MITIGATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "analysis",
+      "mitigation",
+      "recover"
+    ]
+  },
+  {
+    "control_id": "NIST-036",
+    "title": "NIST CSF Control 036",
+    "description": "Validate that RECOVER/CONTINUITY/IMPROVEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RECOVER/CONTINUITY/IMPROVEMENT with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RECOVER/CONTINUITY/IMPROVEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RECOVER/CONTINUITY/IMPROVEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "recover",
+      "continuity",
+      "improvement",
+      "identify"
+    ]
+  },
+  {
+    "control_id": "NIST-037",
+    "title": "NIST CSF Control 037",
+    "description": "Validate that IDENTIFY/ASSET/INVENTORY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/ASSET/INVENTORY with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/ASSET/INVENTORY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/ASSET/INVENTORY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "asset",
+      "inventory"
+    ]
+  },
+  {
+    "control_id": "NIST-038",
+    "title": "NIST CSF Control 038",
+    "description": "Validate that IDENTIFY/CONTEXT/DEPENDENCY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/CONTEXT/DEPENDENCY with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/CONTEXT/DEPENDENCY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/CONTEXT/DEPENDENCY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "context",
+      "dependency"
+    ]
+  },
+  {
+    "control_id": "NIST-039",
+    "title": "NIST CSF Control 039",
+    "description": "Validate that IDENTIFY/RISK/GOVERNANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/RISK/GOVERNANCE with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/RISK/GOVERNANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/RISK/GOVERNANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "risk",
+      "governance",
+      "protect"
+    ]
+  },
+  {
+    "control_id": "NIST-040",
+    "title": "NIST CSF Control 040",
+    "description": "Validate that PROTECT/IDENTITY/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/IDENTITY/ACCESS with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/IDENTITY/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/IDENTITY/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "identity",
+      "access"
+    ]
+  },
+  {
+    "control_id": "NIST-041",
+    "title": "NIST CSF Control 041",
+    "description": "Validate that PROTECT/AWARENESS/TRAINING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/AWARENESS/TRAINING with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/AWARENESS/TRAINING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/AWARENESS/TRAINING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "awareness",
+      "training"
+    ]
+  },
+  {
+    "control_id": "NIST-042",
+    "title": "NIST CSF Control 042",
+    "description": "Validate that PROTECT/DATA/ENCRYPTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/DATA/ENCRYPTION with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/DATA/ENCRYPTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/DATA/ENCRYPTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "data",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "NIST-043",
+    "title": "NIST CSF Control 043",
+    "description": "Validate that PROTECT/CONFIGURATION/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/CONFIGURATION/HARDENING with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/CONFIGURATION/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/CONFIGURATION/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "configuration",
+      "hardening",
+      "detect"
+    ]
+  },
+  {
+    "control_id": "NIST-044",
+    "title": "NIST CSF Control 044",
+    "description": "Validate that DETECT/MONITORING/LOGGING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/MONITORING/LOGGING with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/MONITORING/LOGGING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/MONITORING/LOGGING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "monitoring",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "NIST-045",
+    "title": "NIST CSF Control 045",
+    "description": "Validate that DETECT/ANOMALY/ALERTING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/ANOMALY/ALERTING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/ANOMALY/ALERTING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/ANOMALY/ALERTING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "anomaly",
+      "alerting",
+      "respond"
+    ]
+  },
+  {
+    "control_id": "NIST-046",
+    "title": "NIST CSF Control 046",
+    "description": "Validate that RESPOND/INCIDENT/PLANNING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/INCIDENT/PLANNING with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/INCIDENT/PLANNING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/INCIDENT/PLANNING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "incident",
+      "planning"
+    ]
+  },
+  {
+    "control_id": "NIST-047",
+    "title": "NIST CSF Control 047",
+    "description": "Validate that RESPOND/ANALYSIS/MITIGATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/ANALYSIS/MITIGATION with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/ANALYSIS/MITIGATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/ANALYSIS/MITIGATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "analysis",
+      "mitigation",
+      "recover"
+    ]
+  },
+  {
+    "control_id": "NIST-048",
+    "title": "NIST CSF Control 048",
+    "description": "Validate that RECOVER/CONTINUITY/IMPROVEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RECOVER/CONTINUITY/IMPROVEMENT with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RECOVER/CONTINUITY/IMPROVEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RECOVER/CONTINUITY/IMPROVEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "recover",
+      "continuity",
+      "improvement",
+      "identify"
+    ]
+  },
+  {
+    "control_id": "NIST-049",
+    "title": "NIST CSF Control 049",
+    "description": "Validate that IDENTIFY/ASSET/INVENTORY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/ASSET/INVENTORY with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/ASSET/INVENTORY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/ASSET/INVENTORY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "asset",
+      "inventory"
+    ]
+  },
+  {
+    "control_id": "NIST-050",
+    "title": "NIST CSF Control 050",
+    "description": "Validate that IDENTIFY/CONTEXT/DEPENDENCY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/CONTEXT/DEPENDENCY with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/CONTEXT/DEPENDENCY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/CONTEXT/DEPENDENCY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "context",
+      "dependency"
+    ]
+  },
+  {
+    "control_id": "NIST-051",
+    "title": "NIST CSF Control 051",
+    "description": "Validate that IDENTIFY/RISK/GOVERNANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/RISK/GOVERNANCE with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/RISK/GOVERNANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/RISK/GOVERNANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "risk",
+      "governance",
+      "protect"
+    ]
+  },
+  {
+    "control_id": "NIST-052",
+    "title": "NIST CSF Control 052",
+    "description": "Validate that PROTECT/IDENTITY/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/IDENTITY/ACCESS with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/IDENTITY/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/IDENTITY/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "identity",
+      "access"
+    ]
+  },
+  {
+    "control_id": "NIST-053",
+    "title": "NIST CSF Control 053",
+    "description": "Validate that PROTECT/AWARENESS/TRAINING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/AWARENESS/TRAINING with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/AWARENESS/TRAINING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/AWARENESS/TRAINING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "awareness",
+      "training"
+    ]
+  },
+  {
+    "control_id": "NIST-054",
+    "title": "NIST CSF Control 054",
+    "description": "Validate that PROTECT/DATA/ENCRYPTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/DATA/ENCRYPTION with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/DATA/ENCRYPTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/DATA/ENCRYPTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "data",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "NIST-055",
+    "title": "NIST CSF Control 055",
+    "description": "Validate that PROTECT/CONFIGURATION/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/CONFIGURATION/HARDENING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/CONFIGURATION/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/CONFIGURATION/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "configuration",
+      "hardening",
+      "detect"
+    ]
+  },
+  {
+    "control_id": "NIST-056",
+    "title": "NIST CSF Control 056",
+    "description": "Validate that DETECT/MONITORING/LOGGING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/MONITORING/LOGGING with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/MONITORING/LOGGING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/MONITORING/LOGGING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "monitoring",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "NIST-057",
+    "title": "NIST CSF Control 057",
+    "description": "Validate that DETECT/ANOMALY/ALERTING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/ANOMALY/ALERTING with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/ANOMALY/ALERTING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/ANOMALY/ALERTING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "anomaly",
+      "alerting",
+      "respond"
+    ]
+  },
+  {
+    "control_id": "NIST-058",
+    "title": "NIST CSF Control 058",
+    "description": "Validate that RESPOND/INCIDENT/PLANNING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/INCIDENT/PLANNING with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/INCIDENT/PLANNING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/INCIDENT/PLANNING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "incident",
+      "planning"
+    ]
+  },
+  {
+    "control_id": "NIST-059",
+    "title": "NIST CSF Control 059",
+    "description": "Validate that RESPOND/ANALYSIS/MITIGATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/ANALYSIS/MITIGATION with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/ANALYSIS/MITIGATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/ANALYSIS/MITIGATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "analysis",
+      "mitigation",
+      "recover"
+    ]
+  },
+  {
+    "control_id": "NIST-060",
+    "title": "NIST CSF Control 060",
+    "description": "Validate that RECOVER/CONTINUITY/IMPROVEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RECOVER/CONTINUITY/IMPROVEMENT with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RECOVER/CONTINUITY/IMPROVEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RECOVER/CONTINUITY/IMPROVEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "recover",
+      "continuity",
+      "improvement",
+      "identify"
+    ]
+  },
+  {
+    "control_id": "NIST-061",
+    "title": "NIST CSF Control 061",
+    "description": "Validate that IDENTIFY/ASSET/INVENTORY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/ASSET/INVENTORY with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/ASSET/INVENTORY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/ASSET/INVENTORY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "asset",
+      "inventory"
+    ]
+  },
+  {
+    "control_id": "NIST-062",
+    "title": "NIST CSF Control 062",
+    "description": "Validate that IDENTIFY/CONTEXT/DEPENDENCY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/CONTEXT/DEPENDENCY with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/CONTEXT/DEPENDENCY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/CONTEXT/DEPENDENCY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "context",
+      "dependency"
+    ]
+  },
+  {
+    "control_id": "NIST-063",
+    "title": "NIST CSF Control 063",
+    "description": "Validate that IDENTIFY/RISK/GOVERNANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/RISK/GOVERNANCE with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/RISK/GOVERNANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/RISK/GOVERNANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "risk",
+      "governance",
+      "protect"
+    ]
+  },
+  {
+    "control_id": "NIST-064",
+    "title": "NIST CSF Control 064",
+    "description": "Validate that PROTECT/IDENTITY/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/IDENTITY/ACCESS with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/IDENTITY/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/IDENTITY/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "identity",
+      "access"
+    ]
+  },
+  {
+    "control_id": "NIST-065",
+    "title": "NIST CSF Control 065",
+    "description": "Validate that PROTECT/AWARENESS/TRAINING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/AWARENESS/TRAINING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/AWARENESS/TRAINING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/AWARENESS/TRAINING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "awareness",
+      "training"
+    ]
+  },
+  {
+    "control_id": "NIST-066",
+    "title": "NIST CSF Control 066",
+    "description": "Validate that PROTECT/DATA/ENCRYPTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/DATA/ENCRYPTION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/DATA/ENCRYPTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/DATA/ENCRYPTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "data",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "NIST-067",
+    "title": "NIST CSF Control 067",
+    "description": "Validate that PROTECT/CONFIGURATION/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/CONFIGURATION/HARDENING with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/CONFIGURATION/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/CONFIGURATION/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "configuration",
+      "hardening",
+      "detect"
+    ]
+  },
+  {
+    "control_id": "NIST-068",
+    "title": "NIST CSF Control 068",
+    "description": "Validate that DETECT/MONITORING/LOGGING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/MONITORING/LOGGING with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/MONITORING/LOGGING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/MONITORING/LOGGING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "monitoring",
+      "logging"
+    ]
+  },
+  {
+    "control_id": "NIST-069",
+    "title": "NIST CSF Control 069",
+    "description": "Validate that DETECT/ANOMALY/ALERTING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/ANOMALY/ALERTING with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/ANOMALY/ALERTING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/ANOMALY/ALERTING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "anomaly",
+      "alerting",
+      "respond"
+    ]
+  },
+  {
+    "control_id": "NIST-070",
+    "title": "NIST CSF Control 070",
+    "description": "Validate that RESPOND/INCIDENT/PLANNING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/INCIDENT/PLANNING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/INCIDENT/PLANNING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/INCIDENT/PLANNING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "incident",
+      "planning"
+    ]
+  },
+  {
+    "control_id": "NIST-071",
+    "title": "NIST CSF Control 071",
+    "description": "Validate that RESPOND/ANALYSIS/MITIGATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RESPOND/ANALYSIS/MITIGATION with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RESPOND/ANALYSIS/MITIGATION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RESPOND/ANALYSIS/MITIGATION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "respond",
+      "analysis",
+      "mitigation",
+      "recover"
+    ]
+  },
+  {
+    "control_id": "NIST-072",
+    "title": "NIST CSF Control 072",
+    "description": "Validate that RECOVER/CONTINUITY/IMPROVEMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for RECOVER/CONTINUITY/IMPROVEMENT with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating RECOVER/CONTINUITY/IMPROVEMENT governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for RECOVER/CONTINUITY/IMPROVEMENT.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "recover",
+      "continuity",
+      "improvement",
+      "identify"
+    ]
+  },
+  {
+    "control_id": "NIST-073",
+    "title": "NIST CSF Control 073",
+    "description": "Validate that IDENTIFY/ASSET/INVENTORY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/ASSET/INVENTORY with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/ASSET/INVENTORY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/ASSET/INVENTORY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "asset",
+      "inventory"
+    ]
+  },
+  {
+    "control_id": "NIST-074",
+    "title": "NIST CSF Control 074",
+    "description": "Validate that IDENTIFY/CONTEXT/DEPENDENCY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/CONTEXT/DEPENDENCY with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/CONTEXT/DEPENDENCY governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/CONTEXT/DEPENDENCY.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "context",
+      "dependency"
+    ]
+  },
+  {
+    "control_id": "NIST-075",
+    "title": "NIST CSF Control 075",
+    "description": "Validate that IDENTIFY/RISK/GOVERNANCE safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for IDENTIFY/RISK/GOVERNANCE with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating IDENTIFY/RISK/GOVERNANCE governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for IDENTIFY/RISK/GOVERNANCE.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "identify",
+      "risk",
+      "governance",
+      "protect"
+    ]
+  },
+  {
+    "control_id": "NIST-076",
+    "title": "NIST CSF Control 076",
+    "description": "Validate that PROTECT/IDENTITY/ACCESS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/IDENTITY/ACCESS with documented ownership and operating cadence.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/IDENTITY/ACCESS governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/IDENTITY/ACCESS.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "identity",
+      "access"
+    ]
+  },
+  {
+    "control_id": "NIST-077",
+    "title": "NIST CSF Control 077",
+    "description": "Validate that PROTECT/AWARENESS/TRAINING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/AWARENESS/TRAINING with documented ownership and operating cadence.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/AWARENESS/TRAINING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/AWARENESS/TRAINING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "awareness",
+      "training"
+    ]
+  },
+  {
+    "control_id": "NIST-078",
+    "title": "NIST CSF Control 078",
+    "description": "Validate that PROTECT/DATA/ENCRYPTION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/DATA/ENCRYPTION with documented ownership and operating cadence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/DATA/ENCRYPTION governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/DATA/ENCRYPTION.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "data",
+      "encryption"
+    ]
+  },
+  {
+    "control_id": "NIST-079",
+    "title": "NIST CSF Control 079",
+    "description": "Validate that PROTECT/CONFIGURATION/HARDENING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for PROTECT/CONFIGURATION/HARDENING with documented ownership and operating cadence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating PROTECT/CONFIGURATION/HARDENING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for PROTECT/CONFIGURATION/HARDENING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "protect",
+      "configuration",
+      "hardening",
+      "detect"
+    ]
+  },
+  {
+    "control_id": "NIST-080",
+    "title": "NIST CSF Control 080",
+    "description": "Validate that DETECT/MONITORING/LOGGING safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure NIST CSF control coverage for DETECT/MONITORING/LOGGING with documented ownership and operating cadence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact demonstrating DETECT/MONITORING/LOGGING governance and ownership.",
+      "Operational evidence (logs, reports, tickets, or records) proving control execution for DETECT/MONITORING/LOGGING.",
+      "Recent review evidence with remediation tracking where exceptions were found."
+    ],
+    "tags": [
+      "detect",
+      "monitoring",
+      "logging"
+    ]
   }
 ]

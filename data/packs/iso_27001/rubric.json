@@ -1,18 +1,1132 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "rules": [
-    { "tag": "policy", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "governance", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "risk", "min_hits_for_partial": 1, "min_hits_for_met": 3 },
-    { "tag": "access", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "identity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "mfa", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "cryptography", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "logging", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "vulnerability", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "incident", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "continuity", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "audit", "min_hits_for_partial": 1, "min_hits_for_met": 2 },
-    { "tag": "awareness", "min_hits_for_partial": 1, "min_hits_for_met": 2 }
+    {
+      "tag": "access",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "asset",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "assurance",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "audit",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "awareness",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "cadence",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "classification",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "communication",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "compliance",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "continuity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "contract",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "cryptography",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "encryption",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "governance",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "hardening",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "identity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "incident",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "key_management",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "legal",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "logging",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "metrics",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "mfa",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "monitoring",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "operations",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "ownership",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "people",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "policy",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "privacy",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "recovery",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "register",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "response",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "retention",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "review",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "risk",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "supplier",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "third_party",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "training",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "treatment",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "vulnerability",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    }
+  ],
+  "control_query_map": [
+    {
+      "control_id": "ISO-001",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-002",
+        "ISO-Q-014",
+        "ISO-Q-015",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-002",
+      "query_ids": [
+        "ISO-Q-002",
+        "ISO-Q-003",
+        "ISO-Q-015",
+        "ISO-Q-016",
+        "ISO-Q-028"
+      ]
+    },
+    {
+      "control_id": "ISO-003",
+      "query_ids": [
+        "ISO-Q-003",
+        "ISO-Q-004",
+        "ISO-Q-016",
+        "ISO-Q-017",
+        "ISO-Q-029"
+      ]
+    },
+    {
+      "control_id": "ISO-004",
+      "query_ids": [
+        "ISO-Q-004",
+        "ISO-Q-005",
+        "ISO-Q-017",
+        "ISO-Q-018",
+        "ISO-Q-030"
+      ]
+    },
+    {
+      "control_id": "ISO-005",
+      "query_ids": [
+        "ISO-Q-005",
+        "ISO-Q-006",
+        "ISO-Q-018",
+        "ISO-Q-019",
+        "ISO-Q-031"
+      ]
+    },
+    {
+      "control_id": "ISO-006",
+      "query_ids": [
+        "ISO-Q-006",
+        "ISO-Q-007",
+        "ISO-Q-019",
+        "ISO-Q-020",
+        "ISO-Q-032"
+      ]
+    },
+    {
+      "control_id": "ISO-007",
+      "query_ids": [
+        "ISO-Q-007",
+        "ISO-Q-008",
+        "ISO-Q-020",
+        "ISO-Q-021",
+        "ISO-Q-033"
+      ]
+    },
+    {
+      "control_id": "ISO-008",
+      "query_ids": [
+        "ISO-Q-008",
+        "ISO-Q-009",
+        "ISO-Q-021",
+        "ISO-Q-022",
+        "ISO-Q-034"
+      ]
+    },
+    {
+      "control_id": "ISO-009",
+      "query_ids": [
+        "ISO-Q-009",
+        "ISO-Q-010",
+        "ISO-Q-022",
+        "ISO-Q-023",
+        "ISO-Q-035"
+      ]
+    },
+    {
+      "control_id": "ISO-010",
+      "query_ids": [
+        "ISO-Q-010",
+        "ISO-Q-011",
+        "ISO-Q-023",
+        "ISO-Q-024",
+        "ISO-Q-036"
+      ]
+    },
+    {
+      "control_id": "ISO-011",
+      "query_ids": [
+        "ISO-Q-011",
+        "ISO-Q-012",
+        "ISO-Q-024",
+        "ISO-Q-025",
+        "ISO-Q-037"
+      ]
+    },
+    {
+      "control_id": "ISO-012",
+      "query_ids": [
+        "ISO-Q-012",
+        "ISO-Q-013",
+        "ISO-Q-025",
+        "ISO-Q-026",
+        "ISO-Q-038"
+      ]
+    },
+    {
+      "control_id": "ISO-013",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-013",
+        "ISO-Q-014",
+        "ISO-Q-026",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-014",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-002",
+        "ISO-Q-014",
+        "ISO-Q-015",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-015",
+      "query_ids": [
+        "ISO-Q-002",
+        "ISO-Q-003",
+        "ISO-Q-015",
+        "ISO-Q-016",
+        "ISO-Q-028"
+      ]
+    },
+    {
+      "control_id": "ISO-016",
+      "query_ids": [
+        "ISO-Q-003",
+        "ISO-Q-004",
+        "ISO-Q-016",
+        "ISO-Q-017",
+        "ISO-Q-029"
+      ]
+    },
+    {
+      "control_id": "ISO-017",
+      "query_ids": [
+        "ISO-Q-004",
+        "ISO-Q-005",
+        "ISO-Q-017",
+        "ISO-Q-018",
+        "ISO-Q-030"
+      ]
+    },
+    {
+      "control_id": "ISO-018",
+      "query_ids": [
+        "ISO-Q-005",
+        "ISO-Q-006",
+        "ISO-Q-018",
+        "ISO-Q-019",
+        "ISO-Q-031"
+      ]
+    },
+    {
+      "control_id": "ISO-019",
+      "query_ids": [
+        "ISO-Q-006",
+        "ISO-Q-007",
+        "ISO-Q-019",
+        "ISO-Q-020",
+        "ISO-Q-032"
+      ]
+    },
+    {
+      "control_id": "ISO-020",
+      "query_ids": [
+        "ISO-Q-007",
+        "ISO-Q-008",
+        "ISO-Q-020",
+        "ISO-Q-021",
+        "ISO-Q-033"
+      ]
+    },
+    {
+      "control_id": "ISO-021",
+      "query_ids": [
+        "ISO-Q-008",
+        "ISO-Q-009",
+        "ISO-Q-021",
+        "ISO-Q-022",
+        "ISO-Q-034"
+      ]
+    },
+    {
+      "control_id": "ISO-022",
+      "query_ids": [
+        "ISO-Q-009",
+        "ISO-Q-010",
+        "ISO-Q-022",
+        "ISO-Q-023",
+        "ISO-Q-035"
+      ]
+    },
+    {
+      "control_id": "ISO-023",
+      "query_ids": [
+        "ISO-Q-010",
+        "ISO-Q-011",
+        "ISO-Q-023",
+        "ISO-Q-024",
+        "ISO-Q-036"
+      ]
+    },
+    {
+      "control_id": "ISO-024",
+      "query_ids": [
+        "ISO-Q-011",
+        "ISO-Q-012",
+        "ISO-Q-024",
+        "ISO-Q-025",
+        "ISO-Q-037"
+      ]
+    },
+    {
+      "control_id": "ISO-025",
+      "query_ids": [
+        "ISO-Q-012",
+        "ISO-Q-013",
+        "ISO-Q-025",
+        "ISO-Q-026",
+        "ISO-Q-038"
+      ]
+    },
+    {
+      "control_id": "ISO-026",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-013",
+        "ISO-Q-014",
+        "ISO-Q-026",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-027",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-002",
+        "ISO-Q-014",
+        "ISO-Q-015",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-028",
+      "query_ids": [
+        "ISO-Q-002",
+        "ISO-Q-003",
+        "ISO-Q-015",
+        "ISO-Q-016",
+        "ISO-Q-028"
+      ]
+    },
+    {
+      "control_id": "ISO-029",
+      "query_ids": [
+        "ISO-Q-003",
+        "ISO-Q-004",
+        "ISO-Q-016",
+        "ISO-Q-017",
+        "ISO-Q-029"
+      ]
+    },
+    {
+      "control_id": "ISO-030",
+      "query_ids": [
+        "ISO-Q-004",
+        "ISO-Q-005",
+        "ISO-Q-017",
+        "ISO-Q-018",
+        "ISO-Q-030"
+      ]
+    },
+    {
+      "control_id": "ISO-031",
+      "query_ids": [
+        "ISO-Q-005",
+        "ISO-Q-006",
+        "ISO-Q-018",
+        "ISO-Q-019",
+        "ISO-Q-031"
+      ]
+    },
+    {
+      "control_id": "ISO-032",
+      "query_ids": [
+        "ISO-Q-006",
+        "ISO-Q-007",
+        "ISO-Q-019",
+        "ISO-Q-020",
+        "ISO-Q-032"
+      ]
+    },
+    {
+      "control_id": "ISO-033",
+      "query_ids": [
+        "ISO-Q-007",
+        "ISO-Q-008",
+        "ISO-Q-020",
+        "ISO-Q-021",
+        "ISO-Q-033"
+      ]
+    },
+    {
+      "control_id": "ISO-034",
+      "query_ids": [
+        "ISO-Q-008",
+        "ISO-Q-009",
+        "ISO-Q-021",
+        "ISO-Q-022",
+        "ISO-Q-034"
+      ]
+    },
+    {
+      "control_id": "ISO-035",
+      "query_ids": [
+        "ISO-Q-009",
+        "ISO-Q-010",
+        "ISO-Q-022",
+        "ISO-Q-023",
+        "ISO-Q-035"
+      ]
+    },
+    {
+      "control_id": "ISO-036",
+      "query_ids": [
+        "ISO-Q-010",
+        "ISO-Q-011",
+        "ISO-Q-023",
+        "ISO-Q-024",
+        "ISO-Q-036"
+      ]
+    },
+    {
+      "control_id": "ISO-037",
+      "query_ids": [
+        "ISO-Q-011",
+        "ISO-Q-012",
+        "ISO-Q-024",
+        "ISO-Q-025",
+        "ISO-Q-037"
+      ]
+    },
+    {
+      "control_id": "ISO-038",
+      "query_ids": [
+        "ISO-Q-012",
+        "ISO-Q-013",
+        "ISO-Q-025",
+        "ISO-Q-026",
+        "ISO-Q-038"
+      ]
+    },
+    {
+      "control_id": "ISO-039",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-013",
+        "ISO-Q-014",
+        "ISO-Q-026",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-040",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-002",
+        "ISO-Q-014",
+        "ISO-Q-015",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-041",
+      "query_ids": [
+        "ISO-Q-002",
+        "ISO-Q-003",
+        "ISO-Q-015",
+        "ISO-Q-016",
+        "ISO-Q-028"
+      ]
+    },
+    {
+      "control_id": "ISO-042",
+      "query_ids": [
+        "ISO-Q-003",
+        "ISO-Q-004",
+        "ISO-Q-016",
+        "ISO-Q-017",
+        "ISO-Q-029"
+      ]
+    },
+    {
+      "control_id": "ISO-043",
+      "query_ids": [
+        "ISO-Q-004",
+        "ISO-Q-005",
+        "ISO-Q-017",
+        "ISO-Q-018",
+        "ISO-Q-030"
+      ]
+    },
+    {
+      "control_id": "ISO-044",
+      "query_ids": [
+        "ISO-Q-005",
+        "ISO-Q-006",
+        "ISO-Q-018",
+        "ISO-Q-019",
+        "ISO-Q-031"
+      ]
+    },
+    {
+      "control_id": "ISO-045",
+      "query_ids": [
+        "ISO-Q-006",
+        "ISO-Q-007",
+        "ISO-Q-019",
+        "ISO-Q-020",
+        "ISO-Q-032"
+      ]
+    },
+    {
+      "control_id": "ISO-046",
+      "query_ids": [
+        "ISO-Q-007",
+        "ISO-Q-008",
+        "ISO-Q-020",
+        "ISO-Q-021",
+        "ISO-Q-033"
+      ]
+    },
+    {
+      "control_id": "ISO-047",
+      "query_ids": [
+        "ISO-Q-008",
+        "ISO-Q-009",
+        "ISO-Q-021",
+        "ISO-Q-022",
+        "ISO-Q-034"
+      ]
+    },
+    {
+      "control_id": "ISO-048",
+      "query_ids": [
+        "ISO-Q-009",
+        "ISO-Q-010",
+        "ISO-Q-022",
+        "ISO-Q-023",
+        "ISO-Q-035"
+      ]
+    },
+    {
+      "control_id": "ISO-049",
+      "query_ids": [
+        "ISO-Q-010",
+        "ISO-Q-011",
+        "ISO-Q-023",
+        "ISO-Q-024",
+        "ISO-Q-036"
+      ]
+    },
+    {
+      "control_id": "ISO-050",
+      "query_ids": [
+        "ISO-Q-011",
+        "ISO-Q-012",
+        "ISO-Q-024",
+        "ISO-Q-025",
+        "ISO-Q-037"
+      ]
+    },
+    {
+      "control_id": "ISO-051",
+      "query_ids": [
+        "ISO-Q-012",
+        "ISO-Q-013",
+        "ISO-Q-025",
+        "ISO-Q-026",
+        "ISO-Q-038"
+      ]
+    },
+    {
+      "control_id": "ISO-052",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-013",
+        "ISO-Q-014",
+        "ISO-Q-026",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-053",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-002",
+        "ISO-Q-014",
+        "ISO-Q-015",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-054",
+      "query_ids": [
+        "ISO-Q-002",
+        "ISO-Q-003",
+        "ISO-Q-015",
+        "ISO-Q-016",
+        "ISO-Q-028"
+      ]
+    },
+    {
+      "control_id": "ISO-055",
+      "query_ids": [
+        "ISO-Q-003",
+        "ISO-Q-004",
+        "ISO-Q-016",
+        "ISO-Q-017",
+        "ISO-Q-029"
+      ]
+    },
+    {
+      "control_id": "ISO-056",
+      "query_ids": [
+        "ISO-Q-004",
+        "ISO-Q-005",
+        "ISO-Q-017",
+        "ISO-Q-018",
+        "ISO-Q-030"
+      ]
+    },
+    {
+      "control_id": "ISO-057",
+      "query_ids": [
+        "ISO-Q-005",
+        "ISO-Q-006",
+        "ISO-Q-018",
+        "ISO-Q-019",
+        "ISO-Q-031"
+      ]
+    },
+    {
+      "control_id": "ISO-058",
+      "query_ids": [
+        "ISO-Q-006",
+        "ISO-Q-007",
+        "ISO-Q-019",
+        "ISO-Q-020",
+        "ISO-Q-032"
+      ]
+    },
+    {
+      "control_id": "ISO-059",
+      "query_ids": [
+        "ISO-Q-007",
+        "ISO-Q-008",
+        "ISO-Q-020",
+        "ISO-Q-021",
+        "ISO-Q-033"
+      ]
+    },
+    {
+      "control_id": "ISO-060",
+      "query_ids": [
+        "ISO-Q-008",
+        "ISO-Q-009",
+        "ISO-Q-021",
+        "ISO-Q-022",
+        "ISO-Q-034"
+      ]
+    },
+    {
+      "control_id": "ISO-061",
+      "query_ids": [
+        "ISO-Q-009",
+        "ISO-Q-010",
+        "ISO-Q-022",
+        "ISO-Q-023",
+        "ISO-Q-035"
+      ]
+    },
+    {
+      "control_id": "ISO-062",
+      "query_ids": [
+        "ISO-Q-010",
+        "ISO-Q-011",
+        "ISO-Q-023",
+        "ISO-Q-024",
+        "ISO-Q-036"
+      ]
+    },
+    {
+      "control_id": "ISO-063",
+      "query_ids": [
+        "ISO-Q-011",
+        "ISO-Q-012",
+        "ISO-Q-024",
+        "ISO-Q-025",
+        "ISO-Q-037"
+      ]
+    },
+    {
+      "control_id": "ISO-064",
+      "query_ids": [
+        "ISO-Q-012",
+        "ISO-Q-013",
+        "ISO-Q-025",
+        "ISO-Q-026",
+        "ISO-Q-038"
+      ]
+    },
+    {
+      "control_id": "ISO-065",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-013",
+        "ISO-Q-014",
+        "ISO-Q-026",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-066",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-002",
+        "ISO-Q-014",
+        "ISO-Q-015",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-067",
+      "query_ids": [
+        "ISO-Q-002",
+        "ISO-Q-003",
+        "ISO-Q-015",
+        "ISO-Q-016",
+        "ISO-Q-028"
+      ]
+    },
+    {
+      "control_id": "ISO-068",
+      "query_ids": [
+        "ISO-Q-003",
+        "ISO-Q-004",
+        "ISO-Q-016",
+        "ISO-Q-017",
+        "ISO-Q-029"
+      ]
+    },
+    {
+      "control_id": "ISO-069",
+      "query_ids": [
+        "ISO-Q-004",
+        "ISO-Q-005",
+        "ISO-Q-017",
+        "ISO-Q-018",
+        "ISO-Q-030"
+      ]
+    },
+    {
+      "control_id": "ISO-070",
+      "query_ids": [
+        "ISO-Q-005",
+        "ISO-Q-006",
+        "ISO-Q-018",
+        "ISO-Q-019",
+        "ISO-Q-031"
+      ]
+    },
+    {
+      "control_id": "ISO-071",
+      "query_ids": [
+        "ISO-Q-006",
+        "ISO-Q-007",
+        "ISO-Q-019",
+        "ISO-Q-020",
+        "ISO-Q-032"
+      ]
+    },
+    {
+      "control_id": "ISO-072",
+      "query_ids": [
+        "ISO-Q-007",
+        "ISO-Q-008",
+        "ISO-Q-020",
+        "ISO-Q-021",
+        "ISO-Q-033"
+      ]
+    },
+    {
+      "control_id": "ISO-073",
+      "query_ids": [
+        "ISO-Q-008",
+        "ISO-Q-009",
+        "ISO-Q-021",
+        "ISO-Q-022",
+        "ISO-Q-034"
+      ]
+    },
+    {
+      "control_id": "ISO-074",
+      "query_ids": [
+        "ISO-Q-009",
+        "ISO-Q-010",
+        "ISO-Q-022",
+        "ISO-Q-023",
+        "ISO-Q-035"
+      ]
+    },
+    {
+      "control_id": "ISO-075",
+      "query_ids": [
+        "ISO-Q-010",
+        "ISO-Q-011",
+        "ISO-Q-023",
+        "ISO-Q-024",
+        "ISO-Q-036"
+      ]
+    },
+    {
+      "control_id": "ISO-076",
+      "query_ids": [
+        "ISO-Q-011",
+        "ISO-Q-012",
+        "ISO-Q-024",
+        "ISO-Q-025",
+        "ISO-Q-037"
+      ]
+    },
+    {
+      "control_id": "ISO-077",
+      "query_ids": [
+        "ISO-Q-012",
+        "ISO-Q-013",
+        "ISO-Q-025",
+        "ISO-Q-026",
+        "ISO-Q-038"
+      ]
+    },
+    {
+      "control_id": "ISO-078",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-013",
+        "ISO-Q-014",
+        "ISO-Q-026",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-079",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-002",
+        "ISO-Q-014",
+        "ISO-Q-015",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-080",
+      "query_ids": [
+        "ISO-Q-002",
+        "ISO-Q-003",
+        "ISO-Q-015",
+        "ISO-Q-016",
+        "ISO-Q-028"
+      ]
+    },
+    {
+      "control_id": "ISO-081",
+      "query_ids": [
+        "ISO-Q-003",
+        "ISO-Q-004",
+        "ISO-Q-016",
+        "ISO-Q-017",
+        "ISO-Q-029"
+      ]
+    },
+    {
+      "control_id": "ISO-082",
+      "query_ids": [
+        "ISO-Q-004",
+        "ISO-Q-005",
+        "ISO-Q-017",
+        "ISO-Q-018",
+        "ISO-Q-030"
+      ]
+    },
+    {
+      "control_id": "ISO-083",
+      "query_ids": [
+        "ISO-Q-005",
+        "ISO-Q-006",
+        "ISO-Q-018",
+        "ISO-Q-019",
+        "ISO-Q-031"
+      ]
+    },
+    {
+      "control_id": "ISO-084",
+      "query_ids": [
+        "ISO-Q-006",
+        "ISO-Q-007",
+        "ISO-Q-019",
+        "ISO-Q-020",
+        "ISO-Q-032"
+      ]
+    },
+    {
+      "control_id": "ISO-085",
+      "query_ids": [
+        "ISO-Q-007",
+        "ISO-Q-008",
+        "ISO-Q-020",
+        "ISO-Q-021",
+        "ISO-Q-033"
+      ]
+    },
+    {
+      "control_id": "ISO-086",
+      "query_ids": [
+        "ISO-Q-008",
+        "ISO-Q-009",
+        "ISO-Q-021",
+        "ISO-Q-022",
+        "ISO-Q-034"
+      ]
+    },
+    {
+      "control_id": "ISO-087",
+      "query_ids": [
+        "ISO-Q-009",
+        "ISO-Q-010",
+        "ISO-Q-022",
+        "ISO-Q-023",
+        "ISO-Q-035"
+      ]
+    },
+    {
+      "control_id": "ISO-088",
+      "query_ids": [
+        "ISO-Q-010",
+        "ISO-Q-011",
+        "ISO-Q-023",
+        "ISO-Q-024",
+        "ISO-Q-036"
+      ]
+    },
+    {
+      "control_id": "ISO-089",
+      "query_ids": [
+        "ISO-Q-011",
+        "ISO-Q-012",
+        "ISO-Q-024",
+        "ISO-Q-025",
+        "ISO-Q-037"
+      ]
+    },
+    {
+      "control_id": "ISO-090",
+      "query_ids": [
+        "ISO-Q-012",
+        "ISO-Q-013",
+        "ISO-Q-025",
+        "ISO-Q-026",
+        "ISO-Q-038"
+      ]
+    },
+    {
+      "control_id": "ISO-091",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-013",
+        "ISO-Q-014",
+        "ISO-Q-026",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-092",
+      "query_ids": [
+        "ISO-Q-001",
+        "ISO-Q-002",
+        "ISO-Q-014",
+        "ISO-Q-015",
+        "ISO-Q-027"
+      ]
+    },
+    {
+      "control_id": "ISO-093",
+      "query_ids": [
+        "ISO-Q-002",
+        "ISO-Q-003",
+        "ISO-Q-015",
+        "ISO-Q-016",
+        "ISO-Q-028"
+      ]
+    }
   ]
 }

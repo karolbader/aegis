@@ -1,77 +1,1058 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "queries": [
     {
       "query_id": "ISO-Q-001",
-      "query_text": "information security policy approved",
-      "tags": ["policy", "governance", "review"],
-      "limit": 5
+      "query_text": "policy governance review controls evidence owner review register policy log",
+      "tags": [
+        "policy",
+        "governance",
+        "review"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-001",
+        "ISO-013",
+        "ISO-014",
+        "ISO-026",
+        "ISO-027",
+        "ISO-039",
+        "ISO-040",
+        "ISO-052",
+        "ISO-053",
+        "ISO-065",
+        "ISO-066",
+        "ISO-078",
+        "ISO-079",
+        "ISO-091",
+        "ISO-092"
+      ]
     },
     {
       "query_id": "ISO-Q-002",
-      "query_text": "risk register treatment owner",
-      "tags": ["risk", "register", "governance"],
-      "limit": 5
+      "query_text": "risk register treatment controls evidence owner review register policy log",
+      "tags": [
+        "risk",
+        "register",
+        "treatment"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-001",
+        "ISO-002",
+        "ISO-014",
+        "ISO-015",
+        "ISO-027",
+        "ISO-028",
+        "ISO-040",
+        "ISO-041",
+        "ISO-053",
+        "ISO-054",
+        "ISO-066",
+        "ISO-067",
+        "ISO-079",
+        "ISO-080",
+        "ISO-092",
+        "ISO-093"
+      ]
     },
     {
       "query_id": "ISO-Q-003",
-      "query_text": "asset inventory classification owner",
-      "tags": ["asset", "classification", "ownership"],
-      "limit": 5
+      "query_text": "asset classification ownership controls evidence owner review register policy log",
+      "tags": [
+        "asset",
+        "classification",
+        "ownership"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-002",
+        "ISO-003",
+        "ISO-015",
+        "ISO-016",
+        "ISO-028",
+        "ISO-029",
+        "ISO-041",
+        "ISO-042",
+        "ISO-054",
+        "ISO-055",
+        "ISO-067",
+        "ISO-068",
+        "ISO-080",
+        "ISO-081",
+        "ISO-093"
+      ]
     },
     {
       "query_id": "ISO-Q-004",
-      "query_text": "access control role based privileged",
-      "tags": ["access", "identity", "policy"],
-      "limit": 5
+      "query_text": "identity access mfa controls evidence owner review register policy log",
+      "tags": [
+        "identity",
+        "access",
+        "mfa"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-003",
+        "ISO-004",
+        "ISO-016",
+        "ISO-017",
+        "ISO-029",
+        "ISO-030",
+        "ISO-042",
+        "ISO-043",
+        "ISO-055",
+        "ISO-056",
+        "ISO-068",
+        "ISO-069",
+        "ISO-081",
+        "ISO-082"
+      ]
     },
     {
       "query_id": "ISO-Q-005",
-      "query_text": "MFA strong authentication",
-      "tags": ["mfa", "identity", "access"],
-      "limit": 5
+      "query_text": "cryptography encryption key_management controls evidence owner review register policy log",
+      "tags": [
+        "cryptography",
+        "encryption",
+        "key_management"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-004",
+        "ISO-005",
+        "ISO-017",
+        "ISO-018",
+        "ISO-030",
+        "ISO-031",
+        "ISO-043",
+        "ISO-044",
+        "ISO-056",
+        "ISO-057",
+        "ISO-069",
+        "ISO-070",
+        "ISO-082",
+        "ISO-083"
+      ]
     },
     {
       "query_id": "ISO-Q-006",
-      "query_text": "cryptographic key rotation encryption",
-      "tags": ["cryptography", "encryption", "key_management"],
-      "limit": 5
+      "query_text": "logging monitoring retention controls evidence owner review register policy log",
+      "tags": [
+        "logging",
+        "monitoring",
+        "retention"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-005",
+        "ISO-006",
+        "ISO-018",
+        "ISO-019",
+        "ISO-031",
+        "ISO-032",
+        "ISO-044",
+        "ISO-045",
+        "ISO-057",
+        "ISO-058",
+        "ISO-070",
+        "ISO-071",
+        "ISO-083",
+        "ISO-084"
+      ]
     },
     {
       "query_id": "ISO-Q-007",
-      "query_text": "security event logging retention",
-      "tags": ["logging", "monitoring", "retention"],
-      "limit": 5
+      "query_text": "vulnerability operations hardening controls evidence owner review register policy log",
+      "tags": [
+        "vulnerability",
+        "operations",
+        "hardening"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-006",
+        "ISO-007",
+        "ISO-019",
+        "ISO-020",
+        "ISO-032",
+        "ISO-033",
+        "ISO-045",
+        "ISO-046",
+        "ISO-058",
+        "ISO-059",
+        "ISO-071",
+        "ISO-072",
+        "ISO-084",
+        "ISO-085"
+      ]
     },
     {
       "query_id": "ISO-Q-008",
-      "query_text": "vulnerability remediation patch management",
-      "tags": ["vulnerability", "operations", "risk"],
-      "limit": 5
+      "query_text": "incident response communication controls evidence owner review register policy log",
+      "tags": [
+        "incident",
+        "response",
+        "communication"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-007",
+        "ISO-008",
+        "ISO-020",
+        "ISO-021",
+        "ISO-033",
+        "ISO-034",
+        "ISO-046",
+        "ISO-047",
+        "ISO-059",
+        "ISO-060",
+        "ISO-072",
+        "ISO-073",
+        "ISO-085",
+        "ISO-086"
+      ]
     },
     {
       "query_id": "ISO-Q-009",
-      "query_text": "incident response escalation workflow",
-      "tags": ["incident", "response", "governance"],
-      "limit": 5
+      "query_text": "continuity recovery cadence controls evidence owner review register policy log",
+      "tags": [
+        "continuity",
+        "recovery",
+        "cadence"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-008",
+        "ISO-009",
+        "ISO-021",
+        "ISO-022",
+        "ISO-034",
+        "ISO-035",
+        "ISO-047",
+        "ISO-048",
+        "ISO-060",
+        "ISO-061",
+        "ISO-073",
+        "ISO-074",
+        "ISO-086",
+        "ISO-087"
+      ]
     },
     {
       "query_id": "ISO-Q-010",
-      "query_text": "business continuity disaster recovery",
-      "tags": ["continuity", "recovery", "cadence"],
-      "limit": 5
+      "query_text": "audit assurance metrics controls evidence owner review register policy log",
+      "tags": [
+        "audit",
+        "assurance",
+        "metrics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-009",
+        "ISO-010",
+        "ISO-022",
+        "ISO-023",
+        "ISO-035",
+        "ISO-036",
+        "ISO-048",
+        "ISO-049",
+        "ISO-061",
+        "ISO-062",
+        "ISO-074",
+        "ISO-075",
+        "ISO-087",
+        "ISO-088"
+      ]
     },
     {
       "query_id": "ISO-Q-011",
-      "query_text": "internal audit management review",
-      "tags": ["audit", "governance", "cadence"],
-      "limit": 5
+      "query_text": "supplier third_party contract controls evidence owner review register policy log",
+      "tags": [
+        "supplier",
+        "third_party",
+        "contract"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-010",
+        "ISO-011",
+        "ISO-023",
+        "ISO-024",
+        "ISO-036",
+        "ISO-037",
+        "ISO-049",
+        "ISO-050",
+        "ISO-062",
+        "ISO-063",
+        "ISO-075",
+        "ISO-076",
+        "ISO-088",
+        "ISO-089"
+      ]
     },
     {
       "query_id": "ISO-Q-012",
-      "query_text": "security awareness training completion",
-      "tags": ["awareness", "training", "people"],
-      "limit": 5
+      "query_text": "awareness training people controls evidence owner review register policy log",
+      "tags": [
+        "awareness",
+        "training",
+        "people"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-011",
+        "ISO-012",
+        "ISO-024",
+        "ISO-025",
+        "ISO-037",
+        "ISO-038",
+        "ISO-050",
+        "ISO-051",
+        "ISO-063",
+        "ISO-064",
+        "ISO-076",
+        "ISO-077",
+        "ISO-089",
+        "ISO-090"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-013",
+      "query_text": "privacy legal compliance controls evidence owner review register policy log",
+      "tags": [
+        "privacy",
+        "legal",
+        "compliance"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-012",
+        "ISO-013",
+        "ISO-025",
+        "ISO-026",
+        "ISO-038",
+        "ISO-039",
+        "ISO-051",
+        "ISO-052",
+        "ISO-064",
+        "ISO-065",
+        "ISO-077",
+        "ISO-078",
+        "ISO-090",
+        "ISO-091"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-014",
+      "query_text": "policy governance review controls evidence owner review register policy log",
+      "tags": [
+        "policy",
+        "governance",
+        "review"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-001",
+        "ISO-013",
+        "ISO-014",
+        "ISO-026",
+        "ISO-027",
+        "ISO-039",
+        "ISO-040",
+        "ISO-052",
+        "ISO-053",
+        "ISO-065",
+        "ISO-066",
+        "ISO-078",
+        "ISO-079",
+        "ISO-091",
+        "ISO-092"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-015",
+      "query_text": "risk register treatment controls evidence owner review register policy log",
+      "tags": [
+        "risk",
+        "register",
+        "treatment"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-001",
+        "ISO-002",
+        "ISO-014",
+        "ISO-015",
+        "ISO-027",
+        "ISO-028",
+        "ISO-040",
+        "ISO-041",
+        "ISO-053",
+        "ISO-054",
+        "ISO-066",
+        "ISO-067",
+        "ISO-079",
+        "ISO-080",
+        "ISO-092",
+        "ISO-093"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-016",
+      "query_text": "asset classification ownership controls evidence owner review register policy log",
+      "tags": [
+        "asset",
+        "classification",
+        "ownership"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-002",
+        "ISO-003",
+        "ISO-015",
+        "ISO-016",
+        "ISO-028",
+        "ISO-029",
+        "ISO-041",
+        "ISO-042",
+        "ISO-054",
+        "ISO-055",
+        "ISO-067",
+        "ISO-068",
+        "ISO-080",
+        "ISO-081",
+        "ISO-093"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-017",
+      "query_text": "identity access mfa controls evidence owner review register policy log",
+      "tags": [
+        "identity",
+        "access",
+        "mfa"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-003",
+        "ISO-004",
+        "ISO-016",
+        "ISO-017",
+        "ISO-029",
+        "ISO-030",
+        "ISO-042",
+        "ISO-043",
+        "ISO-055",
+        "ISO-056",
+        "ISO-068",
+        "ISO-069",
+        "ISO-081",
+        "ISO-082"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-018",
+      "query_text": "cryptography encryption key_management controls evidence owner review register policy log",
+      "tags": [
+        "cryptography",
+        "encryption",
+        "key_management"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-004",
+        "ISO-005",
+        "ISO-017",
+        "ISO-018",
+        "ISO-030",
+        "ISO-031",
+        "ISO-043",
+        "ISO-044",
+        "ISO-056",
+        "ISO-057",
+        "ISO-069",
+        "ISO-070",
+        "ISO-082",
+        "ISO-083"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-019",
+      "query_text": "logging monitoring retention controls evidence owner review register policy log",
+      "tags": [
+        "logging",
+        "monitoring",
+        "retention"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-005",
+        "ISO-006",
+        "ISO-018",
+        "ISO-019",
+        "ISO-031",
+        "ISO-032",
+        "ISO-044",
+        "ISO-045",
+        "ISO-057",
+        "ISO-058",
+        "ISO-070",
+        "ISO-071",
+        "ISO-083",
+        "ISO-084"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-020",
+      "query_text": "vulnerability operations hardening controls evidence owner review register policy log",
+      "tags": [
+        "vulnerability",
+        "operations",
+        "hardening"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-006",
+        "ISO-007",
+        "ISO-019",
+        "ISO-020",
+        "ISO-032",
+        "ISO-033",
+        "ISO-045",
+        "ISO-046",
+        "ISO-058",
+        "ISO-059",
+        "ISO-071",
+        "ISO-072",
+        "ISO-084",
+        "ISO-085"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-021",
+      "query_text": "incident response communication controls evidence owner review register policy log",
+      "tags": [
+        "incident",
+        "response",
+        "communication"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-007",
+        "ISO-008",
+        "ISO-020",
+        "ISO-021",
+        "ISO-033",
+        "ISO-034",
+        "ISO-046",
+        "ISO-047",
+        "ISO-059",
+        "ISO-060",
+        "ISO-072",
+        "ISO-073",
+        "ISO-085",
+        "ISO-086"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-022",
+      "query_text": "continuity recovery cadence controls evidence owner review register policy log",
+      "tags": [
+        "continuity",
+        "recovery",
+        "cadence"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-008",
+        "ISO-009",
+        "ISO-021",
+        "ISO-022",
+        "ISO-034",
+        "ISO-035",
+        "ISO-047",
+        "ISO-048",
+        "ISO-060",
+        "ISO-061",
+        "ISO-073",
+        "ISO-074",
+        "ISO-086",
+        "ISO-087"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-023",
+      "query_text": "audit assurance metrics controls evidence owner review register policy log",
+      "tags": [
+        "audit",
+        "assurance",
+        "metrics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-009",
+        "ISO-010",
+        "ISO-022",
+        "ISO-023",
+        "ISO-035",
+        "ISO-036",
+        "ISO-048",
+        "ISO-049",
+        "ISO-061",
+        "ISO-062",
+        "ISO-074",
+        "ISO-075",
+        "ISO-087",
+        "ISO-088"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-024",
+      "query_text": "supplier third_party contract controls evidence owner review register policy log",
+      "tags": [
+        "supplier",
+        "third_party",
+        "contract"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-010",
+        "ISO-011",
+        "ISO-023",
+        "ISO-024",
+        "ISO-036",
+        "ISO-037",
+        "ISO-049",
+        "ISO-050",
+        "ISO-062",
+        "ISO-063",
+        "ISO-075",
+        "ISO-076",
+        "ISO-088",
+        "ISO-089"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-025",
+      "query_text": "awareness training people controls evidence owner review register policy log",
+      "tags": [
+        "awareness",
+        "training",
+        "people"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-011",
+        "ISO-012",
+        "ISO-024",
+        "ISO-025",
+        "ISO-037",
+        "ISO-038",
+        "ISO-050",
+        "ISO-051",
+        "ISO-063",
+        "ISO-064",
+        "ISO-076",
+        "ISO-077",
+        "ISO-089",
+        "ISO-090"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-026",
+      "query_text": "privacy legal compliance controls evidence owner review register policy log",
+      "tags": [
+        "privacy",
+        "legal",
+        "compliance"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-012",
+        "ISO-013",
+        "ISO-025",
+        "ISO-026",
+        "ISO-038",
+        "ISO-039",
+        "ISO-051",
+        "ISO-052",
+        "ISO-064",
+        "ISO-065",
+        "ISO-077",
+        "ISO-078",
+        "ISO-090",
+        "ISO-091"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-027",
+      "query_text": "policy governance review controls evidence owner review register policy log",
+      "tags": [
+        "policy",
+        "governance",
+        "review"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-001",
+        "ISO-013",
+        "ISO-014",
+        "ISO-026",
+        "ISO-027",
+        "ISO-039",
+        "ISO-040",
+        "ISO-052",
+        "ISO-053",
+        "ISO-065",
+        "ISO-066",
+        "ISO-078",
+        "ISO-079",
+        "ISO-091",
+        "ISO-092"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-028",
+      "query_text": "risk register treatment controls evidence owner review register policy log",
+      "tags": [
+        "risk",
+        "register",
+        "treatment"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-002",
+        "ISO-015",
+        "ISO-028",
+        "ISO-041",
+        "ISO-054",
+        "ISO-067",
+        "ISO-080",
+        "ISO-093"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-029",
+      "query_text": "asset classification ownership controls evidence owner review register policy log",
+      "tags": [
+        "asset",
+        "classification",
+        "ownership"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-003",
+        "ISO-016",
+        "ISO-029",
+        "ISO-042",
+        "ISO-055",
+        "ISO-068",
+        "ISO-081"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-030",
+      "query_text": "identity access mfa controls evidence owner review register policy log",
+      "tags": [
+        "identity",
+        "access",
+        "mfa"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-004",
+        "ISO-017",
+        "ISO-030",
+        "ISO-043",
+        "ISO-056",
+        "ISO-069",
+        "ISO-082"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-031",
+      "query_text": "cryptography encryption key_management controls evidence owner review register policy log",
+      "tags": [
+        "cryptography",
+        "encryption",
+        "key_management"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-005",
+        "ISO-018",
+        "ISO-031",
+        "ISO-044",
+        "ISO-057",
+        "ISO-070",
+        "ISO-083"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-032",
+      "query_text": "logging monitoring retention controls evidence owner review register policy log",
+      "tags": [
+        "logging",
+        "monitoring",
+        "retention"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-006",
+        "ISO-019",
+        "ISO-032",
+        "ISO-045",
+        "ISO-058",
+        "ISO-071",
+        "ISO-084"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-033",
+      "query_text": "vulnerability operations hardening controls evidence owner review register policy log",
+      "tags": [
+        "vulnerability",
+        "operations",
+        "hardening"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-007",
+        "ISO-020",
+        "ISO-033",
+        "ISO-046",
+        "ISO-059",
+        "ISO-072",
+        "ISO-085"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-034",
+      "query_text": "incident response communication controls evidence owner review register policy log",
+      "tags": [
+        "incident",
+        "response",
+        "communication"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-008",
+        "ISO-021",
+        "ISO-034",
+        "ISO-047",
+        "ISO-060",
+        "ISO-073",
+        "ISO-086"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-035",
+      "query_text": "continuity recovery cadence controls evidence owner review register policy log",
+      "tags": [
+        "continuity",
+        "recovery",
+        "cadence"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-009",
+        "ISO-022",
+        "ISO-035",
+        "ISO-048",
+        "ISO-061",
+        "ISO-074",
+        "ISO-087"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-036",
+      "query_text": "audit assurance metrics controls evidence owner review register policy log",
+      "tags": [
+        "audit",
+        "assurance",
+        "metrics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-010",
+        "ISO-023",
+        "ISO-036",
+        "ISO-049",
+        "ISO-062",
+        "ISO-075",
+        "ISO-088"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-037",
+      "query_text": "supplier third_party contract controls evidence owner review register policy log",
+      "tags": [
+        "supplier",
+        "third_party",
+        "contract"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-011",
+        "ISO-024",
+        "ISO-037",
+        "ISO-050",
+        "ISO-063",
+        "ISO-076",
+        "ISO-089"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-038",
+      "query_text": "awareness training people controls evidence owner review register policy log",
+      "tags": [
+        "awareness",
+        "training",
+        "people"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "ISO-012",
+        "ISO-025",
+        "ISO-038",
+        "ISO-051",
+        "ISO-064",
+        "ISO-077",
+        "ISO-090"
+      ]
+    },
+    {
+      "query_id": "ISO-Q-039",
+      "query_text": "privacy legal compliance controls evidence owner review register policy log",
+      "tags": [
+        "privacy",
+        "legal",
+        "compliance"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-040",
+      "query_text": "policy governance review controls evidence owner review register policy log",
+      "tags": [
+        "policy",
+        "governance",
+        "review"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-041",
+      "query_text": "risk register treatment controls evidence owner review register policy log",
+      "tags": [
+        "risk",
+        "register",
+        "treatment"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-042",
+      "query_text": "asset classification ownership controls evidence owner review register policy log",
+      "tags": [
+        "asset",
+        "classification",
+        "ownership"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-043",
+      "query_text": "identity access mfa controls evidence owner review register policy log",
+      "tags": [
+        "identity",
+        "access",
+        "mfa"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-044",
+      "query_text": "cryptography encryption key_management controls evidence owner review register policy log",
+      "tags": [
+        "cryptography",
+        "encryption",
+        "key_management"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-045",
+      "query_text": "logging monitoring retention controls evidence owner review register policy log",
+      "tags": [
+        "logging",
+        "monitoring",
+        "retention"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-046",
+      "query_text": "vulnerability operations hardening controls evidence owner review register policy log",
+      "tags": [
+        "vulnerability",
+        "operations",
+        "hardening"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-047",
+      "query_text": "incident response communication controls evidence owner review register policy log",
+      "tags": [
+        "incident",
+        "response",
+        "communication"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-048",
+      "query_text": "continuity recovery cadence controls evidence owner review register policy log",
+      "tags": [
+        "continuity",
+        "recovery",
+        "cadence"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-049",
+      "query_text": "audit assurance metrics controls evidence owner review register policy log",
+      "tags": [
+        "audit",
+        "assurance",
+        "metrics"
+      ],
+      "limit": 30,
+      "control_ids": []
+    },
+    {
+      "query_id": "ISO-Q-050",
+      "query_text": "supplier third_party contract controls evidence owner review register policy log",
+      "tags": [
+        "supplier",
+        "third_party",
+        "contract"
+      ],
+      "limit": 30,
+      "control_ids": []
     }
   ]
 }
