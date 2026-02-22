@@ -1,0 +1,1187 @@
+{
+  "version": "2.0",
+  "queries": [
+    {
+      "query_id": "SOC2-Q-001",
+      "title": "CC1 readiness evidence query 1",
+      "query_text": "control environment cc1 control_environment ethics tone policy owner evidence review log ticket control",
+      "tags": [
+        "control_environment",
+        "ethics",
+        "tone",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC1.1",
+        "CC1.3",
+        "CC1.4",
+        "CC1.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-002",
+      "title": "CC1 readiness evidence query 2",
+      "query_text": "control environment cc1 control_environment ethics tone policy owner evidence review log ticket control",
+      "tags": [
+        "control_environment",
+        "ethics",
+        "tone",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC1.1",
+        "CC1.2",
+        "CC1.4",
+        "CC1.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-003",
+      "title": "CC1 readiness evidence query 3",
+      "query_text": "control environment cc1 control_environment ethics tone policy owner evidence review log ticket control",
+      "tags": [
+        "control_environment",
+        "ethics",
+        "tone",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC1.1",
+        "CC1.2",
+        "CC1.3",
+        "CC1.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-004",
+      "title": "CC1 readiness evidence query 4",
+      "query_text": "control environment cc1 control_environment ethics tone policy owner evidence review log ticket control",
+      "tags": [
+        "control_environment",
+        "ethics",
+        "tone",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC1.2",
+        "CC1.3",
+        "CC1.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-005",
+      "title": "CC2 readiness evidence query 1",
+      "query_text": "communication and information cc2 communication reporting governance policy owner evidence review log ticket control",
+      "tags": [
+        "communication",
+        "reporting",
+        "governance",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC2.1",
+        "CC2.3",
+        "CC2.4",
+        "CC2.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-006",
+      "title": "CC2 readiness evidence query 2",
+      "query_text": "communication and information cc2 communication reporting governance policy owner evidence review log ticket control",
+      "tags": [
+        "communication",
+        "reporting",
+        "governance",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC2.1",
+        "CC2.2",
+        "CC2.4",
+        "CC2.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-007",
+      "title": "CC2 readiness evidence query 3",
+      "query_text": "communication and information cc2 communication reporting governance policy owner evidence review log ticket control",
+      "tags": [
+        "communication",
+        "reporting",
+        "governance",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC2.1",
+        "CC2.2",
+        "CC2.3",
+        "CC2.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-008",
+      "title": "CC2 readiness evidence query 4",
+      "query_text": "communication and information cc2 communication reporting governance policy owner evidence review log ticket control",
+      "tags": [
+        "communication",
+        "reporting",
+        "governance",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC2.2",
+        "CC2.3",
+        "CC2.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-009",
+      "title": "CC3 readiness evidence query 1",
+      "query_text": "risk assessment cc3 risk_assessment threat_modeling enterprise_risk policy owner evidence review log ticket control",
+      "tags": [
+        "risk_assessment",
+        "threat_modeling",
+        "enterprise_risk",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC3.1",
+        "CC3.3",
+        "CC3.4",
+        "CC3.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-010",
+      "title": "CC3 readiness evidence query 2",
+      "query_text": "risk assessment cc3 risk_assessment threat_modeling enterprise_risk policy owner evidence review log ticket control",
+      "tags": [
+        "risk_assessment",
+        "threat_modeling",
+        "enterprise_risk",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC3.1",
+        "CC3.2",
+        "CC3.4",
+        "CC3.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-011",
+      "title": "CC3 readiness evidence query 3",
+      "query_text": "risk assessment cc3 risk_assessment threat_modeling enterprise_risk policy owner evidence review log ticket control",
+      "tags": [
+        "risk_assessment",
+        "threat_modeling",
+        "enterprise_risk",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC3.1",
+        "CC3.2",
+        "CC3.3",
+        "CC3.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-012",
+      "title": "CC3 readiness evidence query 4",
+      "query_text": "risk assessment cc3 risk_assessment threat_modeling enterprise_risk policy owner evidence review log ticket control",
+      "tags": [
+        "risk_assessment",
+        "threat_modeling",
+        "enterprise_risk",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC3.2",
+        "CC3.3",
+        "CC3.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-013",
+      "title": "CC4 readiness evidence query 1",
+      "query_text": "monitoring activities cc4 monitoring metrics audit policy owner evidence review log ticket control",
+      "tags": [
+        "monitoring",
+        "metrics",
+        "audit",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC4.1",
+        "CC4.3",
+        "CC4.4",
+        "CC4.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-014",
+      "title": "CC4 readiness evidence query 2",
+      "query_text": "monitoring activities cc4 monitoring metrics audit policy owner evidence review log ticket control",
+      "tags": [
+        "monitoring",
+        "metrics",
+        "audit",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC4.1",
+        "CC4.2",
+        "CC4.4",
+        "CC4.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-015",
+      "title": "CC4 readiness evidence query 3",
+      "query_text": "monitoring activities cc4 monitoring metrics audit policy owner evidence review log ticket control",
+      "tags": [
+        "monitoring",
+        "metrics",
+        "audit",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC4.1",
+        "CC4.2",
+        "CC4.3",
+        "CC4.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-016",
+      "title": "CC4 readiness evidence query 4",
+      "query_text": "monitoring activities cc4 monitoring metrics audit policy owner evidence review log ticket control",
+      "tags": [
+        "monitoring",
+        "metrics",
+        "audit",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC4.2",
+        "CC4.3",
+        "CC4.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-017",
+      "title": "CC5 readiness evidence query 1",
+      "query_text": "control activities cc5 control_activities review segregation policy owner evidence review log ticket control",
+      "tags": [
+        "control_activities",
+        "review",
+        "segregation",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC5.1",
+        "CC5.3",
+        "CC5.4",
+        "CC5.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-018",
+      "title": "CC5 readiness evidence query 2",
+      "query_text": "control activities cc5 control_activities review segregation policy owner evidence review log ticket control",
+      "tags": [
+        "control_activities",
+        "review",
+        "segregation",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC5.1",
+        "CC5.2",
+        "CC5.4",
+        "CC5.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-019",
+      "title": "CC5 readiness evidence query 3",
+      "query_text": "control activities cc5 control_activities review segregation policy owner evidence review log ticket control",
+      "tags": [
+        "control_activities",
+        "review",
+        "segregation",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC5.1",
+        "CC5.2",
+        "CC5.3",
+        "CC5.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-020",
+      "title": "CC5 readiness evidence query 4",
+      "query_text": "control activities cc5 control_activities review segregation policy owner evidence review log ticket control",
+      "tags": [
+        "control_activities",
+        "review",
+        "segregation",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC5.2",
+        "CC5.3",
+        "CC5.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-021",
+      "title": "CC6 readiness evidence query 1",
+      "query_text": "logical and physical access cc6 logical_access identity mfa policy owner evidence review log ticket control",
+      "tags": [
+        "logical_access",
+        "identity",
+        "mfa",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC6.1",
+        "CC6.3",
+        "CC6.4",
+        "CC6.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-022",
+      "title": "CC6 readiness evidence query 2",
+      "query_text": "logical and physical access cc6 logical_access identity mfa policy owner evidence review log ticket control",
+      "tags": [
+        "logical_access",
+        "identity",
+        "mfa",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC6.1",
+        "CC6.2",
+        "CC6.4",
+        "CC6.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-023",
+      "title": "CC6 readiness evidence query 3",
+      "query_text": "logical and physical access cc6 logical_access identity mfa policy owner evidence review log ticket control",
+      "tags": [
+        "logical_access",
+        "identity",
+        "mfa",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC6.1",
+        "CC6.2",
+        "CC6.3",
+        "CC6.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-024",
+      "title": "CC6 readiness evidence query 4",
+      "query_text": "logical and physical access cc6 logical_access identity mfa policy owner evidence review log ticket control",
+      "tags": [
+        "logical_access",
+        "identity",
+        "mfa",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC6.2",
+        "CC6.3",
+        "CC6.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-025",
+      "title": "CC7 readiness evidence query 1",
+      "query_text": "system operations cc7 system_operations logging alerting policy owner evidence review log ticket control",
+      "tags": [
+        "system_operations",
+        "logging",
+        "alerting",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC7.1",
+        "CC7.3",
+        "CC7.4",
+        "CC7.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-026",
+      "title": "CC7 readiness evidence query 2",
+      "query_text": "system operations cc7 system_operations logging alerting policy owner evidence review log ticket control",
+      "tags": [
+        "system_operations",
+        "logging",
+        "alerting",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC7.1",
+        "CC7.2",
+        "CC7.4",
+        "CC7.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-027",
+      "title": "CC7 readiness evidence query 3",
+      "query_text": "system operations cc7 system_operations logging alerting policy owner evidence review log ticket control",
+      "tags": [
+        "system_operations",
+        "logging",
+        "alerting",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC7.1",
+        "CC7.2",
+        "CC7.3",
+        "CC7.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-028",
+      "title": "CC7 readiness evidence query 4",
+      "query_text": "system operations cc7 system_operations logging alerting policy owner evidence review log ticket control",
+      "tags": [
+        "system_operations",
+        "logging",
+        "alerting",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC7.2",
+        "CC7.3",
+        "CC7.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-029",
+      "title": "CC8 readiness evidence query 1",
+      "query_text": "change management cc8 change_management sdlc release policy owner evidence review log ticket control",
+      "tags": [
+        "change_management",
+        "sdlc",
+        "release",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC8.1",
+        "CC8.3",
+        "CC8.4",
+        "CC8.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-030",
+      "title": "CC8 readiness evidence query 2",
+      "query_text": "change management cc8 change_management sdlc release policy owner evidence review log ticket control",
+      "tags": [
+        "change_management",
+        "sdlc",
+        "release",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC8.1",
+        "CC8.2",
+        "CC8.4",
+        "CC8.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-031",
+      "title": "CC8 readiness evidence query 3",
+      "query_text": "change management cc8 change_management sdlc release policy owner evidence review log ticket control",
+      "tags": [
+        "change_management",
+        "sdlc",
+        "release",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC8.1",
+        "CC8.2",
+        "CC8.3",
+        "CC8.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-032",
+      "title": "CC8 readiness evidence query 4",
+      "query_text": "change management cc8 change_management sdlc release policy owner evidence review log ticket control",
+      "tags": [
+        "change_management",
+        "sdlc",
+        "release",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC8.2",
+        "CC8.3",
+        "CC8.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-033",
+      "title": "CC9 readiness evidence query 1",
+      "query_text": "risk mitigation cc9 risk_mitigation incident_response resilience policy owner evidence review log ticket control",
+      "tags": [
+        "risk_mitigation",
+        "incident_response",
+        "resilience",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC9.1",
+        "CC9.3",
+        "CC9.4",
+        "CC9.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-034",
+      "title": "CC9 readiness evidence query 2",
+      "query_text": "risk mitigation cc9 risk_mitigation incident_response resilience policy owner evidence review log ticket control",
+      "tags": [
+        "risk_mitigation",
+        "incident_response",
+        "resilience",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC9.1",
+        "CC9.2",
+        "CC9.4",
+        "CC9.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-035",
+      "title": "CC9 readiness evidence query 3",
+      "query_text": "risk mitigation cc9 risk_mitigation incident_response resilience policy owner evidence review log ticket control",
+      "tags": [
+        "risk_mitigation",
+        "incident_response",
+        "resilience",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC9.1",
+        "CC9.2",
+        "CC9.3",
+        "CC9.5"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-036",
+      "title": "CC9 readiness evidence query 4",
+      "query_text": "risk mitigation cc9 risk_mitigation incident_response resilience policy owner evidence review log ticket control",
+      "tags": [
+        "risk_mitigation",
+        "incident_response",
+        "resilience",
+        "soc2",
+        "readiness",
+        "security"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "CC9.2",
+        "CC9.3",
+        "CC9.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-037",
+      "title": "C1 readiness evidence query 1",
+      "query_text": "confidentiality commitments c1 confidentiality data_classification encryption policy owner evidence review log ticket control",
+      "tags": [
+        "confidentiality",
+        "data_classification",
+        "encryption",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "C1.1",
+        "C1.2",
+        "C1.3",
+        "C1.4",
+        "C1.5",
+        "C1.6"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-038",
+      "title": "C1 readiness evidence query 2",
+      "query_text": "confidentiality commitments c1 confidentiality data_classification encryption policy owner evidence review log ticket control",
+      "tags": [
+        "confidentiality",
+        "data_classification",
+        "encryption",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "C1.1",
+        "C1.2",
+        "C1.3",
+        "C1.4",
+        "C1.5",
+        "C1.6"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-039",
+      "title": "C1 readiness evidence query 3",
+      "query_text": "confidentiality commitments c1 confidentiality data_classification encryption policy owner evidence review log ticket control",
+      "tags": [
+        "confidentiality",
+        "data_classification",
+        "encryption",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "C1.1",
+        "C1.2",
+        "C1.3",
+        "C1.4",
+        "C1.5",
+        "C1.6"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-040",
+      "title": "C2 readiness evidence query 1",
+      "query_text": "confidential data lifecycle c2 confidentiality data_handling retention policy owner evidence review log ticket control",
+      "tags": [
+        "confidentiality",
+        "data_handling",
+        "retention",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "C2.1",
+        "C2.2",
+        "C2.3",
+        "C2.4",
+        "C2.5",
+        "C2.6"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-041",
+      "title": "C2 readiness evidence query 2",
+      "query_text": "confidential data lifecycle c2 confidentiality data_handling retention policy owner evidence review log ticket control",
+      "tags": [
+        "confidentiality",
+        "data_handling",
+        "retention",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "C2.1",
+        "C2.2",
+        "C2.3",
+        "C2.4",
+        "C2.5",
+        "C2.6"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-042",
+      "title": "C2 readiness evidence query 3",
+      "query_text": "confidential data lifecycle c2 confidentiality data_handling retention policy owner evidence review log ticket control",
+      "tags": [
+        "confidentiality",
+        "data_handling",
+        "retention",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "C2.1",
+        "C2.2",
+        "C2.3",
+        "C2.4",
+        "C2.5",
+        "C2.6"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-043",
+      "title": "A1 readiness evidence query 1",
+      "query_text": "availability planning a1 availability capacity sla policy owner evidence review log ticket control",
+      "tags": [
+        "availability",
+        "capacity",
+        "sla",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "A1.1",
+        "A1.2",
+        "A1.3",
+        "A1.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-044",
+      "title": "A1 readiness evidence query 2",
+      "query_text": "availability planning a1 availability capacity sla policy owner evidence review log ticket control",
+      "tags": [
+        "availability",
+        "capacity",
+        "sla",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "A1.1",
+        "A1.2",
+        "A1.3",
+        "A1.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-045",
+      "title": "A2 readiness evidence query 1",
+      "query_text": "backup and recovery a2 availability backup restore policy owner evidence review log ticket control",
+      "tags": [
+        "availability",
+        "backup",
+        "restore",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "A2.1",
+        "A2.2",
+        "A2.3",
+        "A2.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-046",
+      "title": "A2 readiness evidence query 2",
+      "query_text": "backup and recovery a2 availability backup restore policy owner evidence review log ticket control",
+      "tags": [
+        "availability",
+        "backup",
+        "restore",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "A2.1",
+        "A2.2",
+        "A2.3",
+        "A2.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-047",
+      "title": "A3 readiness evidence query 1",
+      "query_text": "resilience testing a3 availability dr_testing continuity policy owner evidence review log ticket control",
+      "tags": [
+        "availability",
+        "dr_testing",
+        "continuity",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "A3.1",
+        "A3.2",
+        "A3.3",
+        "A3.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-048",
+      "title": "A3 readiness evidence query 2",
+      "query_text": "resilience testing a3 availability dr_testing continuity policy owner evidence review log ticket control",
+      "tags": [
+        "availability",
+        "dr_testing",
+        "continuity",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "A3.1",
+        "A3.2",
+        "A3.3",
+        "A3.4"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-049",
+      "title": "PI1 readiness evidence query 1",
+      "query_text": "input integrity pi1 processing_integrity input_validation completeness policy owner evidence review log ticket control",
+      "tags": [
+        "processing_integrity",
+        "input_validation",
+        "completeness",
+        "soc2",
+        "readiness",
+        "processingintegrity"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "PI1.1",
+        "PI1.2",
+        "PI1.3"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-050",
+      "title": "PI2 readiness evidence query 1",
+      "query_text": "processing accuracy pi2 processing_integrity accuracy reconciliation policy owner evidence review log ticket control",
+      "tags": [
+        "processing_integrity",
+        "accuracy",
+        "reconciliation",
+        "soc2",
+        "readiness",
+        "processingintegrity"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "PI2.1",
+        "PI2.2",
+        "PI2.3"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-051",
+      "title": "PI3 readiness evidence query 1",
+      "query_text": "exception handling pi3 processing_integrity exceptions workflow policy owner evidence review log ticket control",
+      "tags": [
+        "processing_integrity",
+        "exceptions",
+        "workflow",
+        "soc2",
+        "readiness",
+        "processingintegrity"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "PI3.1",
+        "PI3.2",
+        "PI3.3"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-052",
+      "title": "PI4 readiness evidence query 1",
+      "query_text": "job and batch control pi4 processing_integrity job_control batch policy owner evidence review log ticket control",
+      "tags": [
+        "processing_integrity",
+        "job_control",
+        "batch",
+        "soc2",
+        "readiness",
+        "processingintegrity"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "PI4.1",
+        "PI4.2",
+        "PI4.3"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-053",
+      "title": "PI5 readiness evidence query 1",
+      "query_text": "output review pi5 processing_integrity output_review traceability policy owner evidence review log ticket control",
+      "tags": [
+        "processing_integrity",
+        "output_review",
+        "traceability",
+        "soc2",
+        "readiness",
+        "processingintegrity"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "PI5.1",
+        "PI5.2",
+        "PI5.3"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-054",
+      "title": "P1 readiness evidence query 1",
+      "query_text": "notice and transparency p1 privacy notice consent policy owner evidence review log ticket control",
+      "tags": [
+        "privacy",
+        "notice",
+        "consent",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "P1.1",
+        "P1.2"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-055",
+      "title": "P2 readiness evidence query 1",
+      "query_text": "collection and use limitation p2 privacy collection purpose_limitation policy owner evidence review log ticket control",
+      "tags": [
+        "privacy",
+        "collection",
+        "purpose_limitation",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "P2.1",
+        "P2.2"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-056",
+      "title": "P3 readiness evidence query 1",
+      "query_text": "data subject rights p3 privacy data_subject_rights request_handling policy owner evidence review log ticket control",
+      "tags": [
+        "privacy",
+        "data_subject_rights",
+        "request_handling",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "P3.1",
+        "P3.2"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-057",
+      "title": "P4 readiness evidence query 1",
+      "query_text": "privacy safeguards p4 privacy safeguards confidentiality policy owner evidence review log ticket control",
+      "tags": [
+        "privacy",
+        "safeguards",
+        "confidentiality",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "P4.1",
+        "P4.2"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-058",
+      "title": "P5 readiness evidence query 1",
+      "query_text": "third-party privacy management p5 privacy third_party contracts policy owner evidence review log ticket control",
+      "tags": [
+        "privacy",
+        "third_party",
+        "contracts",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "P5.1",
+        "P5.2"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-059",
+      "title": "P6 readiness evidence query 1",
+      "query_text": "privacy monitoring p6 privacy monitoring compliance policy owner evidence review log ticket control",
+      "tags": [
+        "privacy",
+        "monitoring",
+        "compliance",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "P6.1",
+        "P6.2"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-060",
+      "title": "P7 readiness evidence query 1",
+      "query_text": "privacy incident response p7 privacy incident_response breach policy owner evidence review log ticket control",
+      "tags": [
+        "privacy",
+        "incident_response",
+        "breach",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "P7.1",
+        "P7.2"
+      ]
+    },
+    {
+      "query_id": "SOC2-Q-061",
+      "title": "P8 readiness evidence query 1",
+      "query_text": "retention and disposal p8 privacy retention deletion policy owner evidence review log ticket control",
+      "tags": [
+        "privacy",
+        "retention",
+        "deletion",
+        "soc2",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "P8.1",
+        "P8.2"
+      ]
+    }
+  ]
+}

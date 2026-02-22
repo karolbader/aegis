@@ -1,0 +1,2062 @@
+[
+  {
+    "control_id": "CC1.1",
+    "title": "CC1.1 Control Environment readiness",
+    "description": "Readiness control for control environment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control environment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control environment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_environment",
+      "ethics",
+      "tone",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC1.2",
+    "title": "CC1.2 Control Environment readiness",
+    "description": "Readiness control for control environment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control environment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control environment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_environment",
+      "ethics",
+      "tone",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC1.3",
+    "title": "CC1.3 Control Environment readiness",
+    "description": "Readiness control for control environment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control environment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control environment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_environment",
+      "ethics",
+      "tone",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC1.4",
+    "title": "CC1.4 Control Environment readiness",
+    "description": "Readiness control for control environment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control environment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control environment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_environment",
+      "ethics",
+      "tone",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC1.5",
+    "title": "CC1.5 Control Environment readiness",
+    "description": "Readiness control for control environment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control environment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control environment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_environment",
+      "ethics",
+      "tone",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC2.1",
+    "title": "CC2.1 Communication and Information readiness",
+    "description": "Readiness control for communication and information under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that communication and information is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for communication and information.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "communication",
+      "reporting",
+      "governance",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC2.2",
+    "title": "CC2.2 Communication and Information readiness",
+    "description": "Readiness control for communication and information under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that communication and information is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for communication and information.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "communication",
+      "reporting",
+      "governance",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC2.3",
+    "title": "CC2.3 Communication and Information readiness",
+    "description": "Readiness control for communication and information under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that communication and information is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for communication and information.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "communication",
+      "reporting",
+      "governance",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC2.4",
+    "title": "CC2.4 Communication and Information readiness",
+    "description": "Readiness control for communication and information under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that communication and information is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for communication and information.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "communication",
+      "reporting",
+      "governance",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC2.5",
+    "title": "CC2.5 Communication and Information readiness",
+    "description": "Readiness control for communication and information under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that communication and information is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for communication and information.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "communication",
+      "reporting",
+      "governance",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC3.1",
+    "title": "CC3.1 Risk Assessment readiness",
+    "description": "Readiness control for risk assessment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk assessment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk assessment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_assessment",
+      "threat_modeling",
+      "enterprise_risk",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC3.2",
+    "title": "CC3.2 Risk Assessment readiness",
+    "description": "Readiness control for risk assessment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk assessment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk assessment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_assessment",
+      "threat_modeling",
+      "enterprise_risk",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC3.3",
+    "title": "CC3.3 Risk Assessment readiness",
+    "description": "Readiness control for risk assessment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk assessment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk assessment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_assessment",
+      "threat_modeling",
+      "enterprise_risk",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC3.4",
+    "title": "CC3.4 Risk Assessment readiness",
+    "description": "Readiness control for risk assessment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk assessment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk assessment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_assessment",
+      "threat_modeling",
+      "enterprise_risk",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC3.5",
+    "title": "CC3.5 Risk Assessment readiness",
+    "description": "Readiness control for risk assessment under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk assessment is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk assessment.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_assessment",
+      "threat_modeling",
+      "enterprise_risk",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC4.1",
+    "title": "CC4.1 Monitoring Activities readiness",
+    "description": "Readiness control for monitoring activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that monitoring activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for monitoring activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "monitoring",
+      "metrics",
+      "audit",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC4.2",
+    "title": "CC4.2 Monitoring Activities readiness",
+    "description": "Readiness control for monitoring activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that monitoring activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for monitoring activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "monitoring",
+      "metrics",
+      "audit",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC4.3",
+    "title": "CC4.3 Monitoring Activities readiness",
+    "description": "Readiness control for monitoring activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that monitoring activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for monitoring activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "monitoring",
+      "metrics",
+      "audit",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC4.4",
+    "title": "CC4.4 Monitoring Activities readiness",
+    "description": "Readiness control for monitoring activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that monitoring activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for monitoring activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "monitoring",
+      "metrics",
+      "audit",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC4.5",
+    "title": "CC4.5 Monitoring Activities readiness",
+    "description": "Readiness control for monitoring activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that monitoring activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for monitoring activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "monitoring",
+      "metrics",
+      "audit",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC5.1",
+    "title": "CC5.1 Control Activities readiness",
+    "description": "Readiness control for control activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_activities",
+      "review",
+      "segregation",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC5.2",
+    "title": "CC5.2 Control Activities readiness",
+    "description": "Readiness control for control activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_activities",
+      "review",
+      "segregation",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC5.3",
+    "title": "CC5.3 Control Activities readiness",
+    "description": "Readiness control for control activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_activities",
+      "review",
+      "segregation",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC5.4",
+    "title": "CC5.4 Control Activities readiness",
+    "description": "Readiness control for control activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_activities",
+      "review",
+      "segregation",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC5.5",
+    "title": "CC5.5 Control Activities readiness",
+    "description": "Readiness control for control activities under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that control activities is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for control activities.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "control_activities",
+      "review",
+      "segregation",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC6.1",
+    "title": "CC6.1 Logical and Physical Access readiness",
+    "description": "Readiness control for logical and physical access under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that logical and physical access is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for logical and physical access.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "logical_access",
+      "identity",
+      "mfa",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC6.2",
+    "title": "CC6.2 Logical and Physical Access readiness",
+    "description": "Readiness control for logical and physical access under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that logical and physical access is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for logical and physical access.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "logical_access",
+      "identity",
+      "mfa",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC6.3",
+    "title": "CC6.3 Logical and Physical Access readiness",
+    "description": "Readiness control for logical and physical access under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that logical and physical access is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for logical and physical access.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "logical_access",
+      "identity",
+      "mfa",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC6.4",
+    "title": "CC6.4 Logical and Physical Access readiness",
+    "description": "Readiness control for logical and physical access under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that logical and physical access is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for logical and physical access.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "logical_access",
+      "identity",
+      "mfa",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC6.5",
+    "title": "CC6.5 Logical and Physical Access readiness",
+    "description": "Readiness control for logical and physical access under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that logical and physical access is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for logical and physical access.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "logical_access",
+      "identity",
+      "mfa",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC7.1",
+    "title": "CC7.1 System Operations readiness",
+    "description": "Readiness control for system operations under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that system operations is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for system operations.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "system_operations",
+      "logging",
+      "alerting",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC7.2",
+    "title": "CC7.2 System Operations readiness",
+    "description": "Readiness control for system operations under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that system operations is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for system operations.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "system_operations",
+      "logging",
+      "alerting",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC7.3",
+    "title": "CC7.3 System Operations readiness",
+    "description": "Readiness control for system operations under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that system operations is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for system operations.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "system_operations",
+      "logging",
+      "alerting",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC7.4",
+    "title": "CC7.4 System Operations readiness",
+    "description": "Readiness control for system operations under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that system operations is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for system operations.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "system_operations",
+      "logging",
+      "alerting",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC7.5",
+    "title": "CC7.5 System Operations readiness",
+    "description": "Readiness control for system operations under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that system operations is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for system operations.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "system_operations",
+      "logging",
+      "alerting",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC8.1",
+    "title": "CC8.1 Change Management readiness",
+    "description": "Readiness control for change management under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that change management is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for change management.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "change_management",
+      "sdlc",
+      "release",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC8.2",
+    "title": "CC8.2 Change Management readiness",
+    "description": "Readiness control for change management under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that change management is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for change management.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "change_management",
+      "sdlc",
+      "release",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC8.3",
+    "title": "CC8.3 Change Management readiness",
+    "description": "Readiness control for change management under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that change management is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for change management.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "change_management",
+      "sdlc",
+      "release",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC8.4",
+    "title": "CC8.4 Change Management readiness",
+    "description": "Readiness control for change management under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that change management is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for change management.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "change_management",
+      "sdlc",
+      "release",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC8.5",
+    "title": "CC8.5 Change Management readiness",
+    "description": "Readiness control for change management under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that change management is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for change management.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "change_management",
+      "sdlc",
+      "release",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC9.1",
+    "title": "CC9.1 Risk Mitigation readiness",
+    "description": "Readiness control for risk mitigation under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk mitigation is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk mitigation.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_mitigation",
+      "incident_response",
+      "resilience",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC9.2",
+    "title": "CC9.2 Risk Mitigation readiness",
+    "description": "Readiness control for risk mitigation under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk mitigation is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk mitigation.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_mitigation",
+      "incident_response",
+      "resilience",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC9.3",
+    "title": "CC9.3 Risk Mitigation readiness",
+    "description": "Readiness control for risk mitigation under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk mitigation is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk mitigation.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_mitigation",
+      "incident_response",
+      "resilience",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC9.4",
+    "title": "CC9.4 Risk Mitigation readiness",
+    "description": "Readiness control for risk mitigation under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk mitigation is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk mitigation.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_mitigation",
+      "incident_response",
+      "resilience",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "CC9.5",
+    "title": "CC9.5 Risk Mitigation readiness",
+    "description": "Readiness control for risk mitigation under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that risk mitigation is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for risk mitigation.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "risk_mitigation",
+      "incident_response",
+      "resilience",
+      "soc2",
+      "readiness",
+      "security"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C1.1",
+    "title": "C1.1 Confidentiality Commitments readiness",
+    "description": "Readiness control for confidentiality commitments under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidentiality commitments is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidentiality commitments.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_classification",
+      "encryption",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C1.2",
+    "title": "C1.2 Confidentiality Commitments readiness",
+    "description": "Readiness control for confidentiality commitments under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidentiality commitments is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidentiality commitments.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_classification",
+      "encryption",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C1.3",
+    "title": "C1.3 Confidentiality Commitments readiness",
+    "description": "Readiness control for confidentiality commitments under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidentiality commitments is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidentiality commitments.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_classification",
+      "encryption",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C1.4",
+    "title": "C1.4 Confidentiality Commitments readiness",
+    "description": "Readiness control for confidentiality commitments under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidentiality commitments is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidentiality commitments.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_classification",
+      "encryption",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C1.5",
+    "title": "C1.5 Confidentiality Commitments readiness",
+    "description": "Readiness control for confidentiality commitments under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidentiality commitments is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidentiality commitments.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_classification",
+      "encryption",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C1.6",
+    "title": "C1.6 Confidentiality Commitments readiness",
+    "description": "Readiness control for confidentiality commitments under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidentiality commitments is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidentiality commitments.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_classification",
+      "encryption",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C2.1",
+    "title": "C2.1 Confidential Data Lifecycle readiness",
+    "description": "Readiness control for confidential data lifecycle under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidential data lifecycle is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidential data lifecycle.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_handling",
+      "retention",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C2.2",
+    "title": "C2.2 Confidential Data Lifecycle readiness",
+    "description": "Readiness control for confidential data lifecycle under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidential data lifecycle is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidential data lifecycle.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_handling",
+      "retention",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C2.3",
+    "title": "C2.3 Confidential Data Lifecycle readiness",
+    "description": "Readiness control for confidential data lifecycle under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidential data lifecycle is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidential data lifecycle.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_handling",
+      "retention",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C2.4",
+    "title": "C2.4 Confidential Data Lifecycle readiness",
+    "description": "Readiness control for confidential data lifecycle under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidential data lifecycle is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidential data lifecycle.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_handling",
+      "retention",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C2.5",
+    "title": "C2.5 Confidential Data Lifecycle readiness",
+    "description": "Readiness control for confidential data lifecycle under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidential data lifecycle is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidential data lifecycle.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_handling",
+      "retention",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "C2.6",
+    "title": "C2.6 Confidential Data Lifecycle readiness",
+    "description": "Readiness control for confidential data lifecycle under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that confidential data lifecycle is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for confidential data lifecycle.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "confidentiality",
+      "data_handling",
+      "retention",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "core"
+  },
+  {
+    "control_id": "A1.1",
+    "title": "A1.1 Availability Planning readiness",
+    "description": "Readiness control for availability planning under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that availability planning is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for availability planning.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "capacity",
+      "sla",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A1.2",
+    "title": "A1.2 Availability Planning readiness",
+    "description": "Readiness control for availability planning under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that availability planning is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for availability planning.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "capacity",
+      "sla",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A1.3",
+    "title": "A1.3 Availability Planning readiness",
+    "description": "Readiness control for availability planning under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that availability planning is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for availability planning.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "capacity",
+      "sla",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A1.4",
+    "title": "A1.4 Availability Planning readiness",
+    "description": "Readiness control for availability planning under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that availability planning is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for availability planning.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "capacity",
+      "sla",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A2.1",
+    "title": "A2.1 Backup and Recovery readiness",
+    "description": "Readiness control for backup and recovery under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that backup and recovery is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for backup and recovery.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "backup",
+      "restore",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A2.2",
+    "title": "A2.2 Backup and Recovery readiness",
+    "description": "Readiness control for backup and recovery under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that backup and recovery is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for backup and recovery.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "backup",
+      "restore",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A2.3",
+    "title": "A2.3 Backup and Recovery readiness",
+    "description": "Readiness control for backup and recovery under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that backup and recovery is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for backup and recovery.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "backup",
+      "restore",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A2.4",
+    "title": "A2.4 Backup and Recovery readiness",
+    "description": "Readiness control for backup and recovery under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that backup and recovery is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for backup and recovery.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "backup",
+      "restore",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A3.1",
+    "title": "A3.1 Resilience Testing readiness",
+    "description": "Readiness control for resilience testing under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that resilience testing is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for resilience testing.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "dr_testing",
+      "continuity",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A3.2",
+    "title": "A3.2 Resilience Testing readiness",
+    "description": "Readiness control for resilience testing under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that resilience testing is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for resilience testing.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "dr_testing",
+      "continuity",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A3.3",
+    "title": "A3.3 Resilience Testing readiness",
+    "description": "Readiness control for resilience testing under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that resilience testing is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for resilience testing.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "dr_testing",
+      "continuity",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "A3.4",
+    "title": "A3.4 Resilience Testing readiness",
+    "description": "Readiness control for resilience testing under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that resilience testing is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for resilience testing.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "availability",
+      "dr_testing",
+      "continuity",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI1.1",
+    "title": "PI1.1 Input Integrity readiness",
+    "description": "Readiness control for input integrity under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that input integrity is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for input integrity.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "input_validation",
+      "completeness",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI1.2",
+    "title": "PI1.2 Input Integrity readiness",
+    "description": "Readiness control for input integrity under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that input integrity is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for input integrity.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "input_validation",
+      "completeness",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI1.3",
+    "title": "PI1.3 Input Integrity readiness",
+    "description": "Readiness control for input integrity under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that input integrity is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for input integrity.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "input_validation",
+      "completeness",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI2.1",
+    "title": "PI2.1 Processing Accuracy readiness",
+    "description": "Readiness control for processing accuracy under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that processing accuracy is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for processing accuracy.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "accuracy",
+      "reconciliation",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI2.2",
+    "title": "PI2.2 Processing Accuracy readiness",
+    "description": "Readiness control for processing accuracy under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that processing accuracy is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for processing accuracy.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "accuracy",
+      "reconciliation",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI2.3",
+    "title": "PI2.3 Processing Accuracy readiness",
+    "description": "Readiness control for processing accuracy under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that processing accuracy is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for processing accuracy.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "accuracy",
+      "reconciliation",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI3.1",
+    "title": "PI3.1 Exception Handling readiness",
+    "description": "Readiness control for exception handling under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that exception handling is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for exception handling.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "exceptions",
+      "workflow",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI3.2",
+    "title": "PI3.2 Exception Handling readiness",
+    "description": "Readiness control for exception handling under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that exception handling is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for exception handling.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "exceptions",
+      "workflow",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI3.3",
+    "title": "PI3.3 Exception Handling readiness",
+    "description": "Readiness control for exception handling under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that exception handling is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for exception handling.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "exceptions",
+      "workflow",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI4.1",
+    "title": "PI4.1 Job and Batch Control readiness",
+    "description": "Readiness control for job and batch control under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that job and batch control is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for job and batch control.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "job_control",
+      "batch",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI4.2",
+    "title": "PI4.2 Job and Batch Control readiness",
+    "description": "Readiness control for job and batch control under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that job and batch control is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for job and batch control.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "job_control",
+      "batch",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI4.3",
+    "title": "PI4.3 Job and Batch Control readiness",
+    "description": "Readiness control for job and batch control under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that job and batch control is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for job and batch control.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "job_control",
+      "batch",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI5.1",
+    "title": "PI5.1 Output Review readiness",
+    "description": "Readiness control for output review under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that output review is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for output review.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "output_review",
+      "traceability",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI5.2",
+    "title": "PI5.2 Output Review readiness",
+    "description": "Readiness control for output review under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that output review is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for output review.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "output_review",
+      "traceability",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "PI5.3",
+    "title": "PI5.3 Output Review readiness",
+    "description": "Readiness control for output review under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that output review is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for output review.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "processing_integrity",
+      "output_review",
+      "traceability",
+      "soc2",
+      "readiness",
+      "processingintegrity"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P1.1",
+    "title": "P1.1 Notice and Transparency readiness",
+    "description": "Readiness control for notice and transparency under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that notice and transparency is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for notice and transparency.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "notice",
+      "consent",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P1.2",
+    "title": "P1.2 Notice and Transparency readiness",
+    "description": "Readiness control for notice and transparency under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that notice and transparency is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for notice and transparency.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "notice",
+      "consent",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P2.1",
+    "title": "P2.1 Collection and Use Limitation readiness",
+    "description": "Readiness control for collection and use limitation under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that collection and use limitation is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for collection and use limitation.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "collection",
+      "purpose_limitation",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P2.2",
+    "title": "P2.2 Collection and Use Limitation readiness",
+    "description": "Readiness control for collection and use limitation under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that collection and use limitation is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for collection and use limitation.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "collection",
+      "purpose_limitation",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P3.1",
+    "title": "P3.1 Data Subject Rights readiness",
+    "description": "Readiness control for data subject rights under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that data subject rights is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for data subject rights.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "data_subject_rights",
+      "request_handling",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P3.2",
+    "title": "P3.2 Data Subject Rights readiness",
+    "description": "Readiness control for data subject rights under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that data subject rights is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for data subject rights.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "data_subject_rights",
+      "request_handling",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P4.1",
+    "title": "P4.1 Privacy Safeguards readiness",
+    "description": "Readiness control for privacy safeguards under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that privacy safeguards is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for privacy safeguards.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "safeguards",
+      "confidentiality",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P4.2",
+    "title": "P4.2 Privacy Safeguards readiness",
+    "description": "Readiness control for privacy safeguards under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that privacy safeguards is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for privacy safeguards.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "safeguards",
+      "confidentiality",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P5.1",
+    "title": "P5.1 Third-Party Privacy Management readiness",
+    "description": "Readiness control for third-party privacy management under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that third-party privacy management is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for third-party privacy management.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "third_party",
+      "contracts",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P5.2",
+    "title": "P5.2 Third-Party Privacy Management readiness",
+    "description": "Readiness control for third-party privacy management under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that third-party privacy management is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for third-party privacy management.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "third_party",
+      "contracts",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P6.1",
+    "title": "P6.1 Privacy Monitoring readiness",
+    "description": "Readiness control for privacy monitoring under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that privacy monitoring is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for privacy monitoring.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "monitoring",
+      "compliance",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P6.2",
+    "title": "P6.2 Privacy Monitoring readiness",
+    "description": "Readiness control for privacy monitoring under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that privacy monitoring is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for privacy monitoring.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "monitoring",
+      "compliance",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P7.1",
+    "title": "P7.1 Privacy Incident Response readiness",
+    "description": "Readiness control for privacy incident response under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that privacy incident response is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for privacy incident response.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "incident_response",
+      "breach",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P7.2",
+    "title": "P7.2 Privacy Incident Response readiness",
+    "description": "Readiness control for privacy incident response under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that privacy incident response is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for privacy incident response.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "incident_response",
+      "breach",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P8.1",
+    "title": "P8.1 Retention and Disposal readiness",
+    "description": "Readiness control for retention and disposal under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that retention and disposal is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for retention and disposal.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "retention",
+      "deletion",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  },
+  {
+    "control_id": "P8.2",
+    "title": "P8.2 Retention and Disposal readiness",
+    "description": "Readiness control for retention and disposal under SOC 2 evidence-pack preparation.",
+    "objective": "Demonstrate that retention and disposal is defined, operated, and reviewable with reproducible local evidence.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Written policy or procedure showing ownership, approval, and review cadence for retention and disposal.",
+      "Operational records (logs, tickets, reports, or dashboards) demonstrating the control is performed consistently.",
+      "Evidence of exception handling and remediation tracking when control failures or gaps are identified."
+    ],
+    "tags": [
+      "privacy",
+      "retention",
+      "deletion",
+      "soc2",
+      "readiness"
+    ],
+    "readiness_scope": "optional"
+  }
+]

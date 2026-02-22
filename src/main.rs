@@ -184,6 +184,9 @@ enum LibraryPack {
     Iso27001,
     #[value(name = "nist_csf")]
     NistCsf,
+    #[value(name = "soc_2", alias = "soc2")]
+    #[serde(rename = "soc_2", alias = "soc2")]
+    Soc2,
     #[value(name = "vendorsecurity/v1", alias = "vendor_security_v1")]
     #[serde(rename = "vendorsecurity/v1", alias = "vendor_security_v1")]
     VendorSecurityV1,
@@ -201,6 +204,7 @@ impl LibraryPack {
             LibraryPack::VendorSecurity => "vendor_security",
             LibraryPack::Iso27001 => "iso_27001",
             LibraryPack::NistCsf => "nist_csf",
+            LibraryPack::Soc2 => "soc_2",
             LibraryPack::VendorSecurityV1 => "vendorsecurity/v1",
             LibraryPack::DfirLiteV1 => "dfir-lite/v1",
             LibraryPack::Iso27001LiteV1 => "iso27001-lite/v1",
@@ -1526,7 +1530,10 @@ fn build_control_query_map(
                 .collect();
         }
 
-        output.insert(control.control_id.clone(), dedupe_preserving_order(query_ids));
+        output.insert(
+            control.control_id.clone(),
+            dedupe_preserving_order(query_ids),
+        );
     }
 
     output
@@ -1624,12 +1631,16 @@ fn load_library_pack_data_with_data_dir(
     }
     let is_standard_pack = matches!(
         library_pack,
-        LibraryPack::VendorSecurity | LibraryPack::Iso27001 | LibraryPack::NistCsf
+        LibraryPack::VendorSecurity
+            | LibraryPack::Iso27001
+            | LibraryPack::NistCsf
+            | LibraryPack::Soc2
     );
     let min_controls_required = match library_pack {
         LibraryPack::VendorSecurity => 80,
         LibraryPack::Iso27001 => 93,
         LibraryPack::NistCsf => 80,
+        LibraryPack::Soc2 => 80,
         _ => 1,
     };
     if controls.len() < min_controls_required {
@@ -1682,6 +1693,7 @@ fn load_library_pack_data_with_data_dir(
         LibraryPack::VendorSecurity => 40,
         LibraryPack::Iso27001 => 50,
         LibraryPack::NistCsf => 45,
+        LibraryPack::Soc2 => 50,
         _ => 1,
     };
     if queries.queries.len() < min_queries_required {
@@ -2254,8 +2266,9 @@ fn render_evidence_appendix(
         }
 
         if query_blocks.is_empty() {
-            query_blocks = "<p class=\"muted\">No mapped queries for this control in current run.</p>"
-                .to_string();
+            query_blocks =
+                "<p class=\"muted\">No mapped queries for this control in current run.</p>"
+                    .to_string();
         }
 
         controls_html.push_str(&format!(
@@ -2846,6 +2859,7 @@ mod tests {
             LibraryPack::VendorSecurity,
             LibraryPack::Iso27001,
             LibraryPack::NistCsf,
+            LibraryPack::Soc2,
         ];
 
         for library_pack in starter_packs {
@@ -2857,6 +2871,20 @@ mod tests {
             assert!(!data.queries.queries.is_empty());
             assert!(!data.rubric.rules.is_empty());
         }
+    }
+
+    #[test]
+    fn intake_accepts_soc2_alias() {
+        let intake_doc = serde_json::json!({
+            "schema_version": "aegis.intake.v1",
+            "client_id": "acme",
+            "engagement_id": "eng42",
+            "pack_type": "trust_audit",
+            "library_pack": "soc2"
+        });
+        let intake: IntakeV1 =
+            serde_json::from_value(intake_doc).expect("soc2 alias should deserialize");
+        assert_eq!(intake.library_pack.slug(), "soc_2");
     }
 
     #[test]

@@ -1,0 +1,1068 @@
+{
+  "version": "2.0",
+  "rules": [
+    {
+      "tag": "accuracy",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "alerting",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "audit",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "availability",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "backup",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "batch",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "breach",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "capacity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "change_management",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "collection",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "communication",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "completeness",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "compliance",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "confidentiality",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "consent",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "continuity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "contracts",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "control_activities",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "control_environment",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "data_classification",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "data_handling",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "data_subject_rights",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "deletion",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "dr_testing",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "encryption",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "enterprise_risk",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "ethics",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "exceptions",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "governance",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "identity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "incident_response",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "input_validation",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "job_control",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "logging",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "logical_access",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "metrics",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "mfa",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "monitoring",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "notice",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "output_review",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "privacy",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "processing_integrity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "processingintegrity",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "purpose_limitation",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "readiness",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "reconciliation",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "release",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "reporting",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "request_handling",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "resilience",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "restore",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "retention",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "review",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "risk_assessment",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "risk_mitigation",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "safeguards",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "sdlc",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "security",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 3
+    },
+    {
+      "tag": "segregation",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "sla",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "soc2",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "system_operations",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "third_party",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "threat_modeling",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "tone",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "traceability",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    },
+    {
+      "tag": "workflow",
+      "min_hits_for_partial": 1,
+      "min_hits_for_met": 2
+    }
+  ],
+  "control_query_map": [
+    {
+      "control_id": "CC1.1",
+      "query_ids": [
+        "SOC2-Q-001",
+        "SOC2-Q-002",
+        "SOC2-Q-003"
+      ]
+    },
+    {
+      "control_id": "CC1.2",
+      "query_ids": [
+        "SOC2-Q-002",
+        "SOC2-Q-003",
+        "SOC2-Q-004"
+      ]
+    },
+    {
+      "control_id": "CC1.3",
+      "query_ids": [
+        "SOC2-Q-003",
+        "SOC2-Q-004",
+        "SOC2-Q-001"
+      ]
+    },
+    {
+      "control_id": "CC1.4",
+      "query_ids": [
+        "SOC2-Q-004",
+        "SOC2-Q-001",
+        "SOC2-Q-002"
+      ]
+    },
+    {
+      "control_id": "CC1.5",
+      "query_ids": [
+        "SOC2-Q-001",
+        "SOC2-Q-002",
+        "SOC2-Q-003"
+      ]
+    },
+    {
+      "control_id": "CC2.1",
+      "query_ids": [
+        "SOC2-Q-005",
+        "SOC2-Q-006",
+        "SOC2-Q-007"
+      ]
+    },
+    {
+      "control_id": "CC2.2",
+      "query_ids": [
+        "SOC2-Q-006",
+        "SOC2-Q-007",
+        "SOC2-Q-008"
+      ]
+    },
+    {
+      "control_id": "CC2.3",
+      "query_ids": [
+        "SOC2-Q-007",
+        "SOC2-Q-008",
+        "SOC2-Q-005"
+      ]
+    },
+    {
+      "control_id": "CC2.4",
+      "query_ids": [
+        "SOC2-Q-008",
+        "SOC2-Q-005",
+        "SOC2-Q-006"
+      ]
+    },
+    {
+      "control_id": "CC2.5",
+      "query_ids": [
+        "SOC2-Q-005",
+        "SOC2-Q-006",
+        "SOC2-Q-007"
+      ]
+    },
+    {
+      "control_id": "CC3.1",
+      "query_ids": [
+        "SOC2-Q-009",
+        "SOC2-Q-010",
+        "SOC2-Q-011"
+      ]
+    },
+    {
+      "control_id": "CC3.2",
+      "query_ids": [
+        "SOC2-Q-010",
+        "SOC2-Q-011",
+        "SOC2-Q-012"
+      ]
+    },
+    {
+      "control_id": "CC3.3",
+      "query_ids": [
+        "SOC2-Q-011",
+        "SOC2-Q-012",
+        "SOC2-Q-009"
+      ]
+    },
+    {
+      "control_id": "CC3.4",
+      "query_ids": [
+        "SOC2-Q-012",
+        "SOC2-Q-009",
+        "SOC2-Q-010"
+      ]
+    },
+    {
+      "control_id": "CC3.5",
+      "query_ids": [
+        "SOC2-Q-009",
+        "SOC2-Q-010",
+        "SOC2-Q-011"
+      ]
+    },
+    {
+      "control_id": "CC4.1",
+      "query_ids": [
+        "SOC2-Q-013",
+        "SOC2-Q-014",
+        "SOC2-Q-015"
+      ]
+    },
+    {
+      "control_id": "CC4.2",
+      "query_ids": [
+        "SOC2-Q-014",
+        "SOC2-Q-015",
+        "SOC2-Q-016"
+      ]
+    },
+    {
+      "control_id": "CC4.3",
+      "query_ids": [
+        "SOC2-Q-015",
+        "SOC2-Q-016",
+        "SOC2-Q-013"
+      ]
+    },
+    {
+      "control_id": "CC4.4",
+      "query_ids": [
+        "SOC2-Q-016",
+        "SOC2-Q-013",
+        "SOC2-Q-014"
+      ]
+    },
+    {
+      "control_id": "CC4.5",
+      "query_ids": [
+        "SOC2-Q-013",
+        "SOC2-Q-014",
+        "SOC2-Q-015"
+      ]
+    },
+    {
+      "control_id": "CC5.1",
+      "query_ids": [
+        "SOC2-Q-017",
+        "SOC2-Q-018",
+        "SOC2-Q-019"
+      ]
+    },
+    {
+      "control_id": "CC5.2",
+      "query_ids": [
+        "SOC2-Q-018",
+        "SOC2-Q-019",
+        "SOC2-Q-020"
+      ]
+    },
+    {
+      "control_id": "CC5.3",
+      "query_ids": [
+        "SOC2-Q-019",
+        "SOC2-Q-020",
+        "SOC2-Q-017"
+      ]
+    },
+    {
+      "control_id": "CC5.4",
+      "query_ids": [
+        "SOC2-Q-020",
+        "SOC2-Q-017",
+        "SOC2-Q-018"
+      ]
+    },
+    {
+      "control_id": "CC5.5",
+      "query_ids": [
+        "SOC2-Q-017",
+        "SOC2-Q-018",
+        "SOC2-Q-019"
+      ]
+    },
+    {
+      "control_id": "CC6.1",
+      "query_ids": [
+        "SOC2-Q-021",
+        "SOC2-Q-022",
+        "SOC2-Q-023"
+      ]
+    },
+    {
+      "control_id": "CC6.2",
+      "query_ids": [
+        "SOC2-Q-022",
+        "SOC2-Q-023",
+        "SOC2-Q-024"
+      ]
+    },
+    {
+      "control_id": "CC6.3",
+      "query_ids": [
+        "SOC2-Q-023",
+        "SOC2-Q-024",
+        "SOC2-Q-021"
+      ]
+    },
+    {
+      "control_id": "CC6.4",
+      "query_ids": [
+        "SOC2-Q-024",
+        "SOC2-Q-021",
+        "SOC2-Q-022"
+      ]
+    },
+    {
+      "control_id": "CC6.5",
+      "query_ids": [
+        "SOC2-Q-021",
+        "SOC2-Q-022",
+        "SOC2-Q-023"
+      ]
+    },
+    {
+      "control_id": "CC7.1",
+      "query_ids": [
+        "SOC2-Q-025",
+        "SOC2-Q-026",
+        "SOC2-Q-027"
+      ]
+    },
+    {
+      "control_id": "CC7.2",
+      "query_ids": [
+        "SOC2-Q-026",
+        "SOC2-Q-027",
+        "SOC2-Q-028"
+      ]
+    },
+    {
+      "control_id": "CC7.3",
+      "query_ids": [
+        "SOC2-Q-027",
+        "SOC2-Q-028",
+        "SOC2-Q-025"
+      ]
+    },
+    {
+      "control_id": "CC7.4",
+      "query_ids": [
+        "SOC2-Q-028",
+        "SOC2-Q-025",
+        "SOC2-Q-026"
+      ]
+    },
+    {
+      "control_id": "CC7.5",
+      "query_ids": [
+        "SOC2-Q-025",
+        "SOC2-Q-026",
+        "SOC2-Q-027"
+      ]
+    },
+    {
+      "control_id": "CC8.1",
+      "query_ids": [
+        "SOC2-Q-029",
+        "SOC2-Q-030",
+        "SOC2-Q-031"
+      ]
+    },
+    {
+      "control_id": "CC8.2",
+      "query_ids": [
+        "SOC2-Q-030",
+        "SOC2-Q-031",
+        "SOC2-Q-032"
+      ]
+    },
+    {
+      "control_id": "CC8.3",
+      "query_ids": [
+        "SOC2-Q-031",
+        "SOC2-Q-032",
+        "SOC2-Q-029"
+      ]
+    },
+    {
+      "control_id": "CC8.4",
+      "query_ids": [
+        "SOC2-Q-032",
+        "SOC2-Q-029",
+        "SOC2-Q-030"
+      ]
+    },
+    {
+      "control_id": "CC8.5",
+      "query_ids": [
+        "SOC2-Q-029",
+        "SOC2-Q-030",
+        "SOC2-Q-031"
+      ]
+    },
+    {
+      "control_id": "CC9.1",
+      "query_ids": [
+        "SOC2-Q-033",
+        "SOC2-Q-034",
+        "SOC2-Q-035"
+      ]
+    },
+    {
+      "control_id": "CC9.2",
+      "query_ids": [
+        "SOC2-Q-034",
+        "SOC2-Q-035",
+        "SOC2-Q-036"
+      ]
+    },
+    {
+      "control_id": "CC9.3",
+      "query_ids": [
+        "SOC2-Q-035",
+        "SOC2-Q-036",
+        "SOC2-Q-033"
+      ]
+    },
+    {
+      "control_id": "CC9.4",
+      "query_ids": [
+        "SOC2-Q-036",
+        "SOC2-Q-033",
+        "SOC2-Q-034"
+      ]
+    },
+    {
+      "control_id": "CC9.5",
+      "query_ids": [
+        "SOC2-Q-033",
+        "SOC2-Q-034",
+        "SOC2-Q-035"
+      ]
+    },
+    {
+      "control_id": "C1.1",
+      "query_ids": [
+        "SOC2-Q-037",
+        "SOC2-Q-038",
+        "SOC2-Q-039"
+      ]
+    },
+    {
+      "control_id": "C1.2",
+      "query_ids": [
+        "SOC2-Q-038",
+        "SOC2-Q-039",
+        "SOC2-Q-037"
+      ]
+    },
+    {
+      "control_id": "C1.3",
+      "query_ids": [
+        "SOC2-Q-039",
+        "SOC2-Q-037",
+        "SOC2-Q-038"
+      ]
+    },
+    {
+      "control_id": "C1.4",
+      "query_ids": [
+        "SOC2-Q-037",
+        "SOC2-Q-038",
+        "SOC2-Q-039"
+      ]
+    },
+    {
+      "control_id": "C1.5",
+      "query_ids": [
+        "SOC2-Q-038",
+        "SOC2-Q-039",
+        "SOC2-Q-037"
+      ]
+    },
+    {
+      "control_id": "C1.6",
+      "query_ids": [
+        "SOC2-Q-039",
+        "SOC2-Q-037",
+        "SOC2-Q-038"
+      ]
+    },
+    {
+      "control_id": "C2.1",
+      "query_ids": [
+        "SOC2-Q-040",
+        "SOC2-Q-041",
+        "SOC2-Q-042"
+      ]
+    },
+    {
+      "control_id": "C2.2",
+      "query_ids": [
+        "SOC2-Q-041",
+        "SOC2-Q-042",
+        "SOC2-Q-040"
+      ]
+    },
+    {
+      "control_id": "C2.3",
+      "query_ids": [
+        "SOC2-Q-042",
+        "SOC2-Q-040",
+        "SOC2-Q-041"
+      ]
+    },
+    {
+      "control_id": "C2.4",
+      "query_ids": [
+        "SOC2-Q-040",
+        "SOC2-Q-041",
+        "SOC2-Q-042"
+      ]
+    },
+    {
+      "control_id": "C2.5",
+      "query_ids": [
+        "SOC2-Q-041",
+        "SOC2-Q-042",
+        "SOC2-Q-040"
+      ]
+    },
+    {
+      "control_id": "C2.6",
+      "query_ids": [
+        "SOC2-Q-042",
+        "SOC2-Q-040",
+        "SOC2-Q-041"
+      ]
+    },
+    {
+      "control_id": "A1.1",
+      "query_ids": [
+        "SOC2-Q-043",
+        "SOC2-Q-044"
+      ]
+    },
+    {
+      "control_id": "A1.2",
+      "query_ids": [
+        "SOC2-Q-044",
+        "SOC2-Q-043"
+      ]
+    },
+    {
+      "control_id": "A1.3",
+      "query_ids": [
+        "SOC2-Q-043",
+        "SOC2-Q-044"
+      ]
+    },
+    {
+      "control_id": "A1.4",
+      "query_ids": [
+        "SOC2-Q-044",
+        "SOC2-Q-043"
+      ]
+    },
+    {
+      "control_id": "A2.1",
+      "query_ids": [
+        "SOC2-Q-045",
+        "SOC2-Q-046"
+      ]
+    },
+    {
+      "control_id": "A2.2",
+      "query_ids": [
+        "SOC2-Q-046",
+        "SOC2-Q-045"
+      ]
+    },
+    {
+      "control_id": "A2.3",
+      "query_ids": [
+        "SOC2-Q-045",
+        "SOC2-Q-046"
+      ]
+    },
+    {
+      "control_id": "A2.4",
+      "query_ids": [
+        "SOC2-Q-046",
+        "SOC2-Q-045"
+      ]
+    },
+    {
+      "control_id": "A3.1",
+      "query_ids": [
+        "SOC2-Q-047",
+        "SOC2-Q-048"
+      ]
+    },
+    {
+      "control_id": "A3.2",
+      "query_ids": [
+        "SOC2-Q-048",
+        "SOC2-Q-047"
+      ]
+    },
+    {
+      "control_id": "A3.3",
+      "query_ids": [
+        "SOC2-Q-047",
+        "SOC2-Q-048"
+      ]
+    },
+    {
+      "control_id": "A3.4",
+      "query_ids": [
+        "SOC2-Q-048",
+        "SOC2-Q-047"
+      ]
+    },
+    {
+      "control_id": "PI1.1",
+      "query_ids": [
+        "SOC2-Q-049"
+      ]
+    },
+    {
+      "control_id": "PI1.2",
+      "query_ids": [
+        "SOC2-Q-049"
+      ]
+    },
+    {
+      "control_id": "PI1.3",
+      "query_ids": [
+        "SOC2-Q-049"
+      ]
+    },
+    {
+      "control_id": "PI2.1",
+      "query_ids": [
+        "SOC2-Q-050"
+      ]
+    },
+    {
+      "control_id": "PI2.2",
+      "query_ids": [
+        "SOC2-Q-050"
+      ]
+    },
+    {
+      "control_id": "PI2.3",
+      "query_ids": [
+        "SOC2-Q-050"
+      ]
+    },
+    {
+      "control_id": "PI3.1",
+      "query_ids": [
+        "SOC2-Q-051"
+      ]
+    },
+    {
+      "control_id": "PI3.2",
+      "query_ids": [
+        "SOC2-Q-051"
+      ]
+    },
+    {
+      "control_id": "PI3.3",
+      "query_ids": [
+        "SOC2-Q-051"
+      ]
+    },
+    {
+      "control_id": "PI4.1",
+      "query_ids": [
+        "SOC2-Q-052"
+      ]
+    },
+    {
+      "control_id": "PI4.2",
+      "query_ids": [
+        "SOC2-Q-052"
+      ]
+    },
+    {
+      "control_id": "PI4.3",
+      "query_ids": [
+        "SOC2-Q-052"
+      ]
+    },
+    {
+      "control_id": "PI5.1",
+      "query_ids": [
+        "SOC2-Q-053"
+      ]
+    },
+    {
+      "control_id": "PI5.2",
+      "query_ids": [
+        "SOC2-Q-053"
+      ]
+    },
+    {
+      "control_id": "PI5.3",
+      "query_ids": [
+        "SOC2-Q-053"
+      ]
+    },
+    {
+      "control_id": "P1.1",
+      "query_ids": [
+        "SOC2-Q-054"
+      ]
+    },
+    {
+      "control_id": "P1.2",
+      "query_ids": [
+        "SOC2-Q-054"
+      ]
+    },
+    {
+      "control_id": "P2.1",
+      "query_ids": [
+        "SOC2-Q-055"
+      ]
+    },
+    {
+      "control_id": "P2.2",
+      "query_ids": [
+        "SOC2-Q-055"
+      ]
+    },
+    {
+      "control_id": "P3.1",
+      "query_ids": [
+        "SOC2-Q-056"
+      ]
+    },
+    {
+      "control_id": "P3.2",
+      "query_ids": [
+        "SOC2-Q-056"
+      ]
+    },
+    {
+      "control_id": "P4.1",
+      "query_ids": [
+        "SOC2-Q-057"
+      ]
+    },
+    {
+      "control_id": "P4.2",
+      "query_ids": [
+        "SOC2-Q-057"
+      ]
+    },
+    {
+      "control_id": "P5.1",
+      "query_ids": [
+        "SOC2-Q-058"
+      ]
+    },
+    {
+      "control_id": "P5.2",
+      "query_ids": [
+        "SOC2-Q-058"
+      ]
+    },
+    {
+      "control_id": "P6.1",
+      "query_ids": [
+        "SOC2-Q-059"
+      ]
+    },
+    {
+      "control_id": "P6.2",
+      "query_ids": [
+        "SOC2-Q-059"
+      ]
+    },
+    {
+      "control_id": "P7.1",
+      "query_ids": [
+        "SOC2-Q-060"
+      ]
+    },
+    {
+      "control_id": "P7.2",
+      "query_ids": [
+        "SOC2-Q-060"
+      ]
+    },
+    {
+      "control_id": "P8.1",
+      "query_ids": [
+        "SOC2-Q-061"
+      ]
+    },
+    {
+      "control_id": "P8.2",
+      "query_ids": [
+        "SOC2-Q-061"
+      ]
+    }
+  ]
+}
