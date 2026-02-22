@@ -15,7 +15,9 @@
       "access",
       "mfa",
       "privileged"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-1"
   },
   {
     "control_id": "VS-002",
@@ -33,7 +35,9 @@
       "review",
       "access",
       "logging"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-2"
   },
   {
     "control_id": "VS-003",
@@ -51,7 +55,9 @@
       "monitoring",
       "retention",
       "siem"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-3"
   },
   {
     "control_id": "VS-004",
@@ -69,7 +75,9 @@
       "alerting",
       "detection",
       "encryption"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-4"
   },
   {
     "control_id": "VS-005",
@@ -87,7 +95,9 @@
       "key_management",
       "data",
       "network"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-5"
   },
   {
     "control_id": "VS-006",
@@ -105,7 +115,9 @@
       "tls",
       "segmentation",
       "incident"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-6"
   },
   {
     "control_id": "VS-007",
@@ -123,7 +135,9 @@
       "response",
       "tabletop",
       "backup"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-7"
   },
   {
     "control_id": "VS-008",
@@ -141,7 +155,9 @@
       "recovery",
       "continuity",
       "vendor"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-8"
   },
   {
     "control_id": "VS-009",
@@ -159,7 +175,9 @@
       "third_party",
       "risk",
       "governance"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-9"
   },
   {
     "control_id": "VS-010",
@@ -177,7 +195,9 @@
       "policy",
       "audit",
       "training"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-10"
   },
   {
     "control_id": "VS-011",
@@ -195,7 +215,9 @@
       "awareness",
       "people",
       "vulnerability"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-11"
   },
   {
     "control_id": "VS-012",
@@ -213,7 +235,9 @@
       "patching",
       "operations",
       "identity"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-12"
   },
   {
     "control_id": "VS-013",
@@ -231,7 +255,9 @@
       "access",
       "mfa",
       "privileged"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-13"
   },
   {
     "control_id": "VS-014",
@@ -249,7 +275,9 @@
       "review",
       "access",
       "logging"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-14"
   },
   {
     "control_id": "VS-015",
@@ -267,7 +295,9 @@
       "monitoring",
       "retention",
       "siem"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-15"
   },
   {
     "control_id": "VS-016",
@@ -285,7 +315,9 @@
       "alerting",
       "detection",
       "encryption"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-16"
   },
   {
     "control_id": "VS-017",
@@ -303,7 +335,9 @@
       "key_management",
       "data",
       "network"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-17"
   },
   {
     "control_id": "VS-018",
@@ -321,7 +355,9 @@
       "tls",
       "segmentation",
       "incident"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-18"
   },
   {
     "control_id": "VS-019",
@@ -339,7 +375,9 @@
       "response",
       "tabletop",
       "backup"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-1"
   },
   {
     "control_id": "VS-020",
@@ -357,7 +395,9 @@
       "recovery",
       "continuity",
       "vendor"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-2"
   },
   {
     "control_id": "VS-021",
@@ -375,7 +415,9 @@
       "third_party",
       "risk",
       "governance"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-3"
   },
   {
     "control_id": "VS-022",
@@ -393,7 +435,9 @@
       "policy",
       "audit",
       "training"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-4"
   },
   {
     "control_id": "VS-023",
@@ -411,7 +455,9 @@
       "awareness",
       "people",
       "vulnerability"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-5"
   },
   {
     "control_id": "VS-024",
@@ -429,7 +475,9 @@
       "patching",
       "operations",
       "identity"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-6"
   },
   {
     "control_id": "VS-025",
@@ -447,7 +495,9 @@
       "access",
       "mfa",
       "privileged"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-7"
   },
   {
     "control_id": "VS-026",
@@ -465,7 +515,9 @@
       "review",
       "access",
       "logging"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-8"
   },
   {
     "control_id": "VS-027",
@@ -483,7 +535,9 @@
       "monitoring",
       "retention",
       "siem"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-9"
   },
   {
     "control_id": "VS-028",
@@ -501,7 +555,9 @@
       "alerting",
       "detection",
       "encryption"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-10"
   },
   {
     "control_id": "VS-029",
@@ -519,7 +575,9 @@
       "key_management",
       "data",
       "network"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-11"
   },
   {
     "control_id": "VS-030",
@@ -537,7 +595,9 @@
       "tls",
       "segmentation",
       "incident"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-12"
   },
   {
     "control_id": "VS-031",
@@ -555,7 +615,9 @@
       "response",
       "tabletop",
       "backup"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-13"
   },
   {
     "control_id": "VS-032",
@@ -573,7 +635,9 @@
       "recovery",
       "continuity",
       "vendor"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-14"
   },
   {
     "control_id": "VS-033",
@@ -591,7 +655,9 @@
       "third_party",
       "risk",
       "governance"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-15"
   },
   {
     "control_id": "VS-034",
@@ -609,7 +675,9 @@
       "policy",
       "audit",
       "training"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-16"
   },
   {
     "control_id": "VS-035",
@@ -627,7 +695,9 @@
       "awareness",
       "people",
       "vulnerability"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-17"
   },
   {
     "control_id": "VS-036",
@@ -645,7 +715,9 @@
       "patching",
       "operations",
       "identity"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-18"
   },
   {
     "control_id": "VS-037",
@@ -663,7 +735,9 @@
       "access",
       "mfa",
       "privileged"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-1"
   },
   {
     "control_id": "VS-038",
@@ -681,7 +755,9 @@
       "review",
       "access",
       "logging"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-2"
   },
   {
     "control_id": "VS-039",
@@ -699,7 +775,9 @@
       "monitoring",
       "retention",
       "siem"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-3"
   },
   {
     "control_id": "VS-040",
@@ -717,7 +795,9 @@
       "alerting",
       "detection",
       "encryption"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-4"
   },
   {
     "control_id": "VS-041",
@@ -735,7 +815,9 @@
       "key_management",
       "data",
       "network"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-5"
   },
   {
     "control_id": "VS-042",
@@ -753,7 +835,9 @@
       "tls",
       "segmentation",
       "incident"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-6"
   },
   {
     "control_id": "VS-043",
@@ -771,7 +855,9 @@
       "response",
       "tabletop",
       "backup"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-7"
   },
   {
     "control_id": "VS-044",
@@ -789,7 +875,9 @@
       "recovery",
       "continuity",
       "vendor"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-8"
   },
   {
     "control_id": "VS-045",
@@ -807,7 +895,9 @@
       "third_party",
       "risk",
       "governance"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-9"
   },
   {
     "control_id": "VS-046",
@@ -825,7 +915,9 @@
       "policy",
       "audit",
       "training"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-10"
   },
   {
     "control_id": "VS-047",
@@ -843,7 +935,9 @@
       "awareness",
       "people",
       "vulnerability"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-11"
   },
   {
     "control_id": "VS-048",
@@ -861,7 +955,9 @@
       "patching",
       "operations",
       "identity"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-12"
   },
   {
     "control_id": "VS-049",
@@ -879,7 +975,9 @@
       "access",
       "mfa",
       "privileged"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-13"
   },
   {
     "control_id": "VS-050",
@@ -897,7 +995,9 @@
       "review",
       "access",
       "logging"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-14"
   },
   {
     "control_id": "VS-051",
@@ -915,7 +1015,9 @@
       "monitoring",
       "retention",
       "siem"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-15"
   },
   {
     "control_id": "VS-052",
@@ -933,7 +1035,9 @@
       "alerting",
       "detection",
       "encryption"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-16"
   },
   {
     "control_id": "VS-053",
@@ -951,7 +1055,9 @@
       "key_management",
       "data",
       "network"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-17"
   },
   {
     "control_id": "VS-054",
@@ -969,7 +1075,9 @@
       "tls",
       "segmentation",
       "incident"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-18"
   },
   {
     "control_id": "VS-055",
@@ -987,7 +1095,9 @@
       "response",
       "tabletop",
       "backup"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-1"
   },
   {
     "control_id": "VS-056",
@@ -1005,7 +1115,9 @@
       "recovery",
       "continuity",
       "vendor"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-2"
   },
   {
     "control_id": "VS-057",
@@ -1023,7 +1135,9 @@
       "third_party",
       "risk",
       "governance"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-3"
   },
   {
     "control_id": "VS-058",
@@ -1041,7 +1155,9 @@
       "policy",
       "audit",
       "training"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-4"
   },
   {
     "control_id": "VS-059",
@@ -1059,7 +1175,9 @@
       "awareness",
       "people",
       "vulnerability"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-5"
   },
   {
     "control_id": "VS-060",
@@ -1077,7 +1195,9 @@
       "patching",
       "operations",
       "identity"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-6"
   },
   {
     "control_id": "VS-061",
@@ -1095,7 +1215,9 @@
       "access",
       "mfa",
       "privileged"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-7"
   },
   {
     "control_id": "VS-062",
@@ -1113,7 +1235,9 @@
       "review",
       "access",
       "logging"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-8"
   },
   {
     "control_id": "VS-063",
@@ -1131,7 +1255,9 @@
       "monitoring",
       "retention",
       "siem"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-9"
   },
   {
     "control_id": "VS-064",
@@ -1149,7 +1275,9 @@
       "alerting",
       "detection",
       "encryption"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-10"
   },
   {
     "control_id": "VS-065",
@@ -1167,7 +1295,9 @@
       "key_management",
       "data",
       "network"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-11"
   },
   {
     "control_id": "VS-066",
@@ -1185,7 +1315,9 @@
       "tls",
       "segmentation",
       "incident"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-12"
   },
   {
     "control_id": "VS-067",
@@ -1203,7 +1335,9 @@
       "response",
       "tabletop",
       "backup"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-13"
   },
   {
     "control_id": "VS-068",
@@ -1221,7 +1355,9 @@
       "recovery",
       "continuity",
       "vendor"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-14"
   },
   {
     "control_id": "VS-069",
@@ -1239,7 +1375,9 @@
       "third_party",
       "risk",
       "governance"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-15"
   },
   {
     "control_id": "VS-070",
@@ -1257,7 +1395,9 @@
       "policy",
       "audit",
       "training"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-16"
   },
   {
     "control_id": "VS-071",
@@ -1275,7 +1415,9 @@
       "awareness",
       "people",
       "vulnerability"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-17"
   },
   {
     "control_id": "VS-072",
@@ -1293,7 +1435,9 @@
       "patching",
       "operations",
       "identity"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-18"
   },
   {
     "control_id": "VS-073",
@@ -1311,7 +1455,9 @@
       "access",
       "mfa",
       "privileged"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-1"
   },
   {
     "control_id": "VS-074",
@@ -1329,7 +1475,9 @@
       "review",
       "access",
       "logging"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-2"
   },
   {
     "control_id": "VS-075",
@@ -1347,7 +1495,9 @@
       "monitoring",
       "retention",
       "siem"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-3"
   },
   {
     "control_id": "VS-076",
@@ -1365,7 +1515,9 @@
       "alerting",
       "detection",
       "encryption"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-4"
   },
   {
     "control_id": "VS-077",
@@ -1383,7 +1535,9 @@
       "key_management",
       "data",
       "network"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-5"
   },
   {
     "control_id": "VS-078",
@@ -1401,7 +1555,9 @@
       "tls",
       "segmentation",
       "incident"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-6"
   },
   {
     "control_id": "VS-079",
@@ -1419,7 +1575,9 @@
       "response",
       "tabletop",
       "backup"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-7"
   },
   {
     "control_id": "VS-080",
@@ -1437,6 +1595,8 @@
       "recovery",
       "continuity",
       "vendor"
-    ]
+    ],
+    "cis_version": "CIS:v8",
+    "cis_control": "CIS-8"
   }
 ]

@@ -1,0 +1,20 @@
+{
+  "pack_slug": "vendor_security",
+  "pack_name": "Vendor Security (CIS v8-aligned)",
+  "pack_version": "v1.0.0",
+  "last_updated": "2026-02-22",
+  "framework_owner": "Center for Internet Security (CIS)",
+  "framework_name": "CIS Controls",
+  "framework_version": "v8",
+  "scope_required": [
+    "Vendor due diligence evidence pack"
+  ],
+  "spine_required": [
+    "CIS Control families CIS-1..CIS-18 (family-level mapping)"
+  ],
+  "interpretation_notes": [
+    "Controls map to CIS v8 control families (not safeguards).",
+    "Queries are evidence-collection procedures.",
+    "Readiness evidence pack; not certification issuance."
+  ]
+}

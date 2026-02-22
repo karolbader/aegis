@@ -462,6 +462,10 @@ struct LibraryControl {
     csf_ref: String,
     #[serde(default)]
     csf_function: String,
+    #[serde(default)]
+    cis_version: String,
+    #[serde(default)]
+    cis_control: String,
     tags: Vec<String>,
 }
 
@@ -3268,6 +3272,127 @@ mod tests {
     }
 
     #[test]
+    fn vendor_security_pack_meta_has_required_spine_keys() {
+        let pack_meta_path = Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("data")
+            .join("packs")
+            .join("vendor_security")
+            .join("pack_meta.json");
+        let meta: serde_json::Value =
+            read_json_file(&pack_meta_path).expect("vendor_security pack_meta.json should parse");
+
+        for key in [
+            "pack_slug",
+            "pack_name",
+            "pack_version",
+            "last_updated",
+            "framework_owner",
+            "framework_name",
+            "framework_version",
+            "scope_required",
+            "spine_required",
+            "interpretation_notes",
+        ] {
+            assert!(
+                meta.get(key).is_some(),
+                "vendor_security pack_meta.json missing key {key}"
+            );
+        }
+
+        assert_eq!(
+            meta.get("pack_slug").and_then(|v| v.as_str()),
+            Some("vendor_security")
+        );
+        assert_eq!(
+            meta.get("framework_owner").and_then(|v| v.as_str()),
+            Some("Center for Internet Security (CIS)")
+        );
+    }
+
+    #[test]
+    fn vendor_security_controls_include_cis_fields_and_family_coverage() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::VendorSecurity)
+            .expect("vendor_security library pack should load");
+
+        let mut family_counts: BTreeMap<String, usize> = BTreeMap::new();
+        for control in &data.controls {
+            assert_eq!(
+                control.cis_version, "CIS:v8",
+                "control {} missing required cis_version",
+                control.control_id
+            );
+            assert!(
+                !control.cis_control.trim().is_empty(),
+                "control {} missing cis_control",
+                control.control_id
+            );
+            assert!(
+                control.cis_control.starts_with("CIS-"),
+                "control {} has invalid cis_control {}",
+                control.control_id,
+                control.cis_control
+            );
+            let family_num = control
+                .cis_control
+                .strip_prefix("CIS-")
+                .and_then(|value| value.parse::<usize>().ok())
+                .unwrap_or_else(|| {
+                    panic!(
+                        "control {} has non-numeric cis_control {}",
+                        control.control_id, control.cis_control
+                    )
+                });
+            assert!(
+                (1..=18).contains(&family_num),
+                "control {} has out-of-range cis_control {}",
+                control.control_id,
+                control.cis_control
+            );
+            *family_counts
+                .entry(control.cis_control.clone())
+                .or_insert(0) += 1;
+        }
+
+        for family_num in 1..=18 {
+            let family = format!("CIS-{family_num}");
+            assert!(
+                family_counts.get(&family).copied().unwrap_or_default() > 0,
+                "vendor_security family {family} has zero controls"
+            );
+        }
+    }
+
+    #[test]
+    fn vendor_security_queries_and_rubric_reference_existing_controls() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::VendorSecurity)
+            .expect("vendor_security library pack should load");
+        let control_ids: BTreeSet<&str> = data
+            .controls
+            .iter()
+            .map(|c| c.control_id.as_str())
+            .collect();
+
+        for query in &data.queries.queries {
+            for control_id in &query.control_ids {
+                assert!(
+                    control_ids.contains(control_id.as_str()),
+                    "query {} references unknown control_id {}",
+                    query.query_id,
+                    control_id
+                );
+            }
+        }
+
+        for mapping in &data.rubric.control_query_map {
+            assert!(
+                control_ids.contains(mapping.control_id.as_str()),
+                "rubric mapping references unknown control_id {}",
+                mapping.control_id
+            );
+        }
+    }
+
+    #[test]
     #[cfg(windows)]
     fn is_within_true_for_child_under_parent() {
         assert!(is_within(
@@ -3333,6 +3458,8 @@ mod tests {
             csf_version: String::new(),
             csf_ref: String::new(),
             csf_function: String::new(),
+            cis_version: String::new(),
+            cis_control: String::new(),
             tags: vec!["identity".to_string()],
         }];
         let queries = LibraryQueries {
