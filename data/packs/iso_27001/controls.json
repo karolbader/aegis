@@ -15,7 +15,9 @@
       "governance",
       "review",
       "risk"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.1"
   },
   {
     "control_id": "ISO-002",
@@ -33,7 +35,9 @@
       "register",
       "treatment",
       "asset"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.2"
   },
   {
     "control_id": "ISO-003",
@@ -51,7 +55,9 @@
       "classification",
       "ownership",
       "identity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.3"
   },
   {
     "control_id": "ISO-004",
@@ -69,7 +75,9 @@
       "access",
       "mfa",
       "cryptography"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.4"
   },
   {
     "control_id": "ISO-005",
@@ -87,7 +95,9 @@
       "encryption",
       "key_management",
       "logging"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.5"
   },
   {
     "control_id": "ISO-006",
@@ -105,7 +115,9 @@
       "monitoring",
       "retention",
       "vulnerability"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.6"
   },
   {
     "control_id": "ISO-007",
@@ -123,7 +135,9 @@
       "operations",
       "hardening",
       "incident"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.7"
   },
   {
     "control_id": "ISO-008",
@@ -141,7 +155,9 @@
       "response",
       "communication",
       "continuity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.8"
   },
   {
     "control_id": "ISO-009",
@@ -159,7 +175,9 @@
       "recovery",
       "cadence",
       "audit"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.9"
   },
   {
     "control_id": "ISO-010",
@@ -177,7 +195,9 @@
       "assurance",
       "metrics",
       "supplier"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.10"
   },
   {
     "control_id": "ISO-011",
@@ -195,7 +215,9 @@
       "third_party",
       "contract",
       "awareness"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.11"
   },
   {
     "control_id": "ISO-012",
@@ -213,7 +235,9 @@
       "training",
       "people",
       "privacy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.12"
   },
   {
     "control_id": "ISO-013",
@@ -231,7 +255,9 @@
       "legal",
       "compliance",
       "policy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.13"
   },
   {
     "control_id": "ISO-014",
@@ -249,7 +275,9 @@
       "governance",
       "review",
       "risk"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.14"
   },
   {
     "control_id": "ISO-015",
@@ -267,7 +295,9 @@
       "register",
       "treatment",
       "asset"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.15"
   },
   {
     "control_id": "ISO-016",
@@ -285,7 +315,9 @@
       "classification",
       "ownership",
       "identity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.16"
   },
   {
     "control_id": "ISO-017",
@@ -303,7 +335,9 @@
       "access",
       "mfa",
       "cryptography"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.17"
   },
   {
     "control_id": "ISO-018",
@@ -321,7 +355,9 @@
       "encryption",
       "key_management",
       "logging"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.18"
   },
   {
     "control_id": "ISO-019",
@@ -339,7 +375,9 @@
       "monitoring",
       "retention",
       "vulnerability"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.19"
   },
   {
     "control_id": "ISO-020",
@@ -357,7 +395,9 @@
       "operations",
       "hardening",
       "incident"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.20"
   },
   {
     "control_id": "ISO-021",
@@ -375,7 +415,9 @@
       "response",
       "communication",
       "continuity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.21"
   },
   {
     "control_id": "ISO-022",
@@ -393,7 +435,9 @@
       "recovery",
       "cadence",
       "audit"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.22"
   },
   {
     "control_id": "ISO-023",
@@ -411,7 +455,9 @@
       "assurance",
       "metrics",
       "supplier"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.23"
   },
   {
     "control_id": "ISO-024",
@@ -429,7 +475,9 @@
       "third_party",
       "contract",
       "awareness"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.24"
   },
   {
     "control_id": "ISO-025",
@@ -447,7 +495,9 @@
       "training",
       "people",
       "privacy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.25"
   },
   {
     "control_id": "ISO-026",
@@ -465,7 +515,9 @@
       "legal",
       "compliance",
       "policy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.26"
   },
   {
     "control_id": "ISO-027",
@@ -483,7 +535,9 @@
       "governance",
       "review",
       "risk"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.27"
   },
   {
     "control_id": "ISO-028",
@@ -501,7 +555,9 @@
       "register",
       "treatment",
       "asset"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.28"
   },
   {
     "control_id": "ISO-029",
@@ -519,7 +575,9 @@
       "classification",
       "ownership",
       "identity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.29"
   },
   {
     "control_id": "ISO-030",
@@ -537,7 +595,9 @@
       "access",
       "mfa",
       "cryptography"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.30"
   },
   {
     "control_id": "ISO-031",
@@ -555,7 +615,9 @@
       "encryption",
       "key_management",
       "logging"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.31"
   },
   {
     "control_id": "ISO-032",
@@ -573,7 +635,9 @@
       "monitoring",
       "retention",
       "vulnerability"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.32"
   },
   {
     "control_id": "ISO-033",
@@ -591,7 +655,9 @@
       "operations",
       "hardening",
       "incident"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.33"
   },
   {
     "control_id": "ISO-034",
@@ -609,7 +675,9 @@
       "response",
       "communication",
       "continuity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.34"
   },
   {
     "control_id": "ISO-035",
@@ -627,7 +695,9 @@
       "recovery",
       "cadence",
       "audit"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.35"
   },
   {
     "control_id": "ISO-036",
@@ -645,7 +715,9 @@
       "assurance",
       "metrics",
       "supplier"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.36"
   },
   {
     "control_id": "ISO-037",
@@ -663,7 +735,9 @@
       "third_party",
       "contract",
       "awareness"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.5.37"
   },
   {
     "control_id": "ISO-038",
@@ -681,7 +755,9 @@
       "training",
       "people",
       "privacy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.6.1"
   },
   {
     "control_id": "ISO-039",
@@ -699,7 +775,9 @@
       "legal",
       "compliance",
       "policy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.6.2"
   },
   {
     "control_id": "ISO-040",
@@ -717,7 +795,9 @@
       "governance",
       "review",
       "risk"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.6.3"
   },
   {
     "control_id": "ISO-041",
@@ -735,7 +815,9 @@
       "register",
       "treatment",
       "asset"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.6.4"
   },
   {
     "control_id": "ISO-042",
@@ -753,7 +835,9 @@
       "classification",
       "ownership",
       "identity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.6.5"
   },
   {
     "control_id": "ISO-043",
@@ -771,7 +855,9 @@
       "access",
       "mfa",
       "cryptography"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.6.6"
   },
   {
     "control_id": "ISO-044",
@@ -789,7 +875,9 @@
       "encryption",
       "key_management",
       "logging"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.6.7"
   },
   {
     "control_id": "ISO-045",
@@ -807,7 +895,9 @@
       "monitoring",
       "retention",
       "vulnerability"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.6.8"
   },
   {
     "control_id": "ISO-046",
@@ -825,7 +915,9 @@
       "operations",
       "hardening",
       "incident"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.1"
   },
   {
     "control_id": "ISO-047",
@@ -843,7 +935,9 @@
       "response",
       "communication",
       "continuity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.2"
   },
   {
     "control_id": "ISO-048",
@@ -861,7 +955,9 @@
       "recovery",
       "cadence",
       "audit"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.3"
   },
   {
     "control_id": "ISO-049",
@@ -879,7 +975,9 @@
       "assurance",
       "metrics",
       "supplier"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.4"
   },
   {
     "control_id": "ISO-050",
@@ -897,7 +995,9 @@
       "third_party",
       "contract",
       "awareness"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.5"
   },
   {
     "control_id": "ISO-051",
@@ -915,7 +1015,9 @@
       "training",
       "people",
       "privacy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.6"
   },
   {
     "control_id": "ISO-052",
@@ -933,7 +1035,9 @@
       "legal",
       "compliance",
       "policy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.7"
   },
   {
     "control_id": "ISO-053",
@@ -951,7 +1055,9 @@
       "governance",
       "review",
       "risk"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.8"
   },
   {
     "control_id": "ISO-054",
@@ -969,7 +1075,9 @@
       "register",
       "treatment",
       "asset"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.9"
   },
   {
     "control_id": "ISO-055",
@@ -987,7 +1095,9 @@
       "classification",
       "ownership",
       "identity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.10"
   },
   {
     "control_id": "ISO-056",
@@ -1005,7 +1115,9 @@
       "access",
       "mfa",
       "cryptography"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.11"
   },
   {
     "control_id": "ISO-057",
@@ -1023,7 +1135,9 @@
       "encryption",
       "key_management",
       "logging"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.12"
   },
   {
     "control_id": "ISO-058",
@@ -1041,7 +1155,9 @@
       "monitoring",
       "retention",
       "vulnerability"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.13"
   },
   {
     "control_id": "ISO-059",
@@ -1059,7 +1175,9 @@
       "operations",
       "hardening",
       "incident"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.7.14"
   },
   {
     "control_id": "ISO-060",
@@ -1077,7 +1195,9 @@
       "response",
       "communication",
       "continuity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.1"
   },
   {
     "control_id": "ISO-061",
@@ -1095,7 +1215,9 @@
       "recovery",
       "cadence",
       "audit"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.2"
   },
   {
     "control_id": "ISO-062",
@@ -1113,7 +1235,9 @@
       "assurance",
       "metrics",
       "supplier"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.3"
   },
   {
     "control_id": "ISO-063",
@@ -1131,7 +1255,9 @@
       "third_party",
       "contract",
       "awareness"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.4"
   },
   {
     "control_id": "ISO-064",
@@ -1149,7 +1275,9 @@
       "training",
       "people",
       "privacy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.5"
   },
   {
     "control_id": "ISO-065",
@@ -1167,7 +1295,9 @@
       "legal",
       "compliance",
       "policy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.6"
   },
   {
     "control_id": "ISO-066",
@@ -1185,7 +1315,9 @@
       "governance",
       "review",
       "risk"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.7"
   },
   {
     "control_id": "ISO-067",
@@ -1203,7 +1335,9 @@
       "register",
       "treatment",
       "asset"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.8"
   },
   {
     "control_id": "ISO-068",
@@ -1221,7 +1355,9 @@
       "classification",
       "ownership",
       "identity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.9"
   },
   {
     "control_id": "ISO-069",
@@ -1239,7 +1375,9 @@
       "access",
       "mfa",
       "cryptography"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.10"
   },
   {
     "control_id": "ISO-070",
@@ -1257,7 +1395,9 @@
       "encryption",
       "key_management",
       "logging"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.11"
   },
   {
     "control_id": "ISO-071",
@@ -1275,7 +1415,9 @@
       "monitoring",
       "retention",
       "vulnerability"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.12"
   },
   {
     "control_id": "ISO-072",
@@ -1293,7 +1435,9 @@
       "operations",
       "hardening",
       "incident"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.13"
   },
   {
     "control_id": "ISO-073",
@@ -1311,7 +1455,9 @@
       "response",
       "communication",
       "continuity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.14"
   },
   {
     "control_id": "ISO-074",
@@ -1329,7 +1475,9 @@
       "recovery",
       "cadence",
       "audit"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.15"
   },
   {
     "control_id": "ISO-075",
@@ -1347,7 +1495,9 @@
       "assurance",
       "metrics",
       "supplier"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.16"
   },
   {
     "control_id": "ISO-076",
@@ -1365,7 +1515,9 @@
       "third_party",
       "contract",
       "awareness"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.17"
   },
   {
     "control_id": "ISO-077",
@@ -1383,7 +1535,9 @@
       "training",
       "people",
       "privacy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.18"
   },
   {
     "control_id": "ISO-078",
@@ -1401,7 +1555,9 @@
       "legal",
       "compliance",
       "policy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.19"
   },
   {
     "control_id": "ISO-079",
@@ -1419,7 +1575,9 @@
       "governance",
       "review",
       "risk"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.20"
   },
   {
     "control_id": "ISO-080",
@@ -1437,7 +1595,9 @@
       "register",
       "treatment",
       "asset"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.21"
   },
   {
     "control_id": "ISO-081",
@@ -1455,7 +1615,9 @@
       "classification",
       "ownership",
       "identity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.22"
   },
   {
     "control_id": "ISO-082",
@@ -1473,7 +1635,9 @@
       "access",
       "mfa",
       "cryptography"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.23"
   },
   {
     "control_id": "ISO-083",
@@ -1491,7 +1655,9 @@
       "encryption",
       "key_management",
       "logging"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.24"
   },
   {
     "control_id": "ISO-084",
@@ -1509,7 +1675,9 @@
       "monitoring",
       "retention",
       "vulnerability"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.25"
   },
   {
     "control_id": "ISO-085",
@@ -1527,7 +1695,9 @@
       "operations",
       "hardening",
       "incident"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.26"
   },
   {
     "control_id": "ISO-086",
@@ -1545,7 +1715,9 @@
       "response",
       "communication",
       "continuity"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.27"
   },
   {
     "control_id": "ISO-087",
@@ -1563,7 +1735,9 @@
       "recovery",
       "cadence",
       "audit"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.28"
   },
   {
     "control_id": "ISO-088",
@@ -1581,7 +1755,9 @@
       "assurance",
       "metrics",
       "supplier"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.29"
   },
   {
     "control_id": "ISO-089",
@@ -1599,7 +1775,9 @@
       "third_party",
       "contract",
       "awareness"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.30"
   },
   {
     "control_id": "ISO-090",
@@ -1617,7 +1795,9 @@
       "training",
       "people",
       "privacy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.31"
   },
   {
     "control_id": "ISO-091",
@@ -1635,7 +1815,9 @@
       "legal",
       "compliance",
       "policy"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.32"
   },
   {
     "control_id": "ISO-092",
@@ -1653,7 +1835,9 @@
       "governance",
       "review",
       "risk"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.33"
   },
   {
     "control_id": "ISO-093",
@@ -1671,6 +1855,8 @@
       "register",
       "treatment",
       "asset"
-    ]
+    ],
+    "iso_version": "27001:2022",
+    "annex_a_ref": "A.8.34"
   }
 ]

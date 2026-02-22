@@ -452,6 +452,10 @@ struct LibraryControl {
     tsc_version: String,
     #[serde(default)]
     tsc_family: String,
+    #[serde(default)]
+    iso_version: String,
+    #[serde(default)]
+    annex_a_ref: String,
     tags: Vec<String>,
 }
 
@@ -3012,6 +3016,112 @@ mod tests {
             );
         }
     }
+
+    #[test]
+    fn iso27001_pack_meta_has_required_spine_keys() {
+        let pack_meta_path = Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("data")
+            .join("packs")
+            .join("iso_27001")
+            .join("pack_meta.json");
+        let meta: serde_json::Value =
+            read_json_file(&pack_meta_path).expect("iso_27001 pack_meta.json should parse");
+
+        for key in [
+            "pack_slug",
+            "pack_name",
+            "pack_version",
+            "last_updated",
+            "framework_owner",
+            "framework_name",
+            "framework_version",
+            "scope_required",
+            "spine_required",
+            "interpretation_notes",
+        ] {
+            assert!(
+                meta.get(key).is_some(),
+                "iso_27001 pack_meta.json missing key {key}"
+            );
+        }
+
+        assert_eq!(
+            meta.get("pack_slug").and_then(|v| v.as_str()),
+            Some("iso_27001")
+        );
+        assert_eq!(
+            meta.get("framework_owner").and_then(|v| v.as_str()),
+            Some("ISO/IEC")
+        );
+    }
+
+    #[test]
+    fn iso27001_controls_include_annex_a_fields_and_minimum_count() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::Iso27001)
+            .expect("iso_27001 library pack should load");
+        assert!(
+            data.controls.len() >= 93,
+            "iso_27001 controls expected >=93, found {}",
+            data.controls.len()
+        );
+
+        let mut annex_refs = BTreeSet::new();
+        for control in &data.controls {
+            assert_eq!(
+                control.iso_version, "27001:2022",
+                "control {} missing required iso_version",
+                control.control_id
+            );
+            assert!(
+                !control.annex_a_ref.trim().is_empty(),
+                "control {} missing annex_a_ref",
+                control.control_id
+            );
+            assert!(
+                control.annex_a_ref.starts_with("A."),
+                "control {} has invalid annex_a_ref {}",
+                control.control_id,
+                control.annex_a_ref
+            );
+            annex_refs.insert(control.annex_a_ref.clone());
+        }
+        assert!(
+            annex_refs.len() >= 93,
+            "expected at least 93 unique annex_a_ref values, found {}",
+            annex_refs.len()
+        );
+    }
+
+    #[test]
+    fn iso27001_queries_and_rubric_reference_existing_controls() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::Iso27001)
+            .expect("iso_27001 library pack should load");
+        let control_ids: BTreeSet<&str> = data
+            .controls
+            .iter()
+            .map(|c| c.control_id.as_str())
+            .collect();
+
+        for query in &data.queries.queries {
+            for control_id in &query.control_ids {
+                assert!(
+                    control_ids.contains(control_id.as_str()),
+                    "query {} references unknown control_id {}",
+                    query.query_id,
+                    control_id
+                );
+            }
+        }
+
+        for mapping in &data.rubric.control_query_map {
+            assert!(
+                control_ids.contains(mapping.control_id.as_str()),
+                "rubric mapping references unknown control_id {}",
+                mapping.control_id
+            );
+        }
+    }
+
     #[test]
     #[cfg(windows)]
     fn is_within_true_for_child_under_parent() {
@@ -3073,6 +3183,8 @@ mod tests {
             evidence_expectations: vec!["Policy and access logs".to_string()],
             tsc_version: String::new(),
             tsc_family: String::new(),
+            iso_version: String::new(),
+            annex_a_ref: String::new(),
             tags: vec!["identity".to_string()],
         }];
         let queries = LibraryQueries {
