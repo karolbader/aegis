@@ -1,0 +1,21 @@
+{
+  "pack_slug": "dfir",
+  "pack_name": "DFIR Incident Response Readiness",
+  "pack_version": "v1.0.0",
+  "last_updated": "2026-02-22",
+  "framework_owner": "Civitas (crosswalk: NIST CSF Respond/Recover)",
+  "framework_name": "DFIR Readiness Baseline (lifecycle phases + CSF crosswalk)",
+  "framework_version": "v1",
+  "scope_required": [
+    "Incident Response readiness evidence pack"
+  ],
+  "spine_required": [
+    "Lifecycle phases: Preparation, Detection/Analysis, Containment, Eradication, Recovery, Post-Incident",
+    "Crosswalk refs: NIST CSF Respond/Recover where applicable"
+  ],
+  "interpretation_notes": [
+    "Controls map to lifecycle phase spine; optional CSF crosswalk refs.",
+    "Queries are evidence-collection procedures.",
+    "Readiness evidence pack; not legal advice; not certification issuance."
+  ]
+}

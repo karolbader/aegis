@@ -1,0 +1,2004 @@
+[
+  {
+    "control_id": "DFIR-001",
+    "title": "Preparation readiness control 01",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-002",
+    "title": "Preparation readiness control 02",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-003",
+    "title": "Preparation readiness control 03",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-004",
+    "title": "Preparation readiness control 04",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-005",
+    "title": "Preparation readiness control 05",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-006",
+    "title": "Preparation readiness control 06",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-007",
+    "title": "Preparation readiness control 07",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-008",
+    "title": "Preparation readiness control 08",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-009",
+    "title": "Preparation readiness control 09",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-010",
+    "title": "Preparation readiness control 10",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-011",
+    "title": "Preparation readiness control 11",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-012",
+    "title": "Preparation readiness control 12",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-013",
+    "title": "Preparation readiness control 13",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-014",
+    "title": "Preparation readiness control 14",
+    "description": "Validate that PREPARATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Preparation procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Preparation.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Preparation execution.",
+      "Review evidence with remediation tracking for Preparation exceptions."
+    ],
+    "tags": [
+      "preparation",
+      "planning",
+      "governance",
+      "readiness",
+      "incident_response",
+      "dfir"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Preparation",
+    "csf_ref": "RS.RP-1"
+  },
+  {
+    "control_id": "DFIR-015",
+    "title": "DetectionAnalysis readiness control 01",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-1"
+  },
+  {
+    "control_id": "DFIR-016",
+    "title": "DetectionAnalysis readiness control 02",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-2"
+  },
+  {
+    "control_id": "DFIR-017",
+    "title": "DetectionAnalysis readiness control 03",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-3"
+  },
+  {
+    "control_id": "DFIR-018",
+    "title": "DetectionAnalysis readiness control 04",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-4"
+  },
+  {
+    "control_id": "DFIR-019",
+    "title": "DetectionAnalysis readiness control 05",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-5"
+  },
+  {
+    "control_id": "DFIR-020",
+    "title": "DetectionAnalysis readiness control 06",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-1"
+  },
+  {
+    "control_id": "DFIR-021",
+    "title": "DetectionAnalysis readiness control 07",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-2"
+  },
+  {
+    "control_id": "DFIR-022",
+    "title": "DetectionAnalysis readiness control 08",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-3"
+  },
+  {
+    "control_id": "DFIR-023",
+    "title": "DetectionAnalysis readiness control 09",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-4"
+  },
+  {
+    "control_id": "DFIR-024",
+    "title": "DetectionAnalysis readiness control 10",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-5"
+  },
+  {
+    "control_id": "DFIR-025",
+    "title": "DetectionAnalysis readiness control 11",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-1"
+  },
+  {
+    "control_id": "DFIR-026",
+    "title": "DetectionAnalysis readiness control 12",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-2"
+  },
+  {
+    "control_id": "DFIR-027",
+    "title": "DetectionAnalysis readiness control 13",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-3"
+  },
+  {
+    "control_id": "DFIR-028",
+    "title": "DetectionAnalysis readiness control 14",
+    "description": "Validate that DETECTION-ANALYSIS safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure DetectionAnalysis procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for DetectionAnalysis.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating DetectionAnalysis execution.",
+      "Review evidence with remediation tracking for DetectionAnalysis exceptions."
+    ],
+    "tags": [
+      "detection",
+      "analysis",
+      "triage",
+      "telemetry",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "DetectionAnalysis",
+    "csf_ref": "RS.AN-4"
+  },
+  {
+    "control_id": "DFIR-029",
+    "title": "Containment readiness control 01",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-030",
+    "title": "Containment readiness control 02",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-2"
+  },
+  {
+    "control_id": "DFIR-031",
+    "title": "Containment readiness control 03",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-032",
+    "title": "Containment readiness control 04",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-2"
+  },
+  {
+    "control_id": "DFIR-033",
+    "title": "Containment readiness control 05",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-034",
+    "title": "Containment readiness control 06",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-2"
+  },
+  {
+    "control_id": "DFIR-035",
+    "title": "Containment readiness control 07",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-036",
+    "title": "Containment readiness control 08",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-2"
+  },
+  {
+    "control_id": "DFIR-037",
+    "title": "Containment readiness control 09",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-038",
+    "title": "Containment readiness control 10",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-2"
+  },
+  {
+    "control_id": "DFIR-039",
+    "title": "Containment readiness control 11",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-040",
+    "title": "Containment readiness control 12",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-2"
+  },
+  {
+    "control_id": "DFIR-041",
+    "title": "Containment readiness control 13",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-042",
+    "title": "Containment readiness control 14",
+    "description": "Validate that CONTAINMENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Containment procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Containment.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Containment execution.",
+      "Review evidence with remediation tracking for Containment exceptions."
+    ],
+    "tags": [
+      "containment",
+      "isolation",
+      "segmentation",
+      "response",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Containment",
+    "csf_ref": "RS.MI-2"
+  },
+  {
+    "control_id": "DFIR-043",
+    "title": "Eradication readiness control 01",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-044",
+    "title": "Eradication readiness control 02",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-045",
+    "title": "Eradication readiness control 03",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-046",
+    "title": "Eradication readiness control 04",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-047",
+    "title": "Eradication readiness control 05",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-048",
+    "title": "Eradication readiness control 06",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-049",
+    "title": "Eradication readiness control 07",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-050",
+    "title": "Eradication readiness control 08",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-051",
+    "title": "Eradication readiness control 09",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-052",
+    "title": "Eradication readiness control 10",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-053",
+    "title": "Eradication readiness control 11",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-054",
+    "title": "Eradication readiness control 12",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-055",
+    "title": "Eradication readiness control 13",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.MI-1"
+  },
+  {
+    "control_id": "DFIR-056",
+    "title": "Eradication readiness control 14",
+    "description": "Validate that ERADICATION safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Eradication procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Eradication.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Eradication execution.",
+      "Review evidence with remediation tracking for Eradication exceptions."
+    ],
+    "tags": [
+      "eradication",
+      "remediation",
+      "patching",
+      "hardening",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Eradication",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-057",
+    "title": "Recovery readiness control 01",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.RP-1"
+  },
+  {
+    "control_id": "DFIR-058",
+    "title": "Recovery readiness control 02",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-059",
+    "title": "Recovery readiness control 03",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.CO-1"
+  },
+  {
+    "control_id": "DFIR-060",
+    "title": "Recovery readiness control 04",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.RP-1"
+  },
+  {
+    "control_id": "DFIR-061",
+    "title": "Recovery readiness control 05",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-062",
+    "title": "Recovery readiness control 06",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.CO-1"
+  },
+  {
+    "control_id": "DFIR-063",
+    "title": "Recovery readiness control 07",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.RP-1"
+  },
+  {
+    "control_id": "DFIR-064",
+    "title": "Recovery readiness control 08",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-065",
+    "title": "Recovery readiness control 09",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.CO-1"
+  },
+  {
+    "control_id": "DFIR-066",
+    "title": "Recovery readiness control 10",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.RP-1"
+  },
+  {
+    "control_id": "DFIR-067",
+    "title": "Recovery readiness control 11",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-068",
+    "title": "Recovery readiness control 12",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.CO-1"
+  },
+  {
+    "control_id": "DFIR-069",
+    "title": "Recovery readiness control 13",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.RP-1"
+  },
+  {
+    "control_id": "DFIR-070",
+    "title": "Recovery readiness control 14",
+    "description": "Validate that RECOVERY safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure Recovery procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for Recovery.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating Recovery execution.",
+      "Review evidence with remediation tracking for Recovery exceptions."
+    ],
+    "tags": [
+      "recovery",
+      "backup",
+      "restore",
+      "continuity",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "Recovery",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-071",
+    "title": "PostIncident readiness control 01",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-072",
+    "title": "PostIncident readiness control 02",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-073",
+    "title": "PostIncident readiness control 03",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.CO-1"
+  },
+  {
+    "control_id": "DFIR-074",
+    "title": "PostIncident readiness control 04",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-075",
+    "title": "PostIncident readiness control 05",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-076",
+    "title": "PostIncident readiness control 06",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.CO-1"
+  },
+  {
+    "control_id": "DFIR-077",
+    "title": "PostIncident readiness control 07",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-078",
+    "title": "PostIncident readiness control 08",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-079",
+    "title": "PostIncident readiness control 09",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.CO-1"
+  },
+  {
+    "control_id": "DFIR-080",
+    "title": "PostIncident readiness control 10",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 5,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-081",
+    "title": "PostIncident readiness control 11",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 1,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.IM-1"
+  },
+  {
+    "control_id": "DFIR-082",
+    "title": "PostIncident readiness control 12",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 2,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.CO-1"
+  },
+  {
+    "control_id": "DFIR-083",
+    "title": "PostIncident readiness control 13",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 3,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RS.IM-1"
+  },
+  {
+    "control_id": "DFIR-084",
+    "title": "PostIncident readiness control 14",
+    "description": "Validate that POST-INCIDENT safeguards are designed, implemented, and periodically reviewed.",
+    "objective": "Ensure PostIncident procedures are documented, exercised, and reproducible for incident response readiness.",
+    "severity": 4,
+    "evidence_expectations": [
+      "Policy/procedure artifact showing ownership and cadence for PostIncident.",
+      "Operational records (logs, tickets, reports, or runbooks) demonstrating PostIncident execution.",
+      "Review evidence with remediation tracking for PostIncident exceptions."
+    ],
+    "tags": [
+      "postincident",
+      "lessons_learned",
+      "improvement",
+      "governance",
+      "incident_response",
+      "dfir",
+      "readiness"
+    ],
+    "dfir_version": "DFIR:v1",
+    "dfir_phase": "PostIncident",
+    "csf_ref": "RC.IM-1"
+  }
+]

@@ -187,6 +187,9 @@ enum LibraryPack {
     #[value(name = "soc_2", alias = "soc2")]
     #[serde(rename = "soc_2", alias = "soc2")]
     Soc2,
+    #[value(name = "dfir", alias = "dfir-lite", alias = "dfir_lite")]
+    #[serde(rename = "dfir", alias = "dfir-lite", alias = "dfir_lite")]
+    Dfir,
     #[value(name = "vendorsecurity/v1", alias = "vendor_security_v1")]
     #[serde(rename = "vendorsecurity/v1", alias = "vendor_security_v1")]
     VendorSecurityV1,
@@ -205,6 +208,7 @@ impl LibraryPack {
             LibraryPack::Iso27001 => "iso_27001",
             LibraryPack::NistCsf => "nist_csf",
             LibraryPack::Soc2 => "soc_2",
+            LibraryPack::Dfir => "dfir",
             LibraryPack::VendorSecurityV1 => "vendorsecurity/v1",
             LibraryPack::DfirLiteV1 => "dfir-lite/v1",
             LibraryPack::Iso27001LiteV1 => "iso27001-lite/v1",
@@ -466,6 +470,10 @@ struct LibraryControl {
     cis_version: String,
     #[serde(default)]
     cis_control: String,
+    #[serde(default)]
+    dfir_version: String,
+    #[serde(default)]
+    dfir_phase: String,
     tags: Vec<String>,
 }
 
@@ -1653,12 +1661,14 @@ fn load_library_pack_data_with_data_dir(
             | LibraryPack::Iso27001
             | LibraryPack::NistCsf
             | LibraryPack::Soc2
+            | LibraryPack::Dfir
     );
     let min_controls_required = match library_pack {
         LibraryPack::VendorSecurity => 80,
         LibraryPack::Iso27001 => 93,
         LibraryPack::NistCsf => 80,
         LibraryPack::Soc2 => 80,
+        LibraryPack::Dfir => 80,
         _ => 1,
     };
     if controls.len() < min_controls_required {
@@ -1712,6 +1722,7 @@ fn load_library_pack_data_with_data_dir(
         LibraryPack::Iso27001 => 50,
         LibraryPack::NistCsf => 45,
         LibraryPack::Soc2 => 50,
+        LibraryPack::Dfir => 45,
         _ => 1,
     };
     if queries.queries.len() < min_queries_required {
@@ -2878,6 +2889,7 @@ mod tests {
             LibraryPack::Iso27001,
             LibraryPack::NistCsf,
             LibraryPack::Soc2,
+            LibraryPack::Dfir,
         ];
 
         for library_pack in starter_packs {
@@ -2903,6 +2915,20 @@ mod tests {
         let intake: IntakeV1 =
             serde_json::from_value(intake_doc).expect("soc2 alias should deserialize");
         assert_eq!(intake.library_pack.slug(), "soc_2");
+    }
+
+    #[test]
+    fn intake_accepts_dfir_lite_alias() {
+        let intake_doc = serde_json::json!({
+            "schema_version": "aegis.intake.v1",
+            "client_id": "acme",
+            "engagement_id": "eng42",
+            "pack_type": "trust_audit",
+            "library_pack": "dfir-lite"
+        });
+        let intake: IntakeV1 =
+            serde_json::from_value(intake_doc).expect("dfir-lite alias should deserialize");
+        assert_eq!(intake.library_pack.slug(), "dfir");
     }
 
     #[test]
@@ -3393,6 +3419,129 @@ mod tests {
     }
 
     #[test]
+    fn dfir_pack_meta_has_required_spine_keys() {
+        let pack_meta_path = Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("data")
+            .join("packs")
+            .join("dfir")
+            .join("pack_meta.json");
+        let meta: serde_json::Value =
+            read_json_file(&pack_meta_path).expect("dfir pack_meta.json should parse");
+
+        for key in [
+            "pack_slug",
+            "pack_name",
+            "pack_version",
+            "last_updated",
+            "framework_owner",
+            "framework_name",
+            "framework_version",
+            "scope_required",
+            "spine_required",
+            "interpretation_notes",
+        ] {
+            assert!(
+                meta.get(key).is_some(),
+                "dfir pack_meta.json missing key {key}"
+            );
+        }
+
+        assert_eq!(meta.get("pack_slug").and_then(|v| v.as_str()), Some("dfir"));
+    }
+
+    #[test]
+    fn dfir_controls_include_spine_fields_and_phase_coverage() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::Dfir)
+            .expect("dfir library pack should load");
+        assert!(
+            data.controls.len() >= 80,
+            "dfir controls expected >=80, found {}",
+            data.controls.len()
+        );
+
+        let mut phase_counts: BTreeMap<String, usize> = BTreeMap::new();
+        for control in &data.controls {
+            assert_eq!(
+                control.dfir_version, "DFIR:v1",
+                "control {} missing required dfir_version",
+                control.control_id
+            );
+            assert!(
+                !control.dfir_phase.trim().is_empty(),
+                "control {} missing dfir_phase",
+                control.control_id
+            );
+            assert!(
+                [
+                    "Preparation",
+                    "DetectionAnalysis",
+                    "Containment",
+                    "Eradication",
+                    "Recovery",
+                    "PostIncident"
+                ]
+                .contains(&control.dfir_phase.as_str()),
+                "control {} has invalid dfir_phase {}",
+                control.control_id,
+                control.dfir_phase
+            );
+            if !control.csf_ref.trim().is_empty() {
+                assert!(
+                    control.csf_ref.starts_with("RS.") || control.csf_ref.starts_with("RC."),
+                    "control {} has invalid DFIR csf_ref {}",
+                    control.control_id,
+                    control.csf_ref
+                );
+            }
+            *phase_counts.entry(control.dfir_phase.clone()).or_insert(0) += 1;
+        }
+
+        for phase in [
+            "Preparation",
+            "DetectionAnalysis",
+            "Containment",
+            "Eradication",
+            "Recovery",
+            "PostIncident",
+        ] {
+            assert!(
+                phase_counts.get(phase).copied().unwrap_or_default() > 0,
+                "dfir phase {phase} has zero controls"
+            );
+        }
+    }
+
+    #[test]
+    fn dfir_queries_and_rubric_reference_existing_controls() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::Dfir)
+            .expect("dfir library pack should load");
+        let control_ids: BTreeSet<&str> = data
+            .controls
+            .iter()
+            .map(|c| c.control_id.as_str())
+            .collect();
+
+        for query in &data.queries.queries {
+            for control_id in &query.control_ids {
+                assert!(
+                    control_ids.contains(control_id.as_str()),
+                    "query {} references unknown control_id {}",
+                    query.query_id,
+                    control_id
+                );
+            }
+        }
+
+        for mapping in &data.rubric.control_query_map {
+            assert!(
+                control_ids.contains(mapping.control_id.as_str()),
+                "rubric mapping references unknown control_id {}",
+                mapping.control_id
+            );
+        }
+    }
+
+    #[test]
     #[cfg(windows)]
     fn is_within_true_for_child_under_parent() {
         assert!(is_within(
@@ -3460,6 +3609,8 @@ mod tests {
             csf_function: String::new(),
             cis_version: String::new(),
             cis_control: String::new(),
+            dfir_version: String::new(),
+            dfir_phase: String::new(),
             tags: vec!["identity".to_string()],
         }];
         let queries = LibraryQueries {

@@ -1,0 +1,1229 @@
+{
+  "version": "2.0",
+  "queries": [
+    {
+      "query_id": "DFIR-Q-001",
+      "query_text": "incident response plan evidence owner review log ticket runbook timeline",
+      "tags": [
+        "preparation",
+        "planning",
+        "governance",
+        "readiness",
+        "incident_response",
+        "dfir"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-001",
+        "DFIR-002",
+        "DFIR-003",
+        "DFIR-004",
+        "DFIR-005",
+        "DFIR-006",
+        "DFIR-007",
+        "DFIR-015",
+        "DFIR-016"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-002",
+      "query_text": "communications playbook evidence owner review log ticket runbook timeline",
+      "tags": [
+        "preparation",
+        "planning",
+        "governance",
+        "readiness",
+        "incident_response",
+        "dfir",
+        "communications"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-003",
+        "DFIR-004",
+        "DFIR-005",
+        "DFIR-006",
+        "DFIR-007",
+        "DFIR-008",
+        "DFIR-009",
+        "DFIR-016",
+        "DFIR-017"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-003",
+      "query_text": "stakeholder contact list evidence owner review log ticket runbook timeline",
+      "tags": [
+        "preparation",
+        "planning",
+        "governance",
+        "readiness",
+        "incident_response",
+        "dfir"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-005",
+        "DFIR-006",
+        "DFIR-007",
+        "DFIR-008",
+        "DFIR-009",
+        "DFIR-010",
+        "DFIR-011",
+        "DFIR-017",
+        "DFIR-018"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-004",
+      "query_text": "evidence handling standards evidence owner review log ticket runbook timeline",
+      "tags": [
+        "preparation",
+        "planning",
+        "governance",
+        "readiness",
+        "incident_response",
+        "dfir",
+        "evidence",
+        "forensics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-007",
+        "DFIR-008",
+        "DFIR-009",
+        "DFIR-010",
+        "DFIR-011",
+        "DFIR-012",
+        "DFIR-013",
+        "DFIR-018",
+        "DFIR-019"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-005",
+      "query_text": "chain-of-custody template evidence owner review log ticket runbook timeline",
+      "tags": [
+        "preparation",
+        "planning",
+        "governance",
+        "readiness",
+        "incident_response",
+        "dfir",
+        "evidence",
+        "forensics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-001",
+        "DFIR-009",
+        "DFIR-010",
+        "DFIR-011",
+        "DFIR-012",
+        "DFIR-013",
+        "DFIR-014",
+        "DFIR-019",
+        "DFIR-020"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-006",
+      "query_text": "escalation matrix evidence owner review log ticket runbook timeline",
+      "tags": [
+        "preparation",
+        "planning",
+        "governance",
+        "readiness",
+        "incident_response",
+        "dfir"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-001",
+        "DFIR-002",
+        "DFIR-003",
+        "DFIR-011",
+        "DFIR-012",
+        "DFIR-013",
+        "DFIR-014",
+        "DFIR-020",
+        "DFIR-021"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-007",
+      "query_text": "training exercise records evidence owner review log ticket runbook timeline",
+      "tags": [
+        "preparation",
+        "planning",
+        "governance",
+        "readiness",
+        "incident_response",
+        "dfir"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-001",
+        "DFIR-002",
+        "DFIR-003",
+        "DFIR-004",
+        "DFIR-005",
+        "DFIR-013",
+        "DFIR-014",
+        "DFIR-021",
+        "DFIR-022"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-008",
+      "query_text": "tabletop outcomes evidence owner review log ticket runbook timeline",
+      "tags": [
+        "preparation",
+        "planning",
+        "governance",
+        "readiness",
+        "incident_response",
+        "dfir"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-001",
+        "DFIR-002",
+        "DFIR-003",
+        "DFIR-004",
+        "DFIR-005",
+        "DFIR-006",
+        "DFIR-007",
+        "DFIR-022",
+        "DFIR-023"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-009",
+      "query_text": "edr telemetry evidence evidence owner review log ticket runbook timeline",
+      "tags": [
+        "detection",
+        "analysis",
+        "triage",
+        "telemetry",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "logging",
+        "monitoring",
+        "evidence",
+        "forensics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-015",
+        "DFIR-016",
+        "DFIR-017",
+        "DFIR-018",
+        "DFIR-019",
+        "DFIR-020",
+        "DFIR-021",
+        "DFIR-029",
+        "DFIR-030"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-010",
+      "query_text": "siem alert triage logs evidence owner review log ticket runbook timeline",
+      "tags": [
+        "detection",
+        "analysis",
+        "triage",
+        "telemetry",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "logging",
+        "monitoring"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-017",
+        "DFIR-018",
+        "DFIR-019",
+        "DFIR-020",
+        "DFIR-021",
+        "DFIR-022",
+        "DFIR-023",
+        "DFIR-030",
+        "DFIR-031"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-011",
+      "query_text": "incident classification records evidence owner review log ticket runbook timeline",
+      "tags": [
+        "detection",
+        "analysis",
+        "triage",
+        "telemetry",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-019",
+        "DFIR-020",
+        "DFIR-021",
+        "DFIR-022",
+        "DFIR-023",
+        "DFIR-024",
+        "DFIR-025",
+        "DFIR-031",
+        "DFIR-032"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-012",
+      "query_text": "forensic timeline notes evidence owner review log ticket runbook timeline",
+      "tags": [
+        "detection",
+        "analysis",
+        "triage",
+        "telemetry",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-021",
+        "DFIR-022",
+        "DFIR-023",
+        "DFIR-024",
+        "DFIR-025",
+        "DFIR-026",
+        "DFIR-027",
+        "DFIR-032",
+        "DFIR-033"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-013",
+      "query_text": "ioc tracking artifacts evidence owner review log ticket runbook timeline",
+      "tags": [
+        "detection",
+        "analysis",
+        "triage",
+        "telemetry",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-015",
+        "DFIR-023",
+        "DFIR-024",
+        "DFIR-025",
+        "DFIR-026",
+        "DFIR-027",
+        "DFIR-028",
+        "DFIR-033",
+        "DFIR-034"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-014",
+      "query_text": "time sync ntp evidence evidence owner review log ticket runbook timeline",
+      "tags": [
+        "detection",
+        "analysis",
+        "triage",
+        "telemetry",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "evidence",
+        "forensics",
+        "time_sync"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-015",
+        "DFIR-016",
+        "DFIR-017",
+        "DFIR-025",
+        "DFIR-026",
+        "DFIR-027",
+        "DFIR-028",
+        "DFIR-034",
+        "DFIR-035"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-015",
+      "query_text": "logging retention policy evidence owner review log ticket runbook timeline",
+      "tags": [
+        "detection",
+        "analysis",
+        "triage",
+        "telemetry",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "logging",
+        "monitoring"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-015",
+        "DFIR-016",
+        "DFIR-017",
+        "DFIR-018",
+        "DFIR-019",
+        "DFIR-027",
+        "DFIR-028",
+        "DFIR-035",
+        "DFIR-036"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-016",
+      "query_text": "admin account monitoring records evidence owner review log ticket runbook timeline",
+      "tags": [
+        "detection",
+        "analysis",
+        "triage",
+        "telemetry",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "privileged_access"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-015",
+        "DFIR-016",
+        "DFIR-017",
+        "DFIR-018",
+        "DFIR-019",
+        "DFIR-020",
+        "DFIR-021",
+        "DFIR-036",
+        "DFIR-037"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-017",
+      "query_text": "host isolation records evidence owner review log ticket runbook timeline",
+      "tags": [
+        "containment",
+        "isolation",
+        "segmentation",
+        "response",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-029",
+        "DFIR-030",
+        "DFIR-031",
+        "DFIR-032",
+        "DFIR-033",
+        "DFIR-034",
+        "DFIR-035",
+        "DFIR-043",
+        "DFIR-044"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-018",
+      "query_text": "network segmentation indicators evidence owner review log ticket runbook timeline",
+      "tags": [
+        "containment",
+        "isolation",
+        "segmentation",
+        "response",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-031",
+        "DFIR-032",
+        "DFIR-033",
+        "DFIR-034",
+        "DFIR-035",
+        "DFIR-036",
+        "DFIR-037",
+        "DFIR-044",
+        "DFIR-045"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-019",
+      "query_text": "access revocation logs evidence owner review log ticket runbook timeline",
+      "tags": [
+        "containment",
+        "isolation",
+        "segmentation",
+        "response",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-033",
+        "DFIR-034",
+        "DFIR-035",
+        "DFIR-036",
+        "DFIR-037",
+        "DFIR-038",
+        "DFIR-039",
+        "DFIR-045",
+        "DFIR-046"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-020",
+      "query_text": "temporary firewall changes evidence owner review log ticket runbook timeline",
+      "tags": [
+        "containment",
+        "isolation",
+        "segmentation",
+        "response",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "change_management"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-035",
+        "DFIR-036",
+        "DFIR-037",
+        "DFIR-038",
+        "DFIR-039",
+        "DFIR-040",
+        "DFIR-041",
+        "DFIR-046",
+        "DFIR-047"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-021",
+      "query_text": "privileged account disablement evidence owner review log ticket runbook timeline",
+      "tags": [
+        "containment",
+        "isolation",
+        "segmentation",
+        "response",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "privileged_access"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-029",
+        "DFIR-037",
+        "DFIR-038",
+        "DFIR-039",
+        "DFIR-040",
+        "DFIR-041",
+        "DFIR-042",
+        "DFIR-047",
+        "DFIR-048"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-022",
+      "query_text": "endpoint quarantine actions evidence owner review log ticket runbook timeline",
+      "tags": [
+        "containment",
+        "isolation",
+        "segmentation",
+        "response",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-029",
+        "DFIR-030",
+        "DFIR-031",
+        "DFIR-039",
+        "DFIR-040",
+        "DFIR-041",
+        "DFIR-042",
+        "DFIR-048",
+        "DFIR-049"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-023",
+      "query_text": "containment approval trail evidence owner review log ticket runbook timeline",
+      "tags": [
+        "containment",
+        "isolation",
+        "segmentation",
+        "response",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-029",
+        "DFIR-030",
+        "DFIR-031",
+        "DFIR-032",
+        "DFIR-033",
+        "DFIR-041",
+        "DFIR-042",
+        "DFIR-049",
+        "DFIR-050"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-024",
+      "query_text": "containment verification checks evidence owner review log ticket runbook timeline",
+      "tags": [
+        "containment",
+        "isolation",
+        "segmentation",
+        "response",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-029",
+        "DFIR-030",
+        "DFIR-031",
+        "DFIR-032",
+        "DFIR-033",
+        "DFIR-034",
+        "DFIR-035",
+        "DFIR-050",
+        "DFIR-051"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-025",
+      "query_text": "malware removal evidence evidence owner review log ticket runbook timeline",
+      "tags": [
+        "eradication",
+        "remediation",
+        "patching",
+        "hardening",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "evidence",
+        "forensics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-043",
+        "DFIR-044",
+        "DFIR-045",
+        "DFIR-046",
+        "DFIR-047",
+        "DFIR-048",
+        "DFIR-049",
+        "DFIR-057",
+        "DFIR-058"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-026",
+      "query_text": "credential reset evidence evidence owner review log ticket runbook timeline",
+      "tags": [
+        "eradication",
+        "remediation",
+        "patching",
+        "hardening",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "evidence",
+        "forensics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-045",
+        "DFIR-046",
+        "DFIR-047",
+        "DFIR-048",
+        "DFIR-049",
+        "DFIR-050",
+        "DFIR-051",
+        "DFIR-058",
+        "DFIR-059"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-027",
+      "query_text": "patch deployment logs evidence owner review log ticket runbook timeline",
+      "tags": [
+        "eradication",
+        "remediation",
+        "patching",
+        "hardening",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-047",
+        "DFIR-048",
+        "DFIR-049",
+        "DFIR-050",
+        "DFIR-051",
+        "DFIR-052",
+        "DFIR-053",
+        "DFIR-059",
+        "DFIR-060"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-028",
+      "query_text": "hardening checklist outputs evidence owner review log ticket runbook timeline",
+      "tags": [
+        "eradication",
+        "remediation",
+        "patching",
+        "hardening",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-049",
+        "DFIR-050",
+        "DFIR-051",
+        "DFIR-052",
+        "DFIR-053",
+        "DFIR-054",
+        "DFIR-055",
+        "DFIR-060",
+        "DFIR-061"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-029",
+      "query_text": "vulnerability closure notes evidence owner review log ticket runbook timeline",
+      "tags": [
+        "eradication",
+        "remediation",
+        "patching",
+        "hardening",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-043",
+        "DFIR-051",
+        "DFIR-052",
+        "DFIR-053",
+        "DFIR-054",
+        "DFIR-055",
+        "DFIR-056",
+        "DFIR-061",
+        "DFIR-062"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-030",
+      "query_text": "persistence hunting artifacts evidence owner review log ticket runbook timeline",
+      "tags": [
+        "eradication",
+        "remediation",
+        "patching",
+        "hardening",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-043",
+        "DFIR-044",
+        "DFIR-045",
+        "DFIR-053",
+        "DFIR-054",
+        "DFIR-055",
+        "DFIR-056",
+        "DFIR-062",
+        "DFIR-063"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-031",
+      "query_text": "root cause remediation tickets evidence owner review log ticket runbook timeline",
+      "tags": [
+        "eradication",
+        "remediation",
+        "patching",
+        "hardening",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-043",
+        "DFIR-044",
+        "DFIR-045",
+        "DFIR-046",
+        "DFIR-047",
+        "DFIR-055",
+        "DFIR-056",
+        "DFIR-063",
+        "DFIR-064"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-032",
+      "query_text": "change management records evidence owner review log ticket runbook timeline",
+      "tags": [
+        "eradication",
+        "remediation",
+        "patching",
+        "hardening",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "change_management"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-043",
+        "DFIR-044",
+        "DFIR-045",
+        "DFIR-046",
+        "DFIR-047",
+        "DFIR-048",
+        "DFIR-049",
+        "DFIR-064",
+        "DFIR-065"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-033",
+      "query_text": "backup status evidence evidence owner review log ticket runbook timeline",
+      "tags": [
+        "recovery",
+        "backup",
+        "restore",
+        "continuity",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "evidence",
+        "forensics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-057",
+        "DFIR-058",
+        "DFIR-059",
+        "DFIR-060",
+        "DFIR-061",
+        "DFIR-062",
+        "DFIR-063",
+        "DFIR-071",
+        "DFIR-072"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-034",
+      "query_text": "restore test reports evidence owner review log ticket runbook timeline",
+      "tags": [
+        "recovery",
+        "backup",
+        "restore",
+        "continuity",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-059",
+        "DFIR-060",
+        "DFIR-061",
+        "DFIR-062",
+        "DFIR-063",
+        "DFIR-064",
+        "DFIR-065",
+        "DFIR-072",
+        "DFIR-073"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-035",
+      "query_text": "service restoration runbooks evidence owner review log ticket runbook timeline",
+      "tags": [
+        "recovery",
+        "backup",
+        "restore",
+        "continuity",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-061",
+        "DFIR-062",
+        "DFIR-063",
+        "DFIR-064",
+        "DFIR-065",
+        "DFIR-066",
+        "DFIR-067",
+        "DFIR-073",
+        "DFIR-074"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-036",
+      "query_text": "business continuity checkpoints evidence owner review log ticket runbook timeline",
+      "tags": [
+        "recovery",
+        "backup",
+        "restore",
+        "continuity",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-063",
+        "DFIR-064",
+        "DFIR-065",
+        "DFIR-066",
+        "DFIR-067",
+        "DFIR-068",
+        "DFIR-069",
+        "DFIR-074",
+        "DFIR-075"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-037",
+      "query_text": "recovery communications evidence owner review log ticket runbook timeline",
+      "tags": [
+        "recovery",
+        "backup",
+        "restore",
+        "continuity",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "communications"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-057",
+        "DFIR-065",
+        "DFIR-066",
+        "DFIR-067",
+        "DFIR-068",
+        "DFIR-069",
+        "DFIR-070",
+        "DFIR-075",
+        "DFIR-076"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-038",
+      "query_text": "recovery validation metrics evidence owner review log ticket runbook timeline",
+      "tags": [
+        "recovery",
+        "backup",
+        "restore",
+        "continuity",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-057",
+        "DFIR-058",
+        "DFIR-059",
+        "DFIR-067",
+        "DFIR-068",
+        "DFIR-069",
+        "DFIR-070",
+        "DFIR-076",
+        "DFIR-077"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-039",
+      "query_text": "post-recovery monitoring evidence owner review log ticket runbook timeline",
+      "tags": [
+        "recovery",
+        "backup",
+        "restore",
+        "continuity",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-057",
+        "DFIR-058",
+        "DFIR-059",
+        "DFIR-060",
+        "DFIR-061",
+        "DFIR-069",
+        "DFIR-070",
+        "DFIR-077",
+        "DFIR-078"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-040",
+      "query_text": "customer impact closure notes evidence owner review log ticket runbook timeline",
+      "tags": [
+        "recovery",
+        "backup",
+        "restore",
+        "continuity",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "communications"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-057",
+        "DFIR-058",
+        "DFIR-059",
+        "DFIR-060",
+        "DFIR-061",
+        "DFIR-062",
+        "DFIR-063",
+        "DFIR-078",
+        "DFIR-079"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-041",
+      "query_text": "post-incident review minutes evidence owner review log ticket runbook timeline",
+      "tags": [
+        "postincident",
+        "lessons_learned",
+        "improvement",
+        "governance",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-001",
+        "DFIR-002",
+        "DFIR-071",
+        "DFIR-072",
+        "DFIR-073",
+        "DFIR-074",
+        "DFIR-075",
+        "DFIR-076",
+        "DFIR-077"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-042",
+      "query_text": "lessons learned register evidence owner review log ticket runbook timeline",
+      "tags": [
+        "postincident",
+        "lessons_learned",
+        "improvement",
+        "governance",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-002",
+        "DFIR-003",
+        "DFIR-073",
+        "DFIR-074",
+        "DFIR-075",
+        "DFIR-076",
+        "DFIR-077",
+        "DFIR-078",
+        "DFIR-079"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-043",
+      "query_text": "corrective action tracker evidence owner review log ticket runbook timeline",
+      "tags": [
+        "postincident",
+        "lessons_learned",
+        "improvement",
+        "governance",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-003",
+        "DFIR-004",
+        "DFIR-075",
+        "DFIR-076",
+        "DFIR-077",
+        "DFIR-078",
+        "DFIR-079",
+        "DFIR-080",
+        "DFIR-081"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-044",
+      "query_text": "policy update changelog evidence owner review log ticket runbook timeline",
+      "tags": [
+        "postincident",
+        "lessons_learned",
+        "improvement",
+        "governance",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "change_management"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-004",
+        "DFIR-005",
+        "DFIR-077",
+        "DFIR-078",
+        "DFIR-079",
+        "DFIR-080",
+        "DFIR-081",
+        "DFIR-082",
+        "DFIR-083"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-045",
+      "query_text": "control improvement backlog evidence owner review log ticket runbook timeline",
+      "tags": [
+        "postincident",
+        "lessons_learned",
+        "improvement",
+        "governance",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-005",
+        "DFIR-006",
+        "DFIR-071",
+        "DFIR-079",
+        "DFIR-080",
+        "DFIR-081",
+        "DFIR-082",
+        "DFIR-083",
+        "DFIR-084"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-046",
+      "query_text": "executive briefing records evidence owner review log ticket runbook timeline",
+      "tags": [
+        "postincident",
+        "lessons_learned",
+        "improvement",
+        "governance",
+        "incident_response",
+        "dfir",
+        "readiness"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-006",
+        "DFIR-007",
+        "DFIR-071",
+        "DFIR-072",
+        "DFIR-073",
+        "DFIR-081",
+        "DFIR-082",
+        "DFIR-083",
+        "DFIR-084"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-047",
+      "query_text": "regulator/customer comms log evidence owner review log ticket runbook timeline",
+      "tags": [
+        "postincident",
+        "lessons_learned",
+        "improvement",
+        "governance",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "communications"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-007",
+        "DFIR-008",
+        "DFIR-071",
+        "DFIR-072",
+        "DFIR-073",
+        "DFIR-074",
+        "DFIR-075",
+        "DFIR-083",
+        "DFIR-084"
+      ]
+    },
+    {
+      "query_id": "DFIR-Q-048",
+      "query_text": "evidence retention decisions evidence owner review log ticket runbook timeline",
+      "tags": [
+        "postincident",
+        "lessons_learned",
+        "improvement",
+        "governance",
+        "incident_response",
+        "dfir",
+        "readiness",
+        "evidence",
+        "forensics"
+      ],
+      "limit": 30,
+      "control_ids": [
+        "DFIR-008",
+        "DFIR-009",
+        "DFIR-071",
+        "DFIR-072",
+        "DFIR-073",
+        "DFIR-074",
+        "DFIR-075",
+        "DFIR-076",
+        "DFIR-077"
+      ]
+    }
+  ]
+}
