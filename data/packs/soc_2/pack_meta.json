@@ -1,0 +1,28 @@
+{
+  "pack_slug": "soc_2",
+  "pack_name": "SOC 2 Readiness",
+  "pack_version": "v1.0.0",
+  "last_updated": "2026-02-22",
+  "framework_owner": "AICPA",
+  "framework_name": "Trust Services Criteria (TSC)",
+  "framework_version": "2017 + Revised Points of Focus 2022",
+  "scope_required": [
+    "Security"
+  ],
+  "spine_required": [
+    "CC1",
+    "CC2",
+    "CC3",
+    "CC4",
+    "CC5",
+    "CC6",
+    "CC7",
+    "CC8",
+    "CC9"
+  ],
+  "interpretation_notes": [
+    "Controls map to AICPA TSC spine (CC1–CC9).",
+    "Queries are evidence-collection procedures, not AICPA test steps.",
+    "Readiness evidence pack; not certification issuance."
+  ]
+}

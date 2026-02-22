@@ -448,6 +448,10 @@ struct LibraryControl {
     severity: u8,
     #[serde(default)]
     evidence_expectations: Vec<String>,
+    #[serde(default)]
+    tsc_version: String,
+    #[serde(default)]
+    tsc_family: String,
     tags: Vec<String>,
 }
 
@@ -2888,6 +2892,127 @@ mod tests {
     }
 
     #[test]
+    fn soc2_pack_meta_has_required_spine_keys() {
+        let pack_meta_path = Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("data")
+            .join("packs")
+            .join("soc_2")
+            .join("pack_meta.json");
+        let meta: serde_json::Value =
+            read_json_file(&pack_meta_path).expect("soc_2 pack_meta.json should parse");
+
+        for key in [
+            "pack_slug",
+            "pack_name",
+            "pack_version",
+            "last_updated",
+            "framework_owner",
+            "framework_name",
+            "framework_version",
+            "scope_required",
+            "spine_required",
+            "interpretation_notes",
+        ] {
+            assert!(
+                meta.get(key).is_some(),
+                "soc_2 pack_meta.json missing key {key}"
+            );
+        }
+
+        assert_eq!(
+            meta.get("pack_slug").and_then(|v| v.as_str()),
+            Some("soc_2")
+        );
+        assert_eq!(
+            meta.get("framework_owner").and_then(|v| v.as_str()),
+            Some("AICPA")
+        );
+
+        let required_families = [
+            "CC1", "CC2", "CC3", "CC4", "CC5", "CC6", "CC7", "CC8", "CC9",
+        ];
+        let spine = meta
+            .get("spine_required")
+            .and_then(|v| v.as_array())
+            .expect("spine_required should be an array");
+        let spine_values: BTreeSet<String> = spine
+            .iter()
+            .filter_map(|v| v.as_str().map(ToString::to_string))
+            .collect();
+        for family in required_families {
+            assert!(
+                spine_values.contains(family),
+                "spine_required missing family {family}"
+            );
+        }
+    }
+
+    #[test]
+    fn soc2_controls_include_tsc_fields_and_cover_required_cc_families() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::Soc2)
+            .expect("soc_2 library pack should load");
+        let required_families = [
+            "CC1", "CC2", "CC3", "CC4", "CC5", "CC6", "CC7", "CC8", "CC9",
+        ];
+        let required_family_set: BTreeSet<String> = required_families
+            .iter()
+            .map(|family| family.to_string())
+            .collect();
+        let mut family_counts: BTreeMap<String, usize> = BTreeMap::new();
+
+        for control in &data.controls {
+            assert_eq!(
+                control.tsc_version, "2017_TSC_PoF_2022",
+                "control {} missing required tsc_version",
+                control.control_id
+            );
+            assert!(
+                required_family_set.contains(&control.tsc_family),
+                "control {} has invalid tsc_family {}",
+                control.control_id,
+                control.tsc_family
+            );
+            *family_counts.entry(control.tsc_family.clone()).or_insert(0) += 1;
+        }
+
+        for family in required_families {
+            assert!(
+                family_counts.get(family).copied().unwrap_or_default() > 0,
+                "required SOC2 spine family {family} has zero controls"
+            );
+        }
+    }
+
+    #[test]
+    fn soc2_queries_and_rubric_reference_existing_controls() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::Soc2)
+            .expect("soc_2 library pack should load");
+        let control_ids: BTreeSet<&str> = data
+            .controls
+            .iter()
+            .map(|c| c.control_id.as_str())
+            .collect();
+
+        for query in &data.queries.queries {
+            for control_id in &query.control_ids {
+                assert!(
+                    control_ids.contains(control_id.as_str()),
+                    "query {} references unknown control_id {}",
+                    query.query_id,
+                    control_id
+                );
+            }
+        }
+
+        for mapping in &data.rubric.control_query_map {
+            assert!(
+                control_ids.contains(mapping.control_id.as_str()),
+                "rubric mapping references unknown control_id {}",
+                mapping.control_id
+            );
+        }
+    }
+    #[test]
     #[cfg(windows)]
     fn is_within_true_for_child_under_parent() {
         assert!(is_within(
@@ -2946,6 +3071,8 @@ mod tests {
             objective: "Own identity operations".to_string(),
             severity: 4,
             evidence_expectations: vec!["Policy and access logs".to_string()],
+            tsc_version: String::new(),
+            tsc_family: String::new(),
             tags: vec!["identity".to_string()],
         }];
         let queries = LibraryQueries {
