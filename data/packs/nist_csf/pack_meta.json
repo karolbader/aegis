@@ -1,0 +1,21 @@
+{
+  "pack_slug": "nist_csf",
+  "pack_name": "NIST CSF Readiness",
+  "pack_version": "v1.0.0",
+  "last_updated": "2026-02-22",
+  "framework_owner": "NIST",
+  "framework_name": "Cybersecurity Framework (CSF)",
+  "framework_version": "1.1",
+  "scope_required": [
+    "CSF Core outcomes mapped to evidence"
+  ],
+  "spine_required": [
+    "Functions: Identify, Protect, Detect, Respond, Recover",
+    "Subcategory IDs (e.g., PR.AC-1)"
+  ],
+  "interpretation_notes": [
+    "Controls map to CSF Subcategory IDs.",
+    "Queries are evidence-collection procedures.",
+    "Readiness evidence pack; not certification issuance."
+  ]
+}

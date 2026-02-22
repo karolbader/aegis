@@ -14,7 +14,10 @@
       "identify",
       "asset",
       "inventory"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.AM-1",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-002",
@@ -31,7 +34,10 @@
       "identify",
       "context",
       "dependency"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.BE-1",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-003",
@@ -49,7 +55,10 @@
       "risk",
       "governance",
       "protect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.GV-1",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-004",
@@ -66,7 +75,10 @@
       "protect",
       "identity",
       "access"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AC-1",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-005",
@@ -83,7 +95,10 @@
       "protect",
       "awareness",
       "training"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AT-1",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-006",
@@ -100,7 +115,10 @@
       "protect",
       "data",
       "encryption"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.DS-1",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-007",
@@ -118,7 +136,10 @@
       "configuration",
       "hardening",
       "detect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.IP-1",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-008",
@@ -135,7 +156,10 @@
       "detect",
       "monitoring",
       "logging"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.AE-1",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-009",
@@ -153,7 +177,10 @@
       "anomaly",
       "alerting",
       "respond"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.CM-1",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-010",
@@ -170,7 +197,10 @@
       "respond",
       "incident",
       "planning"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.RP-1",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-011",
@@ -188,7 +218,10 @@
       "analysis",
       "mitigation",
       "recover"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.CO-1",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-012",
@@ -206,7 +239,10 @@
       "continuity",
       "improvement",
       "identify"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RC.RP-1",
+    "csf_function": "Recover"
   },
   {
     "control_id": "NIST-013",
@@ -223,7 +259,10 @@
       "identify",
       "asset",
       "inventory"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.RA-1",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-014",
@@ -240,7 +279,10 @@
       "identify",
       "context",
       "dependency"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.RM-1",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-015",
@@ -258,7 +300,10 @@
       "risk",
       "governance",
       "protect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.SC-1",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-016",
@@ -275,7 +320,10 @@
       "protect",
       "identity",
       "access"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.MA-1",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-017",
@@ -292,7 +340,10 @@
       "protect",
       "awareness",
       "training"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.PT-1",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-018",
@@ -309,7 +360,10 @@
       "protect",
       "data",
       "encryption"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AC-2",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-019",
@@ -327,7 +381,10 @@
       "configuration",
       "hardening",
       "detect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AT-2",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-020",
@@ -344,7 +401,10 @@
       "detect",
       "monitoring",
       "logging"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.DP-1",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-021",
@@ -362,7 +422,10 @@
       "anomaly",
       "alerting",
       "respond"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.AE-2",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-022",
@@ -379,7 +442,10 @@
       "respond",
       "incident",
       "planning"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.AN-1",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-023",
@@ -397,7 +463,10 @@
       "analysis",
       "mitigation",
       "recover"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.MI-1",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-024",
@@ -415,7 +484,10 @@
       "continuity",
       "improvement",
       "identify"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RC.IM-1",
+    "csf_function": "Recover"
   },
   {
     "control_id": "NIST-025",
@@ -432,7 +504,10 @@
       "identify",
       "asset",
       "inventory"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.AM-2",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-026",
@@ -449,7 +524,10 @@
       "identify",
       "context",
       "dependency"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.BE-2",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-027",
@@ -467,7 +545,10 @@
       "risk",
       "governance",
       "protect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.GV-2",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-028",
@@ -484,7 +565,10 @@
       "protect",
       "identity",
       "access"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.DS-2",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-029",
@@ -501,7 +585,10 @@
       "protect",
       "awareness",
       "training"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.IP-2",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-030",
@@ -518,7 +605,10 @@
       "protect",
       "data",
       "encryption"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.MA-2",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-031",
@@ -536,7 +626,10 @@
       "configuration",
       "hardening",
       "detect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.PT-2",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-032",
@@ -553,7 +646,10 @@
       "detect",
       "monitoring",
       "logging"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.CM-2",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-033",
@@ -571,7 +667,10 @@
       "anomaly",
       "alerting",
       "respond"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.DP-2",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-034",
@@ -588,7 +687,10 @@
       "respond",
       "incident",
       "planning"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.IM-1",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-035",
@@ -606,7 +708,10 @@
       "analysis",
       "mitigation",
       "recover"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.RP-2",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-036",
@@ -624,7 +729,10 @@
       "continuity",
       "improvement",
       "identify"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RC.CO-1",
+    "csf_function": "Recover"
   },
   {
     "control_id": "NIST-037",
@@ -641,7 +749,10 @@
       "identify",
       "asset",
       "inventory"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.RA-2",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-038",
@@ -658,7 +769,10 @@
       "identify",
       "context",
       "dependency"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.RM-2",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-039",
@@ -676,7 +790,10 @@
       "risk",
       "governance",
       "protect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.SC-2",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-040",
@@ -693,7 +810,10 @@
       "protect",
       "identity",
       "access"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AC-3",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-041",
@@ -710,7 +830,10 @@
       "protect",
       "awareness",
       "training"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AT-3",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-042",
@@ -727,7 +850,10 @@
       "protect",
       "data",
       "encryption"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.DS-3",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-043",
@@ -745,7 +871,10 @@
       "configuration",
       "hardening",
       "detect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.IP-3",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-044",
@@ -762,7 +891,10 @@
       "detect",
       "monitoring",
       "logging"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.AE-3",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-045",
@@ -780,7 +912,10 @@
       "anomaly",
       "alerting",
       "respond"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.CM-3",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-046",
@@ -797,7 +932,10 @@
       "respond",
       "incident",
       "planning"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.CO-2",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-047",
@@ -815,7 +953,10 @@
       "analysis",
       "mitigation",
       "recover"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.AN-2",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-048",
@@ -833,7 +974,10 @@
       "continuity",
       "improvement",
       "identify"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RC.RP-2",
+    "csf_function": "Recover"
   },
   {
     "control_id": "NIST-049",
@@ -850,7 +994,10 @@
       "identify",
       "asset",
       "inventory"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.AM-3",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-050",
@@ -867,7 +1014,10 @@
       "identify",
       "context",
       "dependency"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.BE-3",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-051",
@@ -885,7 +1035,10 @@
       "risk",
       "governance",
       "protect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.GV-3",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-052",
@@ -902,7 +1055,10 @@
       "protect",
       "identity",
       "access"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.MA-3",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-053",
@@ -919,7 +1075,10 @@
       "protect",
       "awareness",
       "training"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.PT-3",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-054",
@@ -936,7 +1095,10 @@
       "protect",
       "data",
       "encryption"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AC-4",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-055",
@@ -954,7 +1116,10 @@
       "configuration",
       "hardening",
       "detect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AT-4",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-056",
@@ -971,7 +1136,10 @@
       "detect",
       "monitoring",
       "logging"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.DP-3",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-057",
@@ -989,7 +1157,10 @@
       "anomaly",
       "alerting",
       "respond"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.AE-4",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-058",
@@ -1006,7 +1177,10 @@
       "respond",
       "incident",
       "planning"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.MI-2",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-059",
@@ -1024,7 +1198,10 @@
       "analysis",
       "mitigation",
       "recover"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.IM-2",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-060",
@@ -1042,7 +1219,10 @@
       "continuity",
       "improvement",
       "identify"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RC.IM-2",
+    "csf_function": "Recover"
   },
   {
     "control_id": "NIST-061",
@@ -1059,7 +1239,10 @@
       "identify",
       "asset",
       "inventory"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.RA-3",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-062",
@@ -1076,7 +1259,10 @@
       "identify",
       "context",
       "dependency"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.RM-3",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-063",
@@ -1094,7 +1280,10 @@
       "risk",
       "governance",
       "protect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.SC-3",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-064",
@@ -1111,7 +1300,10 @@
       "protect",
       "identity",
       "access"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.DS-4",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-065",
@@ -1128,7 +1320,10 @@
       "protect",
       "awareness",
       "training"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.IP-4",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-066",
@@ -1145,7 +1340,10 @@
       "protect",
       "data",
       "encryption"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.MA-4",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-067",
@@ -1163,7 +1361,10 @@
       "configuration",
       "hardening",
       "detect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.PT-4",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-068",
@@ -1180,7 +1381,10 @@
       "detect",
       "monitoring",
       "logging"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.CM-4",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-069",
@@ -1198,7 +1402,10 @@
       "anomaly",
       "alerting",
       "respond"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.DP-4",
+    "csf_function": "Detect"
   },
   {
     "control_id": "NIST-070",
@@ -1215,7 +1422,10 @@
       "respond",
       "incident",
       "planning"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.RP-3",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-071",
@@ -1233,7 +1443,10 @@
       "analysis",
       "mitigation",
       "recover"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RS.CO-3",
+    "csf_function": "Respond"
   },
   {
     "control_id": "NIST-072",
@@ -1251,7 +1464,10 @@
       "continuity",
       "improvement",
       "identify"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "RC.CO-2",
+    "csf_function": "Recover"
   },
   {
     "control_id": "NIST-073",
@@ -1268,7 +1484,10 @@
       "identify",
       "asset",
       "inventory"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.AM-4",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-074",
@@ -1285,7 +1504,10 @@
       "identify",
       "context",
       "dependency"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.BE-4",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-075",
@@ -1303,7 +1525,10 @@
       "risk",
       "governance",
       "protect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "ID.GV-4",
+    "csf_function": "Identify"
   },
   {
     "control_id": "NIST-076",
@@ -1320,7 +1545,10 @@
       "protect",
       "identity",
       "access"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AC-5",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-077",
@@ -1337,7 +1565,10 @@
       "protect",
       "awareness",
       "training"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.AT-5",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-078",
@@ -1354,7 +1585,10 @@
       "protect",
       "data",
       "encryption"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.DS-5",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-079",
@@ -1372,7 +1606,10 @@
       "configuration",
       "hardening",
       "detect"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "PR.IP-5",
+    "csf_function": "Protect"
   },
   {
     "control_id": "NIST-080",
@@ -1389,6 +1626,9 @@
       "detect",
       "monitoring",
       "logging"
-    ]
+    ],
+    "csf_version": "CSF:1.1",
+    "csf_ref": "DE.AE-5",
+    "csf_function": "Detect"
   }
 ]

@@ -456,6 +456,12 @@ struct LibraryControl {
     iso_version: String,
     #[serde(default)]
     annex_a_ref: String,
+    #[serde(default)]
+    csf_version: String,
+    #[serde(default)]
+    csf_ref: String,
+    #[serde(default)]
+    csf_function: String,
     tags: Vec<String>,
 }
 
@@ -3123,6 +3129,145 @@ mod tests {
     }
 
     #[test]
+    fn nist_csf_pack_meta_has_required_spine_keys() {
+        let pack_meta_path = Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("data")
+            .join("packs")
+            .join("nist_csf")
+            .join("pack_meta.json");
+        let meta: serde_json::Value =
+            read_json_file(&pack_meta_path).expect("nist_csf pack_meta.json should parse");
+
+        for key in [
+            "pack_slug",
+            "pack_name",
+            "pack_version",
+            "last_updated",
+            "framework_owner",
+            "framework_name",
+            "framework_version",
+            "scope_required",
+            "spine_required",
+            "interpretation_notes",
+        ] {
+            assert!(
+                meta.get(key).is_some(),
+                "nist_csf pack_meta.json missing key {key}"
+            );
+        }
+
+        assert_eq!(
+            meta.get("pack_slug").and_then(|v| v.as_str()),
+            Some("nist_csf")
+        );
+        assert_eq!(
+            meta.get("framework_owner").and_then(|v| v.as_str()),
+            Some("NIST")
+        );
+    }
+
+    #[test]
+    fn nist_csf_controls_include_spine_fields_and_function_coverage() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::NistCsf)
+            .expect("nist_csf library pack should load");
+        assert!(
+            data.controls.len() >= 80,
+            "nist_csf controls expected >=80, found {}",
+            data.controls.len()
+        );
+
+        let mut function_counts: BTreeMap<String, usize> = BTreeMap::new();
+        for control in &data.controls {
+            assert_eq!(
+                control.csf_version, "CSF:1.1",
+                "control {} missing required csf_version",
+                control.control_id
+            );
+            assert!(
+                !control.csf_ref.trim().is_empty(),
+                "control {} missing csf_ref",
+                control.control_id
+            );
+            assert!(
+                !control.csf_function.trim().is_empty(),
+                "control {} missing csf_function",
+                control.control_id
+            );
+
+            let expected_prefix = match control.csf_function.as_str() {
+                "Identify" => "ID.",
+                "Protect" => "PR.",
+                "Detect" => "DE.",
+                "Respond" => "RS.",
+                "Recover" => "RC.",
+                _ => panic!(
+                    "control {} has invalid csf_function {}",
+                    control.control_id, control.csf_function
+                ),
+            };
+            assert!(
+                control.csf_ref.starts_with(expected_prefix),
+                "control {} has csf_ref {} that does not match function {}",
+                control.control_id,
+                control.csf_ref,
+                control.csf_function
+            );
+            let (_, suffix) = control.csf_ref.rsplit_once('-').unwrap_or_else(|| {
+                panic!(
+                    "control {} has invalid csf_ref {}",
+                    control.control_id, control.csf_ref
+                )
+            });
+            assert!(
+                suffix.parse::<usize>().is_ok(),
+                "control {} has non-numeric csf_ref suffix {}",
+                control.control_id,
+                control.csf_ref
+            );
+            *function_counts
+                .entry(control.csf_function.clone())
+                .or_insert(0) += 1;
+        }
+
+        for function in ["Identify", "Protect", "Detect", "Respond", "Recover"] {
+            assert!(
+                function_counts.get(function).copied().unwrap_or_default() > 0,
+                "nist_csf function {function} has zero controls"
+            );
+        }
+    }
+
+    #[test]
+    fn nist_csf_queries_and_rubric_reference_existing_controls() {
+        let data = load_library_pack_data_with_data_dir(None, LibraryPack::NistCsf)
+            .expect("nist_csf library pack should load");
+        let control_ids: BTreeSet<&str> = data
+            .controls
+            .iter()
+            .map(|c| c.control_id.as_str())
+            .collect();
+
+        for query in &data.queries.queries {
+            for control_id in &query.control_ids {
+                assert!(
+                    control_ids.contains(control_id.as_str()),
+                    "query {} references unknown control_id {}",
+                    query.query_id,
+                    control_id
+                );
+            }
+        }
+
+        for mapping in &data.rubric.control_query_map {
+            assert!(
+                control_ids.contains(mapping.control_id.as_str()),
+                "rubric mapping references unknown control_id {}",
+                mapping.control_id
+            );
+        }
+    }
+
+    #[test]
     #[cfg(windows)]
     fn is_within_true_for_child_under_parent() {
         assert!(is_within(
@@ -3185,6 +3330,9 @@ mod tests {
             tsc_family: String::new(),
             iso_version: String::new(),
             annex_a_ref: String::new(),
+            csf_version: String::new(),
+            csf_ref: String::new(),
+            csf_function: String::new(),
             tags: vec!["identity".to_string()],
         }];
         let queries = LibraryQueries {
