@@ -23,9 +23,37 @@ const CUPOLA_MANIFEST_FILE: &str = "cupola.manifest.json";
 const QUOTE_JSON: &str = "Quote.json";
 const QUOTE_MD: &str = "Quote.md";
 const DATA_SHARE_CHECKLIST_MD: &str = "DataShareChecklist.md";
+const LIBRARY_INVENTORY_JSON: &str = "library_inventory.json";
+const LIBRARY_INVENTORY_MD: &str = "library_inventory.md";
 
 const MAX_QUERY_HITS_PER_QUERY: usize = 50;
 const MAX_EVIDENCE_REFS_PER_CONTROL: usize = 256;
+const INVENTORY_PACK_META_KEYS: [&str; 10] = [
+    "pack_slug",
+    "pack_name",
+    "pack_version",
+    "last_updated",
+    "framework_owner",
+    "framework_name",
+    "framework_version",
+    "scope_required",
+    "spine_required",
+    "interpretation_notes",
+];
+const INVENTORY_KNOWN_OUTPUTS: [&str; 12] = [
+    "pack.zip",
+    DECISION_PACK_HTML,
+    "DecisionPack.pdf",
+    DECISION_PACK_MANIFEST,
+    DECISION_PACK_SEAL,
+    "verify.json",
+    "SHA256.txt",
+    REPLAY_MD,
+    CUPOLA_MANIFEST_FILE,
+    QUOTE_JSON,
+    QUOTE_MD,
+    DATA_SHARE_CHECKLIST_MD,
+];
 
 #[derive(Parser)]
 #[command(name = "aegis")]
@@ -61,6 +89,7 @@ enum Commands {
         status: Status,
     },
     Export(ExportArgs),
+    Inventory,
 }
 
 #[derive(Debug, Clone, Args)]
@@ -698,6 +727,23 @@ struct PackMeta {
     pack_id: String,
 }
 
+#[derive(Debug, Clone, Serialize)]
+struct LibraryInventoryReport {
+    schema_version: String,
+    libraries: Vec<LibraryInventoryItem>,
+}
+
+#[derive(Debug, Clone, Serialize)]
+struct LibraryInventoryItem {
+    library_id: String,
+    control_count: usize,
+    query_count: usize,
+    rubric_rule_count: Option<usize>,
+    #[serde(skip_serializing_if = "BTreeMap::is_empty")]
+    pack_meta_summary: BTreeMap<String, Value>,
+    known_outputs: Vec<String>,
+}
+
 fn build_pack_meta(intake: &IntakeV1, pack_id: &str) -> Result<PackMeta> {
     let pack_type = intake.pack_type.slug().trim().to_string();
     let library = intake.library_pack.slug().trim().to_string();
@@ -751,6 +797,7 @@ fn main() -> Result<()> {
             status,
         } => cmd_score(claim_id, score, severity, status),
         Commands::Export(args) => cmd_export(args),
+        Commands::Inventory => cmd_inventory(),
     }
 }
 
@@ -1214,6 +1261,261 @@ fn cmd_export(args: ExportArgs) -> Result<()> {
         );
     }
     result
+}
+
+fn cmd_inventory() -> Result<()> {
+    ensure_dirs()?;
+    let packs_root = resolve_packs_root(None)?;
+    if !packs_root.is_dir() {
+        bail!(
+            "library packs directory is missing or not a directory: {}",
+            packs_root.display()
+        );
+    }
+
+    let mut pack_roots = Vec::new();
+    collect_library_pack_roots(&packs_root, &packs_root, &mut pack_roots)?;
+    pack_roots.sort_by(|left, right| left.0.cmp(&right.0));
+
+    let mut libraries = Vec::new();
+    for (library_id, library_root) in pack_roots {
+        let entry = build_library_inventory_item(library_id, &library_root)?;
+        libraries.push(entry);
+    }
+
+    let report = LibraryInventoryReport {
+        schema_version: "aegis.library_inventory.v1".to_string(),
+        libraries,
+    };
+    let out_root = Path::new("out");
+    let json_path = out_root.join(LIBRARY_INVENTORY_JSON);
+    let md_path = out_root.join(LIBRARY_INVENTORY_MD);
+
+    write_json(&json_path, &report)?;
+    write_string(&md_path, &render_library_inventory_md(&report))?;
+
+    println!("Wrote {}", json_path.display());
+    println!("Wrote {}", md_path.display());
+    Ok(())
+}
+
+fn collect_library_pack_roots(
+    current: &Path,
+    packs_root: &Path,
+    output: &mut Vec<(String, PathBuf)>,
+) -> Result<()> {
+    let mut children = Vec::new();
+    for entry in fs::read_dir(current)
+        .with_context(|| format!("Failed to read directory {}", current.display()))?
+    {
+        let entry =
+            entry.with_context(|| format!("Failed to read entry in {}", current.display()))?;
+        if entry
+            .file_type()
+            .with_context(|| format!("Failed to read file type for {}", entry.path().display()))?
+            .is_dir()
+        {
+            children.push(entry.path());
+        }
+    }
+
+    children.sort();
+    for child in &children {
+        collect_library_pack_roots(child, packs_root, output)?;
+    }
+
+    let controls_path = current.join("controls.json");
+    let queries_path = current.join("queries.json");
+    if controls_path.is_file() && queries_path.is_file() {
+        let library_id = relative_library_id(current, packs_root)?;
+        output.push((library_id, current.to_path_buf()));
+    }
+    Ok(())
+}
+
+fn relative_library_id(path: &Path, base: &Path) -> Result<String> {
+    let rel = path
+        .strip_prefix(base)
+        .with_context(|| format!("Failed to resolve relative path for {}", path.display()))?;
+    let mut parts = Vec::new();
+    for component in rel.components() {
+        if let Component::Normal(part) = component {
+            parts.push(part.to_string_lossy().to_string());
+        }
+    }
+    if parts.is_empty() {
+        bail!("Invalid library path under packs root: {}", path.display());
+    }
+    Ok(parts.join("/"))
+}
+
+fn build_library_inventory_item(
+    library_id: String,
+    library_root: &Path,
+) -> Result<LibraryInventoryItem> {
+    let controls_path = library_root.join("controls.json");
+    let queries_path = library_root.join("queries.json");
+    let rubric_path = library_root.join("rubric.json");
+    let pack_meta_path = library_root.join("pack_meta.json");
+
+    let controls_json: Value = read_json_file(&controls_path)
+        .with_context(|| format!("Failed to parse {}", controls_path.display()))?;
+    let control_count = controls_json.as_array().map(Vec::len).ok_or_else(|| {
+        anyhow!(
+            "{} must contain a top-level JSON array",
+            controls_path.display()
+        )
+    })?;
+
+    let queries_json: Value = read_json_file(&queries_path)
+        .with_context(|| format!("Failed to parse {}", queries_path.display()))?;
+    let query_count = queries_json
+        .get("queries")
+        .and_then(Value::as_array)
+        .map(Vec::len)
+        .ok_or_else(|| anyhow!("{} must contain queries[]", queries_path.display()))?;
+
+    let rubric_rule_count = if rubric_path.is_file() {
+        let rubric_json: Value = read_json_file(&rubric_path)
+            .with_context(|| format!("Failed to parse {}", rubric_path.display()))?;
+        Some(
+            rubric_json
+                .get("rules")
+                .and_then(Value::as_array)
+                .map(Vec::len)
+                .ok_or_else(|| anyhow!("{} must contain rules[]", rubric_path.display()))?,
+        )
+    } else {
+        None
+    };
+
+    let pack_meta_summary = if pack_meta_path.is_file() {
+        let pack_meta_json: Value = read_json_file(&pack_meta_path)
+            .with_context(|| format!("Failed to parse {}", pack_meta_path.display()))?;
+        summarize_pack_meta(&pack_meta_json)
+    } else {
+        BTreeMap::new()
+    };
+
+    Ok(LibraryInventoryItem {
+        library_id,
+        control_count,
+        query_count,
+        rubric_rule_count,
+        pack_meta_summary,
+        known_outputs: INVENTORY_KNOWN_OUTPUTS
+            .iter()
+            .map(|name| (*name).to_string())
+            .collect(),
+    })
+}
+
+fn summarize_pack_meta(pack_meta: &Value) -> BTreeMap<String, Value> {
+    let mut summary = BTreeMap::new();
+    for key in INVENTORY_PACK_META_KEYS {
+        let Some(value) = pack_meta.get(key) else {
+            continue;
+        };
+        if value.is_null() {
+            continue;
+        }
+        match value {
+            Value::String(text) => {
+                if !text.trim().is_empty() {
+                    summary.insert(key.to_string(), Value::String(text.clone()));
+                }
+            }
+            Value::Array(values) => {
+                let mut list = values
+                    .iter()
+                    .filter_map(Value::as_str)
+                    .map(|item| item.trim().to_string())
+                    .filter(|item| !item.is_empty())
+                    .collect::<Vec<String>>();
+                list.sort_by(|left, right| {
+                    left.to_ascii_lowercase()
+                        .cmp(&right.to_ascii_lowercase())
+                        .then_with(|| left.cmp(right))
+                });
+                list.dedup();
+                if !list.is_empty() {
+                    summary.insert(
+                        key.to_string(),
+                        Value::Array(list.into_iter().map(Value::String).collect()),
+                    );
+                }
+            }
+            _ => {
+                summary.insert(key.to_string(), value.clone());
+            }
+        }
+    }
+    summary
+}
+
+fn render_library_inventory_md(report: &LibraryInventoryReport) -> String {
+    let mut lines = vec![
+        "# Library Inventory".to_string(),
+        String::new(),
+        "| library_id | control_count | query_count | rubric_rule_count |".to_string(),
+        "| --- | ---: | ---: | ---: |".to_string(),
+    ];
+    for entry in &report.libraries {
+        let rubric_rule_count = entry
+            .rubric_rule_count
+            .map(|value| value.to_string())
+            .unwrap_or_else(|| "-".to_string());
+        lines.push(format!(
+            "| `{}` | {} | {} | {} |",
+            escape_markdown_cell(&entry.library_id),
+            entry.control_count,
+            entry.query_count,
+            rubric_rule_count
+        ));
+    }
+
+    for entry in &report.libraries {
+        lines.push(String::new());
+        lines.push(format!("## `{}`", escape_markdown_cell(&entry.library_id)));
+        lines.push(String::new());
+        if entry.pack_meta_summary.is_empty() {
+            lines.push("- pack_meta summary: _not available_".to_string());
+        } else {
+            lines.push("- pack_meta summary:".to_string());
+            for (key, value) in &entry.pack_meta_summary {
+                lines.push(format!(
+                    "  - `{}`: {}",
+                    escape_markdown_cell(key),
+                    inventory_value_markdown(value)
+                ));
+            }
+        }
+        lines.push("- known outputs:".to_string());
+        for artifact in &entry.known_outputs {
+            lines.push(format!("  - `{}`", escape_markdown_cell(artifact)));
+        }
+    }
+
+    format!("{}\n", lines.join("\n"))
+}
+
+fn inventory_value_markdown(value: &Value) -> String {
+    match value {
+        Value::String(text) => format!("`{}`", escape_markdown_cell(text)),
+        Value::Array(items) => {
+            let values = items
+                .iter()
+                .filter_map(Value::as_str)
+                .map(|item| format!("`{}`", escape_markdown_cell(item)))
+                .collect::<Vec<String>>();
+            if values.is_empty() {
+                "`[]`".to_string()
+            } else {
+                values.join(", ")
+            }
+        }
+        _ => format!("`{}`", escape_markdown_cell(&value.to_string())),
+    }
 }
 
 fn write_decision_pack_outputs(build: DecisionPackBuild<'_>) -> Result<()> {
